@@ -30,6 +30,8 @@ python tools/verify_coverage.py
 python tools/build_research_db.py
 python tools/query_kb.py "webhook signature"
 python tools/query_research.py "WB token"
+python tools/mock_qparser.py --port 8765   # local API emulator, no key needed
+python tools/smoke_mock.py                 # 15 contract checks against the emulator
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.

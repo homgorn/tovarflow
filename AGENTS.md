@@ -98,6 +98,10 @@ python tools/verify_coverage.py         # coverage gate
 python tools/query_kb.py "webhook"      # query the corpus
 python tools/build_research_db.py       # research DB + graph + wiki
 python tools/query_research.py "WB token"
+python tools/mock_qparser.py --port 8765 # local Q-Parser API emulator
+python tools/smoke_mock.py               # contract smoke test
+python tools/merge_graphs.py             # combined knowledge graph
+python tools/status.py                   # current counts
 ```
 
 A change is not done until the relevant gate passes and the wiki is regenerated.
