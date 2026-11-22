@@ -1,0 +1,448 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/v1/me",
+    "summary": "Текущий пользователь: тариф, баланс и AI Points.",
+    "request": "",
+    "response": "- `email` — email пользователя\n- `tariff_id` — идентификатор тарифа\n- `tariff_until` — срок действия тарифа (unix ms)\n- `balance` — баланс в рублях\n- `ai_points` — баланс AI Points",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "email",
+        "description": "email пользователя"
+      },
+      {
+        "name": "tariff_id",
+        "description": "идентификатор тарифа"
+      },
+      {
+        "name": "tariff_until",
+        "description": "срок действия тарифа (unix ms)"
+      },
+      {
+        "name": "balance",
+        "description": "баланс в рублях"
+      },
+      {
+        "name": "ai_points",
+        "description": "баланс AI Points"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/catalog",
+    "summary": "Каталог сайтов, доступных для парсинга: поиск по названию, описанию и домену.",
+    "request": "- `q` — поисковый запрос (необязательно). Можно передать домен или URL\n- `free=1` — только сайты с бесплатным парсингом\n- `limit` — размер страницы, по умолчанию 100, максимум 1000\n- `offset` — смещение, по умолчанию 0",
+    "response": "- `total` — всего сайтов по фильтру\n- `limit`, `offset` — фактическая пагинация\n- `list` — массив: `domain`, `title`, `slug` (страница в каталоге), `private`, `free_until` (unix ms), `categories` и `cities` — массивы `{ title, slug }`\n\nВ выдачу также попадают приватные сайты, доступные текущему пользователю. Домен из `list` передают в `GET /api/v1/website/:domain` и при запуске парсинга.",
+    "request_fields": [
+      {
+        "name": "q",
+        "description": "поисковый запрос (необязательно). Можно передать домен или URL"
+      },
+      {
+        "name": "free=1",
+        "description": "только сайты с бесплатным парсингом"
+      },
+      {
+        "name": "limit",
+        "description": "размер страницы, по умолчанию 100, максимум 1000"
+      },
+      {
+        "name": "offset",
+        "description": "смещение, по умолчанию 0"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "total",
+        "description": "всего сайтов по фильтру"
+      },
+      {
+        "name": "limit",
+        "description": "фактическая пагинация"
+      },
+      {
+        "name": "list",
+        "description": "массив: `domain`, `title`, `slug` (страница в каталоге), `private`, `free_until` (unix ms), `categories` и `cities` — массивы `{ title, slug }`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/website/:domain",
+    "summary": "Схема настроек парсера для сайта: нужна ли авторизация, ручные категории и какие опции передавать при запуске.",
+    "request": "`domain` в пути (например `example.com`).",
+    "response": "- `domain` — канонический домен\n- `protocol` — `http` или `https`\n- `auth_required` — нужна ли авторизация на сайте\n- `manual_categories` — нужно ли передавать категории вручную\n- `options` — объект опций (может быть пустым). Ключ опции передаётся в `options` при запуске парсинга\n  категорий или товаров. Типы: `select`, `input`, `file`, `text`, `html`, `vkcom`, `okru`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "domain",
+        "description": "канонический домен"
+      },
+      {
+        "name": "protocol",
+        "description": "`http` или `https`"
+      },
+      {
+        "name": "auth_required",
+        "description": "нужна ли авторизация на сайте"
+      },
+      {
+        "name": "manual_categories",
+        "description": "нужно ли передавать категории вручную"
+      },
+      {
+        "name": "options",
+        "description": "объект опций (может быть пустым). Ключ опции передаётся в `options` при запуске парсинга"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/credentials",
+    "summary": "Список сохранённых логинов для сайтов, где нужна авторизация. Пароли не возвращаются.",
+    "request": "необязательный query-параметр `domain` — фильтр по сайту.",
+    "response": "объект `credentials` — массив записей:\n\n- `id` — идентификатор записи (UUID), его передают в `credentials_id`\n- `domain` — домен сайта\n- `login` — логин\n- `last_login` — время последней успешной авторизации (unix ms) или `null`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор записи (UUID), его передают в `credentials_id`"
+      },
+      {
+        "name": "domain",
+        "description": "домен сайта"
+      },
+      {
+        "name": "login",
+        "description": "логин"
+      },
+      {
+        "name": "last_login",
+        "description": "время последней успешной авторизации (unix ms) или `null`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/credentials",
+    "summary": "Добавляет логин и пароль. Если такая пара уже есть, пароль обновляется, `id` остаётся прежним.",
+    "request": "",
+    "response": "`id`, `login`, `domain`.",
+    "request_fields": [],
+    "response_fields": [],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/categories",
+    "summary": "Запускает сбор категорий сайта. Если список уже есть в кэше, сразу возвращается `completed` без повторного сбора.",
+    "request": "",
+    "response": "- `id` — идентификатор задачи, его передают в `GET /api/v1/categories/:id`\n- `status` — `running` или `completed`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор задачи, его передают в `GET /api/v1/categories/:id`"
+      },
+      {
+        "name": "status",
+        "description": "`running` или `completed`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/categories/:id",
+    "summary": "Статус и результат сбора категорий.",
+    "request": "`id` задачи из `POST /api/v1/categories`.",
+    "response": "- `id` — идентификатор задачи\n- `status` — `running`, `completed` или `error`\n- `updated` — время обновления кэша (unix ms) или `null`\n- `categories` — массив `{ title, url }` или `null`, пока статус `running`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор задачи"
+      },
+      {
+        "name": "status",
+        "description": "`running`, `completed` или `error`"
+      },
+      {
+        "name": "updated",
+        "description": "время обновления кэша (unix ms) или `null`"
+      },
+      {
+        "name": "categories",
+        "description": "массив `{ title, url }` или `null`, пока статус `running`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/parser",
+    "summary": "Запускает парсинг товаров. Полноценный парсинг платного сайта — только с действующим тарифом. Пробный парсинг — с `trial: true`, доступен без тарифа. Если `categories` не передан или пустой, список категорий будет загружен автоматически",
+    "request": "",
+    "response": "`id` парсинга в виде `id1234567`.",
+    "request_fields": [],
+    "response_fields": [],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/parser/list",
+    "summary": "История парсингов.",
+    "request": "- `limit` — размер страницы, по умолчанию 100, максимум 1000\n- `offset` — смещение, по умолчанию 0",
+    "response": "- `total` — всего парсингов\n- `limit`, `offset` — фактическая пагинация\n- `list` — массив: `id`, `domain`, `status` (`queued`, `running`, `completed`, `canceled`, `error`), `goods_processed`, `goods_limited`, `categories_total`, `categories_processed`, `created`, `finished` (unix ms, `finished` может быть `null`), `archive`",
+    "request_fields": [
+      {
+        "name": "limit",
+        "description": "размер страницы, по умолчанию 100, максимум 1000"
+      },
+      {
+        "name": "offset",
+        "description": "смещение, по умолчанию 0"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "total",
+        "description": "всего парсингов"
+      },
+      {
+        "name": "limit",
+        "description": "фактическая пагинация"
+      },
+      {
+        "name": "list",
+        "description": "массив: `id`, `domain`, `status` (`queued`, `running`, `completed`, `canceled`, `error`), `goods_processed`, `goods_limited`, `categories_total`, `categories_processed`, `created`, `finished` (unix ms, `finished` может быть `null`), `archive`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/parser/:id",
+    "summary": "Статус парсинга: очередь, прогресс, ошибка.",
+    "request": "`id` в пути — полный id парсинга, например `id1234567`.",
+    "response": "- `id` — идентификатор парсинга\n- `status` — `queued`, `running`, `completed`, `canceled` или `error`\n- `domain` — домен сайта\n- `goods_processed` — сколько товаров уже спарсено\n- `goods_limited` — лимит товаров по тарифу или `null`\n- `categories_total` — всего категорий в задании\n- `categories_processed` — сколько категорий уже обработано\n- `created` — время создания (unix ms)\n- `finished` — время завершения (unix ms) или `null`\n- `archive` — архивный парсинг\n- `error` — текст ошибки или `null`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор парсинга"
+      },
+      {
+        "name": "status",
+        "description": "`queued`, `running`, `completed`, `canceled` или `error`"
+      },
+      {
+        "name": "domain",
+        "description": "домен сайта"
+      },
+      {
+        "name": "goods_processed",
+        "description": "сколько товаров уже спарсено"
+      },
+      {
+        "name": "goods_limited",
+        "description": "лимит товаров по тарифу или `null`"
+      },
+      {
+        "name": "categories_total",
+        "description": "всего категорий в задании"
+      },
+      {
+        "name": "categories_processed",
+        "description": "сколько категорий уже обработано"
+      },
+      {
+        "name": "created",
+        "description": "время создания (unix ms)"
+      },
+      {
+        "name": "finished",
+        "description": "время завершения (unix ms) или `null`"
+      },
+      {
+        "name": "archive",
+        "description": "архивный парсинг"
+      },
+      {
+        "name": "error",
+        "description": "текст ошибки или `null`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/parser/:id/stop",
+    "summary": "Останавливает незавершенный парсинг — то же, что кнопка «Остановить» в интерфейсе. Парсинг в очереди или в работе переходит в статус `canceled`. Уже завершенный или уже остановленный парсинг остановить нельзя: ответ `unprocessable`.",
+    "request": "`id` в пути — полный id парсинга, например `id1234567`. Тело запроса не нужно.",
+    "response": "тот же объект, что у `GET /api/v1/parser/:id`. После остановки `status` — `canceled`.",
+    "request_fields": [],
+    "response_fields": [],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/parser/:id/resume",
+    "summary": "Возобновляет вручную остановленный парсинг — то же, что кнопка «Возобновить». Парсинг должен быть в статусе `canceled` и не в архиве. Успешно завершенный, завершенный с ошибкой, еще идущий или архивный парсинг возобновить нельзя:",
+    "request": "`id` в пути — полный id парсинга, например `id1234567`. Тело запроса не нужно.",
+    "response": "тот же объект, что у `GET /api/v1/parser/:id`. После возобновления `status` — `queued` или `running`.",
+    "request_fields": [],
+    "response_fields": [],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/parser/:id/goods",
+    "summary": "Список товаров парсинга с постраничной выдачей.",
+    "request": "- `id` в пути — полный id парсинга, например `id1234567`\n- `limit` — размер страницы, по умолчанию 100, максимум 1000\n- `offset` — смещение, по умолчанию 0",
+    "response": "- `total` — всего товаров\n- `limit`, `offset` — фактическая пагинация\n- `goods` — массив товаров: `title`, `article`, `url`, `price`, `old_price`, `currency`, `brand`, `quantity`, `publish` (наличие, `true` / `false` / `null`), `images`, `file_links`, `video_links` (массивы ссылок), `category_title`, `category_url`, `description`, `short_description`, `data` — дополнительные характеристики с человекочитаемыми ключами",
+    "request_fields": [
+      {
+        "name": "id",
+        "description": "полный id парсинга, например `id1234567`"
+      },
+      {
+        "name": "limit",
+        "description": "размер страницы, по умолчанию 100, максимум 1000"
+      },
+      {
+        "name": "offset",
+        "description": "смещение, по умолчанию 0"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "total",
+        "description": "всего товаров"
+      },
+      {
+        "name": "limit",
+        "description": "фактическая пагинация"
+      },
+      {
+        "name": "goods",
+        "description": "массив товаров: `title`, `article`, `url`, `price`, `old_price`, `currency`, `brand`, `quantity`, `publish` (наличие, `true` / `false` / `null`), `images`, `file_links`, `video_links` (массивы ссылок), `category_title`, `category_url`, `description`, `short_description`, `data` — дополнительные характеристики с человекочитаемыми ключами"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/format",
+    "summary": "Список форматов выгрузки: идентификаторы, названия и схема опций.",
+    "request": "",
+    "response": "объект `formats` — массив записей:\n\n- `id` — идентификатор формата, его передают в `POST /api/v1/export`\n- `title` — название формата\n- `options` — объект опций (может быть пустым). Ключ опции передаётся в `options` при запуске выгрузки.\n  Каждая опция: `title`, `type`, `values` — массив `{ key, label }`. Для выбора обычно берут `key` первого элемента `values`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор формата, его передают в `POST /api/v1/export`"
+      },
+      {
+        "name": "title",
+        "description": "название формата"
+      },
+      {
+        "name": "options",
+        "description": "объект опций (может быть пустым). Ключ опции передаётся в `options` при запуске выгрузки."
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/export",
+    "summary": "Запускает выгрузку товаров парсинга в выбранный формат.",
+    "request": "",
+    "response": "`id` выгрузки (UUID).",
+    "request_fields": [],
+    "response_fields": [],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v1/export/:id",
+    "summary": "Статус выгрузки: очередь, прогресс, файлы или ссылки результата.",
+    "request": "`id` в пути — UUID выгрузки из `POST /api/v1/export`.",
+    "response": "- `id` — идентификатор выгрузки\n- `status` — `queued`, `running`, `completed`, `canceled` или `error`\n- `parser_id` — id парсинга\n- `format` — id формата\n- `goods_exported` — сколько товаров уже обработано\n- `created` — время создания (unix ms)\n- `finished` — время завершения (unix ms) или `null`\n- `error` — текст ошибки или `null`\n- `message` — сообщение результата или `null`\n- `files` — массив ссылок на файлы выгрузки (может быть пустым)\n- `links` — массив `{ title, url }` (может быть пустым)\n- `progress` — `{ current, max, message }` во время работы или `null`",
+    "request_fields": [],
+    "response_fields": [
+      {
+        "name": "id",
+        "description": "идентификатор выгрузки"
+      },
+      {
+        "name": "status",
+        "description": "`queued`, `running`, `completed`, `canceled` или `error`"
+      },
+      {
+        "name": "parser_id",
+        "description": "id парсинга"
+      },
+      {
+        "name": "format",
+        "description": "id формата"
+      },
+      {
+        "name": "goods_exported",
+        "description": "сколько товаров уже обработано"
+      },
+      {
+        "name": "created",
+        "description": "время создания (unix ms)"
+      },
+      {
+        "name": "finished",
+        "description": "время завершения (unix ms) или `null`"
+      },
+      {
+        "name": "error",
+        "description": "текст ошибки или `null`"
+      },
+      {
+        "name": "message",
+        "description": "сообщение результата или `null`"
+      },
+      {
+        "name": "files",
+        "description": "массив ссылок на файлы выгрузки (может быть пустым)"
+      },
+      {
+        "name": "links",
+        "description": "массив `{ title, url }` (может быть пустым)"
+      },
+      {
+        "name": "progress",
+        "description": "`{ current, max, message }` во время работы или `null`"
+      }
+    ],
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured"
+  }
+]

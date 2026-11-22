@@ -1,0 +1,1085 @@
+{
+  "generated_at": "2026-11-22T00:00:00Z",
+  "platforms": [
+    {
+      "platform": "Amazon SP-API",
+      "region": "Global (NA/EU/FE endpoints)",
+      "auth": {
+        "type": "LWA OAuth2",
+        "flows": ["Authorization Code (public apps)", "Self-authorization (private apps)"],
+        "token_endpoint": "api.amazon.com/auth/o2/token",
+        "scopes": "Per-API (e.g., orders, listings, feeds)",
+        "pii_handling": "Restricted Data Token (RDT) required for PII endpoints",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-step-6-set-up-the-authorization-workflow",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; Swagger/OpenAPI per API; versioned in path",
+      "product_import": {
+        "methods": ["Feeds API (async, CSV/JSON)", "Listings Items API (sync, REST)"],
+        "required_attributes": "Varies by product type; Product Type Definitions API provides schema",
+        "category_mapping": "Amazon Browse Tree Guides (BTG) + Product Type Definitions",
+        "media_rules": "Images via Uploads API; max 2000px; white background for main",
+        "moderation": "Automated + human review; suppressed listings via Listings Restrictions API",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Feeds API (price feed)", "Listings Items PATCH"],
+        "latency": "Feeds: minutes to hours; API: near-real-time",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Feeds API (inventory feed)", "Inventory API (FBA/merchant)"],
+        "latency": "Feeds: minutes to hours; API: near-real-time",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Orders API v0 / v2026-01-01", "Order Events via Notifications API (SQS/EventBridge)"],
+        "acknowledge_required": true,
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Returns API (beta)", "Customer Returns feed"],
+        "confidence": 7,
+        "source": "reported"
+      },
+      "rate_limits": {
+        "algorithm": "Token bucket per operation/account/application",
+        "headers": ["x-amzn-RateLimit-Limit", "x-amzn-RateLimit-Remaining"],
+        "sandbox_limits": "5 req/s, burst 15 (shared across all sandbox ops)",
+        "production_example": "searchOrders: 0.0056 req/s (20 burst); getOrder: 0.5 req/s (30 burst)",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits"
+      },
+      "sandbox": {
+        "environments": ["Static (mock)", "Dynamic (realistic backend)", "Sample AI (local)"],
+        "endpoints": {
+          "NA": "sandbox.sellingpartnerapi-na.amazon.com",
+          "EU": "sandbox.sellingpartnerapi-eu.amazon.com",
+          "FE": "sandbox.sellingpartnerapi-fe.amazon.com"
+        },
+        "limitations": "Sandbox rate limits ≠ production; RDT must come from prod",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developer-docs.amazon.com/sp-api/",
+      "regional_entity_constraints": "Separate endpoints per region (NA/EU/FE); separate LWA auth per region; VAT/tax per marketplace",
+      "confidence": 9,
+      "notes": "Most complex auth (LWA + RDT); per-op rate limits require header parsing; Appstore listing for public apps adds review time",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "eBay Sell APIs",
+      "region": "Global (site IDs per marketplace)",
+      "auth": {
+        "type": "OAuth2",
+        "flows": ["Authorization Code (multi-seller)", "Client Credentials (single seller)"],
+        "token_endpoint": "api.ebay.com/identity/v1/oauth2/token",
+        "scopes": "Per-API (sell.inventory, sell.fulfillment, sell.analytics, etc.)",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.ebay.com/develop/guides/sell/get-started-with-ebay-apis",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; dual Inventory API (sync) + Feed API (async LMS/Seller Hub)",
+      "product_import": {
+        "methods": ["Inventory API (create inventory item + offer)", "Feed API (LMS_ADD_FIXED_PRICE_ITEM, Seller Hub feeds)"],
+        "required_attributes": "Category-specific; Catalog API for product identifiers (ePID)",
+        "category_mapping": "eBay Category Tree API (site-specific)",
+        "media_rules": "Images via Media API (image resource); 200k calls/day limit",
+        "moderation": "Policy compliance checks; listing quality score",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Inventory API bulk_update_price_quantity", "Feed API ReviseInventoryStatus"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Inventory API bulk_update_price_quantity", "Feed API ReviseInventoryStatus"],
+        "real_time_inventory_check": "Optional webhook endpoint for checkout-time verification",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Fulfillment API (orders resource)", "Feed API OrderReport (async download)"],
+        "acknowledge_required": true,
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Post-Order API (Return resource)", "Cancellation, Case Management, Inquiry"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "algorithm": "Fixed daily quotas per API category",
+        "key_limits": {
+          "Inventory API": "2,000,000 calls/day",
+          "Feed API": "100,000 calls/day",
+          "Fulfillment API": "100,000 calls/day (orders)",
+          "Post-Order API": "5,000 calls/day per resource",
+          "Media API": "200,000 calls/day (images)"
+        },
+        "growth_path": "Application Growth Check for higher limits",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.ebay.com/develop/get-started/api-call-limits"
+      },
+      "sandbox": {
+        "environment": "Full separate sandbox (api.sandbox.ebay.com)",
+        "credentials": "Separate sandbox keys",
+        "limits": "Default 5,000 calls/day; suitable for functional testing not load",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developer.ebay.com/",
+      "regional_entity_constraints": "Site ID per marketplace (US=0, UK=3, DE=77, etc.); separate auth per site; VAT/Brexit considerations",
+      "confidence": 9,
+      "notes": "Dual API model (Inventory + Feed) adds complexity; LMS vs Seller Hub feed formats differ; 2M/day Inventory limit is generous but real",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Etsy Open API v3",
+      "region": "Global",
+      "auth": {
+        "type": "Dual: x-api-key + OAuth2",
+        "api_key_format": "keystring:shared_secret in x-api-key header (every request)",
+        "oauth2": {
+          "flows": ["Authorization Code + PKCE"],
+          "token_endpoint": "openapi.etsy.com/v3/public/oauth/token",
+          "scopes": ["listings_r", "listings_w", "listings_d", "transactions_r", "shops_r", "profile_r"]
+        },
+        "app_types": ["Seller App (own shop only)", "Personal App (limited)", "Commercial Access (gated, multi-seller)"],
+        "confidence": 8,
+        "source": "measured",
+        "source_url": "https://developers.etsy.com/documentation/essentials/authentication",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; OpenAPI 3.0 spec; batch endpoints for inventory/shipping",
+      "product_import": {
+        "methods": ["createDraftListing + updateListingInventory", "Digital products via uploadListingFile"],
+        "required_attributes": "Title, description, price, quantity, taxonomy_id, images (min 1)",
+        "category_mapping": "Etsy Taxonomy API (categories + attributes)",
+        "media_rules": "Images: 5 max per listing; 2000px min; videos supported",
+        "moderation": "Policy review; can be auto-suspended",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["PUT /listings/{id}/inventory (price in offerings array)"],
+        "currency": "US pennies (integer)",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["PUT /listings/{id}/inventory (quantity in offerings array)"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Receipts API (transactions_r scope)", "Webhooks: order.paid, order.shipped, order.canceled"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Shop Return Policy API (CRUD)"],
+        "confidence": 7,
+        "source": "reported"
+      },
+      "rate_limits": {
+        "algorithm": "Undocumented global limits",
+        "batch_limits": "getListingsInventoryByListingIds: 100 IDs/request; getListingsByShop: paginated",
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "sandbox": {
+        "environment": "Seller App = own production shop only (no separate sandbox); Personal App + Commercial Access required for multi-seller",
+        "confidence": 7,
+        "source": "reported"
+      },
+      "docs_url": "https://developers.etsy.com/",
+      "regional_entity_constraints": "Single global shop; currency per shop; EU VAT/OSS compliance on seller",
+      "confidence": 8,
+      "notes": "Commercial Access gating is major blocker for SaaS; dual auth unusual; 100-listing batch limit; SKU only visible to owner",
+      "tier": "Very Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Walmart Marketplace",
+      "region": "US, CA, MX",
+      "auth": {
+        "type": "OAuth2 Client Credentials",
+        "token_endpoint": "marketplace.walmartapis.com/v3/token",
+        "token_ttl": "15 minutes (900 seconds)",
+        "delegated_access": "Solution Provider keys for multi-seller",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.walmart.com/us-marketplace/docs/integrate-with-marketplace-apis",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; Feeds (async) + Items/Inventory/Orders (sync); OpenAPI specs",
+      "product_import": {
+        "methods": ["Feeds API (Items feed, async)", "Item Management API (sync, per-item)"],
+        "required_attributes": "GTIN, title, description, category, brand, images, price, shipping weight",
+        "category_mapping": "Walmart Category API (taxonomy tree)",
+        "media_rules": "Images via Feeds or Items API; max 50MB; specific aspect ratios",
+        "moderation": "Content quality scores; suppressed via Item API",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Feeds API (Price feed)", "Items API price update"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Feeds API (Inventory feed)", "Inventory API (per-SKU)"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Orders API (GET, acknowledge, ship, cancel)", "Shipping API (buy shipping labels)"],
+        "acknowledge_required": true,
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Returns/Refunds API", "Disputes API"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "algorithm": "Token bucket",
+        "headers": ["x-current-token-count", "X-Next-Replenishment-Time"],
+        "sandbox_limits": {
+          "Items": "30/hr",
+          "Prices": "30/hr",
+          "Inventory": "30/hr",
+          "Returns": "30/hr"
+        },
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.walmart.com/us-marketplace/docs/rate-limiting"
+      },
+      "sandbox": {
+        "environment": "Dynamic Sandbox (custom test data, simulation APIs)",
+        "features": ["Create test items/orders", "Simulate carrier delivery", "Test returns/refunds"],
+        "limitations": "Not full-stack; mock responses; 30 req/hr per feed type",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developer.walmart.com/",
+      "regional_entity_constraints": "Separate endpoints per country (US/CA/MX); delegated access for SPs; US tax nexus rules",
+      "confidence": 9,
+      "notes": "15-min token expiry requires robust caching; dual feed+API paths mirror real needs; dynamic sandbox is best-in-class",
+      "tier": "Medium",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "TikTok Shop Partner API",
+      "region": "Global (SEA, US, UK, EU markets)",
+      "auth": {
+        "type": "OAuth2 Authorization Code + request signing",
+        "authorization_domains": {
+          "US_seller": "services.us.tiktokshop.com/open/authorize",
+          "ROW_seller": "services.tiktokshop.com/open/authorize",
+          "US_partner": "partner.us.tiktokshop.com/open/authorize",
+          "ROW_partner": "partner.tiktokshop.com/open/authorize",
+          "creator": "shop.tiktok.com/alliance/creator/auth",
+          "token": "auth.tiktok-shops.com/api/v2/token/get"
+        },
+        "signing": "HMAC-SHA256 with app_secret on every request",
+        "token_ttl": "Not explicitly documented; refresh_token flow",
+        "compliance_review": "3+ weeks for US/UK markets",
+        "confidence": 8,
+        "source": "measured",
+        "source_url": "https://partner.tiktokshop.com/docv2/page/authorization",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; Global Product API for cross-border; webhooks for events",
+      "product_import": {
+        "methods": ["Product API (create/edit)", "Global Product API (cross-border unified)"],
+        "required_attributes": "Category-specific; Category API provides required attributes",
+        "category_mapping": "TikTok Shop Category Tree API",
+        "media_rules": "Images/videos via Media API upload; certifications upload",
+        "moderation": "Automated + manual review; compliance checks per market",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Product API update_price", "Global Product API"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Product API update_inventory", "Global Product API"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Order API (list/get/acknowledge/ship)", "Webhooks: order events"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Return & Refund API (returns, refunds, cancellations)"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "sandbox": "QPH = 1000 per sandbox user (429 + error_code 36009037)",
+        "production": "Per-endpoint limits (undocumented); inactive shop/seller blocked (401 + 36009043/44)",
+        "confidence": 7,
+        "source": "reported",
+        "source_url": "https://partner.tiktokshop.com/docv2/page/p9x5je85"
+      },
+      "sandbox": {
+        "environment": "Seller Center Development Shops (Core/Full Function)",
+        "expiry": "180 days (reactivatable)",
+        "accounts": "Up to 10 test accounts; Core = minimal setup; Full = requires TikTok accounts",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "docs_url": "https://partner.tiktokshop.com/",
+      "regional_entity_constraints": "Multi-market OAuth domains; per-market compliance; cross-border via Global Product API; GST/VAT per market",
+      "confidence": 8,
+      "notes": "Compliance review (3+ weeks) is calendar blocker; per-market auth domains; sandbox QPH=1000 strict; request signing adds complexity",
+      "tier": "Medium",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Allegro REST API",
+      "region": "PL, CZ, SK, HU",
+      "auth": {
+        "type": "OAuth2 (Auth Code + Client Credentials)",
+        "token_endpoint": "allegro.pl/auth/oauth/token",
+        "media_types": "Custom: application/vnd.allegro.public.v1+json (versioned via Accept/Content-Type)",
+        "scopes": "Per-resource (e.g., sale:offers:read, sale:offers:write, order:read)",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.allegro.pl/tutorials/informacje-podstawowe-b21569boAI1",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; versioned via custom media types; Polish/English docs",
+      "product_import": {
+        "methods": ["Offers API (create from product)", "Product API (propose/manage products)"],
+        "required_attributes": "Category-specific parameters via GET /sale/categories/{id}/product-parameters",
+        "category_mapping": "Allegro Category Tree API",
+        "media_rules": "Images via offer creation; max 20k draft offers limit",
+        "moderation": "Productization flow (product proposals)",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Offers API price update"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Offers API stock update"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Order Events API (polling GET /order/events)", "Checkout Forms API (order details)"],
+        "acknowledge_required": "Fulfillment status transitions via PUT /order/checkout-forms/{id}/fulfillment",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": "Via order events (cancellation, return events); limited dedicated returns API",
+        "confidence": 7,
+        "source": "reported"
+      },
+      "rate_limits": {
+        "algorithm": "Global 9,000 req/min per Client ID + Leaky Bucket per user",
+        "error_on_exceed": "429 Too Many Requests (1-min ban for global; latency increase for per-user)",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developer.allegro.pl/faq"
+      },
+      "sandbox": {
+        "environment": "Separate sandbox (allegrosandbox.pl subdomains)",
+        "endpoints": {
+          "api": "api.allegro.pl.allegrosandbox.pl",
+          "auth": "allegro.pl.allegrosandbox.pl/auth/oauth",
+          "apps": "apps.developer.allegro.pl.allegrosandbox.pl"
+        },
+        "limits": "Same as production",
+        "data_reset": "Quarterly (offers removed)",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developer.allegro.pl/",
+      "regional_entity_constraints": "Base service per registration domain (allegro.pl, allegro.cz, etc.); Polish language primary; VAT per country",
+      "confidence": 9,
+      "notes": "Custom media type versioning unusual but clean; Leaky Bucket per-user means latency spikes before 429; sandbox separate but same limits",
+      "tier": "Medium",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Kaufland Seller API",
+      "region": "DE, AT, CZ, SK, PL",
+      "auth": {
+        "type": "HMAC-SHA256 (Client Key + Secret Key)",
+        "no_oauth": true,
+        "credentials": "32-char Client Key + 64-char Secret Key from Seller Portal",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://sellerapi.kaufland.com/?page=rest-api",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; OpenAPI 3.0 (Swagger); EAN-centric product model",
+      "product_import": {
+        "methods": ["Product Data API (per-EAN PUT/PATCH)", "CSV import-files (async, URL-based, 30 feeds/day limit)"],
+        "required_attributes": "EAN (GTIN), title, description, category, brand, images, price, condition",
+        "category_mapping": "Kaufland category tree (via Attributes API)",
+        "media_rules": "Images via product data; URLs in CSV",
+        "moderation": "Async feed processing with status endpoint",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["PATCH /product-data (price field)", "CSV Price feed"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["PATCH /product-data (quantity field)", "CSV Inventory feed"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["GET /orders (paginated)", "GET /orders/{id}", "GET /order-units"],
+        "fulfillment": "PATCH /order-units/{id}/send, /fulfil, /cancel, /refund",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Order Units refund/cancel endpoints", "Order Invoices upload"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "deep_pagination": "offset >= 1,000,000 limited to 200/min per seller (429)",
+        "csv_feeds": "30 feeds/day limit (combine multiple products per feed)",
+        "general": "Undocumented; observed conservative",
+        "confidence": 7,
+        "source": "reported",
+        "source_url": "https://sellerapi.kaufland.com/?page=releaselog"
+      },
+      "sandbox": {
+        "environment": "Playground (sellerapi-playground.kaufland.com)",
+        "sync_lag": "Production data synced every 2 weeks; test data cleared same time",
+        "credentials": "Same Client/Secret Key as production",
+        "test_orders": "POST /playground/orders with valid offer",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://sellerapi.kaufland.com/",
+      "regional_entity_constraints": "Storefront parameter (de, at, cz, sk, pl); VAT per country; fulfillment by Kaufland or merchant",
+      "confidence": 9,
+      "notes": "HMAC signing simpler than OAuth but per-call; 30 feeds/day CSV limit forces batching; playground sync lag 2 weeks",
+      "tier": "Easy",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Bol.com",
+      "region": "NL, BE",
+      "auth": {
+        "type": "OAuth2 Client Credentials",
+        "token_endpoint": "login.bol.com/token",
+        "grant_type": "client_credentials",
+        "token_ttl": "299 seconds (JWT)",
+        "no_user_consent": true,
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developers.bol.com/en/api-best-practices",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; versioned API families (Offers v11, Orders v10, Returns v10, Subscriptions v11, etc.)",
+      "product_import": {
+        "methods": ["Offers API v11 (EAN-based create/update)"],
+        "required_attributes": "EAN, title, description, condition, price, delivery code, images",
+        "category_mapping": "Bol.com catalog (EAN lookup); Product Content API for attributes",
+        "media_rules": "Images via Offers API; specific format requirements",
+        "moderation": "Content validation; process-status polling",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Offers API v11 price update"],
+        "async": true,
+        "process_status_polling": "Required (PENDING -> SUCCESS/FAILURE/TIMEOUT)",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Offers API v11 stock update"],
+        "async": true,
+        "process_status_polling": "Required",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Orders & Shipments API v10", "Shipment confirmation with carrier/tracking"],
+        "async": false,
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Returns API v10"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "published_at": "api.bol.com/retailer/public/ratelimits (machine-readable)",
+        "headers": ["X-RateLimit-Limit", "X-RateLimit-Remaining", "X-RateLimit-Reset"],
+        "example": "List orders: 25/min; Get single order: 25/sec",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "sandbox": {
+        "environment": "Demo environment (/retailer-demo/ prefix on api.bol.com)",
+        "credentials": "Same client_id/secret as production",
+        "data": "Fixed sample data only (not your shop's data)",
+        "use_case": "Auth, headers, response handling validation",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developers.bol.com/",
+      "regional_entity_constraints": "NL/BE only; single VAT regime (EU OSS); retailer account per country; technical contact required",
+      "confidence": 9,
+      "notes": "Cleanest OAuth2 flow (client credentials only); explicit async contract via process-status; published rate limits; English docs",
+      "tier": "Easy",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Cdiscount (via Octopia)",
+      "region": "FR, BE, ES, IT",
+      "auth": {
+        "type": "OAuth2 + API Key (login-walled portal)",
+        "legacy_soap": "Deprecated (permanently decommissioned)",
+        "confidence": 5,
+        "source": "reported",
+        "source_url": "https://dev.cdiscount.com/marketplace",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON (Octopia unified); CSV feeds; login-walled docs",
+      "product_import": {
+        "methods": ["Product Integration API (POST packages, async)", "CSV feeds via import-files"],
+        "required_attributes": "GTIN, title, description, categoryCode, brand, images, sellerProductReference",
+        "category_mapping": "Octopia category codes",
+        "media_rules": "Images via sellerPictureUrls array",
+        "moderation": "Async package processing with packageId tracking",
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "price_write": {
+        "methods": ["Product Integration API price fields", "CSV price feed"],
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "stock_write": {
+        "methods": ["Product Integration API stock fields", "CSV inventory feed"],
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "order_read": {
+        "methods": ["Orders API via Octopia"],
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "returns": {
+        "methods": ["Returns via Octopia"],
+        "confidence": 4,
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "observed": "100 req/min (community report); token 1hr",
+        "confidence": 5,
+        "source": "reported",
+        "source_url": "https://developer.aliyun.com/article/1691285"
+      },
+      "sandbox": {
+        "environment": "Not publicly documented; Octopia portal required",
+        "confidence": 3,
+        "source": "inferred"
+      },
+      "docs_url": "https://developer.octopia-io.net/ (login-walled)",
+      "regional_entity_constraints": "FR/BE/ES/IT storefronts; EU VAT/OSS; Octopia network includes Rakuten, CDON, Fyndiq, OnBuy, Worten",
+      "confidence": 5,
+      "notes": "SOAP deprecated; docs login-walled; Octopia unified API for multiple marketplaces; rate limit 100/min observed",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Zalando (zDirect)",
+      "region": "EU (DE, AT, BE, CH, CZ, DK, ES, FI, FR, IE, IT, NL, PL, SE)",
+      "auth": {
+        "type": "OAuth2 Client Credentials",
+        "token_endpoint": "api-sandbox.merchants.zalando.com/auth/token (sandbox) / api.merchants.zalando.com/auth/token (prod)",
+        "token_ttl": "7200 seconds (2 hours)",
+        "no_refresh_token": true,
+        "scopes": "Per-API (Products/products/write, Products/price/write, products/stock/write, Orders API/orders)",
+        "partner_only": true,
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developers.merchants.zalando.com/docs/api-overview.html",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; GraphQL for PSR; Merchant ID (BPID) scoped paths; sales channel codes",
+      "product_import": {
+        "methods": ["Product Submissions API (async)", "Product Attributes API (outlines/attribute-types)"],
+        "required_attributes": "GTIN/EAN mandatory; category-specific attributes via outlines",
+        "category_mapping": "Zalando Catalog (EAN lookup); outlines define required attributes per product type",
+        "media_rules": "Images via Product Submissions; specific requirements per category",
+        "moderation": "Zalando catalog validation; PSR (Product Status Report) for tracking",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Prices API (write-only; batch updates)"],
+        "limits": "30 req/min, 8,000 price updates/min (production)",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Stocks API (batch updates)"],
+        "limits": "60 req/min, 2,000 stock updates/min (production)",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Orders API (7 sub-limits)"],
+        "limits": {
+          "GET multiple orders": "40/min (prod), 10/min (sandbox)",
+          "GET by order_number": "400/min (prod), 100/min (sandbox)",
+          "GET order items/lines": "2,000/min (prod), 40/min (sandbox)",
+          "PATCH orders": "2,000/min (prod), 40/min (sandbox)"
+        },
+        "fulfillment_models": ["Partner Fulfillment (merchant ships)", "ZFS (Zalando Fulfillment Solutions)"],
+        "confidence": 9,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Order line transitions (returns via status changes)"],
+        "confidence": 8,
+        "source": "reported"
+      },
+      "rate_limits": {
+        "per_api": true,
+        "headers": ["Retry-After", "X-Rate-Limit"],
+        "product_submissions": "25/sec (both sandbox/prod)",
+        "product_attributes": "1,000/min (client)",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://netalith.com/blogs/marketplace-selling/zalando-partner-api"
+      },
+      "sandbox": {
+        "environment": "api-sandbox.merchants.zalando.com",
+        "app_mode": "Must set app to Sandbox Mode in zDirect Portal",
+        "behavior": "Data not persisted/propagated; responds like prod",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developers.merchants.zalando.com/",
+      "regional_entity_constraints": "Partner-only onboarding (contract required); Merchant ID per sales channel; EU VAT/OSS; ZFS warehouses in DE/PL",
+      "confidence": 9,
+      "notes": "Partner-only = calendar blocker; 2-hr JWT no refresh = token service needed; per-API limits granular; write-only Prices API",
+      "tier": "Medium",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Mercado Libre",
+      "region": "LatAm (MLA=AR, MLB=BR, MLM=MX, MLC=CL, MCO=CO, MPE=PE, MLU=UY, MLV=VE, etc.)",
+      "auth": {
+        "type": "OAuth2 Authorization Code",
+        "token_endpoint": "api.mercadolibre.com/oauth/token",
+        "access_token_ttl": "6 hours",
+        "refresh_token": "Yes (long-lived)",
+        "pkce_recommended": true,
+        "confidence": 8,
+        "source": "measured",
+        "source_url": "https://developers.mercadolibre.com.do/en_us/set-categories-for-products/authentication-and-authorization",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; scroll-based pagination (scroll_id); country-specific domains",
+      "product_import": {
+        "methods": ["Items API (POST/PUT /items)"],
+        "required_attributes": "Title, category_id, price, currency, available_quantity, buying_mode, condition, listing_type_id, pictures",
+        "category_mapping": "Mercado Libre Category API (site-specific)",
+        "media_rules": "Images via Pictures API; max 12 per item; hosted by ML",
+        "moderation": "Quality score; moderation status in item response",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["PUT /items/{item_id} with price field"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["PUT /items/{item_id} with available_quantity"],
+        "confidence": 8,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Orders API (GET /orders/search, /orders/{id})", "Shipments API"],
+        "pagination": "scroll_id (expires; must consume continuously)",
+        "confidence": 8,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Claims/Returns API", "Order cancellation"],
+        "confidence": 7,
+        "source": "reported"
+      },
+      "rate_limits": {
+        "algorithm": "Per Client ID per endpoint (hundreds/hr)",
+        "error": "429 with backoff guidance",
+        "scroll_issues": "scroll_id expires; repeated consumption causes 429",
+        "confidence": 7,
+        "source": "reported",
+        "source_url": "https://developers.mercadolibre.com.sv/en_us/rate-limit-429-error"
+      },
+      "sandbox": {
+        "environment": "Test users via developers portal",
+        "separate_sandbox": false,
+        "confidence": 7,
+        "source": "reported"
+      },
+      "docs_url": "https://developers.mercadolibre.com/",
+      "regional_entity_constraints": "Per-country site IDs; local tax (NF-e in BR, CFDI in MX); Spanish/Portuguese docs; local logistics",
+      "confidence": 8,
+      "notes": "6-hr tokens short; scroll pagination fragile; per-country site IDs; rate limits undocumented but enforced",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Shopee Open Platform",
+      "region": "SEA (SG, MY, TH, VN, PH, ID, TW), BR",
+      "auth": {
+        "type": "OAuth2 Authorization Code + HMAC-SHA256 signing per call",
+        "authorization_url": "open.shopee.com/auth (global) / open.shopee.cn/auth (CN)",
+        "token_endpoint": "partner.shopeemobile.com/api/v2/auth/access_token/get",
+        "auth_validity": "Max 365 days (seller customizable)",
+        "signing": "HMAC-SHA256 (partner_id, path, timestamp, access_token, shop_id) with partner_key",
+        "token_fragmentation": "After first refresh, each shop_id/merchant_id gets independent token pair",
+        "confidence": 7,
+        "source": "measured",
+        "source_url": "https://open.shopee.com/documents/v2/OpenAPI%202.0%20Overview?module=87&type=2",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; partner_id + sign + timestamp on every request; GET/POST only",
+      "product_import": {
+        "methods": ["Product API (Global Product + Shop SKU)", "Media Space API (images/videos)"],
+        "required_attributes": "Category-specific; Category API provides recommended attributes",
+        "category_mapping": "Shopee Category Tree (per market)",
+        "media_rules": "Images/videos via Media Space API",
+        "moderation": "Automated + manual; Global Product sync controls",
+        "confidence": 7,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Product API update_price"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Product API update_stock"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Order API (list/get/split/cancel)", "Invoice API", "Push notifications"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Order cancellation + returns via Order API"],
+        "confidence": 6,
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "documented": "Undocumented",
+        "observed": "Per-app/per-shop fragmentation after refresh makes limits complex",
+        "confidence": 4,
+        "source": "inferred"
+      },
+      "sandbox": {
+        "environment": "Sandbox v2 (openplatform.sandbox.test-stable.shopee.sg / .cn)",
+        "features": "Test accounts via Console; core scenarios (product, order, logistics)",
+        "confidence": 7,
+        "source": "measured"
+      },
+      "docs_url": "https://open.shopee.com/",
+      "regional_entity_constraints": "Per-market deployment domains (SG/CN/BR); 3 production API domains; SIP shops auto-authorize linked shops",
+      "confidence": 7,
+      "notes": "HMAC per call + token fragmentation per shop = high complexity; sandbox v2 only; undocumented rate limits",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Lazada Open Platform",
+      "region": "SEA (SG, MY, TH, VN, PH, ID)",
+      "auth": {
+        "type": "OAuth2 Authorization Code + HMAC-SHA256 signing",
+        "policies": ["Allow login users to authorize", "Allow binding user to authorize (30 max)", "Allow subscribers to authorize (Service Marketplace)"],
+        "token_endpoint": "auth.lazada.com/rest/auth/token/create",
+        "signing": "HMAC-SHA256 (app_key, timestamp, parameters, app_secret)",
+        "per_region_endpoints": true,
+        "confidence": 7,
+        "source": "measured",
+        "source_url": "https://open.lazada.com/apps/doc/doc?docId=108260&nodeId=10777&lang=en_US",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON; SDKs (Java/PHP/Python/.NET/Ruby); per-region endpoints",
+      "product_import": {
+        "methods": ["Product API (create/update)", "Global Product API"],
+        "required_attributes": "Category-specific; Category API provides attributes",
+        "category_mapping": "Lazada Category Tree (per country)",
+        "media_rules": "Images via Product API",
+        "moderation": "Automated review",
+        "confidence": 7,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Product API price update"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Product API stock update"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Order API (get/set status/ship)", "Push Mechanism (webhooks)"],
+        "confidence": 7,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Returns API"],
+        "confidence": 6,
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "testing_status": "10,000 calls/day",
+        "online_status": "10,000,000 calls/day",
+        "qps": "Global per-API shared across all developers (~1 sec ban on exceed)",
+        "error_codes": ["ApiCallLimit", "AppApiCallLimit", "E1002 (backend)", "SellerCallLimit (test accounts ~4 QPS)"],
+        "confidence": 7,
+        "source": "measured",
+        "source_url": "https://open.lazada.com/apps/doc/doc?docId=239755&nodeId=10551"
+      },
+      "sandbox": {
+        "environment": "No public sandbox; Testing status = 10k/day on prod-like env",
+        "confidence": 5,
+        "source": "reported"
+      },
+      "docs_url": "https://open.lazada.com/",
+      "regional_entity_constraints": "6 country endpoints; 3 auth policies; Service Marketplace for commercial apps; VAT per country",
+      "confidence": 7,
+      "notes": "Per-region endpoints + 3 auth policies + HMAC signing + no sandbox = high integration cost; Testing quota very low",
+      "tier": "Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Rakuten RMS",
+      "region": "JP only",
+      "auth": {
+        "type": "ESA (serviceSecret + licenseKey)",
+        "service_secret": "No expiry; not displayed in RMS",
+        "license_key": "90-day expiry for PII APIs (orders, items, inquiries); 7-day expiry notice; auto-delete after 1yr expiry",
+        "key_management": "Max 2 valid keys; manual renewal in RMS portal",
+        "confidence": 3,
+        "source": "reported",
+        "source_url": "https://www.issoh.co.jp/tech/details/19877",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON (+ some XML); specs login-walled (RMS portal); 403 from external",
+      "product_import": {
+        "methods": ["ItemAPI 2.0/2.1", "CabinetAPI (images)", "ProductAPI, ItemBundleAPI"],
+        "required_attributes": "Category-specific; NavigationAPI 2.0 for genre/attributes",
+        "category_mapping": "Rakuten Category API (Genre/Navigation)",
+        "media_rules": "CabinetAPI for image management",
+        "moderation": "Rakuten review process",
+        "confidence": 3,
+        "source": "inferred"
+      },
+      "price_write": {
+        "methods": ["ItemAPI price update"],
+        "confidence": 3,
+        "source": "inferred"
+      },
+      "stock_write": {
+        "methods": ["InventoryAPI 2.1 (bulk max 400)", "InventoryAPI 2.0"],
+        "bulk_limits": "Get by range: 1,000 max; Bulk get by SKU: 1,000 max; Bulk upsert: 400 max",
+        "confidence": 4,
+        "source": "reported",
+        "source_url": "https://fancas.co.jp/blog/rms-api"
+      },
+      "order_read": {
+        "methods": ["RakutenPayOrderAPI (searchOrder + getOrder 2-step)", "PurchaseItemAPI"],
+        "confidence": 4,
+        "source": "reported"
+      },
+      "returns": {
+        "methods": ["InquiryManagementAPI"],
+        "confidence": 3,
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "documented": "Undocumented; no public specs",
+        "confidence": 2,
+        "source": "inferred"
+      },
+      "sandbox": {
+        "environment": "None public",
+        "confidence": 1,
+        "source": "reported"
+      },
+      "docs_url": "https://webservice.rms.rakuten.co.jp/ (login-walled; 403 external)",
+      "regional_entity_constraints": "JP only; RMS contract required; RMS Service Square for partner apps; Japanese docs primary",
+      "confidence": 3,
+      "notes": "Hardest integration: login-walled docs, no sandbox, ESA auth with 90-day key expiry, Japanese language, partner-gated",
+      "tier": "Very Hard",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Google Merchant Center",
+      "region": "Global",
+      "auth": {
+        "type": "OAuth2 (3rd-party) or Service Account (own account)",
+        "no_api_keys": true,
+        "service_account": "Add service account email to Merchant Center with Admin role",
+        "oauth2": "User must exist in Merchant Center with Admin role",
+        "confidence": 10,
+        "source": "measured",
+        "source_url": "https://developers.google.com/merchant/api/guides/quickstart/authentication",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "REST + JSON (Merchant API v1beta); resource names (not IDs); modular sub-APIs",
+      "product_import": {
+        "methods": ["ProductInputs API (insert/update)", "DataSources (primary + supplemental)"],
+        "required_attributes": "title, description, link, imageLink, availability, price, condition, GTIN (recommended)",
+        "category_mapping": "Google Product Category taxonomy",
+        "media_rules": "imageLink (URL); videoLinks array; hosted by merchant",
+        "moderation": "Policy compliance; disapproval reasons in ProductStatus",
+        "confidence": 10,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["ProductInputs price attribute (amountMicros + currencyCode)"],
+        "confidence": 10,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["ProductInputs availability attribute (IN_STOCK, OUT_OF_STOCK, PREORDER)"],
+        "confidence": 10,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": "Not applicable (ads/discovery platform, not marketplace)",
+        "confidence": 10,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": "Not applicable",
+        "confidence": 10,
+        "source": "measured"
+      },
+      "rate_limits": {
+        "quotas": "Via accounts.limits.get (per-account product limits, not API call quotas)",
+        "example": "products~ADS_EEA, products~ADS_NON_EEA",
+        "confidence": 9,
+        "source": "measured",
+        "source_url": "https://developers.google.com/merchant/api/guides/quotas-limits/limits"
+      },
+      "sandbox": {
+        "environment": "No sandbox; test via Merchant Center demo/test account",
+        "confidence": 9,
+        "source": "measured"
+      },
+      "docs_url": "https://developers.google.com/merchant/api/",
+      "regional_entity_constraints": "Global; feedLabel + contentLanguage per target country; local tax/shipping settings in Merchant Center",
+      "confidence": 10,
+      "notes": "Simplest auth (service account); feed-based; powers Google Shopping/PMax; free; canonical GTIN model",
+      "tier": "Easy",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Meta Commerce",
+      "region": "US (beta); Facebook/Instagram Shops",
+      "auth": {
+        "type": "System User access tokens (Page token)",
+        "app_review_required": true,
+        "permissions": ["catalog_management", "business_management", "commerce_manage_accounts", "commerce_account_read_orders"],
+        "test_accounts": "Test Commerce Accounts (US only)",
+        "confidence": 6,
+        "source": "measured",
+        "source_url": "https://developers.facebook.com/documentation/ads-commerce/commerce-platform/api-setup",
+        "observed_at": "2026-11-22"
+      },
+      "api_style": "Graph API (REST + JSON); cursor pagination; catalog + order + promotions APIs",
+      "product_import": {
+        "methods": ["Catalog Batch API (sync)", "Product Feeds (scheduled CSV/TSV/XML/RSS/ATOM)"],
+        "required_attributes": "id, title, description, availability, price, condition, link, image_link, gtin/brand/mpn",
+        "category_mapping": "Facebook Product Categories (Google taxonomy subset)",
+        "media_rules": "image_link URL; additional_image_link array",
+        "moderation": "Commerce Manager review; policy compliance",
+        "confidence": 6,
+        "source": "measured"
+      },
+      "price_write": {
+        "methods": ["Catalog Batch API price update", "Direct feed upload (update_only=true)"],
+        "confidence": 6,
+        "source": "measured"
+      },
+      "stock_write": {
+        "methods": ["Catalog Batch API availability update", "Direct feed upload"],
+        "confidence": 6,
+        "source": "measured"
+      },
+      "order_read": {
+        "methods": ["Order Management API (commerce_orders)", "Order acknowledgment required (CREATED -> IN_PROGRESS)"],
+        "pagination": "Cursor-based (default 25/page)",
+        "confidence": 6,
+        "source": "measured"
+      },
+      "returns": {
+        "methods": ["Promotions/Offers API (refunds in presence of promotions)"],
+        "confidence": 5,
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "standard": "Graph API rate limits (undocumented for Commerce specifically)",
+        "confidence": 4,
+        "source": "inferred"
+      },
+      "sandbox": {
+        "environment": "Test Commerce Accounts (US only); Staging mode in Commerce Manager",
+        "limitations": "No Instagram channel in test; no payouts; limited test accounts per Business Manager",
+        "confidence": 6,
+        "source": "measured"
+      },
+      "docs_url": "https://developers.facebook.com/docs/commerce-platform/",
+      "regional_entity_constraints": "US only (beta); Meta Business Suite required; Tech Provider Amendment for partners",
+      "confidence": 6,
+      "notes": "Closed beta + App Review = calendar blocker; system user tokens; Graph API patterns; US-only test accounts",
+      "tier": "Medium",
+      "observed_at": "2026-11-22"
+    }
+  ]
+}

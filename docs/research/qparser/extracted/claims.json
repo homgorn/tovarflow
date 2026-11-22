@@ -1,0 +1,167 @@
+[
+  {
+    "subject": "q-parser-api",
+    "predicate": "base_url",
+    "object": "base",
+    "value": "https://q-parser.ru/api/v1",
+    "unit": "url",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "auth",
+    "object": "header",
+    "value": "Authorization: Bearer | X-Api-Key",
+    "unit": "header",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "endpoint_count",
+    "object": "count",
+    "value": 16,
+    "unit": "endpoints",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "concurrency_limit",
+    "object": "парсингов",
+    "value": 100,
+    "unit": "jobs",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "concurrency_limit",
+    "object": "выгрузок",
+    "value": 100,
+    "unit": "jobs",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "page_size_max",
+    "object": "pagination",
+    "value": 1000,
+    "unit": "records",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "page_size_max",
+    "object": "pagination",
+    "value": 1000,
+    "unit": "records",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-api",
+    "predicate": "page_size_max",
+    "object": "pagination",
+    "value": 1000,
+    "unit": "records",
+    "source_url": "https://q-parser.ru/howto/api",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-plan",
+    "predicate": "price",
+    "object": "Day",
+    "value": 295,
+    "unit": "RUB/день",
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-plan",
+    "predicate": "price",
+    "object": "Pro",
+    "value": 2495,
+    "unit": "RUB/мес",
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-plan",
+    "predicate": "price",
+    "object": "Lite",
+    "value": 995,
+    "unit": "RUB/мес",
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-plan",
+    "predicate": "price",
+    "object": "Пробная версия",
+    "value": 0,
+    "unit": "RUB/trial",
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-webhooks",
+    "predicate": "signature",
+    "object": "headers",
+    "value": "X-QParser-Signature: sha256=HMAC-SHA256(timestamp.body)",
+    "unit": "scheme",
+    "source_url": "https://q-parser.ru/howto/automata/webhooks",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-webhooks",
+    "predicate": "retry_schedule",
+    "object": "seconds",
+    "value": "1,5,10,30,60",
+    "unit": "schedule",
+    "source_url": "https://q-parser.ru/howto/automata/webhooks",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  },
+  {
+    "subject": "q-parser-webhooks",
+    "predicate": "max_addresses",
+    "object": "per_automation",
+    "value": 5,
+    "unit": "webhooks",
+    "source_url": "https://q-parser.ru/howto/automata/webhooks",
+    "confidence": "measured",
+    "note": "",
+    "observed_at": "2026-11-22"
+  }
+]

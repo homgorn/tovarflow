@@ -1,0 +1,17 @@
+{
+  "pages": 128,
+  "pages_ok": 128,
+  "total_chars": 442579,
+  "endpoints": 16,
+  "formats": 72,
+  "formats_by_category": {
+    "cms": 36,
+    "commerce": 2,
+    "file": 5,
+    "marketplace": 5,
+    "social": 8,
+    "sp": 16
+  },
+  "plans": 4,
+  "claims": 15
+}

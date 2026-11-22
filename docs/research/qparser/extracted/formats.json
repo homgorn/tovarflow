@@ -1,0 +1,1476 @@
+[
+  {
+    "slug": "advantshopv1format",
+    "title": "Как выгрузить товары в Advantshop 1.0?",
+    "target": "Advantshop 1.0",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "4. Задайте настройки импорта"
+    ],
+    "bold_terms": [
+      "barcode",
+      "producer",
+      "properties",
+      "sku:size:color:price:purchaseprice:amount",
+      "weight",
+      "выбрать версию импорта"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/advantshopv1format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "advantshopv2format",
+    "title": "Как выгрузить товары в Advantshop 2.0?",
+    "target": "Advantshop 2.0",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "4. Задайте настройки импорта",
+      "Особенности формата"
+    ],
+    "bold_terms": [
+      "Производитель",
+      "Размер",
+      "Цвет",
+      "Штрихкод",
+      "выбрать версию импорта"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/advantshopv2format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "alltradesformat",
+    "title": "Как выгрузить товары на AllTrades?",
+    "target": "AllTrades",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "URL изображений (через запятую)",
+      "Вес, кг",
+      "Количество",
+      "Мой магазин → Импорт/Экспорт → Импорт товаров из CSV",
+      "Описание",
+      "Производитель",
+      "Разделы",
+      "Старая цена",
+      "Страна-производитель",
+      "Характеристики"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/alltradesformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "bitrixcsvformat",
+    "title": "Как выгрузить товары в 1С-Битрикс (Bitrix)?",
+    "target": "1С-Битрикс (Bitrix)",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "BRAND",
+      "CP\\_HEIGHT",
+      "CP\\_LENGTH",
+      "CP\\_WEIGHT",
+      "CP\\_WIDTH",
+      "Контент -> Инфоблоки -> Типы инфоблоков -> Каталоги -> ваш инфоблок",
+      "Магазин -> Настройки -> Импорт данных -> Добавить профиль (Import CSV)",
+      "Поля",
+      "Свойства"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/bitrixcsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "botobotformat",
+    "title": "Как выгрузить товары в Botobot?",
+    "target": "Botobot",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Done",
+      "ID",
+      "Активно",
+      "Артикулом",
+      "Важно:",
+      "Вес",
+      "Выгрузка характеристик",
+      "Диаметр",
+      "Загрузить",
+      "Загрузить новые данные",
+      "Изображение",
+      "Импорт",
+      "Наименование",
+      "Объем",
+      "Описание",
+      "Раздел 1",
+      "Раздел 4",
+      "Размер",
+      "Старая цена",
+      "Цвет"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/botobotformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "cmss3format",
+    "title": "Как выгрузить товары для CMS.S3 (Megagroup)?",
+    "target": "CMS.S3 (Megagroup)",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "categories-props.csv",
+      "categories.csv",
+      "dimensions",
+      "goods-props.csv",
+      "goods.csv",
+      "unit : Единица измерения товара",
+      "vendor : Производитель",
+      "weight : Вес",
+      "weight\\_unit : Единица веса",
+      "Ключевое поле",
+      "Символ-разделитель"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/cmss3format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "cscartformat",
+    "title": "Как выгрузить товары на CS-Cart?",
+    "target": "CS-Cart",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "\n\nРазделитель изображений — ",
+      " и укажите как должен обрабатываться файл.\n\nРазделитель категорий — ",
+      " чтобы добавить пресет импорта, выберите CSV файл.\n\nПерейдите на вкладку ",
+      "Product code",
+      "Администрирование > Импорт данных > Товары",
+      "Язык товаров"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/cscartformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "diskauntscsvformat",
+    "title": "Как выгрузить товары на маркетплейс Diskaunts?",
+    "target": "маркетплейс Diskaunts",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "color",
+      "Важно.",
+      "Массовая загрузка товаров"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/diskauntscsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "eshoperformat",
+    "title": "Как выгрузить товары в Eshoper?",
+    "target": "Eshoper",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Вес, кг",
+      "Высота, см",
+      "Длина, см",
+      "Импорт из Excel",
+      "Производитель",
+      "Ширина, см"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/eshoperformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "hostcmsformat",
+    "title": "Как выгрузить товары на HostCMS?",
+    "target": "HostCMS",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "4. Задайте настройки импорта и выберите файл",
+      "5. Проверьте сопоставление полей файла",
+      "Ограничения формата"
+    ],
+    "bold_terms": [
+      "Загрузить",
+      "Контент → Интернет-магазины",
+      "Название производителя",
+      "Путь для внешних файлов",
+      "Товар → Импорт товаров"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/hostcmsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "insalescsvformat",
+    "title": "Как выгрузить товары в InSales?",
+    "target": "InSales",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "6. Задайте настройки импорта"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/insalescsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "insalesxlsformat",
+    "title": "Как выгрузить товары в InSales?",
+    "target": "InSales",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "6. Задайте настройки импорта"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/insalesxlsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "joomlaformat",
+    "title": "Как выгрузить товары в Joomla (Excel2JS)?",
+    "target": "Joomla (Excel2JS)",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      " и разделитель изображений ",
+      ".\n\nИзображения выгружаются ссылками через ",
+      "Вес",
+      "Компоненты > Импорт/Экспорт товаров JoomShopping > Импорт",
+      "Компоненты > Импорт/Экспорт товаров JoomShopping > Профили настроек",
+      "Опции > Атрибуты",
+      "Размер",
+      "Список характеристик"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/joomlaformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "joomshoppingformat",
+    "title": "Как выгрузить товары в JoomShopping?",
+    "target": "JoomShopping",
+    "category": "cms",
+    "settings_headings": [
+      "3. Выбираем формат Comiel"
+    ],
+    "bold_terms": [
+      "extra\\_fields",
+      "manufacturer",
+      "weight",
+      "Важно.",
+      "Выгрузка файлов"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/joomshoppingformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "lpmotorformat",
+    "title": "Как выгрузить товары для LPmotor (lpmotor.ru)?",
+    "target": "LPmotor (lpmotor.ru)",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "Загрузить товары из CSV, YML",
+      "Товары"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/lpmotorformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "mogutaformat",
+    "title": "Как выгрузить товары в Moguta?",
+    "target": "Moguta",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Вес",
+      "Загрузить из CSV/Excel",
+      "Многострочные характеристики",
+      "Товары"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/mogutaformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "okaycmsformat",
+    "title": "Как выгрузить товары на OkayCMS?",
+    "target": "OkayCMS",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "5. Настройте соответствие полей"
+    ],
+    "bold_terms": [
+      "Brand",
+      "Импорт",
+      "Импорт/Экспорт"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/okaycmsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "opencartcsvliteformat",
+    "title": "Как выгрузить товары в OpenCart модулем CSV Export/Import Light?",
+    "target": "OpenCart модулем CSV Export/Import Light",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "manufacturer"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/opencartcsvliteformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "opencartcsvpriceproformat",
+    "title": "Как выгрузить товары для OpenCart в формате CSV Price Pro?",
+    "target": "OpenCart в формате CSV Price Pro",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "\\_ATTRIBUTES\\_",
+      "\\_HEIGHT\\_",
+      "\\_ISBN\\_",
+      "\\_LENGTH\\_",
+      "\\_MANUFACTURER\\_",
+      "\\_MODEL\\_",
+      "\\_SKU\\_",
+      "\\_WEIGHT\\_",
+      "\\_WIDTH\\_",
+      "Важно.",
+      "Докачка изображений",
+      "Товары > Импорт"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/opencartcsvpriceproformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "opencartexportimportformat",
+    "title": "Как выгрузить товары в OpenCart?",
+    "target": "OpenCart",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "ID категорий",
+      "attributes.xlsx",
+      "categories.xlsx",
+      "images.zip",
+      "manufacturer",
+      "model",
+      "options.xlsx",
+      "products.xlsx",
+      "sku",
+      "Поместить в поле model",
+      "Поместить в поле sku",
+      "Старый метод"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/opencartexportimportformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "openmallformat",
+    "title": "Как выгрузить товары на OpenMall?",
+    "target": "OpenMall",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "5. Добавьте категории в магазин"
+    ],
+    "bold_terms": [
+      "ID категории",
+      "ID товара",
+      "Артикул товара",
+      "Вариации",
+      "Добавить все категории поставщика",
+      "Загрузить .csv .xls или .xlsx",
+      "Импортировать товары",
+      "Каталог → Товары",
+      "Категория",
+      "Мои магазины → Категории",
+      "Название категории",
+      "Название товара",
+      "Описание товара",
+      "Перейти к товарам",
+      "Подтвердить загрузку",
+      "Ссылка на товар",
+      "Фото",
+      "Фотографии",
+      "Характеристики в описании",
+      "Цена товара"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/openmallformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "osclassadimporterformat",
+    "title": "Как выгрузить товары в Osclass?",
+    "target": "Osclass",
+    "category": "cms",
+    "settings_headings": [
+      "Общие настройки",
+      "Нашли ошибку в выгрузке в этот формат?"
+    ],
+    "bold_terms": [
+      "Выгрузка характеристик",
+      "Разбить на несколько файлов",
+      "Разбить по числу товаров",
+      "Файловое хранилище"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/osclassadimporterformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "phpshopformat",
+    "title": "Как выгрузить товары в PHPShop?",
+    "target": "PHPShop",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "-categories.csv",
+      "/UserFiles/Image",
+      "ID категорий",
+      "База",
+      "Импорт данных",
+      "Полный путь для изображений",
+      "Разделитель изображений",
+      "Старый метод"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/phpshopformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "prestashopformat",
+    "title": "Как выгрузить товары в PrestaShop?",
+    "target": "PrestaShop",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Depth",
+      "Feature",
+      "Height",
+      "Manufacturer",
+      "Weight",
+      "Width",
+      "Обратите внимание",
+      "Расширенные параметры > Импорт",
+      "Формат Feature"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/prestashopformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "prestashopmagiconestoremanagerformat",
+    "title": "Как выгрузить товары в PrestaShop MagicOne Store Manager?",
+    "target": "PrestaShop MagicOne Store Manager",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Бренд",
+      "Производитель"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/prestashopmagiconestoremanagerformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "readyscriptformat",
+    "title": "Как выгрузить товары в ReadyScript?",
+    "target": "ReadyScript",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "4. Импортируйте категории",
+      "5. Импортируйте характеристики",
+      "6. Импортируйте значения характеристик"
+    ],
+    "bold_terms": [
+      "--1-categories.csv",
+      "--2-properties.csv",
+      "--3-property-values.csv",
+      "--4-products.csv",
+      "--5-offers.csv",
+      "Веб-сайт → Настройка модулей → Системный модуль",
+      "Импорт категорий из CSV",
+      "Импорт характеристик из CSV",
+      "Импорт/Экспорт",
+      "Импорт/Экспорт → Импорт значений характеристик из CSV",
+      "Импорт/Экспорт → Импорт комплектаций из CSV",
+      "Импорт/Экспорт → Импорт товаров из CSV",
+      "Кодировка.",
+      "Комплектации.",
+      "Остатки.",
+      "Повторный импорт.",
+      "Старая цена.",
+      "Товары → Каталог товаров",
+      "Товары → Справочник цен",
+      "Товары → Характеристики",
+      "Характеристики"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/readyscriptformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "shopifyformat",
+    "title": "Как выгрузить товары на Shopify (shopify.com)?",
+    "target": "Shopify (shopify.com)",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "All products",
+      "Import",
+      "Products",
+      "Variant Barcode",
+      "Vendor"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/shopifyformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "simplacmsformat",
+    "title": "Как выгрузить товары в Simpla CMS?",
+    "target": "Simpla CMS",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/simplacmsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "storelandformat",
+    "title": "Как выгрузить товары в Storeland?",
+    "target": "Storeland",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/storelandformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "tildacsvformat",
+    "title": "Как выгрузить товары на Tilda (tilda.cc) в CSV?",
+    "target": "Tilda (tilda.cc) в CSV",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "Каталог",
+      "Сайт"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/tildacsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "tildaymlformat",
+    "title": "Как выгрузить товары на Tilda (tilda.cc) в YML?",
+    "target": "Tilda (tilda.cc) в YML",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Особенности формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "ID категорий",
+      "barcode",
+      "param",
+      "vendor",
+      "Каталог",
+      "Разделять мультисвойства",
+      "Сайт",
+      "Старый метод",
+      "Формировать offer id из"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/tildaymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "uralcmscsvformat",
+    "title": "Как выгрузить товары для Ural CMS (uralcms.ru)?",
+    "target": "Ural CMS (uralcms.ru)",
+    "category": "cms",
+    "settings_headings": [],
+    "bold_terms": [
+      "Импорт / экспорт позиций",
+      "Импорт из файла CSV",
+      "Интернет-магазин",
+      "Структура и содержание"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/uralcmscsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "ushopymlformat",
+    "title": "Как выгрузить товары на uShop (ucoz.ru)?",
+    "target": "uShop (ucoz.ru)",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "ID категорий",
+      "barcode",
+      "param",
+      "vendor",
+      "Импорт YML",
+      "Интернет-магазин",
+      "Обработать",
+      "Перейти к настройкам",
+      "Разделять мультисвойства",
+      "Старый метод",
+      "Формировать offer id из"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/ushopymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "webasystshopscriptformat",
+    "title": "Как выгрузить товары в Webasyst Shop-Script?",
+    "target": "Webasyst Shop-Script",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/webasystshopscriptformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "wixformat",
+    "title": "Как выгрузить товары в Wix?",
+    "target": "Wix",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Ограничения формата"
+    ],
+    "bold_terms": [
+      "weight",
+      "Импортировать",
+      "Товары"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/wixformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "woocommerceformat",
+    "title": "Как выгрузить товары в WooCommerce?",
+    "target": "WooCommerce",
+    "category": "cms",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Height (unit)",
+      "Import",
+      "Length (unit)",
+      "Weight (unit)",
+      "Width (unit)",
+      "WooCommerce > Products",
+      "tax:product\\_brand",
+      "Обрезать имена атрибутов до 28 символов",
+      "Расположение атрибутов",
+      "Тип атрибутов"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/woocommerceformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "commercemlformat",
+    "title": "Как выгрузить товары в CommerceML (1С)?",
+    "target": "CommerceML (1С)",
+    "category": "commerce",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "1С-Битрикс.",
+      "import--2.xml",
+      "import--Категория.xml",
+      "import.xml",
+      "import\\_files",
+      "offers--Категория.xml",
+      "offers.xml",
+      "Бренд",
+      "Вес",
+      "Категории.",
+      "Остатки.",
+      "Повторный импорт.",
+      "Полная выгрузка.",
+      "Разбить на несколько файлов",
+      "Разбить по числу товаров",
+      "Старая цена.",
+      "Тип свойств.",
+      "Торговые предложения.",
+      "Цены.",
+      "Штрихкод"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/commercemlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "moyskladformat",
+    "title": "Как выгрузить товары в МойСклад?",
+    "target": "МойСклад",
+    "category": "commerce",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "+Поле",
+      "Валюта",
+      "Вес",
+      "Внешний код",
+      "Выгружать остаток",
+      "ГТД",
+      "Группы",
+      "Доп. поля",
+      "Единица измерения",
+      "Загрузить",
+      "Импорт",
+      "Импорт из Excel",
+      "Искать",
+      "Код товара",
+      "Модификации",
+      "Не загружать",
+      "Объем",
+      "Ограничения",
+      "По коду",
+      "Признак предмета расчета",
+      "Размер файла",
+      "Страна",
+      "Товары → Товары и услуги",
+      "Устанавливать уникальный код",
+      "Штрихкод Code128",
+      "Штрихкод EAN13",
+      "Штрихкод EAN8",
+      "Штрихкод UPC"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/moyskladformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "csvformat",
+    "title": "Как выгрузить товары в CSV?",
+    "target": "CSV",
+    "category": "file",
+    "settings_headings": [
+      "2. Задайте настройки файла"
+    ],
+    "bold_terms": [
+      "Разделитель CSV",
+      "Разделитель изображений",
+      "Разделитель характеристик"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/csvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "jsonformat",
+    "title": "Как выгрузить товары в JSON?",
+    "target": "JSON",
+    "category": "file",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Категории"
+    ],
+    "bold_terms": [
+      "article",
+      "brand",
+      "category",
+      "category\\_id",
+      "currency",
+      "data",
+      "description",
+      "file\\_links",
+      "id",
+      "images",
+      "images\\_files",
+      "level",
+      "name",
+      "old\\_price",
+      "parent\\_id",
+      "path",
+      "price",
+      "publish",
+      "quantity",
+      "short\\_description",
+      "title",
+      "url",
+      "video\\_links",
+      "…--categories.json",
+      "…--products--<группа>.json",
+      "…--products.json"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/jsonformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "xlsformat",
+    "title": "Как выгрузить товары в Excel?",
+    "target": "Excel",
+    "category": "file",
+    "settings_headings": [
+      "2. Задайте настройки файла"
+    ],
+    "bold_terms": [
+      "Разделитель изображений",
+      "Разделитель характеристик"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/xlsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "xmlformat",
+    "title": "Как выгрузить товары в XML?",
+    "target": "XML",
+    "category": "file",
+    "settings_headings": [
+      "2. Задайте настройки файла"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/xmlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "ymlformat",
+    "title": "Как выгрузить товары в YML?",
+    "target": "YML",
+    "category": "file",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата",
+      "Специальные теги"
+    ],
+    "bold_terms": [
+      "ID категорий",
+      "barcode",
+      "model",
+      "vendor",
+      "vendorCode",
+      "Старый метод"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/ymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "epicentrkymlformat",
+    "title": "Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?",
+    "target": "Epicentrk (epicentrk.ua) в YML",
+    "category": "marketplace",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Особенности формата"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/epicentrkymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "kaspixmlformat",
+    "title": "Как выгрузить цены и наличие товаров на Kaspi.kz?",
+    "target": "Как выгрузить цены и наличие товаров на Kaspi.kz",
+    "category": "marketplace",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "AB-12/3",
+      "AB123",
+      "ID продавца (merchantid)",
+      "PP1, PP2",
+      "availability",
+      "available=\"no\"",
+      "available=\"yes\"",
+      "brand",
+      "model",
+      "preOrder",
+      "stockCount",
+      "Коды складов через запятую",
+      "Название магазина (company)",
+      "Предзаказ, дней",
+      "Формировать sku из",
+      "не пересчитывается",
+      "не создает карточки",
+      "разбивка на несколько файлов",
+      "снимает его с продажи"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/kaspixmlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "megamarketymlformat",
+    "title": "Как выгрузить товары на Мегамаркет?",
+    "target": "Мегамаркет",
+    "category": "marketplace",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "120",
+      "3000",
+      "ID категорий",
+      "ID склада Мегамаркета",
+      "RUB",
+      "available",
+      "barcode",
+      "false",
+      "outlets",
+      "param",
+      "shipment-options",
+      "true",
+      "vendor",
+      "vendorCode",
+      "«Штрих-код»",
+      "«Штрихкод»",
+      "Группировка характеристик",
+      "Остаток для товаров в наличии без количества",
+      "Прием заказов до, час",
+      "Срок отгрузки, дней",
+      "Старый метод",
+      "Товары без штрихкода фид загружает, но Мегамаркет их пропускает",
+      "Формировать offer id из"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/megamarketymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "promuaymlformat",
+    "title": "Как выгрузить товары на Prom.ua?",
+    "target": "Prom.ua",
+    "category": "marketplace",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "\"Импорт\"",
+      "\"Начать импорт\"",
+      "\"Продолжить с ошибками\"",
+      "ID категорий",
+      "barcode",
+      "param",
+      "vendor",
+      "Разделять мультисвойства",
+      "Старый метод",
+      "Формировать offer id из",
+      "запускается после импорта товаров"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/promuaymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "rozetkaymlformat",
+    "title": "Как выгрузить товары на Rozetka.com.ua?",
+    "target": "Rozetka.com.ua",
+    "category": "marketplace",
+    "settings_headings": [
+      "2. Задайте настройки формата",
+      "Настройки формата"
+    ],
+    "bold_terms": [
+      "1000",
+      "ID категорий",
+      "barcode",
+      "param",
+      "stock\\_quantity",
+      "vendor",
+      "Разделять мультисвойства",
+      "Старый метод",
+      "Формировать offer id из",
+      "нулевое"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/rozetkaymlformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "facebookcsvformat",
+    "title": "Как выгрузить товары в каталоги Facebook* (CSV)?",
+    "target": "каталоги Facebook* (CSV)",
+    "category": "social",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "\"Электронная коммерция\"",
+      "additional\\_image\\_link",
+      "additional\\_variant\\_attribute",
+      "availability",
+      "color",
+      "description",
+      "gender",
+      "gtin",
+      "id",
+      "image\\_link",
+      "item\\_group\\_id",
+      "material",
+      "mpn",
+      "pattern",
+      "price",
+      "product\\_type",
+      "quantity\\_to\\_sell\\_on\\_facebook",
+      "rich\\_text\\_description",
+      "sale\\_price",
+      "shipping\\_weight",
+      "size"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/facebookcsvformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "facebookxmlfeedformat",
+    "title": "Как выгрузить товары в каталоги Facebook*?",
+    "target": "каталоги Facebook*",
+    "category": "social",
+    "settings_headings": [],
+    "bold_terms": [
+      "\"Электронная коммерция\"",
+      "g:additional\\_variant\\_attribute",
+      "g:brand",
+      "g:color",
+      "g:description",
+      "g:gender",
+      "g:id",
+      "g:item\\_group\\_id",
+      "g:material",
+      "g:mpn",
+      "g:pattern",
+      "g:size"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/facebookxmlfeedformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "googlemerchantformat",
+    "title": "Как выгрузить товары в Google Merchant Center?",
+    "target": "Google Merchant Center",
+    "category": "social",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "g:additional\\_image\\_link",
+      "g:age\\_group",
+      "g:availability",
+      "g:brand",
+      "g:color",
+      "g:description",
+      "g:gender",
+      "g:google\\_product\\_category",
+      "g:gtin",
+      "g:id",
+      "g:identifier\\_exists",
+      "g:image\\_link",
+      "g:item\\_group\\_id",
+      "g:material",
+      "g:mpn",
+      "g:pattern",
+      "g:price",
+      "g:product\\_detail",
+      "g:product\\_height",
+      "g:product\\_length",
+      "g:product\\_type",
+      "g:product\\_weight",
+      "g:product\\_width",
+      "g:sale\\_price",
+      "g:size",
+      "g:title",
+      "g:video\\_link",
+      "В теги product\\_detail",
+      "Выгрузка характеристик",
+      "Добавить к описанию"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/googlemerchantformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "okalbumsformat",
+    "title": "Как выгрузить товары в альбомы Одноклассники?",
+    "target": "альбомы Одноклассники",
+    "category": "social",
+    "settings_headings": [
+      "3. Выберите группу, альбом и настройки выгрузки"
+    ],
+    "bold_terms": [
+      "Альбом, в который загружать товары",
+      "Группа или профиль в Одноклассниках",
+      "Добавить \"Выгружено с помощью...\"",
+      "Задержка между выгрузкой товаров",
+      "уникальные URL и артикулы"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/okalbumsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "okformat",
+    "title": "Как выгрузить товары в Одноклассники?",
+    "target": "Одноклассники",
+    "category": "social",
+    "settings_headings": [],
+    "bold_terms": [
+      "Группа в Одноклассниках",
+      "Добавить \"Выгружено с помощью...\"",
+      "Задержка между выгрузкой товаров",
+      "Каталог, в который загружать товары",
+      "уникальные URL и артикулы"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/okformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "showcaseformat",
+    "title": "Витрины товаров",
+    "target": "Витрины товаров",
+    "category": "social",
+    "settings_headings": [
+      "2. Задайте настройки и запустите выгрузку"
+    ],
+    "bold_terms": [
+      "Название витрины",
+      "Описание",
+      "Фото товаров"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/showcaseformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "vkalbumsformat",
+    "title": "Как выгрузить товары в альбомы ВКонтакте?",
+    "target": "альбомы ВКонтакте",
+    "category": "social",
+    "settings_headings": [
+      "3. Выберите группу, альбом и настройки выгрузки"
+    ],
+    "bold_terms": [
+      "Альбом, в который загружать товары",
+      "Группа или профиль ВКонтакте",
+      "Добавить \"Выгружено с помощью...\"",
+      "Задержка между выгрузкой товаров",
+      "Удалить из альбомов товары, которых нет в выгрузке",
+      "уникальные URL и артикулы"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/vkalbumsformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "vkformat",
+    "title": "Как выгрузить товары в ВКонтакте?",
+    "target": "ВКонтакте",
+    "category": "social",
+    "settings_headings": [
+      "3. Выберите группу, подборку и настройки выгрузки"
+    ],
+    "bold_terms": [
+      "Выгружать ссылку на товар",
+      "Выгрузка изображений",
+      "Группа или профиль ВКонтакте",
+      "Добавить \"Выгружено с помощью...\"",
+      "Добавить ссылку в описание",
+      "Задержка между выгрузкой товаров",
+      "Подборка, в которую загружать товары",
+      "Присвоить товарам категорию ВКонтакте",
+      "Удалить из подборок товары, которых нет в выгрузке",
+      "уникальные URL и артикулы"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/vkformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "amadyformat",
+    "title": "Как выгрузить товары на Амади?",
+    "target": "Амади",
+    "category": "sp",
+    "settings_headings": [
+      "Общие настройки",
+      "Нашли ошибку в выгрузке в этот формат?"
+    ],
+    "bold_terms": [
+      "Разбить на несколько файлов",
+      "Разбить по числу товаров",
+      "Файловое хранилище"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/amadyformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "kupivspformat",
+    "title": "Как выгрузить товары на сайт Kupivsp.ru?",
+    "target": "сайт Kupivsp.ru",
+    "category": "sp",
+    "settings_headings": [
+      "Особенности формата"
+    ],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/kupivspformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "materinstvoshopformat",
+    "title": "Как выгрузить товары на Материнство (materinstvo-shop.ru)?",
+    "target": "Материнство (materinstvo-shop.ru)",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Размер^",
+      "Цвет"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/materinstvoshopformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "mikaiformat",
+    "title": "Как выгрузить товары на Mikai?",
+    "target": "Mikai",
+    "category": "sp",
+    "settings_headings": [
+      "Общие настройки",
+      "Нашли ошибку в выгрузке в этот формат?"
+    ],
+    "bold_terms": [
+      "Выгрузка характеристик",
+      "Разбить на несколько файлов",
+      "Разбить по числу товаров",
+      "Файловое хранилище"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/mikaiformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "ok24format",
+    "title": "Как выгрузить товары на 24-ok.ru?",
+    "target": "24-ok.ru",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Артикул",
+      "Изображение",
+      "Каталог",
+      "Наименование",
+      "Описание",
+      "Орг",
+      "Размер",
+      "Ссылка",
+      "Транспортные",
+      "Цена"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/ok24format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "pokupki63format",
+    "title": "Как выгрузить товары на 63pokupki.ru?",
+    "target": "63pokupki.ru",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Колонки",
+      "Характеристики",
+      "размер"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/pokupki63format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "pokupkiprostoformat",
+    "title": "Как выгрузить товары на Покупки-просто?",
+    "target": "Покупки-просто",
+    "category": "sp",
+    "settings_headings": [],
+    "bold_terms": [],
+    "source_url": "https://q-parser.ru/howto/format/pokupkiprostoformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "samarskieroditeliformat",
+    "title": "Как выгрузить товары на Самарские родители?",
+    "target": "Самарские родители",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Вес",
+      "Выгрузка характеристик",
+      "Габариты",
+      "Добавить к описанию",
+      "Добавить к описанию и удалить (товары без вариаций)",
+      "Производитель",
+      "Размер"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/samarskieroditeliformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "serpokformat",
+    "title": "Как выгрузить товары на Serpok.ru?",
+    "target": "Serpok.ru",
+    "category": "sp",
+    "settings_headings": [],
+    "bold_terms": [
+      "Размеры",
+      "Цвета"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/serpokformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "spkostromaformat",
+    "title": "Как выгрузить товары на СП Кострома?",
+    "target": "СП Кострома",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Бренд, старая цена, остаток, краткое описание",
+      "Доступно к заказу",
+      "Кол-во штук в упаковке",
+      "Коллекция",
+      "Колонки",
+      "Название тары",
+      "Несколько значений",
+      "Размер(ы)",
+      "Ссылка на изображение",
+      "Цвет"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/spkostromaformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "spprotonformat",
+    "title": "Как выгрузить товары на сайты СП-Протон?",
+    "target": "сайты СП-Протон",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Размер"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/spprotonformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "stospformat",
+    "title": "Как выгрузить товары на 100 СП?",
+    "target": "100 СП",
+    "category": "sp",
+    "settings_headings": [
+      "Общие настройки",
+      "Нашли ошибку в выгрузке в этот формат?"
+    ],
+    "bold_terms": [
+      "Выгрузка характеристик",
+      "Разбить на несколько файлов",
+      "Разбить по числу товаров",
+      "Файловое хранилище"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/stospformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "supermamkiformat",
+    "title": "Как выгрузить товары на Супермамки?",
+    "target": "Супермамки",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Размер"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/supermamkiformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "superpuperformat",
+    "title": "Как выгрузить товары на сайт SuperPuper.ru?",
+    "target": "сайт SuperPuper.ru",
+    "category": "sp",
+    "settings_headings": [],
+    "bold_terms": [
+      "Размер"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/superpuperformat",
+    "confidence": "measured"
+  },
+  {
+    "slug": "tom70format",
+    "title": "Как выгрузить товары на сайты СП с модулем Tom70?",
+    "target": "сайты СП с модулем Tom70",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      " — ссылки на все фото через запятую.\n\n",
+      ".\n\n",
+      "Вес",
+      "Габариты",
+      "Орг. процент",
+      "Производитель",
+      "Тип товара"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/tom70format",
+    "confidence": "measured"
+  },
+  {
+    "slug": "zaprosto24format",
+    "title": "Как выгрузить товары на Запросто 24?",
+    "target": "Запросто 24",
+    "category": "sp",
+    "settings_headings": [
+      "2. Задайте настройки формата"
+    ],
+    "bold_terms": [
+      "Авто-Распродажа",
+      "Единица измерения",
+      "Количество ряда",
+      "Коэффициент объема",
+      "Новинка",
+      "Пристрой",
+      "Размеры",
+      "Распродажа",
+      "Ряд",
+      "Скрыт",
+      "Цвет"
+    ],
+    "source_url": "https://q-parser.ru/howto/format/zaprosto24format",
+    "confidence": "measured"
+  }
+]

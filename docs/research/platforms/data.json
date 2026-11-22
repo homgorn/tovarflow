@@ -1,0 +1,526 @@
+{
+  "generated": "2026-11-22",
+  "currency": "USD (RUB converted at 1 USD = 95 RUB where needed)",
+  "criteria_weights": {
+    "catalogue_scale_variant_model": 15,
+    "multi_store_multi_tenant": 15,
+    "api_first_extensibility": 15,
+    "marketplace_connector_ecosystem": 15,
+    "tco_at_scale": 10,
+    "seo_ssr_performance": 10,
+    "ru_payments_delivery": 10,
+    "ops_complexity_team_fit": 10
+  },
+  "candidates": [
+    {
+      "name": "Medusa v2",
+      "license": "MIT (core), Commercial (Cloud)",
+      "hosting_model": "Self-host or Medusa Cloud (managed)",
+      "pricing_tiers": [
+        { "name": "Self-host", "price_monthly_usd": 0, "source": "https://medusajs.com/pricing", "date_checked": "2026-11-22", "notes": "Free MIT-licensed core; infrastructure costs separate" },
+        { "name": "Medusa Cloud Hobby", "price_monthly_usd": 29, "source": "https://docs.medusajs.com/cloud/pricing", "date_checked": "2026-11-22", "notes": "Dev/small production; 0% GMV fee" },
+        { "name": "Medusa Cloud Pro", "price_monthly_usd": 299, "source": "https://docs.medusajs.com/cloud/pricing", "date_checked": "2026-11-22", "notes": "Production workloads; 0% GMV fee; SLA" },
+        { "name": "Medusa Cloud Enterprise", "price_monthly_usd": "custom", "source": "https://medusajs.com/pricing", "date_checked": "2026-11-22", "notes": "Custom contract, dedicated support" }
+      ],
+      "product_variant_limits": "No hard limits; tested at 100k+ SKUs; variant model supports attributes, options, multi-dimensional variants",
+      "multi_store_channels": "Store Module supports multiple stores; Sales Channels for channels; multi-tenant via custom middleware (not native); marketplace recipe exists",
+      "api_style": "REST + typed JS/TS SDK; GraphQL via community plugins; modular architecture with workflows",
+      "plugin_extension_model": "Commerce Modules (core), plugins (npm packages), custom workflows, subscribers, API routes; strong TypeScript DX",
+      "marketplace_integrations": "Community plugins for Yandex Market feed; Ozon/WB via custom integration or gorgojs plugins (early); API2Cart unified API option; no native certified connectors",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 3,
+      "key_risks": [
+        "Multi-tenancy not native - requires custom middleware/guard implementation",
+        "Russian marketplace connectors (Ozon, WB, Yandex) are community/maintained, not official",
+        "Medusa Cloud Pro at $299/mo may hit limits at high scale; Enterprise pricing opaque",
+        "Team needs strong TypeScript/Node.js skills"
+      ],
+      "confidence": 8,
+      "scores": {
+        "catalogue_scale_variant_model": 14,
+        "multi_store_multi_tenant": 10,
+        "api_first_extensibility": 15,
+        "marketplace_connector_ecosystem": 8,
+        "tco_at_scale": 9,
+        "seo_ssr_performance": 12,
+        "ru_payments_delivery": 6,
+        "ops_complexity_team_fit": 7
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Medusa v2 architecture docs; community reports of 100k+ SKUs; variant model supports multi-dimensional variants",
+        "multi_store_multi_tenant": "Store Module docs (createStoresWorkflow); GitHub discussion #14247 confirms multi-tenancy not native; marketplace recipe exists",
+        "api_first_extensibility": "REST API + JS SDK; modular architecture; workflows; subscribers; TypeScript-first",
+        "marketplace_connector_ecosystem": "gorgojs/medusa-integrations issue #151 shows Ozon/WB/Yandex as TODO; Yandex Market feed plugin exists; API2Cart option",
+        "tco_at_scale": "Self-host: infra only (~$200-2000/mo at scale); Cloud Pro $299 + infra; no GMV fees",
+        "seo_ssr_performance": "Next.js storefront starter; SSR/ISR supported; Core Web Vitals good; headless by default",
+        "ru_payments_delivery": "No native RU integrations; custom work needed for YuKassa, SberPay, CDEK, Russian Post",
+        "ops_complexity_team_fit": "Requires Node.js/TS expertise; self-host ops burden; Cloud reduces ops but less control"
+      }
+    },
+    {
+      "name": "Saleor",
+      "license": "BSD-3-Clause (core), Commercial (Cloud)",
+      "hosting_model": "Self-host or Saleor Cloud (managed)",
+      "pricing_tiers": [
+        { "name": "Self-host", "price_monthly_usd": 0, "source": "https://saleor.io/pricing", "date_checked": "2026-11-22", "notes": "Free open source; infrastructure costs separate" },
+        { "name": "Saleor Cloud Select", "price_monthly_usd": 1599, "source": "https://saleor.io/pricing", "date_checked": "2026-11-22", "notes": "Up to $200k GMV/mo; 0.8% overage; fair API usage" },
+        { "name": "Saleor Cloud Volume", "price_monthly_usd": 3999, "source": "https://saleor.io/pricing", "date_checked": "2026-11-22", "notes": "Up to $12M GMV/yr; 0.4% overage; accelerator $6k one-time" },
+        { "name": "Saleor Cloud Enterprise", "price_monthly_usd": "custom", "source": "https://saleor.io/pricing", "date_checked": "2026-11-22", "notes": "Custom contract; forward-deployed engineering $12k/mo option" }
+      ],
+      "product_variant_limits": "No hard limits; channel-scoped products/variants; supports complex attribute matrices; tested at high scale",
+      "multi_store_channels": "Native multi-channel (unlimited storefronts); each channel has independent currency, language, pricing, availability; multi-tenant via channels + custom permissions",
+      "api_style": "GraphQL-first (primary); REST via GraphQL; Python/Django backend; Relay-compatible",
+      "plugin_extension_model": "Apps (external services via webhooks/API), custom mutations, Django plugins; App framework for multi-tenant extensions",
+      "marketplace_integrations": "No native Russian marketplace connectors; Base.com integration for Vendure (not Saleor); custom development required for Ozon/WB/Yandex",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 4,
+      "key_risks": [
+        "High Cloud entry price ($1,599/mo) - steep for pre-revenue",
+        "Python/Django stack may not match team's TypeScript strength",
+        "No certified Russian marketplace integrations",
+        "Multi-tenancy requires custom permission layer on top of channels",
+        "GraphQL-only API may need REST gateway for some integrations"
+      ],
+      "confidence": 7,
+      "scores": {
+        "catalogue_scale_variant_model": 14,
+        "multi_store_multi_tenant": 13,
+        "api_first_extensibility": 14,
+        "marketplace_connector_ecosystem": 6,
+        "tco_at_scale": 5,
+        "seo_ssr_performance": 11,
+        "ru_payments_delivery": 5,
+        "ops_complexity_team_fit": 6
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Saleor docs: channel-scoped products/variants; multi-dimensional pricing; no published hard limits",
+        "multi_store_multi_tenant": "Saleor.io/solutions/multi-channel-commerce: 'Unlimited storefronts'; channels scope pricing/currency/language; multi-tenant via channels + permissions",
+        "api_first_extensibility": "GraphQL-first; App framework; Django extensibility; Relay spec",
+        "marketplace_connector_ecosystem": "Saleor marketplace recipe exists but no certified Ozon/WB/Yandex connectors; Base.com integrates Vendure not Saleor",
+        "tco_at_scale": "Cloud Select $1,599/mo + 0.8% GMV overage; Volume $3,999/mo; self-host infra only but Python/Django ops",
+        "seo_ssr_performance": "Next.js storefront reference; SSR/ISR; GraphQL can be chatty; performance good at scale",
+        "ru_payments_delivery": "No native RU payment/delivery; custom integration needed",
+        "ops_complexity_team_fit": "Python/Django + GraphQL; different from TS stack; Cloud reduces ops but high cost"
+      }
+    },
+    {
+      "name": "Vendure",
+      "license": "GPLv3 (core), Commercial (paid plans)",
+      "hosting_model": "Self-host or Vendure Cloud (managed)",
+      "pricing_tiers": [
+        { "name": "Self-host (Framework)", "price_monthly_usd": 0, "source": "https://vendure.io/pricing", "date_checked": "2026-11-22", "notes": "Free GPLv3 core; infrastructure costs separate" },
+        { "name": "Starter", "price_monthly_usd": 210, "source": "https://vendure.io/pricing", "date_checked": "2026-11-22", "notes": "€199/mo; 12-month term; Framework + 9 capabilities" },
+        { "name": "Growth", "price_monthly_usd": 630, "source": "https://vendure.io/pricing", "date_checked": "2026-11-22", "notes": "€599/mo; adds B2B, quotes, contracts" },
+        { "name": "Scale", "price_monthly_usd": 2625, "source": "https://vendure.io/pricing", "date_checked": "2026-11-22", "notes": "€2,499/mo; high volume; 12-month term" },
+        { "name": "Enterprise", "price_monthly_usd": 5000, "source": "https://vendure.io/pricing", "date_checked": "2026-11-22", "notes": "From €60k/yr; custom SLA; dedicated support" }
+      ],
+      "product_variant_limits": "No hard limits; channel-aware variants; faceted attributes; supports complex B2B price lists per channel",
+      "multi_store_channels": "Native channels = multi-store/multi-tenant; each channel scopes products, pricing, promotions, shipping, payments; multi-vendor marketplace recipe; role-based tenant admin",
+      "api_style": "GraphQL (primary) + REST; TypeScript/NestJS backend; Admin UI API; headless-first",
+      "plugin_extension_model": "TypeScript plugins (strongly typed); custom resolvers, entities, permissions; Admin UI extensions; plugin marketplace",
+      "marketplace_integrations": "Base.com integration for marketplace sync (Ozon, WB, Yandex, Allegro); no native certified connectors; custom TS plugins needed",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 3,
+      "key_risks": [
+        "GPLv3 core - commercial plans required for B2B/marketplace features",
+        "Base.com is EU-focused; Russian marketplace API coverage uncertain",
+        "Scale plan at €2,499/mo expensive; Enterprise from €60k/yr",
+        "TypeScript/NestJS stack aligns well but smaller community than Medusa"
+      ],
+      "confidence": 8,
+      "scores": {
+        "catalogue_scale_variant_model": 14,
+        "multi_store_multi_tenant": 15,
+        "api_first_extensibility": 15,
+        "marketplace_connector_ecosystem": 7,
+        "tco_at_scale": 6,
+        "seo_ssr_performance": 12,
+        "ru_payments_delivery": 6,
+        "ops_complexity_team_fit": 8
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Vendure docs: channel-aware pricing/variants; faceted attributes; multi-stage price pipeline; no hard limits published",
+        "multi_store_multi_tenant": "Vendure.io/docs: Channels for multi-tenant/multi-vendor; each channel scopes entities; role-based tenant admin; marketplace how-to guide",
+        "api_first_extensibility": "GraphQL + REST; TypeScript/NestJS; plugin system with typed APIs; Admin UI extensions",
+        "marketplace_connector_ecosystem": "Base.com integration listed; Ozon/WB/Yandex via Base.com but Base.com is EU-centric; no direct certified connectors",
+        "tco_at_scale": "Starter €199, Growth €599, Scale €2,499, Enterprise €60k+/yr; self-host free but ops cost",
+        "seo_ssr_performance": "Next.js storefront; SSR/ISR; GraphQL; TypeScript stack; good CWV potential",
+        "ru_payments_delivery": "No native RU integrations; custom plugins for YuKassa, CDEK, etc.",
+        "ops_complexity_team_fit": "TypeScript/NestJS aligns with modern stack; smaller ecosystem than Medusa; GPLv3 considerations"
+      }
+    },
+    {
+      "name": "Shopify (Plus for B2B/multi-store)",
+      "license": "SaaS (proprietary)",
+      "hosting_model": "Fully managed SaaS only",
+      "pricing_tiers": [
+        { "name": "Basic", "price_monthly_usd": 29, "source": "https://www.shopify.com/pricing", "date_checked": "2026-11-22", "notes": "B2B limited to 3 catalog assignments" },
+        { "name": "Grow", "price_monthly_usd": 79, "source": "https://www.shopify.com/pricing", "date_checked": "2026-11-22", "notes": "Formerly 'Shopify' plan; B2B limited to 3 catalogs" },
+        { "name": "Advanced", "price_monthly_usd": 299, "source": "https://www.shopify.com/pricing", "date_checked": "2026-11-22", "notes": "B2B limited to 3 catalogs; lower transaction fees" },
+        { "name": "Plus (3-yr)", "price_monthly_usd": 2300, "source": "https://www.shopify.com/plus/pricing", "date_checked": "2026-11-22", "notes": "$2,300/mo on 3-year term; $2,500/mo on 1-year; unlimited B2B catalogs" },
+        { "name": "Plus (1-yr)", "price_monthly_usd": 2500, "source": "https://www.shopify.com/plus/pricing", "date_checked": "2026-11-22", "notes": "Unlimited catalogs; direct company assignment; 25 catalogs per company location" }
+      ],
+      "product_variant_limits": "100 variants per product; 1000 options per product (Plus); 50k products standard, higher on Plus; not suited for 100k+ complex SKUs without workarounds",
+      "multi_store_channels": "Shopify Markets (multi-currency/language); B2B catalogs on Plus (unlimited); Organization admin for multi-store; not true multi-tenant SaaS foundation",
+      "api_style": "GraphQL (Admin API, Storefront API) + REST (legacy); webhooks; app extensions; Functions (serverless)",
+      "plugin_extension_model": "App Store (public/private apps); Theme app extensions; Checkout UI extensions; Functions (WASM); limited to Shopify sandbox",
+      "marketplace_integrations": "Native: Facebook/Instagram, Google, TikTok, Amazon, Walmart; Russian marketplaces via third-party apps (e.g., Ozon, WB apps in App Store - varying quality)",
+      "self_host_option": false,
+      "estimated_dev_effort_months": 2,
+      "key_risks": [
+        "Variant limit (100/product) problematic for complex catalogues",
+        "Not multi-tenant by design - Organization admin is for brand multi-store, not SaaS tenancy",
+        "Plus at $2,300+/mo + transaction fees (0.15-0.30% on Plus) + app costs",
+        "Vendor lock-in; limited backend customization; Functions have execution limits",
+        "Russian marketplace apps often basic; data sovereignty concerns"
+      ],
+      "confidence": 7,
+      "scores": {
+        "catalogue_scale_variant_model": 6,
+        "multi_store_multi_tenant": 8,
+        "api_first_extensibility": 10,
+        "marketplace_connector_ecosystem": 12,
+        "tco_at_scale": 4,
+        "seo_ssr_performance": 9,
+        "ru_payments_delivery": 13,
+        "ops_complexity_team_fit": 10
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Shopify docs: 100 variants/product hard limit; 50k products on standard plans; Plus higher but not 100k+ complex SKUs native",
+        "multi_store_multi_tenant": "Shopify Markets for localization; Organization admin for multi-brand; B2B catalogs unlimited on Plus only; not a multi-tenant SaaS foundation",
+        "api_first_extensibility": "GraphQL Admin/Storefront APIs; Functions (WASM); App extensions; but sandboxed - no DB access, no custom backend logic",
+        "marketplace_connector_ecosystem": "Native global marketplaces; App Store has Ozon/WB/Yandex apps but reviews mixed; API2Cart option",
+        "tco_at_scale": "Plus $2,300-2,500/mo + 0.15-0.30% GMV + apps ($500-5000/mo); no self-host option",
+        "seo_ssr_performance": "Hydrogen (React/Remix) for headless; Online Store 2.0 Liquid themes; good SEO but limited technical control",
+        "ru_payments_delivery": "Native: YuKassa, Tinkoff, SberPay, Alfa-Bank; CDEK, Russian Post, Boxberry, DPD via apps; strong RU coverage",
+        "ops_complexity_team_fit": "Low ops (managed); but customization requires learning Shopify-specific paradigms (Liquid, Functions, App Bridge)"
+      }
+    },
+    {
+      "name": "WooCommerce",
+      "license": "GPLv2 (core), Commercial (extensions, hosting)",
+      "hosting_model": "Self-host (WordPress) or managed WP hosting",
+      "pricing_tiers": [
+        { "name": "Core plugin", "price_monthly_usd": 0, "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "Free GPLv2" },
+        { "name": "Hosting (shared)", "price_monthly_usd": 25, "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$25-50/mo for small stores" },
+        { "name": "Hosting (VPS/Cloud)", "price_monthly_usd": 100, "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$100-350/mo for scaling stores" },
+        { "name": "Hosting (Enterprise)", "price_monthly_usd": 1000, "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$1,000-5,000+/mo for high scale" },
+        { "name": "Extensions (typical)", "price_monthly_usd": 200, "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$29-299/yr each; typical stack 10-20 extensions" },
+        { "name": "WooPayments", "price_monthly_usd": "variable", "source": "https://woocommerce.com/pricing", "date_checked": "2026-11-22", "notes": "2.9% + $0.30; not available in Russia" }
+      ],
+      "product_variant_limits": "No hard limits; attribute/variation system; 100k+ SKUs possible with optimized hosting (HPOS, caching); performance degrades without tuning",
+      "multi_store_channels": "WordPress Multisite for multi-store; Multi-Store Manager plugins; WooCommerce Multistore; not native multi-tenant; marketplace via plugins (Dokan, WCFM, MultiVendorX)",
+      "api_style": "REST API (legacy); GraphQL via WPGraphQL plugin; headless via Next.js + WPGraphQL",
+      "plugin_extension_model": "WordPress plugin ecosystem (50k+); PHP hooks/filters; custom plugins; theme overrides; large but variable quality",
+      "marketplace_integrations": "Ozon/WB/Yandex via WordPress plugins (various vendors); quality varies; no certified official connectors; API2Cart option",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 4,
+      "key_risks": [
+        "PHP/WordPress stack - technical debt, security surface, plugin conflicts",
+        "HPOS helps but 100k+ SKUs needs significant infra/optimization",
+        "Multi-tenant SaaS on WP Multisite is fragile (shared DB, plugin conflicts)",
+        "Russian payment gateways via plugins (not core); WooPayments not in RU",
+        "Plugin maintenance burden; no unified type safety"
+      ],
+      "confidence": 6,
+      "scores": {
+        "catalogue_scale_variant_model": 10,
+        "multi_store_multi_tenant": 6,
+        "api_first_extensibility": 8,
+        "marketplace_connector_ecosystem": 7,
+        "tco_at_scale": 7,
+        "seo_ssr_performance": 7,
+        "ru_payments_delivery": 10,
+        "ops_complexity_team_fit": 4
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "WooCommerce HPOS (High Performance Order Storage) + caching enables 100k+ SKUs; no hard variant limits but attribute system basic",
+        "multi_store_multi_tenant": "WP Multisite + Multi-Store plugins; marketplace plugins (Dokan, WCFM); not designed for multi-tenant SaaS",
+        "api_first_extensibility": "REST API + WPGraphQL; PHP hooks; headless possible but WP not API-first",
+        "marketplace_connector_ecosystem": "Multiple WP plugins for Ozon/WB/Yandex; varying quality/maintenance; no official certified connectors",
+        "tco_at_scale": "Hosting $100-5000/mo + extensions $200-2000/mo + dev ops; no GMV fees but high dev/maintenance cost",
+        "seo_ssr_performance": "WordPress SEO strong (Yoast/RankMath); headless Next.js + WPGraphQL for SSR; but WP overhead",
+        "ru_payments_delivery": "Many RU payment/delivery plugins (YuKassa, SberPay, CDEK, Russian Post); mature ecosystem",
+        "ops_complexity_team_fit": "PHP/WordPress expertise needed; plugin conflicts; security patching; not modern TS stack"
+      }
+    },
+    {
+      "name": "BigCommerce",
+      "license": "SaaS (proprietary)",
+      "hosting_model": "Fully managed SaaS only",
+      "pricing_tiers": [
+        { "name": "Core", "price_monthly_usd": 29, "source": "https://www.bigcommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$29/mo annual; $39/mo monthly; up to $50k GMV" },
+        { "name": "Growth", "price_monthly_usd": 79, "source": "https://www.bigcommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$79/mo annual; $105/mo monthly; up to $180k GMV" },
+        { "name": "Scale", "price_monthly_usd": 299, "source": "https://www.bigcommerce.com/pricing", "date_checked": "2026-11-22", "notes": "$299/mo annual; $399/mo monthly; up to $400k GMV; 0.9% overage" },
+        { "name": "Performance (Enterprise)", "price_monthly_usd": 1499, "source": "https://www.bigcommerce.com/enterprise-pricing", "date_checked": "2026-11-22", "notes": "Custom from $1,499/mo annual; higher GMV limits; dedicated support" }
+      ],
+      "product_variant_limits": "600 variants per product (Scale/Performance); 250 options; 100k+ SKUs supported on Enterprise; headless catalog scales well",
+      "multi_store_channels": "Native Multi-Storefront (additional storefronts = extra cost); Channels for marketplaces/POS/headless; Organization-level multi-store; not multi-tenant SaaS foundation",
+      "api_style": "GraphQL (Storefront API) + REST (Management API); webhooks; headless-first",
+      "plugin_extension_model": "App Marketplace; BigCommerce Apps (OAuth); widget areas; limited backend customization; no serverless functions",
+      "marketplace_integrations": "Native Channel Manager: Amazon, eBay, Google, Facebook, TikTok, Walmart; Mirakl; Russian marketplaces via third-party apps or custom",
+      "self_host_option": false,
+      "estimated_dev_effort_months": 2,
+      "key_risks": [
+        "GMV-based overage fees on all plans (0.9-1.0%)",
+        "Multi-Storefront costs extra per storefront",
+        "Not multi-tenant; Organization is for brand multi-store",
+        "Limited backend extensibility vs open-source options",
+        "Russian marketplace integrations not native; custom work needed"
+      ],
+      "confidence": 7,
+      "scores": {
+        "catalogue_scale_variant_model": 11,
+        "multi_store_multi_tenant": 9,
+        "api_first_extensibility": 11,
+        "marketplace_connector_ecosystem": 10,
+        "tco_at_scale": 5,
+        "seo_ssr_performance": 10,
+        "ru_payments_delivery": 7,
+        "ops_complexity_team_fit": 9
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "BigCommerce docs: 600 variants/product on Scale/Performance; 250 options; 100k+ SKUs on Enterprise; headless catalog scales",
+        "multi_store_multi_tenant": "Multi-Storefront native (extra cost/storefront); Channels for marketplaces/headless; Organization admin; not multi-tenant SaaS",
+        "api_first_extensibility": "GraphQL Storefront + REST Management; webhooks; Apps OAuth; but no custom backend logic, no Functions equivalent",
+        "marketplace_connector_ecosystem": "Channel Manager native for global marketplaces; Mirakl; Russian marketplaces via custom/apps",
+        "tco_at_scale": "Performance from $1,499/mo + 0.9% GMV overage + Multi-Storefront fees + apps; no self-host",
+        "seo_ssr_performance": "Next.js Commerce starter; GraphQL Storefront API; good CWV; headless by default",
+        "ru_payments_delivery": "Limited native RU gateways; custom integration for YuKassa/CDEK; weaker than Shopify",
+        "ops_complexity_team_fit": "Low ops (managed); modern GraphQL/React stack; but proprietary platform limits"
+      }
+    },
+    {
+      "name": "1C-Bitrix (Bitrix CMS)",
+      "license": "Proprietary (perpetual license + annual renewal)",
+      "hosting_model": "Self-host (on-prem or VPS) or Bitrix Cloud",
+      "pricing_tiers": [
+        { "name": "Small Business", "price_monthly_usd": 495, "source": "https://1c.1c-bitrix.ru/buy", "date_checked": "2026-11-22", "notes": "47,000 RUB one-time + renewal; B2C store + CRM; no multi-site" },
+        { "name": "Business", "price_monthly_usd": 1015, "source": "https://1c.1c-bitrix.ru/buy", "date_checked": "2026-11-22", "notes": "96,500 RUB one-time; B2B/B2C; multi-site; 1C integration included" },
+        { "name": "Enterprise", "price_monthly_usd": 2100, "source": "https://1c.1c-bitrix.ru/buy", "date_checked": "2026-11-22", "notes": "200,000+ RUB one-time; clustering; high load; custom SLA" },
+        { "name": "Bitrix Cloud", "price_monthly_usd": 150, "source": "https://www.1c-bitrix.ru/", "date_checked": "2026-11-22", "notes": "Managed hosting from ~14,000 RUB/mo; includes license" }
+      ],
+      "product_variant_limits": "No hard limits; distributed catalog for high load; 100k+ SKUs with clustering; trade offers (SKUs) per product",
+      "multi_store_channels": "Multi-site (multi-store) native in Business+; each site separate catalog/pricing; not multi-tenant SaaS; marketplace via modules",
+      "api_style": "REST API; GraphQL via modules; PHP backend; Bitrix Framework (D7 kernel); event-driven",
+      "plugin_extension_model": "Bitrix Marketplace (modules/components); PHP modules; custom kernel extensions; 1C integration native",
+      "marketplace_integrations": "Official Marketplace modules for Ozon, Wildberries, Yandex Market (paid, from marketplace.1c-bitrix.ru); 1C integration native",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 4,
+      "key_risks": [
+        "PHP legacy stack (D7 kernel modernized but still PHP); hiring harder",
+        "Perpetual license model - high upfront cost; annual renewal ~20%",
+        "Not API-first; headless requires custom work",
+        "Multi-tenant SaaS not supported - multi-site is for brand multi-store",
+        "Vendor lock-in; Russian market only; limited global ecosystem"
+      ],
+      "confidence": 7,
+      "scores": {
+        "catalogue_scale_variant_model": 12,
+        "multi_store_multi_tenant": 7,
+        "api_first_extensibility": 6,
+        "marketplace_connector_ecosystem": 13,
+        "tco_at_scale": 6,
+        "seo_ssr_performance": 7,
+        "ru_payments_delivery": 15,
+        "ops_complexity_team_fit": 5
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "KT.Team analysis: distributed catalog, clustering for high load; trade offers (SKUs); no hard limits",
+        "multi_store_multi_tenant": "Multi-site in Business+ edition; each site independent catalog/pricing; not multi-tenant SaaS",
+        "api_first_extensibility": "REST API; GraphQL via modules; PHP/D7 kernel; not headless-native",
+        "marketplace_connector_ecosystem": "Official paid modules for Ozon, WB, Yandex Market on marketplace.1c-bitrix.ru; 1C integration native",
+        "tco_at_scale": "License 96,500-200,000+ RUB + renewal 20%/yr + hosting (14,000+ RUB/mo cloud) + dev; no GMV fees",
+        "seo_ssr_performance": "Traditional PHP SSR; composite site; SEO modules; but not modern Core Web Vitals optimized",
+        "ru_payments_delivery": "Native: YuKassa, Tinkoff, SberPay, Alfa, CDEK, Russian Post, Boxberry, 1C integration - best in class for RU",
+        "ops_complexity_team_fit": "PHP/D7 expertise rare; legacy stack; 1C integration is strength but modern DX poor"
+      }
+    },
+    {
+      "name": "InSales",
+      "license": "SaaS (proprietary, Russian)",
+      "hosting_model": "Fully managed SaaS (Russian data centers)",
+      "pricing_tiers": [
+        { "name": "Сайт-визитка", "price_monthly_usd": 17, "source": "https://insales.ru/page/combo", "date_checked": "2026-11-22", "notes": "1,580 RUB/mo; basic; no marketplace" },
+        { "name": "Интернет-магазин", "price_monthly_usd": 28, "source": "https://insales.ru/page/combo", "date_checked": "2026-11-22", "notes": "2,700 RUB/mo; 1,000 products" },
+        { "name": "Селлер", "price_monthly_usd": 51, "source": "https://insales.ru/page/combo", "date_checked": "2026-11-22", "notes": "4,800 RUB/mo; marketplace sync" },
+        { "name": "Комбо Профессиональный", "price_monthly_usd": 66, "source": "https://insales.ru/page/combo", "date_checked": "2026-11-22", "notes": "5,610 RUB/mo annual; 10,000 products; API access" },
+        { "name": "Комбо Ультра", "price_monthly_usd": 315, "source": "https://insales.ru/page/combo", "date_checked": "2026-11-22", "notes": "29,900 RUB/mo; higher limits; 24/7 support" }
+      ],
+      "product_variant_limits": "Plan-limited: 1k/10k/50k products; variants per product not explicitly limited but practical limits at scale",
+      "multi_store_channels": "Single store per account; API for headless; marketplace sync built-in (Ozon, WB, Yandex); not multi-store/multi-tenant",
+      "api_style": "REST API; Liquid templating; webhooks; API rate limits (500 req/5 min per store)",
+      "plugin_extension_model": "App Store (limited); Liquid snippets; webhooks; no server-side extensions",
+      "marketplace_integrations": "Native built-in sync for Ozon, Wildberries, Yandex Market, MegaMarket; API keys in admin; two-way sync",
+      "self_host_option": false,
+      "estimated_dev_effort_months": 1,
+      "key_risks": [
+        "Hard product limits per plan (10k on Pro, unclear on Ultra)",
+        "Not multi-store/multi-tenant - single storefront per account",
+        "API rate limits restrictive for high-volume sync",
+        "Liquid templating only; no modern headless stack",
+        "Russian-only; data sovereignty OK but no global expansion path"
+      ],
+      "confidence": 8,
+      "scores": {
+        "catalogue_scale_variant_model": 5,
+        "multi_store_multi_tenant": 3,
+        "api_first_extensibility": 5,
+        "marketplace_connector_ecosystem": 14,
+        "tco_at_scale": 8,
+        "seo_ssr_performance": 6,
+        "ru_payments_delivery": 15,
+        "ops_complexity_team_fit": 9
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Tariff pages: 1k/10k/50k product limits; variant model basic; not designed for 100k+ SKUs",
+        "multi_store_multi_tenant": "Single store per account; no multi-store; no multi-tenant; API for headless but rate limited",
+        "api_first_extensibility": "REST API + Liquid; 500 req/5 min; no GraphQL; no serverless functions; not API-first",
+        "marketplace_connector_ecosystem": "Native built-in two-way sync for Ozon, WB, Yandex, MegaMarket; strongest native RU marketplace support",
+        "tco_at_scale": "Ultra 29,900 RUB/mo (~$315); but product limits may require custom enterprise plan",
+        "seo_ssr_performance": "Liquid SSR; decent SEO basics; but no modern CWV optimization; not headless-native",
+        "ru_payments_delivery": "Native YuKassa (3%), СДЭК, Почта России, DPD, Dalli, 1C, МойСклад - excellent RU coverage",
+        "ops_complexity_team_fit": "Zero ops (SaaS); but Liquid/PHP-like stack; limited customization; team may outgrow"
+      }
+    },
+    {
+      "name": "Advantshop",
+      "license": "SaaS (proprietary, Russian)",
+      "hosting_model": "Fully managed SaaS (Russian data centers) or boxed version (self-host)",
+      "pricing_tiers": [
+        { "name": "Lite", "price_monthly_usd": 42, "source": "https://www.advantshop.net/saas/compare", "date_checked": "2026-11-22", "notes": "3,990 RUB/mo annual; basic features" },
+        { "name": "Plus", "price_monthly_usd": 71, "source": "https://www.advantshop.net/saas/compare", "date_checked": "2026-11-22", "notes": "6,790 RUB/mo annual; up to 50k products; API access; 1C integration" },
+        { "name": "Premium", "price_monthly_usd": 152, "source": "https://www.advantshop.net/saas/compare", "date_checked": "2026-11-22", "notes": "14,440 RUB/mo annual; up to 500k products; 20 staff; warehouses" },
+        { "name": "Ultra (Marketplace)", "price_monthly_usd": 253, "source": "https://www.advantshop.net/saas/compare", "date_checked": "2026-11-22", "notes": "24,000 RUB/mo annual; multi-vendor marketplace features" },
+        { "name": "Boxed (self-host)", "price_monthly_usd": 0, "source": "https://www.advantshop.net/", "date_checked": "2026-11-22", "notes": "One-time license; self-host; no monthly fee; updates paid separately" }
+      ],
+      "product_variant_limits": "Plan-based: Lite unspecified, Plus 50k, Premium 500k, Ultra 500k; variants via characteristics system",
+      "multi_store_channels": "Single storefront per license; Ultra has multi-vendor marketplace mode; not multi-tenant SaaS; boxed version allows multi-site",
+      "api_style": "REST API (on Plus+); webhooks; API docs at help/for-dev; no GraphQL",
+      "plugin_extension_model": "App Marketplace (8 listed integrations); custom development via API; 1C/MoySklad native",
+      "marketplace_integrations": "Native modules for Ozon, Wildberries, Yandex Market (setup guides in help); API-based sync",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 2,
+      "key_risks": [
+        "Product limits on lower plans; Premium 500k but expensive",
+        "No multi-store/multi-tenant (except Ultra marketplace mode which is vendor-facing)",
+        "REST API only; no GraphQL; limited extensibility",
+        "Russian-only platform; small ecosystem; hiring hard",
+        "Boxed version requires PHP hosting and maintenance"
+      ],
+      "confidence": 7,
+      "scores": {
+        "catalogue_scale_variant_model": 9,
+        "multi_store_multi_tenant": 4,
+        "api_first_extensibility": 5,
+        "marketplace_connector_ecosystem": 13,
+        "tco_at_scale": 7,
+        "seo_ssr_performance": 6,
+        "ru_payments_delivery": 14,
+        "ops_complexity_team_fit": 7
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Tariff compare: Plus 50k, Premium/Ultra 500k products; characteristics for variants; 500k claimed",
+        "multi_store_multi_tenant": "Single storefront per SaaS account; Ultra = multi-vendor marketplace (vendors), not multi-tenant SaaS; boxed allows multi-site",
+        "api_first_extensibility": "REST API on Plus+; webhooks; no GraphQL; limited App Marketplace; not API-first",
+        "marketplace_connector_ecosystem": "Native Ozon, WB, Yandex modules with setup guides; API-based; 1C/MoySklad native",
+        "tco_at_scale": "Premium 14,440 RUB/mo (~$152) for 500k products; Ultra 24,000 RUB/mo (~$253); boxed one-time",
+        "seo_ssr_performance": "Traditional PHP SSR; SEO tools; but not modern headless/CWV optimized",
+        "ru_payments_delivery": "Native YuKassa, СБП, СДЭК, Почта России, Boxberry, DPD, 1C, МойСклад - excellent RU coverage",
+        "ops_complexity_team_fit": "SaaS = zero ops; boxed = PHP ops; limited modern stack; team may outgrow customization"
+      }
+    },
+    {
+      "name": "Tilda",
+      "license": "SaaS (proprietary)",
+      "hosting_model": "Fully managed SaaS",
+      "pricing_tiers": [
+        { "name": "Free", "price_monthly_usd": 0, "source": "https://tilda.cc/pricing", "date_checked": "2026-11-22", "notes": "1 site, 50 pages, no ecommerce" },
+        { "name": "Personal", "price_monthly_usd": 15, "source": "https://tilda.cc/pricing", "date_checked": "2026-11-22", "notes": "$15/mo monthly; 1 site, 1000 pages, ecommerce enabled" },
+        { "name": "Business", "price_monthly_usd": 25, "source": "https://tilda.cc/pricing", "date_checked": "2026-11-22", "notes": "$25/mo monthly; 5 sites, source code export, ecommerce" }
+      ],
+      "product_variant_limits": "Catalog-based; not designed for large catalogues; ~1000 products practical limit; no complex variant model",
+      "multi_store_channels": "Business plan: 5 websites; each independent; not multi-tenant; no multi-store management",
+      "api_style": "REST API (Public/Secret keys); read-only mostly; webhooks limited; no GraphQL",
+      "plugin_extension_model": "Zero-code blocks; HTML/JS injection; no server-side extensions; no app marketplace",
+      "marketplace_integrations": "Import from Ozon/WB/Yandex Market (one-way sync to Tilda catalog); no two-way sync; no order import",
+      "self_host_option": false,
+      "estimated_dev_effort_months": 1,
+      "key_risks": [
+        "Not an ecommerce platform - website builder with shop features",
+        "Product limits ~1000 practical; no complex variants/attributes",
+        "No multi-store/multi-tenant; no API for catalogue management at scale",
+        "One-way marketplace import only; cannot publish to marketplaces",
+        "No RU payment/delivery native (Stripe/PayPal/CloudPayments only)"
+      ],
+      "confidence": 9,
+      "scores": {
+        "catalogue_scale_variant_model": 2,
+        "multi_store_multi_tenant": 2,
+        "api_first_extensibility": 2,
+        "marketplace_connector_ecosystem": 4,
+        "tco_at_scale": 9,
+        "seo_ssr_performance": 5,
+        "ru_payments_delivery": 3,
+        "ops_complexity_team_fit": 10
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Tilda features: catalog import from marketplaces; ~1000 products practical; simple variants only",
+        "multi_store_multi_tenant": "Business plan = 5 separate sites; no shared catalog; no multi-tenant",
+        "api_first_extensibility": "REST API read-only; no GraphQL; no webhooks for orders; zero extensibility",
+        "marketplace_connector_ecosystem": "One-way import from Ozon/WB/Yandex to Tilda catalog only; no publishing to marketplaces",
+        "tco_at_scale": "Business $25/mo; but cannot scale to 100k SKUs - wrong tool",
+        "seo_ssr_performance": "Static site generation; good page speed; but no dynamic SEO for large catalogs",
+        "ru_payments_delivery": "Stripe, PayPal, CloudPayments only; no YuKassa, SberPay, CDEK native",
+        "ops_complexity_team_fit": "Zero ops; zero dev effort; but fundamentally wrong architecture for requirements"
+      }
+    },
+    {
+      "name": "Custom Next.js + PostgreSQL",
+      "license": "Own code (MIT/proprietary as chosen)",
+      "hosting_model": "Self-host (Vercel, AWS, GCP, Cloudflare, own infra)",
+      "pricing_tiers": [
+        { "name": "Vercel Pro", "price_monthly_usd": 20, "source": "https://vercel.com/pricing", "date_checked": "2026-11-22", "notes": "$20/mo; serverless functions; edge; good for Next.js" },
+        { "name": "Vercel Enterprise", "price_monthly_usd": "custom", "source": "https://vercel.com/pricing", "date_checked": "2026-11-22", "notes": "Custom; dedicated support; SLA; compliance" },
+        { "name": "AWS/GCP (self-managed)", "price_monthly_usd": 200, "source": "estimated", "date_checked": "2026-11-22", "notes": "ECS/Fargate + RDS + ElastiCache; ~$200-2000/mo at scale" },
+        { "name": "Database (managed Postgres)", "price_monthly_usd": 100, "source": "estimated", "date_checked": "2026-11-22", "notes": "RDS/Cloud SQL/Neon/Supabase; ~$100-1000/mo at scale" },
+        { "name": "Dev team (3-5 engineers)", "price_monthly_usd": 50000, "source": "estimated", "date_checked": "2026-11-22", "notes": "Senior TS/Next.js/Postgres engineers; $150-250k/yr each" }
+      ],
+      "product_variant_limits": "No limits; schema designed for 1M+ SKUs; custom variant/attribute model; full control",
+      "multi_store_channels": "Native multi-tenant architecture (schema-per-tenant or row-level security); channels as first-class; marketplace publishing built-in",
+      "api_style": "GraphQL (Pothos/TypeGraphQL) or tRPC or REST; TypeScript end-to-end; fully controlled",
+      "plugin_extension_model": "NPM packages; internal packages; plugin architecture custom; no vendor lock-in",
+      "marketplace_integrations": "Custom-built for Ozon, WB, Yandex Market APIs; full control; can use API2Cart or bssoft2b/marketplace-mcp",
+      "self_host_option": true,
+      "estimated_dev_effort_months": 12,
+      "key_risks": [
+        "12+ months to MVP for full feature parity",
+        "High upfront engineering cost ($500k+ team)",
+        "Ongoing maintenance burden (security, updates, scaling)",
+        "Reinventing cart, checkout, promotions, B2B pricing, etc.",
+        "Marketplace API maintenance (Ozon/WB/Yandex change frequently)"
+      ],
+      "confidence": 9,
+      "scores": {
+        "catalogue_scale_variant_model": 15,
+        "multi_store_multi_tenant": 15,
+        "api_first_extensibility": 15,
+        "marketplace_connector_ecosystem": 10,
+        "tco_at_scale": 3,
+        "seo_ssr_performance": 15,
+        "ru_payments_delivery": 10,
+        "ops_complexity_team_fit": 2
+      },
+      "evidence": {
+        "catalogue_scale_variant_model": "Custom schema; no limits; can model Q-Parser supplier catalogues exactly",
+        "multi_store_multi_tenant": "Designed from ground up for multi-tenant SaaS; RLS or schema-per-tenant",
+        "api_first_extensibility": "TypeScript end-to-end; tRPC/GraphQL/REST as chosen; full control",
+        "marketplace_connector_ecosystem": "Custom integrations using official APIs; bssoft2b/marketplace-mcp for typed clients; full control but build effort",
+        "tco_at_scale": "Infra $500-5000/mo + team $50k+/mo; no GMV fees; high fixed cost",
+        "seo_ssr_performance": "Next.js 15 + React 19; SSR/ISR/SSG; full CWV control; edge caching",
+        "ru_payments_delivery": "Custom integrations for YuKassa, SberPay, CDEK, Russian Post, Boxberry - full control",
+        "ops_complexity_team_fit": "Requires senior team; full ops ownership; highest complexity; not feasible for small team"
+      }
+    }
+  ]
+}

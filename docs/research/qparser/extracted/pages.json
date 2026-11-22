@@ -1,0 +1,4071 @@
+[
+  {
+    "slug": "agreement",
+    "path": "/agreement",
+    "url": "https://q-parser.ru/agreement",
+    "title": "Пользовательское соглашение сервиса Q-Parser",
+    "fetched_at": "2026-11-22T06:36:53+00:00",
+    "sha256": "f04cd32e56c5090c685f21a574403a8cb1969e80c63a9e2283d5f1b665a7be3f",
+    "http_status": "200",
+    "chars": 18581,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Основные термины и понятия."
+      },
+      {
+        "level": 3,
+        "text": "Общие положения."
+      },
+      {
+        "level": 3,
+        "text": "Права и обязанности Администрации."
+      },
+      {
+        "level": 3,
+        "text": "Права и обязанности Пользователя."
+      },
+      {
+        "level": 3,
+        "text": "Право интеллектуальной собственности."
+      },
+      {
+        "level": 3,
+        "text": "Ответственность Сторон"
+      },
+      {
+        "level": 3,
+        "text": "Финансовые условия"
+      },
+      {
+        "level": 3,
+        "text": "Условия предоставления автоматического перевода"
+      },
+      {
+        "level": 3,
+        "text": "Условия предоставления услуги по парсингу сайтов"
+      },
+      {
+        "level": 3,
+        "text": "Условия использования AI функций сервиса"
+      },
+      {
+        "level": 3,
+        "text": "Другие условия"
+      }
+    ]
+  },
+  {
+    "slug": "blog",
+    "path": "/blog",
+    "url": "https://q-parser.ru/blog",
+    "title": "Свежие обновления и полезные статьи",
+    "fetched_at": "2026-11-22T06:36:59+00:00",
+    "sha256": "f22427c7b4ed331e94d107fcb29b7dbcbc4851729e3ded236ea47f739ac61954",
+    "http_status": "200",
+    "chars": 28107,
+    "headings": []
+  },
+  {
+    "slug": "catalog",
+    "path": "/catalog",
+    "url": "https://q-parser.ru/catalog",
+    "title": "Каталог сайтов для парсинга Q-Parser",
+    "fetched_at": "2026-11-22T06:37:01+00:00",
+    "sha256": "31735b7e0c14b27ac070995918f1f871977beb8ef5bc4b733d584d93bb250750",
+    "http_status": "200",
+    "chars": 8144,
+    "headings": []
+  },
+  {
+    "slug": "faq",
+    "path": "/faq",
+    "url": "https://q-parser.ru/faq",
+    "title": "Вопросы — Ответы",
+    "fetched_at": "2026-11-22T06:36:49+00:00",
+    "sha256": "e539bd5bb1f9c68d3cfa0e325449a13a3a108b375913aa1f61be819e8e5b4685",
+    "http_status": "200",
+    "chars": 14875,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Зачем это нужно?"
+      },
+      {
+        "level": 3,
+        "text": "Как открыть ZIP архив?"
+      }
+    ]
+  },
+  {
+    "slug": "howto",
+    "path": "/howto",
+    "url": "https://q-parser.ru/howto",
+    "title": "Как выгружать товары с помощью парсера Q-Parser",
+    "fetched_at": "2026-11-22T06:34:29+00:00",
+    "sha256": "c542f9bc041e282e0c7c7e0c91bb342cee99f6ef39b8095ac718ad56744fde4a",
+    "http_status": "200",
+    "chars": 374,
+    "headings": []
+  },
+  {
+    "slug": "howto__additional-css-selectors",
+    "path": "/howto/additional-css-selectors",
+    "url": "https://q-parser.ru/howto/additional-css-selectors",
+    "title": "Парсинг по CSS селекторам",
+    "fetched_at": "2026-11-22T06:36:41+00:00",
+    "sha256": "e3a24573ec3384903a43aaf1fde95875537c6874db3324c1202549dd02291843",
+    "http_status": "200",
+    "chars": 3922,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как добавить CSS селектор"
+      },
+      {
+        "level": 3,
+        "text": "Поле: Название характеристики"
+      },
+      {
+        "level": 3,
+        "text": "Поле: Тип характеристики"
+      },
+      {
+        "level": 3,
+        "text": "Поле: CSS селектор"
+      },
+      {
+        "level": 3,
+        "text": "Поле: Название атрибута"
+      },
+      {
+        "level": 2,
+        "text": "Проверка CSS селекторов"
+      },
+      {
+        "level": 2,
+        "text": "Известные и возможные ограничения"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__agent",
+    "path": "/howto/ai/agent",
+    "url": "https://q-parser.ru/howto/ai/agent",
+    "title": "Как запустить AI редактирование",
+    "fetched_at": "2026-11-22T06:36:24+00:00",
+    "sha256": "8d399ec1b1cee9622f45ecae6e1e1d84b32d76ac7607a92b2f626c16ce047856",
+    "http_status": "200",
+    "chars": 6284,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как это работает"
+      },
+      {
+        "level": 3,
+        "text": "Запуск AI редактирования"
+      },
+      {
+        "level": 3,
+        "text": "Шаги плана"
+      },
+      {
+        "level": 3,
+        "text": "Проверка на товаре"
+      },
+      {
+        "level": 3,
+        "text": "Основные возможности AI редактирования"
+      },
+      {
+        "level": 3,
+        "text": "Кэширование результатов"
+      },
+      {
+        "level": 3,
+        "text": "Взаимодействие с редактированием товаров"
+      },
+      {
+        "level": 3,
+        "text": "Изменения — постоянны"
+      },
+      {
+        "level": 3,
+        "text": "Что не стоит делать"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__images",
+    "path": "/howto/ai/images",
+    "url": "https://q-parser.ru/howto/ai/images",
+    "title": "Генерация и редактирование фото товаров",
+    "fetched_at": "2026-11-22T06:36:25+00:00",
+    "sha256": "5da7f00cc18ed59f9e1ff05810f70fb2425d2e4bb4712b2406c01d0b28126025",
+    "http_status": "200",
+    "chars": 3525,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Возможности"
+      },
+      {
+        "level": 3,
+        "text": "Принцип работы"
+      },
+      {
+        "level": 3,
+        "text": "Время хранения фото"
+      },
+      {
+        "level": 3,
+        "text": "Пропорции и размеры фото"
+      },
+      {
+        "level": 3,
+        "text": "Использование"
+      },
+      {
+        "level": 3,
+        "text": "Ограничения"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__models",
+    "path": "/howto/ai/models",
+    "url": "https://q-parser.ru/howto/ai/models",
+    "title": "AI модели",
+    "fetched_at": "2026-11-22T06:36:29+00:00",
+    "sha256": "ea153faa5832539fb8934c2f3566943cf3f57579a02fe48987f5d973275ba75a",
+    "http_status": "200",
+    "chars": 1829,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Автоматический подбор модели"
+      },
+      {
+        "level": 3,
+        "text": "Работа с фото товаров"
+      },
+      {
+        "level": 3,
+        "text": "Стоимость"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__points",
+    "path": "/howto/ai/points",
+    "url": "https://q-parser.ru/howto/ai/points",
+    "title": "Что такое AI Points",
+    "fetched_at": "2026-11-22T06:36:31+00:00",
+    "sha256": "eeebb59fae78beabb98e2c2a16920034dd751e57a8fd53706d160a266c59be2a",
+    "http_status": "200",
+    "chars": 2490,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Баланс AIP"
+      },
+      {
+        "level": 3,
+        "text": "Докупка AI Points"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__prompt-writing",
+    "path": "/howto/ai/prompt-writing",
+    "url": "https://q-parser.ru/howto/ai/prompt-writing",
+    "title": "Составление запросов к AI",
+    "fetched_at": "2026-11-22T06:36:28+00:00",
+    "sha256": "de1340b2550cbddfc0d31b40fd2faa4159be1dabfe94e8f823699c3b44e9644b",
+    "http_status": "200",
+    "chars": 6928,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Алгоритм запроса"
+      },
+      {
+        "level": 3,
+        "text": "Проверка и уточнение плана"
+      },
+      {
+        "level": 3,
+        "text": "Примеры запросов"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__unwatermark",
+    "path": "/howto/ai/unwatermark",
+    "url": "https://q-parser.ru/howto/ai/unwatermark",
+    "title": "Удаление водяных знаков с фото товаров",
+    "fetched_at": "2026-11-22T06:36:26+00:00",
+    "sha256": "9ceda63fb8c24ba9e8611b4ab41b1ab40adc8a9276315ffa6585383254e6e2d2",
+    "http_status": "200",
+    "chars": 2174,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как использовать"
+      },
+      {
+        "level": 3,
+        "text": "Стоимость"
+      },
+      {
+        "level": 3,
+        "text": "Технические особенности"
+      },
+      {
+        "level": 4,
+        "text": "Важно: Правовая ответственность"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__ai__web-search",
+    "path": "/howto/ai/web-search",
+    "url": "https://q-parser.ru/howto/ai/web-search",
+    "title": "Веб-поиск в AI редактировании",
+    "fetched_at": "2026-11-22T06:36:27+00:00",
+    "sha256": "53bb9d48bdb2288ddf8e9c7626f24ec7faea31888c8846654283010892f2290c",
+    "http_status": "200",
+    "chars": 2959,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как это работает"
+      },
+      {
+        "level": 3,
+        "text": "Примеры использования"
+      },
+      {
+        "level": 3,
+        "text": "Стоимость"
+      },
+      {
+        "level": 3,
+        "text": "Как использовать"
+      },
+      {
+        "level": 3,
+        "text": "Ограничения"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__api",
+    "path": "/howto/api",
+    "url": "https://q-parser.ru/howto/api",
+    "title": "API разработчикам",
+    "fetched_at": "2026-11-22T06:36:42+00:00",
+    "sha256": "584e9674d7a538ee0a664bf82a6ba037b8b2403eeaab65b1cca960322d96652b",
+    "http_status": "200",
+    "chars": 9666,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Авторизация"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/me"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/catalog"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/website/:domain"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/credentials"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/credentials"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/categories"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/categories/:id"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/parser"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/parser/list"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/parser/:id"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/parser/:id/stop"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/parser/:id/resume"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/parser/:id/goods"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/format"
+      },
+      {
+        "level": 3,
+        "text": "POST /api/v1/export"
+      },
+      {
+        "level": 3,
+        "text": "GET /api/v1/export/:id"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__automata",
+    "path": "/howto/automata",
+    "url": "https://q-parser.ru/howto/automata",
+    "title": "Автоматическая выгрузка по расписанию",
+    "fetched_at": "2026-11-22T06:35:53+00:00",
+    "sha256": "1c3ef223fe41c21539eb5f1a1222a754a733f43efc3ec5d395c3f820311b4ef0",
+    "http_status": "200",
+    "chars": 3932,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как это работает?"
+      },
+      {
+        "level": 3,
+        "text": "Постоянные ссылки на файлы"
+      },
+      {
+        "level": 3,
+        "text": "Примерная схема работы выглядит следующим образом"
+      },
+      {
+        "level": 2,
+        "text": "Как создать автовыгрузку"
+      },
+      {
+        "level": 2,
+        "text": "Где посмотреть список моих автовыгрузок?"
+      },
+      {
+        "level": 3,
+        "text": "Сколько автовыгрузок можно создать?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__automata__edit",
+    "path": "/howto/automata/edit",
+    "url": "https://q-parser.ru/howto/automata/edit",
+    "title": "Настройка автовыгрузок Q-Parser",
+    "fetched_at": "2026-11-22T06:35:54+00:00",
+    "sha256": "00bde24e7d50a4a31dcdc4f21ebd2bc4662a41e1979c662ead862ba0c2e94348",
+    "http_status": "200",
+    "chars": 6438,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Настройки автовыгрузки"
+      },
+      {
+        "level": 3,
+        "text": "Категории парсинга"
+      },
+      {
+        "level": 3,
+        "text": "AI редактирование"
+      },
+      {
+        "level": 4,
+        "text": "Если AI Points не хватило или AI редактирование остановлено"
+      },
+      {
+        "level": 3,
+        "text": "Выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "Webhooks"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__automata__webhooks",
+    "path": "/howto/automata/webhooks",
+    "url": "https://q-parser.ru/howto/automata/webhooks",
+    "title": "Webhooks автовыгрузок Q-Parser",
+    "fetched_at": "2026-11-22T06:35:55+00:00",
+    "sha256": "ee7707066f2e00be4df2a992784ae4a575f295d34eb13bc798373a6a4e683df3",
+    "http_status": "200",
+    "chars": 4902,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Как добавить webhook"
+      },
+      {
+        "level": 2,
+        "text": "Когда отправляется запрос"
+      },
+      {
+        "level": 2,
+        "text": "Параметры запроса"
+      },
+      {
+        "level": 2,
+        "text": "Проверка подписи"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__button",
+    "path": "/howto/button",
+    "url": "https://q-parser.ru/howto/button",
+    "title": "Кнопка парсера в браузер",
+    "fetched_at": "2026-11-22T06:36:34+00:00",
+    "sha256": "d37bd3782cbe6e5f888f0224cc22809dbf63fcb7bfb1038ad429964129b1ac62",
+    "http_status": "200",
+    "chars": 1266,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как запустить парсинг кнопкой:"
+      },
+      {
+        "level": 3,
+        "text": "Не видите панель закладок?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__erange",
+    "path": "/howto/erange",
+    "url": "https://q-parser.ru/howto/erange",
+    "title": "Частичная выгрузка товаров",
+    "fetched_at": "2026-11-22T06:36:35+00:00",
+    "sha256": "be0246baabe1e15b6895c3c398c5a7384fe5304df215aed7ef20fb80ed022ac4",
+    "http_status": "200",
+    "chars": 854,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как выгрузить часть товаров?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__file-headers",
+    "path": "/howto/file-headers",
+    "url": "https://q-parser.ru/howto/file-headers",
+    "title": "Управление заголовками файлов",
+    "fetched_at": "2026-11-22T06:36:39+00:00",
+    "sha256": "12f9432b76707cf4b0f64a05e71e4485fbd8380dcf9978b8a3f12f5ce27dc83b",
+    "http_status": "200",
+    "chars": 1820,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как это работает?"
+      },
+      {
+        "level": 3,
+        "text": "Примеры"
+      },
+      {
+        "level": 3,
+        "text": "На что обратить внимание"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__filestorage",
+    "path": "/howto/filestorage",
+    "url": "https://q-parser.ru/howto/filestorage",
+    "title": "Файловые хранилища",
+    "fetched_at": "2026-11-22T06:36:38+00:00",
+    "sha256": "9a92a67ff35ded7bfb3d63ea7e33b8a417e35d1b0fef817aab1745d7e781c226",
+    "http_status": "200",
+    "chars": 3950,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как выгрузить файлы на FTP или S3?"
+      },
+      {
+        "level": 3,
+        "text": "Настройки FTP, SFTP"
+      },
+      {
+        "level": 3,
+        "text": "Настройки S3"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format",
+    "path": "/howto/format",
+    "url": "https://q-parser.ru/howto/format",
+    "title": "Форматы выгрузки товаров",
+    "fetched_at": "2026-11-22T06:36:43+00:00",
+    "sha256": "a49ab2da1fe75c802c3d4923e60aef74b8576712677f13796d73b1b2c4408757",
+    "http_status": "200",
+    "chars": 2533,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Доступные форматы выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "Универсальные файловые форматы"
+      },
+      {
+        "level": 3,
+        "text": "Специализированные форматы CMS"
+      },
+      {
+        "level": 3,
+        "text": "Прямая выгрузка в социальные сети"
+      },
+      {
+        "level": 3,
+        "text": "Форматы для совместных покупок"
+      },
+      {
+        "level": 2,
+        "text": "Предложить новый формат выгрузки"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__advantshopv1format",
+    "path": "/howto/format/advantshopv1format",
+    "url": "https://q-parser.ru/howto/format/advantshopv1format",
+    "title": "Как выгрузить товары в Advantshop 1.0?",
+    "fetched_at": "2026-11-22T06:34:30+00:00",
+    "sha256": "15055af34479ae67784bc94f3bd160af8451f727ae79d89a623a52b554a2542d",
+    "http_status": "200",
+    "chars": 2503,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел \"Импорт данных\" в вашем Advantshop"
+      },
+      {
+        "level": 3,
+        "text": "4. Задайте настройки импорта"
+      },
+      {
+        "level": 3,
+        "text": "5. Загрузите файлы из Q-Parser и запустите импорт"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__advantshopv2format",
+    "path": "/howto/format/advantshopv2format",
+    "url": "https://q-parser.ru/howto/format/advantshopv2format",
+    "title": "Как выгрузить товары в Advantshop 2.0?",
+    "fetched_at": "2026-11-22T06:34:32+00:00",
+    "sha256": "ed3d48a1d44980ac9395df29808287b9d94e44b7b54c529b5b4e78dddd985fe4",
+    "http_status": "200",
+    "chars": 2743,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел \"Импорт данных\" в вашем Advantshop"
+      },
+      {
+        "level": 3,
+        "text": "4. Задайте настройки импорта"
+      },
+      {
+        "level": 3,
+        "text": "5. Загрузите файлы из Q-Parser и запустите импорт"
+      },
+      {
+        "level": 3,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__alltradesformat",
+    "path": "/howto/format/alltradesformat",
+    "url": "https://q-parser.ru/howto/format/alltradesformat",
+    "title": "Как выгрузить товары на AllTrades?",
+    "fetched_at": "2026-11-22T06:34:33+00:00",
+    "sha256": "ea6e22d872bd150ee3765873d9aae838fddc20d31abf39d8b4b440841850b81f",
+    "http_status": "200",
+    "chars": 2243,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл в AllTrades"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__amadyformat",
+    "path": "/howto/format/amadyformat",
+    "url": "https://q-parser.ru/howto/format/amadyformat",
+    "title": "Как выгрузить товары на Амади?",
+    "fetched_at": "2026-11-22T06:34:34+00:00",
+    "sha256": "b3d79aa7768362ef9bbfaaf9085b37c2c9c0f07ca6a8cf6104c91d7a432415f9",
+    "http_status": "200",
+    "chars": 7594,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Общие настройки"
+      },
+      {
+        "level": 3,
+        "text": "Нашли ошибку в выгрузке в этот формат?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__bitrixcsvformat",
+    "path": "/howto/format/bitrixcsvformat",
+    "url": "https://q-parser.ru/howto/format/bitrixcsvformat",
+    "title": "Как выгрузить товары в 1С-Битрикс (Bitrix)?",
+    "fetched_at": "2026-11-22T06:34:35+00:00",
+    "sha256": "1d0344511ea2b642f91b9e7ce8fb71c41a86a45e410a2cd157a4df02cb01c8f1",
+    "http_status": "200",
+    "chars": 3213,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Настройте интернет-магазин для импорта"
+      },
+      {
+        "level": 3,
+        "text": "4. Настройте каталог"
+      },
+      {
+        "level": 3,
+        "text": "5. Добавьте профиль импорта"
+      },
+      {
+        "level": 3,
+        "text": "6. Выполните импорт"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__botobotformat",
+    "path": "/howto/format/botobotformat",
+    "url": "https://q-parser.ru/howto/format/botobotformat",
+    "title": "Как выгрузить товары в Botobot?",
+    "fetched_at": "2026-11-22T06:34:36+00:00",
+    "sha256": "9d0ecc4b0010e20bb668dcf3ce19051c11ece3d2f614c317a35586844622053a",
+    "http_status": "200",
+    "chars": 3616,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл в Botobot"
+      },
+      {
+        "level": 2,
+        "text": "Вариации"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__cmss3format",
+    "path": "/howto/format/cmss3format",
+    "url": "https://q-parser.ru/howto/format/cmss3format",
+    "title": "Как выгрузить товары для CMS.S3 (Megagroup)?",
+    "fetched_at": "2026-11-22T06:34:37+00:00",
+    "sha256": "4410b3f4787230ea15e78994934015ce47176e1aa4f7384fe65a43567431d976",
+    "http_status": "200",
+    "chars": 1952,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Список файлов"
+      },
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте товары в магазин"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__commercemlformat",
+    "path": "/howto/format/commercemlformat",
+    "url": "https://q-parser.ru/howto/format/commercemlformat",
+    "title": "Как выгрузить товары в CommerceML (1С)?",
+    "fetched_at": "2026-11-22T06:34:38+00:00",
+    "sha256": "150704519a4cf1a66e49486e48bee82770c73a1b20dbdf5f35a475b1985ed55d",
+    "http_status": "200",
+    "chars": 5787,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Подготовьте фото"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте файлы"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__cscartformat",
+    "path": "/howto/format/cscartformat",
+    "url": "https://q-parser.ru/howto/format/cscartformat",
+    "title": "Как выгрузить товары на CS-Cart?",
+    "fetched_at": "2026-11-22T06:34:40+00:00",
+    "sha256": "83df4ba2b433ad89a6f9ba7dbed712b85e095be18193c17036d9b9d89f5f8209",
+    "http_status": "200",
+    "chars": 2036,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. Выгрузите товары"
+      },
+      {
+        "level": 3,
+        "text": "2. Импортируйте файл в CS-Cart"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__csvformat",
+    "path": "/howto/format/csvformat",
+    "url": "https://q-parser.ru/howto/format/csvformat",
+    "title": "Как выгрузить товары в CSV?",
+    "fetched_at": "2026-11-22T06:34:41+00:00",
+    "sha256": "420849334e88d290c29497e02786176fc427d2dd750143f97d8cb60a1cb0e9bc",
+    "http_status": "200",
+    "chars": 2017,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки файла"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Что такое CSV?"
+      },
+      {
+        "level": 3,
+        "text": "Как открыть CSV?"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__diskauntscsvformat",
+    "path": "/howto/format/diskauntscsvformat",
+    "url": "https://q-parser.ru/howto/format/diskauntscsvformat",
+    "title": "Как выгрузить товары на маркетплейс Diskaunts?",
+    "fetched_at": "2026-11-22T06:34:42+00:00",
+    "sha256": "a57a63f87bc4402e7cb676354ace3a49e8a58d9ceeaa3470ee3e3c0a2687c808",
+    "http_status": "200",
+    "chars": 1521,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел [Массовая загрузка товаров](https://diskaunts.net/vendor/products/import)"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__epicentrkymlformat",
+    "path": "/howto/format/epicentrkymlformat",
+    "url": "https://q-parser.ru/howto/format/epicentrkymlformat",
+    "title": "Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?",
+    "fetched_at": "2026-11-22T06:34:43+00:00",
+    "sha256": "c0610538beb0a0b90bcfdceae280c47f127beeb177a1ab541bba0f0bca89ca88",
+    "http_status": "200",
+    "chars": 1344,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте товары в Epicentrk"
+      },
+      {
+        "level": 3,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__eshoperformat",
+    "path": "/howto/format/eshoperformat",
+    "url": "https://q-parser.ru/howto/format/eshoperformat",
+    "title": "Как выгрузить товары в Eshoper?",
+    "fetched_at": "2026-11-22T06:34:44+00:00",
+    "sha256": "843c8ec3a908b8ebee06373f96f563d9900cef97bfbaff1b582b3a299a50974a",
+    "http_status": "200",
+    "chars": 2139,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел Импорт из Excel"
+      },
+      {
+        "level": 3,
+        "text": "4. Дождитесь окончания импорта"
+      },
+      {
+        "level": 2,
+        "text": "Категории"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__facebookcsvformat",
+    "path": "/howto/format/facebookcsvformat",
+    "url": "https://q-parser.ru/howto/format/facebookcsvformat",
+    "title": "Как выгрузить товары в каталоги Facebook* (CSV)?",
+    "fetched_at": "2026-11-22T06:34:45+00:00",
+    "sha256": "de82da14fee7f75fe01036ce4722fbdd2df423070852065b6a2097dac3ad146c",
+    "http_status": "200",
+    "chars": 5418,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Откройте Catalog Manager и выберите каталог"
+      },
+      {
+        "level": 3,
+        "text": "4. Загрузите файл"
+      },
+      {
+        "level": 2,
+        "text": "Вариации"
+      },
+      {
+        "level": 2,
+        "text": "Артикул товара"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__facebookxmlfeedformat",
+    "path": "/howto/format/facebookxmlfeedformat",
+    "url": "https://q-parser.ru/howto/format/facebookxmlfeedformat",
+    "title": "Как выгрузить товары в каталоги Facebook*?",
+    "fetched_at": "2026-11-22T06:34:46+00:00",
+    "sha256": "7cf5a1edbed395a12209067f0a5126381cf1f42ea274845276aa597647f741ca",
+    "http_status": "200",
+    "chars": 3100,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Откройте Catalog Manager и выберите каталог"
+      },
+      {
+        "level": 2,
+        "text": "Вариации"
+      },
+      {
+        "level": 2,
+        "text": "Артикул товара"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__googlemerchantformat",
+    "path": "/howto/format/googlemerchantformat",
+    "url": "https://q-parser.ru/howto/format/googlemerchantformat",
+    "title": "Как выгрузить товары в Google Merchant Center?",
+    "fetched_at": "2026-11-22T06:34:48+00:00",
+    "sha256": "7fceaa9d30420db5cdbfcf813c62734df8f21c451d708aa8839e72bb22a71082",
+    "http_status": "200",
+    "chars": 5707,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Добавьте фид в Merchant Center"
+      },
+      {
+        "level": 2,
+        "text": "Вариации"
+      },
+      {
+        "level": 2,
+        "text": "Артикул товара"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__hostcmsformat",
+    "path": "/howto/format/hostcmsformat",
+    "url": "https://q-parser.ru/howto/format/hostcmsformat",
+    "title": "Как выгрузить товары на HostCMS?",
+    "fetched_at": "2026-11-22T06:34:49+00:00",
+    "sha256": "0fbc1fb269d2a0568accd87fdbf7294da270f5d2263fce82a0a08dbdb64a1e1f",
+    "http_status": "200",
+    "chars": 3070,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел импорта товаров на вашем сайте"
+      },
+      {
+        "level": 3,
+        "text": "4. Задайте настройки импорта и выберите файл"
+      },
+      {
+        "level": 3,
+        "text": "5. Проверьте сопоставление полей файла"
+      },
+      {
+        "level": 3,
+        "text": "6. Дождитесь окончания импорта"
+      },
+      {
+        "level": 3,
+        "text": "Ограничения формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__insalescsvformat",
+    "path": "/howto/format/insalescsvformat",
+    "url": "https://q-parser.ru/howto/format/insalescsvformat",
+    "title": "Как выгрузить товары в InSales?",
+    "fetched_at": "2026-11-22T06:34:50+00:00",
+    "sha256": "a8734679cf5867e7d640b42570a68760919e1698710f6830e393ab9bb05756fb",
+    "http_status": "200",
+    "chars": 4328,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел Импорт в вашем InSales"
+      },
+      {
+        "level": 3,
+        "text": "4. Выберите сопоставление товаров"
+      },
+      {
+        "level": 3,
+        "text": "5. Загрузите файл из Q-Parser"
+      },
+      {
+        "level": 3,
+        "text": "6. Задайте настройки импорта"
+      },
+      {
+        "level": 3,
+        "text": "7. Дождитесь окончания импорта"
+      },
+      {
+        "level": 2,
+        "text": "Категории"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__insalesxlsformat",
+    "path": "/howto/format/insalesxlsformat",
+    "url": "https://q-parser.ru/howto/format/insalesxlsformat",
+    "title": "Как выгрузить товары в InSales?",
+    "fetched_at": "2026-11-22T06:34:51+00:00",
+    "sha256": "3349ae28c6e843083da11449488e0735881a2dc378ecf6d86d676e6b2b4479cb",
+    "http_status": "200",
+    "chars": 4330,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в раздел Импорт в вашем InSales"
+      },
+      {
+        "level": 3,
+        "text": "4. Выберите сопоставление товаров"
+      },
+      {
+        "level": 3,
+        "text": "5. Загрузите файл из Q-Parser"
+      },
+      {
+        "level": 3,
+        "text": "6. Задайте настройки импорта"
+      },
+      {
+        "level": 3,
+        "text": "7. Дождитесь окончания импорта"
+      },
+      {
+        "level": 2,
+        "text": "Категории"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__joomlaformat",
+    "path": "/howto/format/joomlaformat",
+    "url": "https://q-parser.ru/howto/format/joomlaformat",
+    "title": "Как выгрузить товары в Joomla (Excel2JS)?",
+    "fetched_at": "2026-11-22T06:34:52+00:00",
+    "sha256": "96c3324b9272f309cfc4892bedd6737535a21e8118dc88cd71555bab816c949f",
+    "http_status": "200",
+    "chars": 4275,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Создайте зависимый атрибут «Размер»"
+      },
+      {
+        "level": 3,
+        "text": "4. Настройте профиль Excel2JS"
+      },
+      {
+        "level": 3,
+        "text": "5. Запустите импорт"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__joomshoppingformat",
+    "path": "/howto/format/joomshoppingformat",
+    "url": "https://q-parser.ru/howto/format/joomshoppingformat",
+    "title": "Как выгрузить товары в JoomShopping?",
+    "fetched_at": "2026-11-22T06:34:53+00:00",
+    "sha256": "ccd3ce7dc23f15515c1742c68cf293dffad0aca9a15d96fd358a39ff6396aebe",
+    "http_status": "200",
+    "chars": 2885,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Заходим в раздел Import & Export"
+      },
+      {
+        "level": 3,
+        "text": "3. Выбираем формат Comiel"
+      },
+      {
+        "level": 3,
+        "text": "4. Загружаем файл"
+      },
+      {
+        "level": 3,
+        "text": "5. Отчет об импорте"
+      },
+      {
+        "level": 2,
+        "text": "Как импортировать картинки в JoomShopping?"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__jsonformat",
+    "path": "/howto/format/jsonformat",
+    "url": "https://q-parser.ru/howto/format/jsonformat",
+    "title": "Как выгрузить товары в JSON?",
+    "fetched_at": "2026-11-22T06:34:54+00:00",
+    "sha256": "f01db0b3be8cdf02539321fee9e16c7784716602744da5759d777d521c277271",
+    "http_status": "200",
+    "chars": 3948,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Скачайте файлы"
+      },
+      {
+        "level": 2,
+        "text": "Структура файлов"
+      },
+      {
+        "level": 3,
+        "text": "Категории"
+      },
+      {
+        "level": 3,
+        "text": "Товары"
+      },
+      {
+        "level": 2,
+        "text": "Характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__kaspixmlformat",
+    "path": "/howto/format/kaspixmlformat",
+    "url": "https://q-parser.ru/howto/format/kaspixmlformat",
+    "title": "Как выгрузить цены и наличие товаров на Kaspi.kz?",
+    "fetched_at": "2026-11-22T06:34:56+00:00",
+    "sha256": "dccf93521f57dbfde38160f048fba2c7c270b032004aa5adee386954f763d35f",
+    "http_status": "200",
+    "chars": 4717,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите прайс-лист в кабинет продавца"
+      },
+      {
+        "level": 2,
+        "text": "Товары, которых нет в прайс-листе, снимаются с продажи"
+      },
+      {
+        "level": 2,
+        "text": "Цены и валюта"
+      },
+      {
+        "level": 2,
+        "text": "Наличие и остатки"
+      },
+      {
+        "level": 2,
+        "text": "Код товара (sku)"
+      },
+      {
+        "level": 2,
+        "text": "Вариации"
+      },
+      {
+        "level": 2,
+        "text": "Бренд"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__kupivspformat",
+    "path": "/howto/format/kupivspformat",
+    "url": "https://q-parser.ru/howto/format/kupivspformat",
+    "title": "Как выгрузить товары на сайт Kupivsp.ru?",
+    "fetched_at": "2026-11-22T06:34:57+00:00",
+    "sha256": "d4f376e3b3aa609944723903785d64046692f68d3d99b085d093e5b63f102972",
+    "http_status": "200",
+    "chars": 1270,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Перейдите в организаторскую"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл"
+      },
+      {
+        "level": 3,
+        "text": "4. Настройте поля"
+      },
+      {
+        "level": 3,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__lpmotorformat",
+    "path": "/howto/format/lpmotorformat",
+    "url": "https://q-parser.ru/howto/format/lpmotorformat",
+    "title": "Как выгрузить товары для LPmotor (lpmotor.ru)?",
+    "fetched_at": "2026-11-22T06:34:58+00:00",
+    "sha256": "f3d0df1b6b2ed3497f1a775007f013edc5a2c975a4fd0ce30ff7b8c02d99a3c7",
+    "http_status": "200",
+    "chars": 1298,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. Выгрузите товары"
+      },
+      {
+        "level": 3,
+        "text": "2. Импортируйте файл в LPmotor"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__materinstvoshopformat",
+    "path": "/howto/format/materinstvoshopformat",
+    "url": "https://q-parser.ru/howto/format/materinstvoshopformat",
+    "title": "Как выгрузить товары на Материнство (materinstvo-shop.ru)?",
+    "fetched_at": "2026-11-22T06:34:59+00:00",
+    "sha256": "04a650b7f3b188a4e207463890b3c34635bbe0a259a3e75e4c71002fb149d702",
+    "http_status": "200",
+    "chars": 2623,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на materinstvo-shop.ru"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__megamarketymlformat",
+    "path": "/howto/format/megamarketymlformat",
+    "url": "https://q-parser.ru/howto/format/megamarketymlformat",
+    "title": "Как выгрузить товары на Мегамаркет?",
+    "fetched_at": "2026-11-22T06:35:00+00:00",
+    "sha256": "6e3a92378970983241ee8834f694a37e5c6ae4849846ecf6b43f5608e9d1c3c3",
+    "http_status": "200",
+    "chars": 4805,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Подключите фид в личном кабинете Мегамаркета"
+      },
+      {
+        "level": 2,
+        "text": "Штрихкод обязателен"
+      },
+      {
+        "level": 2,
+        "text": "Цены и валюта"
+      },
+      {
+        "level": 2,
+        "text": "Наличие и остатки"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Ограничения полей"
+      },
+      {
+        "level": 2,
+        "text": "Специальные теги"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__mikaiformat",
+    "path": "/howto/format/mikaiformat",
+    "url": "https://q-parser.ru/howto/format/mikaiformat",
+    "title": "Как выгрузить товары на Mikai?",
+    "fetched_at": "2026-11-22T06:35:01+00:00",
+    "sha256": "e49a422dfd2f2621c0ee1da641773c231406c3f5bc74bd3f2b96129b65006729",
+    "http_status": "200",
+    "chars": 7701,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Общие настройки"
+      },
+      {
+        "level": 3,
+        "text": "Нашли ошибку в выгрузке в этот формат?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__mogutaformat",
+    "path": "/howto/format/mogutaformat",
+    "url": "https://q-parser.ru/howto/format/mogutaformat",
+    "title": "Как выгрузить товары в Moguta?",
+    "fetched_at": "2026-11-22T06:35:02+00:00",
+    "sha256": "b16157d33ef604423ffd0d05f02c07e16dbb36c04791d5c6cd2b011290d5fa44",
+    "http_status": "200",
+    "chars": 1954,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл в Moguta"
+      },
+      {
+        "level": 3,
+        "text": "4. Дождитесь окончания импорта"
+      },
+      {
+        "level": 3,
+        "text": "Видео. Пример работы с прайсом поставщика"
+      },
+      {
+        "level": 3,
+        "text": "Видео. Демонстрация загрузки архива с изображениями товара"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__moyskladformat",
+    "path": "/howto/format/moyskladformat",
+    "url": "https://q-parser.ru/howto/format/moyskladformat",
+    "title": "Как выгрузить товары в МойСклад?",
+    "fetched_at": "2026-11-22T06:35:04+00:00",
+    "sha256": "9ecc9aeea08b1afd3a750c12cbfda5053e6ed235ca67a66502a2d39e6594e560",
+    "http_status": "200",
+    "chars": 6040,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Подготовьте справочник товаров"
+      },
+      {
+        "level": 3,
+        "text": "4. Загрузите файл"
+      },
+      {
+        "level": 3,
+        "text": "5. Проверьте колонки и запустите импорт"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__ok24format",
+    "path": "/howto/format/ok24format",
+    "url": "https://q-parser.ru/howto/format/ok24format",
+    "title": "Как выгрузить товары на 24-ok.ru?",
+    "fetched_at": "2026-11-22T06:35:05+00:00",
+    "sha256": "613cb19d9a37342ae99b3c440a542530257fd2ce1aaf40e770f2ba0512d5ae91",
+    "http_status": "200",
+    "chars": 2017,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на 24-ok.ru"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__okalbumsformat",
+    "path": "/howto/format/okalbumsformat",
+    "url": "https://q-parser.ru/howto/format/okalbumsformat",
+    "title": "Как выгрузить товары в альбомы Одноклассники?",
+    "fetched_at": "2026-11-22T06:35:06+00:00",
+    "sha256": "a1cea3b165ee9d8c3c5245b358be978ef0fdac2c9717dcf5f964001d01bc97c2",
+    "http_status": "200",
+    "chars": 3075,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Требования к данным товаров"
+      },
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Войдите через Одноклассники"
+      },
+      {
+        "level": 3,
+        "text": "3. Выберите группу, альбом и настройки выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "4. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Формирование описания фото"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__okaycmsformat",
+    "path": "/howto/format/okaycmsformat",
+    "url": "https://q-parser.ru/howto/format/okaycmsformat",
+    "title": "Как выгрузить товары на OkayCMS?",
+    "fetched_at": "2026-11-22T06:35:07+00:00",
+    "sha256": "eccc47356415997a09ecaf08eda2582e64271953cfb57e6d61c38471115fc37a",
+    "http_status": "200",
+    "chars": 2278,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте товары на ваш сайт"
+      },
+      {
+        "level": 3,
+        "text": "4. Загрузите файл и настройте параметры импорта"
+      },
+      {
+        "level": 3,
+        "text": "5. Настройте соответствие полей"
+      },
+      {
+        "level": 3,
+        "text": "6. Дождитесь завершения импорта"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__okformat",
+    "path": "/howto/format/okformat",
+    "url": "https://q-parser.ru/howto/format/okformat",
+    "title": "Как выгрузить товары в Одноклассники?",
+    "fetched_at": "2026-11-22T06:35:08+00:00",
+    "sha256": "ca179f1d41354723015da5d1a3eeacdf220e74fd766ca6229586c4aede8d8218",
+    "http_status": "200",
+    "chars": 2789,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Требования к данным товаров"
+      },
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Войдите через Одноклассники"
+      },
+      {
+        "level": 3,
+        "text": "3. Выберите группу и каталог для выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "4. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__opencartcsvliteformat",
+    "path": "/howto/format/opencartcsvliteformat",
+    "url": "https://q-parser.ru/howto/format/opencartcsvliteformat",
+    "title": "Как выгрузить товары в OpenCart модулем CSV Export/Import Light?",
+    "fetched_at": "2026-11-22T06:35:09+00:00",
+    "sha256": "89050f7081f689c024c8752dff0591a1fb1d962a417a5c32ab742f345b0b7a5e",
+    "http_status": "200",
+    "chars": 1036,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__opencartcsvpriceproformat",
+    "path": "/howto/format/opencartcsvpriceproformat",
+    "url": "https://q-parser.ru/howto/format/opencartcsvpriceproformat",
+    "title": "Как выгрузить товары для OpenCart в формате CSV Price Pro?",
+    "fetched_at": "2026-11-22T06:35:10+00:00",
+    "sha256": "5cb5cf84283bb98b7ac236d1d7c2247771a36808428ad01c5b7eb2c277d71cd3",
+    "http_status": "200",
+    "chars": 1738,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте товары"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__opencartexportimportformat",
+    "path": "/howto/format/opencartexportimportformat",
+    "url": "https://q-parser.ru/howto/format/opencartexportimportformat",
+    "title": "Как выгрузить товары в OpenCart?",
+    "fetched_at": "2026-11-22T06:35:12+00:00",
+    "sha256": "3bea2480b31a3cd98260fc1bde635217364b88cf46f0cf140c74249d5e8cdff7",
+    "http_status": "200",
+    "chars": 2484,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Сортировка товаров"
+      },
+      {
+        "level": 2,
+        "text": "Описание набора формируемых файлов"
+      },
+      {
+        "level": 2,
+        "text": "Импорт без атрибутов и опций"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__openmallformat",
+    "path": "/howto/format/openmallformat",
+    "url": "https://q-parser.ru/howto/format/openmallformat",
+    "title": "Как выгрузить товары на OpenMall?",
+    "fetched_at": "2026-11-22T06:35:13+00:00",
+    "sha256": "003b30941db80b4a696889fc747347f5775e07c659b4db8ff857b19e8e56b43e",
+    "http_status": "200",
+    "chars": 3044,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Откройте импорт товаров"
+      },
+      {
+        "level": 3,
+        "text": "4. Загрузите файл и сопоставьте колонки"
+      },
+      {
+        "level": 3,
+        "text": "5. Добавьте категории в магазин"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__osclassadimporterformat",
+    "path": "/howto/format/osclassadimporterformat",
+    "url": "https://q-parser.ru/howto/format/osclassadimporterformat",
+    "title": "Как выгрузить товары в Osclass?",
+    "fetched_at": "2026-11-22T06:35:14+00:00",
+    "sha256": "8661f17dbc8327e3a7025a6d254c799e4f96ddbdf6013fd67d5923351067ebd1",
+    "http_status": "200",
+    "chars": 7606,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Общие настройки"
+      },
+      {
+        "level": 3,
+        "text": "Нашли ошибку в выгрузке в этот формат?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__phpshopformat",
+    "path": "/howto/format/phpshopformat",
+    "url": "https://q-parser.ru/howto/format/phpshopformat",
+    "title": "Как выгрузить товары в PHPShop?",
+    "fetched_at": "2026-11-22T06:35:15+00:00",
+    "sha256": "d9c1087e8414c804772c4364e2d343ba6144d8cf09bec72e3bb23ffc055bae62",
+    "http_status": "200",
+    "chars": 1610,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте файл в ваш магазин на PHPShop"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__pokupki63format",
+    "path": "/howto/format/pokupki63format",
+    "url": "https://q-parser.ru/howto/format/pokupki63format",
+    "title": "Как выгрузить товары на 63pokupki.ru?",
+    "fetched_at": "2026-11-22T06:35:16+00:00",
+    "sha256": "a9bc46892cde97ce56dda844cf8968def27932cf38afa74bd03dd94016140b41",
+    "http_status": "200",
+    "chars": 1590,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на 63pokupki.ru"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__pokupkiprostoformat",
+    "path": "/howto/format/pokupkiprostoformat",
+    "url": "https://q-parser.ru/howto/format/pokupkiprostoformat",
+    "title": "Как выгрузить товары на Покупки-просто?",
+    "fetched_at": "2026-11-22T06:35:17+00:00",
+    "sha256": "396ea88934cba061779638ad57758952fe09185c3551c738971047fd898fe3d5",
+    "http_status": "200",
+    "chars": 345,
+    "headings": []
+  },
+  {
+    "slug": "howto__format__prestashopformat",
+    "path": "/howto/format/prestashopformat",
+    "url": "https://q-parser.ru/howto/format/prestashopformat",
+    "title": "Как выгрузить товары в PrestaShop?",
+    "fetched_at": "2026-11-22T06:35:18+00:00",
+    "sha256": "e43d6b0b64a489e3d293d330b334bf7faddb90435600d17390da33030c36b2cd",
+    "http_status": "200",
+    "chars": 1903,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в Импорт PrestaShop"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__prestashopmagiconestoremanagerformat",
+    "path": "/howto/format/prestashopmagiconestoremanagerformat",
+    "url": "https://q-parser.ru/howto/format/prestashopmagiconestoremanagerformat",
+    "title": "Как выгрузить товары в PrestaShop MagicOne Store Manager?",
+    "fetched_at": "2026-11-22T06:35:20+00:00",
+    "sha256": "af28ce01415787e210fcf8c3d37d16bf7c37c046801dce1383ed6831a0d7e223",
+    "http_status": "200",
+    "chars": 1054,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в приложение PrestaShop MagicOne Store Manager"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__promuaymlformat",
+    "path": "/howto/format/promuaymlformat",
+    "url": "https://q-parser.ru/howto/format/promuaymlformat",
+    "title": "Как выгрузить товары на Prom.ua?",
+    "fetched_at": "2026-11-22T06:35:21+00:00",
+    "sha256": "ece968d997feeb29a37f39a24e1f2bdeee49ff3b6828c7f778955883fe77f674",
+    "http_status": "200",
+    "chars": 3254,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте файл в Prom.ua"
+      },
+      {
+        "level": 2,
+        "text": "Импорт по ссылке"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__readyscriptformat",
+    "path": "/howto/format/readyscriptformat",
+    "url": "https://q-parser.ru/howto/format/readyscriptformat",
+    "title": "Как выгрузить товары в ReadyScript?",
+    "fetched_at": "2026-11-22T06:35:22+00:00",
+    "sha256": "b7f698c774bfea76572f67e2130679a386d290c8850a3f3fbf5f56cfe6229290",
+    "http_status": "200",
+    "chars": 5244,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Подготовьте ReadyScript"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте категории"
+      },
+      {
+        "level": 3,
+        "text": "5. Импортируйте характеристики"
+      },
+      {
+        "level": 3,
+        "text": "6. Импортируйте значения характеристик"
+      },
+      {
+        "level": 3,
+        "text": "7. Импортируйте товары"
+      },
+      {
+        "level": 3,
+        "text": "8. Импортируйте комплектации"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__rozetkaymlformat",
+    "path": "/howto/format/rozetkaymlformat",
+    "url": "https://q-parser.ru/howto/format/rozetkaymlformat",
+    "title": "Как выгрузить товары на Rozetka.com.ua?",
+    "fetched_at": "2026-11-22T06:35:23+00:00",
+    "sha256": "7cc3d1adbf92d220bc5f1f50867e3466133b904b46d3154eeae623d96ede72e1",
+    "http_status": "200",
+    "chars": 2602,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте файл на Розетку"
+      },
+      {
+        "level": 2,
+        "text": "Импорт по ссылке"
+      },
+      {
+        "level": 2,
+        "text": "Наличие товаров"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__samarskieroditeliformat",
+    "path": "/howto/format/samarskieroditeliformat",
+    "url": "https://q-parser.ru/howto/format/samarskieroditeliformat",
+    "title": "Как выгрузить товары на Самарские родители?",
+    "fetched_at": "2026-11-22T06:35:24+00:00",
+    "sha256": "7bdbc1c505fa0f99aaef2663173153c2ae2958e71b52940d1b7c475109f664c4",
+    "http_status": "200",
+    "chars": 2994,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на sp.samarskie-roditeli.ru"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__serpokformat",
+    "path": "/howto/format/serpokformat",
+    "url": "https://q-parser.ru/howto/format/serpokformat",
+    "title": "Как выгрузить товары на Serpok.ru?",
+    "fetched_at": "2026-11-22T06:35:25+00:00",
+    "sha256": "9e2762678d615d4a02300969f28e2a33670528a9e67c9595182d8b045ec0451c",
+    "http_status": "200",
+    "chars": 1119,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__shopifyformat",
+    "path": "/howto/format/shopifyformat",
+    "url": "https://q-parser.ru/howto/format/shopifyformat",
+    "title": "Как выгрузить товары на Shopify (shopify.com)?",
+    "fetched_at": "2026-11-22T06:35:27+00:00",
+    "sha256": "3fabaa07f61433c99970aa9428fdf88ca31ac93aad8845f8ce24e3422074977b",
+    "http_status": "200",
+    "chars": 1804,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. Выгрузите товары"
+      },
+      {
+        "level": 3,
+        "text": "2. Импортируйте файл в Shopify"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__showcaseformat",
+    "path": "/howto/format/showcaseformat",
+    "url": "https://q-parser.ru/howto/format/showcaseformat",
+    "title": "Витрины товаров",
+    "fetched_at": "2026-11-22T06:35:28+00:00",
+    "sha256": "f9d759d864d8ed78f2d469187da30065240d6583ecdd0ce1078a68b3d01f70ba",
+    "http_status": "200",
+    "chars": 2274,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки и запустите выгрузку"
+      },
+      {
+        "level": 2,
+        "text": "Особенности и ограничения"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__simplacmsformat",
+    "path": "/howto/format/simplacmsformat",
+    "url": "https://q-parser.ru/howto/format/simplacmsformat",
+    "title": "Как выгрузить товары в Simpla CMS?",
+    "fetched_at": "2026-11-22T06:35:29+00:00",
+    "sha256": "2380ac2bcff28c34650ebe1aa0a4aabd45819a1fa732fffcd04dd70cbbeb1465",
+    "http_status": "200",
+    "chars": 698,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте файл в свой магазин"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__spkostromaformat",
+    "path": "/howto/format/spkostromaformat",
+    "url": "https://q-parser.ru/howto/format/spkostromaformat",
+    "title": "Как выгрузить товары на СП Кострома?",
+    "fetched_at": "2026-11-22T06:35:30+00:00",
+    "sha256": "8f8e047da3f23207daadbd3baafd53291305698ae56ade3ccc9db2634a1fd09d",
+    "http_status": "200",
+    "chars": 2649,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на spkostroma.ru"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__spprotonformat",
+    "path": "/howto/format/spprotonformat",
+    "url": "https://q-parser.ru/howto/format/spprotonformat",
+    "title": "Как выгрузить товары на сайты СП-Протон?",
+    "fetched_at": "2026-11-22T06:35:31+00:00",
+    "sha256": "2c365d8cecbd531c523cdf8a8316a4121cd4e5d74541d1737be48729de454f2d",
+    "http_status": "200",
+    "chars": 2232,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на сайт СП"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__storelandformat",
+    "path": "/howto/format/storelandformat",
+    "url": "https://q-parser.ru/howto/format/storelandformat",
+    "title": "Как выгрузить товары в Storeland?",
+    "fetched_at": "2026-11-22T06:35:32+00:00",
+    "sha256": "98a500bbf67d35f9f70acb23c2263687d110bad3f50340720326b444f906613b",
+    "http_status": "200",
+    "chars": 1646,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Импортируйте файл на Storeland"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__stospformat",
+    "path": "/howto/format/stospformat",
+    "url": "https://q-parser.ru/howto/format/stospformat",
+    "title": "Как выгрузить товары на 100 СП?",
+    "fetched_at": "2026-11-22T06:35:33+00:00",
+    "sha256": "4dfc31bb99963cb429f8c458e71caa9d49e8067dad70d6f826a461bbe8c431f0",
+    "http_status": "200",
+    "chars": 7773,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Общие настройки"
+      },
+      {
+        "level": 3,
+        "text": "Нашли ошибку в выгрузке в этот формат?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__supermamkiformat",
+    "path": "/howto/format/supermamkiformat",
+    "url": "https://q-parser.ru/howto/format/supermamkiformat",
+    "title": "Как выгрузить товары на Супермамки?",
+    "fetched_at": "2026-11-22T06:35:35+00:00",
+    "sha256": "ccca05926c548d9310053d33481395f04eb47b20f7ac353e597b2c78ae32d4a5",
+    "http_status": "200",
+    "chars": 2136,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на supermamki.ru"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__superpuperformat",
+    "path": "/howto/format/superpuperformat",
+    "url": "https://q-parser.ru/howto/format/superpuperformat",
+    "title": "Как выгрузить товары на сайт SuperPuper.ru?",
+    "fetched_at": "2026-11-22T06:35:36+00:00",
+    "sha256": "0fc6a189f55ab396c98c52343c7d6bc2c5606308da08e3f2beda0ceefb954c3f",
+    "http_status": "200",
+    "chars": 486,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__tildacsvformat",
+    "path": "/howto/format/tildacsvformat",
+    "url": "https://q-parser.ru/howto/format/tildacsvformat",
+    "title": "Как выгрузить товары на Tilda (tilda.cc) в CSV?",
+    "fetched_at": "2026-11-22T06:35:37+00:00",
+    "sha256": "2b27f0d1bf50431e6bb01d4addf7b6300b937fcd7751e6f9dbe1aaff4006bf36",
+    "http_status": "200",
+    "chars": 998,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. Выгрузите товары"
+      },
+      {
+        "level": 3,
+        "text": "2. Импортируйте товары в Tilda"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__tildaymlformat",
+    "path": "/howto/format/tildaymlformat",
+    "url": "https://q-parser.ru/howto/format/tildaymlformat",
+    "title": "Как выгрузить товары на Tilda (tilda.cc) в YML?",
+    "fetched_at": "2026-11-22T06:35:38+00:00",
+    "sha256": "dd96463645621c0e773c52f068573653980a37b5e3ebde668f523bbbd8c4a272",
+    "http_status": "200",
+    "chars": 2378,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте товары в Tilda"
+      },
+      {
+        "level": 3,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__tom70format",
+    "path": "/howto/format/tom70format",
+    "url": "https://q-parser.ru/howto/format/tom70format",
+    "title": "Как выгрузить товары на сайты СП с модулем Tom70?",
+    "fetched_at": "2026-11-22T06:35:39+00:00",
+    "sha256": "d955b3f9b7529c30db3be572c06ccacba66a20dcdaed563246955f4c569796c0",
+    "http_status": "200",
+    "chars": 2677,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на сайт СП"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__uralcmscsvformat",
+    "path": "/howto/format/uralcmscsvformat",
+    "url": "https://q-parser.ru/howto/format/uralcmscsvformat",
+    "title": "Как выгрузить товары для Ural CMS (uralcms.ru)?",
+    "fetched_at": "2026-11-22T06:35:40+00:00",
+    "sha256": "f3006faaa55934017dc7bfc2e63e48e37f4ac875f81ee8d1552b8b4c1ed632dd",
+    "http_status": "200",
+    "chars": 1501,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. Выгрузите товары"
+      },
+      {
+        "level": 3,
+        "text": "2. Импортируйте файл в Ural CMS"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__ushopymlformat",
+    "path": "/howto/format/ushopymlformat",
+    "url": "https://q-parser.ru/howto/format/ushopymlformat",
+    "title": "Как выгрузить товары на uShop (ucoz.ru)?",
+    "fetched_at": "2026-11-22T06:35:42+00:00",
+    "sha256": "fdf80794e56da85338a6c36c5e863cab54e224d91ef633578d8efd235569abda",
+    "http_status": "200",
+    "chars": 2783,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 3,
+        "text": "4. Импортируйте файл в uShop"
+      },
+      {
+        "level": 2,
+        "text": "Импорт по ссылке"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__vkalbumsformat",
+    "path": "/howto/format/vkalbumsformat",
+    "url": "https://q-parser.ru/howto/format/vkalbumsformat",
+    "title": "Как выгрузить товары в альбомы ВКонтакте?",
+    "fetched_at": "2026-11-22T06:35:43+00:00",
+    "sha256": "113ed3e740f62bd26ab7385bb715be4f36f76f1f36863d0232ff5adb1a2e232a",
+    "http_status": "200",
+    "chars": 3537,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Требования к данным товаров"
+      },
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Войдите через ВКонтакте"
+      },
+      {
+        "level": 3,
+        "text": "3. Выберите группу, альбом и настройки выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "4. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Удаление неактуальных фото"
+      },
+      {
+        "level": 2,
+        "text": "Формирование описания фото"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__vkformat",
+    "path": "/howto/format/vkformat",
+    "url": "https://q-parser.ru/howto/format/vkformat",
+    "title": "Как выгрузить товары в ВКонтакте?",
+    "fetched_at": "2026-11-22T06:35:44+00:00",
+    "sha256": "cc8e434d96812055ae963403b3926bf983198ed0e77a53edb9e1c872fb055e1b",
+    "http_status": "200",
+    "chars": 3868,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Включите раздел Товары"
+      },
+      {
+        "level": 3,
+        "text": "Требования к данным товаров"
+      },
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Войдите через ВКонтакте"
+      },
+      {
+        "level": 3,
+        "text": "3. Выберите группу, подборку и настройки выгрузки"
+      },
+      {
+        "level": 3,
+        "text": "4. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__webasystshopscriptformat",
+    "path": "/howto/format/webasystshopscriptformat",
+    "url": "https://q-parser.ru/howto/format/webasystshopscriptformat",
+    "title": "Как выгрузить товары в Webasyst Shop-Script?",
+    "fetched_at": "2026-11-22T06:35:45+00:00",
+    "sha256": "5638cc2cd5b8d90ed2fbcca497cba64007dba4ebaeba47999b678582ab6040a9",
+    "http_status": "200",
+    "chars": 1823,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл в Webasyst"
+      },
+      {
+        "level": 3,
+        "text": "4. Настройте колонки и запустите импорт"
+      },
+      {
+        "level": 3,
+        "text": "5. Дождитесь окончания импорта"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__wixformat",
+    "path": "/howto/format/wixformat",
+    "url": "https://q-parser.ru/howto/format/wixformat",
+    "title": "Как выгрузить товары в Wix?",
+    "fetched_at": "2026-11-22T06:35:46+00:00",
+    "sha256": "340c8784449d0c83f858e0a5bff8a066f48f212a8305b80f825113755f43d9e4",
+    "http_status": "200",
+    "chars": 2045,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файлы в ваш магазин на Wix"
+      },
+      {
+        "level": 3,
+        "text": "Ограничения формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__woocommerceformat",
+    "path": "/howto/format/woocommerceformat",
+    "url": "https://q-parser.ru/howto/format/woocommerceformat",
+    "title": "Как выгрузить товары в WooCommerce?",
+    "fetched_at": "2026-11-22T06:35:47+00:00",
+    "sha256": "fc4172bcae66e421fc0723ef675e672f45c2ac5a971badf115ae5666bcfcc344",
+    "http_status": "200",
+    "chars": 3033,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Перейдите в Import WooCommerce"
+      },
+      {
+        "level": 3,
+        "text": "4. Загрузите файл в импортер"
+      },
+      {
+        "level": 3,
+        "text": "5. Запустите импорт"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__xlsformat",
+    "path": "/howto/format/xlsformat",
+    "url": "https://q-parser.ru/howto/format/xlsformat",
+    "title": "Как выгрузить товары в Excel?",
+    "fetched_at": "2026-11-22T06:35:48+00:00",
+    "sha256": "7c80ffe9f7dd5041d77afc9cd9dc216b002248064ac7e16e700013457468d6fc",
+    "http_status": "200",
+    "chars": 1343,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки файла"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__xmlformat",
+    "path": "/howto/format/xmlformat",
+    "url": "https://q-parser.ru/howto/format/xmlformat",
+    "title": "Как выгрузить товары в XML?",
+    "fetched_at": "2026-11-22T06:35:50+00:00",
+    "sha256": "eb44bfe42f4b99296fffef9c912884ba84f80097d3a2ad20c9d9ebc4bc90518a",
+    "http_status": "200",
+    "chars": 948,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки файла"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 3,
+        "text": "Обратите внимание"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__ymlformat",
+    "path": "/howto/format/ymlformat",
+    "url": "https://q-parser.ru/howto/format/ymlformat",
+    "title": "Как выгрузить товары в YML?",
+    "fetched_at": "2026-11-22T06:35:51+00:00",
+    "sha256": "27de514c800fd75d469ab0dc03d31af29b73f1fcc46733b7f2c37d1d49d758d0",
+    "http_status": "200",
+    "chars": 1670,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Выгрузка запущена"
+      },
+      {
+        "level": 2,
+        "text": "Что такое YML?"
+      },
+      {
+        "level": 3,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "Специальные теги"
+      }
+    ]
+  },
+  {
+    "slug": "howto__format__zaprosto24format",
+    "path": "/howto/format/zaprosto24format",
+    "url": "https://q-parser.ru/howto/format/zaprosto24format",
+    "title": "Как выгрузить товары на Запросто 24?",
+    "fetched_at": "2026-11-22T06:35:52+00:00",
+    "sha256": "588798bc030ebee54825747a9a8696169ebe47eb2beff245652f0184bb59f709",
+    "http_status": "200",
+    "chars": 2952,
+    "headings": [
+      {
+        "level": 3,
+        "text": "1. В списке товаров нажмите \"Выгрузить\""
+      },
+      {
+        "level": 3,
+        "text": "2. Задайте настройки формата"
+      },
+      {
+        "level": 3,
+        "text": "3. Загрузите файл на zaprosto24.ru"
+      },
+      {
+        "level": 2,
+        "text": "Настройки формата"
+      },
+      {
+        "level": 2,
+        "text": "Особенности формата"
+      },
+      {
+        "level": 2,
+        "text": "Специальные характеристики"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-cut",
+    "path": "/howto/mods/cols-cut",
+    "url": "https://q-parser.ru/howto/mods/cols-cut",
+    "title": "Обрезание характеристик товаров",
+    "fetched_at": "2026-11-22T06:36:04+00:00",
+    "sha256": "eb7a39575bdd92592496abed227d413c3df38d5d6bc0e10b614c472a1affcd25",
+    "http_status": "200",
+    "chars": 1213,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Пример"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-remove",
+    "path": "/howto/mods/cols-remove",
+    "url": "https://q-parser.ru/howto/mods/cols-remove",
+    "title": "Удаление характеристик товаров",
+    "fetched_at": "2026-11-22T06:36:03+00:00",
+    "sha256": "f7721b5665975aad8e21eb0a472c89eec8425c4efb913f0343a0f8f4233a7c9e",
+    "http_status": "200",
+    "chars": 1144,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-rename",
+    "path": "/howto/mods/cols-rename",
+    "url": "https://q-parser.ru/howto/mods/cols-rename",
+    "title": "Переименование характеристик товаров",
+    "fetched_at": "2026-11-22T06:36:01+00:00",
+    "sha256": "a710e88bb2edee6ea0454ccbc6aee24dbcc7c89f900c55a69a34b79f365525e1",
+    "http_status": "200",
+    "chars": 748,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-replace",
+    "path": "/howto/mods/cols-replace",
+    "url": "https://q-parser.ru/howto/mods/cols-replace",
+    "title": "Поиск и замена",
+    "fetched_at": "2026-11-22T06:35:59+00:00",
+    "sha256": "6cb96834e9ae7713546fa237d1ff188273b55ce696e81458c24b74365c86ffb7",
+    "http_status": "200",
+    "chars": 2633,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Поиск и замена текста в характеристиках"
+      },
+      {
+        "level": 3,
+        "text": "Искомая строка"
+      },
+      {
+        "level": 3,
+        "text": "Заменяемое значение"
+      },
+      {
+        "level": 2,
+        "text": "Поиск по регулярным выражениям"
+      },
+      {
+        "level": 2,
+        "text": "Изменение ссылок изображений"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-sort",
+    "path": "/howto/mods/cols-sort",
+    "url": "https://q-parser.ru/howto/mods/cols-sort",
+    "title": "Сортировка характеристик товаров",
+    "fetched_at": "2026-11-22T06:36:00+00:00",
+    "sha256": "f1e8822d962ddd2da650878f72a7d3a09af3490af8c2234585c0047778c8f4b1",
+    "http_status": "200",
+    "chars": 1060,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-split",
+    "path": "/howto/mods/cols-split",
+    "url": "https://q-parser.ru/howto/mods/cols-split",
+    "title": "Разделение характеристик товаров",
+    "fetched_at": "2026-11-22T06:36:02+00:00",
+    "sha256": "c8f59763b48debfc2b88b794238577c1000e28daf3fce93e652f8af7124d39a2",
+    "http_status": "200",
+    "chars": 1168,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols-strip-html",
+    "path": "/howto/mods/cols-strip-html",
+    "url": "https://q-parser.ru/howto/mods/cols-strip-html",
+    "title": "Удаление HTML-тегов из характеристик",
+    "fetched_at": "2026-11-22T06:36:05+00:00",
+    "sha256": "eb4d7e198634f0dd00f2d700fbce32bd656a2a73628be45bab26ce3c7147c44e",
+    "http_status": "200",
+    "chars": 1246,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Пример"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__cols",
+    "path": "/howto/mods/cols",
+    "url": "https://q-parser.ru/howto/mods/cols",
+    "title": "Редактирование полей товаров",
+    "fetched_at": "2026-11-22T06:35:58+00:00",
+    "sha256": "3fec904c835a3a8520ffbc6c10624c43b3fde22106dfd7f591ed43acf8bfbf72",
+    "http_status": "200",
+    "chars": 1628,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Изменение характеристик при выгрузке"
+      },
+      {
+        "level": 3,
+        "text": "Название характеристики"
+      },
+      {
+        "level": 3,
+        "text": "Содержимое"
+      },
+      {
+        "level": 3,
+        "text": "Пример: Подставить артикул в описание товара"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__copying",
+    "path": "/howto/mods/copying",
+    "url": "https://q-parser.ru/howto/mods/copying",
+    "title": "Копирование/Вставка и шаблоны редактирования",
+    "fetched_at": "2026-11-22T06:36:20+00:00",
+    "sha256": "2e8afdbbb48fbcc1cc82f8a743f590b5b715ee1368435d5bee16a03b2642b408",
+    "http_status": "200",
+    "chars": 1981,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Копирование/Вставка изменений в парсингах"
+      },
+      {
+        "level": 2,
+        "text": "Шаблоны редактирования"
+      },
+      {
+        "level": 4,
+        "text": "Обратите внимание"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__deduplication",
+    "path": "/howto/mods/deduplication",
+    "url": "https://q-parser.ru/howto/mods/deduplication",
+    "title": "Удаление дублей товаров",
+    "fetched_at": "2026-11-22T06:36:08+00:00",
+    "sha256": "2f082d48ad9417c862bc04907172c4059ee5f15e3829ebf0522d3e5615deaa10",
+    "http_status": "200",
+    "chars": 1610,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Общая информация"
+      },
+      {
+        "level": 2,
+        "text": "Товары без значения характеристики"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__filter",
+    "path": "/howto/mods/filter",
+    "url": "https://q-parser.ru/howto/mods/filter",
+    "title": "Фильтрация товаров",
+    "fetched_at": "2026-11-22T06:36:07+00:00",
+    "sha256": "a8c27075e2ae2eb175225559db37e756feab6ec8939384a748d4c28ba55065a4",
+    "http_status": "200",
+    "chars": 2618,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Общая информация"
+      },
+      {
+        "level": 2,
+        "text": "Удаление товаров"
+      },
+      {
+        "level": 2,
+        "text": "Типы фильтрации"
+      },
+      {
+        "level": 3,
+        "text": "Точное соответствие"
+      },
+      {
+        "level": 3,
+        "text": "Вхождение"
+      },
+      {
+        "level": 3,
+        "text": "Существует"
+      },
+      {
+        "level": 3,
+        "text": "НЕ-фильтр"
+      },
+      {
+        "level": 3,
+        "text": "Числовые фильры"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__html-remove-children",
+    "path": "/howto/mods/html-remove-children",
+    "url": "https://q-parser.ru/howto/mods/html-remove-children",
+    "title": "Удаление HTML элементов по CSS селектору",
+    "fetched_at": "2026-11-22T06:36:23+00:00",
+    "sha256": "3b494d4f06afe1c5e8354f7b97c774638b22b7034652174492177a551d03e546",
+    "http_status": "200",
+    "chars": 1571,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Примеры CSS селекторов:"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images",
+    "path": "/howto/mods/images",
+    "url": "https://q-parser.ru/howto/mods/images",
+    "title": "Редактирование фото товаров",
+    "fetched_at": "2026-11-22T06:36:10+00:00",
+    "sha256": "b8601c631c5f91f6b9bc02d3b6a5d041e01daf34a6ed1516ee4cb5679c9619ea",
+    "http_status": "200",
+    "chars": 2739,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Выгрузка фото в альбомы соцсетей"
+      },
+      {
+        "level": 3,
+        "text": "Отказ от гарантий"
+      },
+      {
+        "level": 3,
+        "text": "Права на изображения"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__background",
+    "path": "/howto/mods/images/background",
+    "url": "https://q-parser.ru/howto/mods/images/background",
+    "title": "Добавить фон на фотографии",
+    "fetched_at": "2026-11-22T06:36:19+00:00",
+    "sha256": "c9dc27cc2b7d3304638fb6878b470df732a98bd8fe5befc91c86d88697092638",
+    "http_status": "200",
+    "chars": 2774,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как добавить фон?"
+      },
+      {
+        "level": 4,
+        "text": "Важно: формат фото не меняется автоматически"
+      },
+      {
+        "level": 3,
+        "text": "Какие фото изменятся?"
+      },
+      {
+        "level": 3,
+        "text": "Замена цвета фона"
+      },
+      {
+        "level": 3,
+        "text": "Рекомендации"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__count",
+    "path": "/howto/mods/images/count",
+    "url": "https://q-parser.ru/howto/mods/images/count",
+    "title": "Ограничение числа фото товара",
+    "fetched_at": "2026-11-22T06:36:17+00:00",
+    "sha256": "378c8ab1d5dab593f0b502faa5656d69dff29fbd5736d3da3c77f0b9206a2a11",
+    "http_status": "200",
+    "chars": 704,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__cut",
+    "path": "/howto/mods/images/cut",
+    "url": "https://q-parser.ru/howto/mods/images/cut",
+    "title": "Обрезать фото перед выгрузкой",
+    "fetched_at": "2026-11-22T06:36:16+00:00",
+    "sha256": "afee0c3e43edc59d5e22b5394aa276074579464e295921b5ea029b0321eadaf4",
+    "http_status": "200",
+    "chars": 863,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__embed",
+    "path": "/howto/mods/images/embed",
+    "url": "https://q-parser.ru/howto/mods/images/embed",
+    "title": "Вписать фото в размер с обрезкой",
+    "fetched_at": "2026-11-22T06:36:12+00:00",
+    "sha256": "bc3dcc1ea706ac6c472bbbc1f24d90325be89a1ff69b7885312b10a1d233f07f",
+    "http_status": "200",
+    "chars": 2687,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как включить?"
+      },
+      {
+        "level": 3,
+        "text": "Позиция при обрезке"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__overlay",
+    "path": "/howto/mods/images/overlay",
+    "url": "https://q-parser.ru/howto/mods/images/overlay",
+    "title": "Наложение изображения на фотографии",
+    "fetched_at": "2026-11-22T06:36:15+00:00",
+    "sha256": "30a324adba1ea35856906c742ea40ca900ed4b3f8fdb19bca9c0b54fb2b54dfd",
+    "http_status": "200",
+    "chars": 1531,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как наложить изображение поверх фото товаров?"
+      },
+      {
+        "level": 3,
+        "text": "Поддерживаемые форматы"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__resize",
+    "path": "/howto/mods/images/resize",
+    "url": "https://q-parser.ru/howto/mods/images/resize",
+    "title": "Изменить размер фото перед выгрузкой",
+    "fetched_at": "2026-11-22T06:36:11+00:00",
+    "sha256": "f6e5365c5024c2d29a4fc0f276f396b702c3b1e947fba3487cea8ddf06701d8a",
+    "http_status": "200",
+    "chars": 1686,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как изменить размер фото?"
+      },
+      {
+        "level": 3,
+        "text": "Ограничения размеров"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__text",
+    "path": "/howto/mods/images/text",
+    "url": "https://q-parser.ru/howto/mods/images/text",
+    "title": "Наложение текста на фотографии товаров",
+    "fetched_at": "2026-11-22T06:36:14+00:00",
+    "sha256": "02cabe1e8290c7861ea18ed8a50197a092cc98039bc6fe1ea2602bffabfb3f82",
+    "http_status": "200",
+    "chars": 2732,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как наложить текст фото?"
+      },
+      {
+        "level": 3,
+        "text": "Примеры"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__images__transparent",
+    "path": "/howto/mods/images/transparent",
+    "url": "https://q-parser.ru/howto/mods/images/transparent",
+    "title": "Сделать цвет прозрачным на фотографиях",
+    "fetched_at": "2026-11-22T06:36:18+00:00",
+    "sha256": "ee529a481682990638b10c2a923b40f2d20788379e3ccf439a0d230cf41b7210",
+    "http_status": "200",
+    "chars": 2281,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как сделать цвет прозрачным?"
+      },
+      {
+        "level": 3,
+        "text": "Как работает допуск?"
+      },
+      {
+        "level": 3,
+        "text": "Важные особенности"
+      },
+      {
+        "level": 3,
+        "text": "Рекомендации"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__price",
+    "path": "/howto/mods/price",
+    "url": "https://q-parser.ru/howto/mods/price",
+    "title": "Изменение цен и конвертацию валют",
+    "fetched_at": "2026-11-22T06:35:56+00:00",
+    "sha256": "58f0a6cc743446387fa2e8bc69d2d4d2e4e6c8e444c73b1e048db5cba1c4a7e3",
+    "http_status": "200",
+    "chars": 1733,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Как округлить цены?"
+      },
+      {
+        "level": 2,
+        "text": "Как конвертировать валюту?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__publish",
+    "path": "/howto/mods/publish",
+    "url": "https://q-parser.ru/howto/mods/publish",
+    "title": "Изменение наличия товаров",
+    "fetched_at": "2026-11-22T06:36:22+00:00",
+    "sha256": "de1d51d3b3e4793190988859e15a95b6cc60de483ce056b9b1177bb9b85676e6",
+    "http_status": "200",
+    "chars": 537,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__mods__sort",
+    "path": "/howto/mods/sort",
+    "url": "https://q-parser.ru/howto/mods/sort",
+    "title": "Сортировка товаров",
+    "fetched_at": "2026-11-22T06:36:09+00:00",
+    "sha256": "a80432e8dd3efd5c2b4ebe0e37a03d5dfcfcc70cc7d4d16aa73ef9d90c46c716",
+    "http_status": "200",
+    "chars": 1069,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Общая информация"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__parser-categories",
+    "path": "/howto/parser-categories",
+    "url": "https://q-parser.ru/howto/parser-categories",
+    "title": "Ручное добавление категорий",
+    "fetched_at": "2026-11-22T06:36:36+00:00",
+    "sha256": "56a8b4c82451d56214aa450dc9ea839c912031c9f42a74a5cd88552fb9bcc36c",
+    "http_status": "200",
+    "chars": 3897,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Названия категорий"
+      },
+      {
+        "level": 3,
+        "text": "Ссылки"
+      },
+      {
+        "level": 3,
+        "text": "Добавление нескольких ссылок разом"
+      },
+      {
+        "level": 3,
+        "text": "Импорт категорий из CSV/Sitemap"
+      },
+      {
+        "level": 3,
+        "text": "Импорт из CSV"
+      },
+      {
+        "level": 3,
+        "text": "Импорт из Sitemap"
+      },
+      {
+        "level": 3,
+        "text": "Экспорт категорий в CSV"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__parser-compare",
+    "path": "/howto/parser-compare",
+    "url": "https://q-parser.ru/howto/parser-compare",
+    "title": "Сравнение парсингов",
+    "fetched_at": "2026-11-22T06:36:40+00:00",
+    "sha256": "157fa41c7c2b072f669f1cfcd6cab3585854b27f9b4ef09a3b88de6ffa1a0717",
+    "http_status": "200",
+    "chars": 1110,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Как это работает?"
+      }
+    ]
+  },
+  {
+    "slug": "howto__referral",
+    "path": "/howto/referral",
+    "url": "https://q-parser.ru/howto/referral",
+    "title": "Реферальная программа Q-Parser",
+    "fetched_at": "2026-11-22T06:36:33+00:00",
+    "sha256": "be827282f9964fc818a06c316e835f76520a014ab181a02b67add957f6c14fac",
+    "http_status": "200",
+    "chars": 1161,
+    "headings": [
+      {
+        "level": 3,
+        "text": "Пример начислений по реферальной программе"
+      },
+      {
+        "level": 3,
+        "text": "На что можно расходовать начисления?"
+      },
+      {
+        "level": 3,
+        "text": "Какой срок действия программы?"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "howto__social",
+    "path": "/howto/social",
+    "url": "https://q-parser.ru/howto/social",
+    "title": "Выгрузка товаров в социальные сети",
+    "fetched_at": "2026-11-22T06:36:32+00:00",
+    "sha256": "e3ff999920088101cb9613091aefbd774793d86e26e319d46467793601335638",
+    "http_status": "200",
+    "chars": 3588,
+    "headings": [
+      {
+        "level": 2,
+        "text": "Выгрузка в ВКонтакте (Товары)"
+      },
+      {
+        "level": 2,
+        "text": "Выгрузка в альбомы ВКонтакте"
+      },
+      {
+        "level": 2,
+        "text": "Выгрузка в Одноклассники (Товары)"
+      },
+      {
+        "level": 2,
+        "text": "Выгрузка в альбомы Одноклассники"
+      },
+      {
+        "level": 2,
+        "text": "Выгрузка в каталоги Facebook\\*"
+      },
+      {
+        "level": 2,
+        "text": "Связанные материалы"
+      }
+    ]
+  },
+  {
+    "slug": "reviews",
+    "path": "/reviews",
+    "url": "https://q-parser.ru/reviews",
+    "title": "Отзывы Q-Parser",
+    "fetched_at": "2026-11-22T06:36:50+00:00",
+    "sha256": "a2e13bfb59a60c5c82099af7b57bfb27cb3b38224aed56d908a83ab214905615",
+    "http_status": "200",
+    "chars": 12146,
+    "headings": []
+  },
+  {
+    "slug": "root",
+    "path": "/",
+    "url": "https://q-parser.ru/",
+    "title": "Товары с сайтов — готовые к продаже и всегда актуальные",
+    "fetched_at": "2026-11-22T06:36:45+00:00",
+    "sha256": "820585cfeddd5ceaba8b8136321d9e909a9941bbeeff494cd3a8b1cb77638535",
+    "http_status": "200",
+    "chars": 23364,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Товары с сайтов — готовые к продаже и всегда актуальные"
+      },
+      {
+        "level": 2,
+        "text": "Уже настроены — просто нажмите «Загрузить»"
+      },
+      {
+        "level": 2,
+        "text": "Вся карточка товара — до последней характеристики"
+      },
+      {
+        "level": 3,
+        "text": "Кеды кожаные Urban Line, белые"
+      },
+      {
+        "level": 2,
+        "text": "Карточки, которые продают, — одной фразой"
+      },
+      {
+        "level": 2,
+        "text": "Настройте один раз — каталог обновляется сам"
+      },
+      {
+        "level": 2,
+        "text": "Посчитайте, сколько стоит ручная работа"
+      },
+      {
+        "level": 2,
+        "text": "Выберите, кто вы, — покажем сценарий"
+      },
+      {
+        "level": 2,
+        "text": "71 формат — ваша CMS почти наверняка здесь"
+      },
+      {
+        "level": 2,
+        "text": "Новое на Q-Parser"
+      },
+      {
+        "level": 3,
+        "text": "AI редактирование в автовыгрузках: несколько задач перед каждой выгрузкой"
+      },
+      {
+        "level": 3,
+        "text": "До 20 ноября настройка новых сайтов почти втрое дешевле"
+      },
+      {
+        "level": 3,
+        "text": "Несколько форматов в одной автовыгрузке: дублировать задания больше не нужно"
+      },
+      {
+        "level": 3,
+        "text": "Бэкапы сайта: почему копия на том же хостинге не спасает"
+      },
+      {
+        "level": 2,
+        "text": "Частые вопросы"
+      },
+      {
+        "level": 2,
+        "text": "Проверьте на своем поставщике"
+      }
+    ]
+  },
+  {
+    "slug": "supplier",
+    "path": "/supplier",
+    "url": "https://q-parser.ru/supplier",
+    "title": "Оплатите сайт один раз — загружают все ваши клиенты",
+    "fetched_at": "2026-11-22T06:36:51+00:00",
+    "sha256": "56987cad2fe4090deab1706f3802b67cc6cdf28642a962e178bc7f616b746a05",
+    "http_status": "200",
+    "chars": 4662,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Оплатите сайт один раз — загружают все ваши клиенты"
+      },
+      {
+        "level": 2,
+        "text": "Вы платите за сайт, а не за каждого клиента"
+      },
+      {
+        "level": 2,
+        "text": "Три шага — и ваш каталог открыт для всех"
+      },
+      {
+        "level": 2,
+        "text": "Заметнее в каталоге — больше новых клиентов"
+      },
+      {
+        "level": 2,
+        "text": "Кнопка загрузки — прямо на вашем сайте"
+      },
+      {
+        "level": 2,
+        "text": "Одна цена — для любого числа клиентов"
+      },
+      {
+        "level": 2,
+        "text": "Откройте свой каталог всем клиентам"
+      }
+    ]
+  },
+  {
+    "slug": "supplier__widget",
+    "path": "/supplier/widget",
+    "url": "https://q-parser.ru/supplier/widget",
+    "title": "Виджет для парсинга товаров с вашего сайта",
+    "fetched_at": "2026-11-22T06:36:52+00:00",
+    "sha256": "fb7c01c4bcd8dbc648d9e51af79ea5fd9f88bde80dfc2dcaac848afed3258e37",
+    "http_status": "200",
+    "chars": 363,
+    "headings": []
+  },
+  {
+    "slug": "tariffs",
+    "path": "/tariffs",
+    "url": "https://q-parser.ru/tariffs",
+    "title": "Тарифы и цены Q-Parser",
+    "fetched_at": "2026-11-22T07:09:11+00:00",
+    "sha256": "a1f5e0ac63bcfe80006831f301c2b591aee54be59a68bdf7a3672fe6687ad0cc",
+    "http_status": "200",
+    "chars": 2504,
+    "headings": []
+  },
+  {
+    "slug": "what-can",
+    "path": "/what-can",
+    "url": "https://q-parser.ru/what-can",
+    "title": "Что умеет Q-Parser",
+    "fetched_at": "2026-11-22T06:36:46+00:00",
+    "sha256": "ca0c26f70e5c766a1fabee6aad94388baed7652e19314b17f6906eff1c615826",
+    "http_status": "200",
+    "chars": 7062,
+    "headings": [
+      {
+        "level": 1,
+        "text": "Что умеет Q-Parser"
+      },
+      {
+        "level": 2,
+        "text": "Товары с сайта — со всеми полями"
+      },
+      {
+        "level": 2,
+        "text": "Наценка, фильтры и фото — по вашим правилам"
+      },
+      {
+        "level": 2,
+        "text": "Опишите задачу словами — AI составит план и выполнит его"
+      },
+      {
+        "level": 2,
+        "text": "70 форматов — и доставка туда, где нужно"
+      },
+      {
+        "level": 2,
+        "text": "Настройте один раз — цепочка повторяется сама"
+      },
+      {
+        "level": 2,
+        "text": "Проверьте на своем поставщике"
+      }
+    ]
+  }
+]

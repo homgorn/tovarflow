@@ -1,0 +1,1532 @@
+{
+  "nodes": [
+    {
+      "id": "track:competitors",
+      "type": "research_track",
+      "label": "Competitor Research Report — Q-Parser Platform"
+    },
+    {
+      "id": "track:marketplaces-ru",
+      "type": "research_track",
+      "label": "RU Marketplace Capability Matrix"
+    },
+    {
+      "id": "track:marketplaces-cn",
+      "type": "research_track",
+      "label": "Chinese Marketplaces: Supply vs Sales Channel Analysis"
+    },
+    {
+      "id": "track:marketplaces-global",
+      "type": "research_track",
+      "label": "Global Marketplace API Comparison Report"
+    },
+    {
+      "id": "track:platforms",
+      "type": "research_track",
+      "label": "Q-Parser Storefront Platform Research Report"
+    },
+    {
+      "id": "track:demand",
+      "type": "research_track",
+      "label": "Demand Data Sources & Pipeline Research"
+    },
+    {
+      "id": "track:inherited",
+      "type": "research_track",
+      "label": "inherited"
+    },
+    {
+      "id": "marketplace:ru:Ozon Seller",
+      "type": "marketplace",
+      "label": "Ozon Seller"
+    },
+    {
+      "id": "layer:ru",
+      "type": "layer",
+      "label": "ru"
+    },
+    {
+      "id": "marketplace:ru:Wildberries",
+      "type": "marketplace",
+      "label": "Wildberries"
+    },
+    {
+      "id": "marketplace:ru:Yandex Market",
+      "type": "marketplace",
+      "label": "Yandex Market"
+    },
+    {
+      "id": "marketplace:ru:Megamarket",
+      "type": "marketplace",
+      "label": "Megamarket"
+    },
+    {
+      "id": "marketplace:ru:Avito",
+      "type": "marketplace",
+      "label": "Avito"
+    },
+    {
+      "id": "marketplace:ru:Kaspi.kz",
+      "type": "marketplace",
+      "label": "Kaspi.kz"
+    },
+    {
+      "id": "marketplace:ru:Uzum Market",
+      "type": "marketplace",
+      "label": "Uzum Market"
+    },
+    {
+      "id": "marketplace:ru:Wildberries KZ/BY",
+      "type": "marketplace",
+      "label": "Wildberries KZ/BY"
+    },
+    {
+      "id": "marketplace:cn:1688",
+      "type": "marketplace",
+      "label": "1688"
+    },
+    {
+      "id": "layer:cn",
+      "type": "layer",
+      "label": "cn"
+    },
+    {
+      "id": "marketplace:cn:Taobao / Tmall",
+      "type": "marketplace",
+      "label": "Taobao / Tmall"
+    },
+    {
+      "id": "marketplace:cn:Alibaba.com",
+      "type": "marketplace",
+      "label": "Alibaba.com"
+    },
+    {
+      "id": "marketplace:cn:Pinduoduo",
+      "type": "marketplace",
+      "label": "Pinduoduo"
+    },
+    {
+      "id": "marketplace:cn:JD.com",
+      "type": "marketplace",
+      "label": "JD.com"
+    },
+    {
+      "id": "marketplace:cn:Douyin",
+      "type": "marketplace",
+      "label": "Douyin"
+    },
+    {
+      "id": "marketplace:cn:AliExpress",
+      "type": "marketplace",
+      "label": "AliExpress"
+    },
+    {
+      "id": "marketplace:cn:Temu",
+      "type": "marketplace",
+      "label": "Temu"
+    },
+    {
+      "id": "marketplace:cn:Shein Marketplace",
+      "type": "marketplace",
+      "label": "Shein Marketplace"
+    },
+    {
+      "id": "marketplace:cn:Ozon Global",
+      "type": "marketplace",
+      "label": "Ozon Global"
+    },
+    {
+      "id": "marketplace:cn:WB China",
+      "type": "marketplace",
+      "label": "WB China"
+    },
+    {
+      "id": "marketplace:cn:Xianyu / Goofish",
+      "type": "marketplace",
+      "label": "Xianyu / Goofish"
+    },
+    {
+      "id": "marketplace:global:Amazon EU",
+      "type": "marketplace",
+      "label": "Amazon EU"
+    },
+    {
+      "id": "layer:global",
+      "type": "layer",
+      "label": "global"
+    },
+    {
+      "id": "marketplace:global:eBay",
+      "type": "marketplace",
+      "label": "eBay"
+    },
+    {
+      "id": "marketplace:global:Etsy",
+      "type": "marketplace",
+      "label": "Etsy"
+    },
+    {
+      "id": "marketplace:global:Allegro",
+      "type": "marketplace",
+      "label": "Allegro"
+    },
+    {
+      "id": "marketplace:global:Kaufland",
+      "type": "marketplace",
+      "label": "Kaufland"
+    },
+    {
+      "id": "marketplace:global:Bol.com",
+      "type": "marketplace",
+      "label": "Bol.com"
+    },
+    {
+      "id": "marketplace:global:Cdiscount",
+      "type": "marketplace",
+      "label": "Cdiscount"
+    },
+    {
+      "id": "marketplace:global:Zalando",
+      "type": "marketplace",
+      "label": "Zalando"
+    },
+    {
+      "id": "marketplace:global:OTTO",
+      "type": "marketplace",
+      "label": "OTTO"
+    },
+    {
+      "id": "marketplace:global:Fnac",
+      "type": "marketplace",
+      "label": "Fnac"
+    },
+    {
+      "id": "marketplace:global:ManoMano",
+      "type": "marketplace",
+      "label": "ManoMano"
+    },
+    {
+      "id": "marketplace:global:eMAG",
+      "type": "marketplace",
+      "label": "eMAG"
+    },
+    {
+      "id": "marketplace:global:Heureka",
+      "type": "marketplace",
+      "label": "Heureka"
+    },
+    {
+      "id": "marketplace:global:Idealo",
+      "type": "marketplace",
+      "label": "Idealo"
+    },
+    {
+      "id": "marketplace:global:Amazon US/CA",
+      "type": "marketplace",
+      "label": "Amazon US/CA"
+    },
+    {
+      "id": "marketplace:global:eBay US",
+      "type": "marketplace",
+      "label": "eBay US"
+    },
+    {
+      "id": "marketplace:global:Etsy US",
+      "type": "marketplace",
+      "label": "Etsy US"
+    },
+    {
+      "id": "marketplace:global:Walmart",
+      "type": "marketplace",
+      "label": "Walmart"
+    },
+    {
+      "id": "marketplace:global:TikTok Shop US",
+      "type": "marketplace",
+      "label": "TikTok Shop US"
+    },
+    {
+      "id": "marketplace:global:Newegg",
+      "type": "marketplace",
+      "label": "Newegg"
+    },
+    {
+      "id": "marketplace:global:Wayfair",
+      "type": "marketplace",
+      "label": "Wayfair"
+    },
+    {
+      "id": "marketplace:global:Target Plus",
+      "type": "marketplace",
+      "label": "Target Plus"
+    },
+    {
+      "id": "marketplace:global:Best Buy",
+      "type": "marketplace",
+      "label": "Best Buy"
+    },
+    {
+      "id": "marketplace:global:Mercado Libre",
+      "type": "marketplace",
+      "label": "Mercado Libre"
+    },
+    {
+      "id": "marketplace:global:Amazon Brazil",
+      "type": "marketplace",
+      "label": "Amazon Brazil"
+    },
+    {
+      "id": "marketplace:global:Magazine Luiza",
+      "type": "marketplace",
+      "label": "Magazine Luiza"
+    },
+    {
+      "id": "marketplace:global:Americanas",
+      "type": "marketplace",
+      "label": "Americanas"
+    },
+    {
+      "id": "marketplace:global:Falabella",
+      "type": "marketplace",
+      "label": "Falabella"
+    },
+    {
+      "id": "marketplace:global:Shopee",
+      "type": "marketplace",
+      "label": "Shopee"
+    },
+    {
+      "id": "marketplace:global:Lazada",
+      "type": "marketplace",
+      "label": "Lazada"
+    },
+    {
+      "id": "marketplace:global:Tokopedia",
+      "type": "marketplace",
+      "label": "Tokopedia"
+    },
+    {
+      "id": "marketplace:global:TikTok Shop SEA",
+      "type": "marketplace",
+      "label": "TikTok Shop SEA"
+    },
+    {
+      "id": "marketplace:global:Rakuten",
+      "type": "marketplace",
+      "label": "Rakuten"
+    },
+    {
+      "id": "marketplace:global:Yahoo Shopping",
+      "type": "marketplace",
+      "label": "Yahoo Shopping"
+    },
+    {
+      "id": "marketplace:global:Mercari",
+      "type": "marketplace",
+      "label": "Mercari"
+    },
+    {
+      "id": "marketplace:global:Coupang",
+      "type": "marketplace",
+      "label": "Coupang"
+    },
+    {
+      "id": "marketplace:global:Naver Smart Store",
+      "type": "marketplace",
+      "label": "Naver Smart Store"
+    },
+    {
+      "id": "marketplace:global:Amazon.ae",
+      "type": "marketplace",
+      "label": "Amazon.ae"
+    },
+    {
+      "id": "marketplace:global:Noon",
+      "type": "marketplace",
+      "label": "Noon"
+    },
+    {
+      "id": "marketplace:global:Trendyol",
+      "type": "marketplace",
+      "label": "Trendyol"
+    },
+    {
+      "id": "marketplace:global:Hepsiburada",
+      "type": "marketplace",
+      "label": "Hepsiburada"
+    },
+    {
+      "id": "marketplace:global:n11",
+      "type": "marketplace",
+      "label": "n11"
+    },
+    {
+      "id": "marketplace:global:Jumia",
+      "type": "marketplace",
+      "label": "Jumia"
+    },
+    {
+      "id": "marketplace:global:Takealot",
+      "type": "marketplace",
+      "label": "Takealot"
+    },
+    {
+      "id": "marketplace:global:Amazon AU",
+      "type": "marketplace",
+      "label": "Amazon AU"
+    },
+    {
+      "id": "marketplace:global:eBay AU",
+      "type": "marketplace",
+      "label": "eBay AU"
+    },
+    {
+      "id": "marketplace:global:Catch",
+      "type": "marketplace",
+      "label": "Catch"
+    },
+    {
+      "id": "marketplace:global:Trade Me",
+      "type": "marketplace",
+      "label": "Trade Me"
+    },
+    {
+      "id": "adr:0001-layered-channel-adapters",
+      "type": "adr",
+      "label": "ADR 0001 — Layered channel adapters (RU / CN / global / CIS)"
+    },
+    {
+      "id": "adr:0002-supply-vs-sales-ports",
+      "type": "adr",
+      "label": "ADR 0002 — Supply adapters and sales adapters are different ports"
+    },
+    {
+      "id": "adr:0003-write-path",
+      "type": "adr",
+      "label": "ADR 0003 — Writes go through Proposal → Policy → Execution → Verification"
+    },
+    {
+      "id": "adr:0004-atomised-knowledge",
+      "type": "adr",
+      "label": "ADR 0004 — Atomised knowledge with provenance"
+    },
+    {
+      "id": "adr:0005-content-rights-gate",
+      "type": "adr",
+      "label": "ADR 0005 — Content rights gate before publishing"
+    },
+    {
+      "id": "adr:0006-storefront-platform-medusa",
+      "type": "adr",
+      "label": "ADR 0006 — Storefront platform: Medusa v2"
+    },
+    {
+      "id": "asset:asset.wbchina.ozon-openapi",
+      "type": "asset",
+      "label": "Ozon Seller API OpenAPI schema"
+    },
+    {
+      "id": "asset:asset.wbchina.wb-specs",
+      "type": "asset",
+      "label": "Wildberries 13 OpenAPI specs"
+    },
+    {
+      "id": "asset:asset.wbchina.adapter-spec",
+      "type": "asset",
+      "label": "Marketplace adapter specification"
+    },
+    {
+      "id": "asset:asset.wbchina.schema",
+      "type": "asset",
+      "label": "Marketplace platform Postgres schema"
+    },
+    {
+      "id": "asset:asset.wbchina.governance",
+      "type": "asset",
+      "label": "Proposal -> Policy -> Execution -> Verification"
+    },
+    {
+      "id": "asset:asset.wbchina.market-graph",
+      "type": "asset",
+      "label": "RU seller-tools market graph"
+    },
+    {
+      "id": "asset:asset.wbchina.oss-stack",
+      "type": "asset",
+      "label": "Open-source stack and license traps"
+    },
+    {
+      "id": "asset:asset.alibaba.pricing",
+      "type": "asset",
+      "label": "Destination-aware price observation schema"
+    },
+    {
+      "id": "asset:asset.alibaba.static-first",
+      "type": "asset",
+      "label": "Static-first storefront with .md twins and llms.txt"
+    },
+    {
+      "id": "asset:asset.alibaba.identity",
+      "type": "asset",
+      "label": "Product identity candidate model"
+    },
+    {
+      "id": "asset:asset.chinaauto.wiki",
+      "type": "asset",
+      "label": "Atomised knowledge contract"
+    },
+    {
+      "id": "asset:asset.chinaauto.verify",
+      "type": "asset",
+      "label": "Crawler-view site verification"
+    },
+    {
+      "id": "asset:asset.goofish.negative",
+      "type": "asset",
+      "label": "Xianyu / Goofish negative results"
+    },
+    {
+      "id": "asset:asset.niche-radar.model",
+      "type": "asset",
+      "label": "Demand metrics and niche model"
+    }
+  ],
+  "edges": [
+    {
+      "source": "marketplace:ru:Ozon Seller",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Wildberries",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Yandex Market",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Megamarket",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Avito",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Kaspi.kz",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Uzum Market",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Wildberries KZ/BY",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:cn:1688",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Taobao / Tmall",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Alibaba.com",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Pinduoduo",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:JD.com",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Douyin",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:AliExpress",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Temu",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Shein Marketplace",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Ozon Global",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:WB China",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Xianyu / Goofish",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:global:Amazon EU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Etsy",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Allegro",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Kaufland",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Bol.com",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Cdiscount",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Zalando",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:OTTO",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Fnac",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:ManoMano",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eMAG",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Heureka",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Idealo",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon US/CA",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Etsy US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Walmart",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:TikTok Shop US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Newegg",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Wayfair",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Target Plus",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Best Buy",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Mercado Libre",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon Brazil",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Magazine Luiza",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Americanas",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Falabella",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Shopee",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Lazada",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Tokopedia",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:TikTok Shop SEA",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Rakuten",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Yahoo Shopping",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Mercari",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Coupang",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Naver Smart Store",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon.ae",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Noon",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Trendyol",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Hepsiburada",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:n11",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Jumia",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Takealot",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon AU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay AU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Catch",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Trade Me",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "asset.wbchina.ozon-openapi",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.wb-specs",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.adapter-spec",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.schema",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.governance",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.market-graph",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.oss-stack",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.pricing",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.static-first",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.identity",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.chinaauto.wiki",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.chinaauto.verify",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.goofish.negative",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.niche-radar.model",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Q-Parser",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:CloudParser / Облачный парсер",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:CatalogLoader / PriceMatrix",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ALL RIVAL",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:MarketParser",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ParserOK",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Apify",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Bright Data",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Zyte",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Oxylabs",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ScrapingBee",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Octoparse",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ParseHub",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:DataFeedWatch",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Productsup",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:GoDataFeed",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Lengow",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Feedonomics",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Channable",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Sellbrite",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ChannelAdvisor / Rithum",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:LitCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Shopify Marketplace Connect (formerly Codisto)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Shopify",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:WooCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:BigCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Medusa Cloud",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Saleor Cloud",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Vendure",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Bitrix24",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:InSales",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Advantshop",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Tilda",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Ozon Seller API",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Wildberries",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Yandex Market Partner API",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Megamarket (СберМегамаркет)",
+      "confidence": "medium"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Avito",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Kaspi.kz",
+      "confidence": "medium"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:1688",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Taobao/Tmall",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Pinduoduo",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:JD.com",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Douyin/TikTok China",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Alibaba.com (B2B)",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:AliExpress",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Temu",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Ozon Global",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:WB China (Wildberries China)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Xianyu/Goofish",
+      "confidence": "10"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Amazon SP-API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:eBay Sell APIs",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Etsy Open API v3",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Walmart Marketplace",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:TikTok Shop Partner API",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Allegro REST API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Kaufland Seller API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Bol.com",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Cdiscount (via Octopia)",
+      "confidence": "5"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Zalando (zDirect)",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Mercado Libre",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Shopee Open Platform",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Lazada Open Platform",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Rakuten RMS",
+      "confidence": "3"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Google Merchant Center",
+      "confidence": "10"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Meta Commerce",
+      "confidence": "6"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Medusa v2",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Saleor",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Vendure",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Shopify (Plus for B2B/multi-store)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:WooCommerce",
+      "confidence": "6"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:BigCommerce",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:1C-Bitrix (Bitrix CMS)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:InSales",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Advantshop",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Tilda",
+      "confidence": "9"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Custom Next.js + PostgreSQL",
+      "confidence": "9"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Yandex Wordstat",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Bukvarix Top Keywords CSV",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Bukvarix API",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Yandex Market Seller Cabinet",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ozon Seller Analytics",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Wildberries Seller Cabinet",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:MPSTATS",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Avito Demand",
+      "confidence": "inferred"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Google Trends (RU)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Google Trends (Global)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Amazon Brand Analytics / Product Opportunity Explorer",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:TikTok Creative Center",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Pinterest Trends",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Exploding Topics",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Glimpse",
+      "confidence": "inferred"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Semrush API v4",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ahrefs API",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:DataForSEO",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Marketplace Search Suggestions",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Category Bestseller Ranks",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Out-of-Stock / Нехватка Signals",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Sales Rank / BSR History",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Review Velocity & Sentiment",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Search Query Reports (Seller Cabinet)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ad Keyword Reports (Bidder Data)",
+      "confidence": "measured"
+    }
+  ]
+}

@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key id="type" for="node" attr.name="type" attr.type="string"/>
+  <key id="label" for="node" attr.name="label" attr.type="string"/>
+  <key id="relation" for="edge" attr.name="relation" attr.type="string"/>
+  <graph id="knowledge" edgedefault="directed">
+    <node id="page:/agreement"><data key="type">page</data><data key="label">Пользовательское соглашение сервиса Q-Parser</data></node>
+    <node id="page:/blog"><data key="type">page</data><data key="label">Свежие обновления и полезные статьи</data></node>
+    <node id="page:/catalog"><data key="type">page</data><data key="label">Каталог сайтов для парсинга Q-Parser</data></node>
+    <node id="page:/faq"><data key="type">page</data><data key="label">Вопросы — Ответы</data></node>
+    <node id="page:/howto"><data key="type">page</data><data key="label">Как выгружать товары с помощью парсера Q-Parser</data></node>
+    <node id="page:/howto/additional-css-selectors"><data key="type">page</data><data key="label">Парсинг по CSS селекторам</data></node>
+    <node id="page:/howto/ai/agent"><data key="type">page</data><data key="label">Как запустить AI редактирование</data></node>
+    <node id="page:/howto/ai/images"><data key="type">page</data><data key="label">Генерация и редактирование фото товаров</data></node>
+    <node id="page:/howto/ai/models"><data key="type">page</data><data key="label">AI модели</data></node>
+    <node id="page:/howto/ai/points"><data key="type">page</data><data key="label">Что такое AI Points</data></node>
+    <node id="page:/howto/ai/prompt-writing"><data key="type">page</data><data key="label">Составление запросов к AI</data></node>
+    <node id="page:/howto/ai/unwatermark"><data key="type">page</data><data key="label">Удаление водяных знаков с фото товаров</data></node>
+    <node id="page:/howto/ai/web-search"><data key="type">page</data><data key="label">Веб-поиск в AI редактировании</data></node>
+    <node id="page:/howto/api"><data key="type">page</data><data key="label">API разработчикам</data></node>
+    <node id="page:/howto/automata"><data key="type">page</data><data key="label">Автоматическая выгрузка по расписанию</data></node>
+    <node id="page:/howto/automata/edit"><data key="type">page</data><data key="label">Настройка автовыгрузок Q-Parser</data></node>
+    <node id="page:/howto/automata/webhooks"><data key="type">page</data><data key="label">Webhooks автовыгрузок Q-Parser</data></node>
+    <node id="page:/howto/button"><data key="type">page</data><data key="label">Кнопка парсера в браузер</data></node>
+    <node id="page:/howto/erange"><data key="type">page</data><data key="label">Частичная выгрузка товаров</data></node>
+    <node id="page:/howto/file-headers"><data key="type">page</data><data key="label">Управление заголовками файлов</data></node>
+    <node id="page:/howto/filestorage"><data key="type">page</data><data key="label">Файловые хранилища</data></node>
+    <node id="page:/howto/format"><data key="type">page</data><data key="label">Форматы выгрузки товаров</data></node>
+    <node id="page:/howto/format/advantshopv1format"><data key="type">page</data><data key="label">Как выгрузить товары в Advantshop 1.0?</data></node>
+    <node id="page:/howto/format/advantshopv2format"><data key="type">page</data><data key="label">Как выгрузить товары в Advantshop 2.0?</data></node>
+    <node id="page:/howto/format/alltradesformat"><data key="type">page</data><data key="label">Как выгрузить товары на AllTrades?</data></node>
+    <node id="page:/howto/format/amadyformat"><data key="type">page</data><data key="label">Как выгрузить товары на Амади?</data></node>
+    <node id="page:/howto/format/bitrixcsvformat"><data key="type">page</data><data key="label">Как выгрузить товары в 1С-Битрикс (Bitrix)?</data></node>
+    <node id="page:/howto/format/botobotformat"><data key="type">page</data><data key="label">Как выгрузить товары в Botobot?</data></node>
+    <node id="page:/howto/format/cmss3format"><data key="type">page</data><data key="label">Как выгрузить товары для CMS.S3 (Megagroup)?</data></node>
+    <node id="page:/howto/format/commercemlformat"><data key="type">page</data><data key="label">Как выгрузить товары в CommerceML (1С)?</data></node>
+    <node id="page:/howto/format/cscartformat"><data key="type">page</data><data key="label">Как выгрузить товары на CS-Cart?</data></node>
+    <node id="page:/howto/format/csvformat"><data key="type">page</data><data key="label">Как выгрузить товары в CSV?</data></node>
+    <node id="page:/howto/format/diskauntscsvformat"><data key="type">page</data><data key="label">Как выгрузить товары на маркетплейс Diskaunts?</data></node>
+    <node id="page:/howto/format/epicentrkymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?</data></node>
+    <node id="page:/howto/format/eshoperformat"><data key="type">page</data><data key="label">Как выгрузить товары в Eshoper?</data></node>
+    <node id="page:/howto/format/facebookcsvformat"><data key="type">page</data><data key="label">Как выгрузить товары в каталоги Facebook* (CSV)?</data></node>
+    <node id="page:/howto/format/facebookxmlfeedformat"><data key="type">page</data><data key="label">Как выгрузить товары в каталоги Facebook*?</data></node>
+    <node id="page:/howto/format/googlemerchantformat"><data key="type">page</data><data key="label">Как выгрузить товары в Google Merchant Center?</data></node>
+    <node id="page:/howto/format/hostcmsformat"><data key="type">page</data><data key="label">Как выгрузить товары на HostCMS?</data></node>
+    <node id="page:/howto/format/insalescsvformat"><data key="type">page</data><data key="label">Как выгрузить товары в InSales?</data></node>
+    <node id="page:/howto/format/insalesxlsformat"><data key="type">page</data><data key="label">Как выгрузить товары в InSales?</data></node>
+    <node id="page:/howto/format/joomlaformat"><data key="type">page</data><data key="label">Как выгрузить товары в Joomla (Excel2JS)?</data></node>
+    <node id="page:/howto/format/joomshoppingformat"><data key="type">page</data><data key="label">Как выгрузить товары в JoomShopping?</data></node>
+    <node id="page:/howto/format/jsonformat"><data key="type">page</data><data key="label">Как выгрузить товары в JSON?</data></node>
+    <node id="page:/howto/format/kaspixmlformat"><data key="type">page</data><data key="label">Как выгрузить цены и наличие товаров на Kaspi.kz?</data></node>
+    <node id="page:/howto/format/kupivspformat"><data key="type">page</data><data key="label">Как выгрузить товары на сайт Kupivsp.ru?</data></node>
+    <node id="page:/howto/format/lpmotorformat"><data key="type">page</data><data key="label">Как выгрузить товары для LPmotor (lpmotor.ru)?</data></node>
+    <node id="page:/howto/format/materinstvoshopformat"><data key="type">page</data><data key="label">Как выгрузить товары на Материнство (materinstvo-shop.ru)?</data></node>
+    <node id="page:/howto/format/megamarketymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на Мегамаркет?</data></node>
+    <node id="page:/howto/format/mikaiformat"><data key="type">page</data><data key="label">Как выгрузить товары на Mikai?</data></node>
+    <node id="page:/howto/format/mogutaformat"><data key="type">page</data><data key="label">Как выгрузить товары в Moguta?</data></node>
+    <node id="page:/howto/format/moyskladformat"><data key="type">page</data><data key="label">Как выгрузить товары в МойСклад?</data></node>
+    <node id="page:/howto/format/ok24format"><data key="type">page</data><data key="label">Как выгрузить товары на 24-ok.ru?</data></node>
+    <node id="page:/howto/format/okalbumsformat"><data key="type">page</data><data key="label">Как выгрузить товары в альбомы Одноклассники?</data></node>
+    <node id="page:/howto/format/okaycmsformat"><data key="type">page</data><data key="label">Как выгрузить товары на OkayCMS?</data></node>
+    <node id="page:/howto/format/okformat"><data key="type">page</data><data key="label">Как выгрузить товары в Одноклассники?</data></node>
+    <node id="page:/howto/format/opencartcsvliteformat"><data key="type">page</data><data key="label">Как выгрузить товары в OpenCart модулем CSV Export/Import Light?</data></node>
+    <node id="page:/howto/format/opencartcsvpriceproformat"><data key="type">page</data><data key="label">Как выгрузить товары для OpenCart в формате CSV Price Pro?</data></node>
+    <node id="page:/howto/format/opencartexportimportformat"><data key="type">page</data><data key="label">Как выгрузить товары в OpenCart?</data></node>
+    <node id="page:/howto/format/openmallformat"><data key="type">page</data><data key="label">Как выгрузить товары на OpenMall?</data></node>
+    <node id="page:/howto/format/osclassadimporterformat"><data key="type">page</data><data key="label">Как выгрузить товары в Osclass?</data></node>
+    <node id="page:/howto/format/phpshopformat"><data key="type">page</data><data key="label">Как выгрузить товары в PHPShop?</data></node>
+    <node id="page:/howto/format/pokupki63format"><data key="type">page</data><data key="label">Как выгрузить товары на 63pokupki.ru?</data></node>
+    <node id="page:/howto/format/pokupkiprostoformat"><data key="type">page</data><data key="label">Как выгрузить товары на Покупки-просто?</data></node>
+    <node id="page:/howto/format/prestashopformat"><data key="type">page</data><data key="label">Как выгрузить товары в PrestaShop?</data></node>
+    <node id="page:/howto/format/prestashopmagiconestoremanagerformat"><data key="type">page</data><data key="label">Как выгрузить товары в PrestaShop MagicOne Store Manager?</data></node>
+    <node id="page:/howto/format/promuaymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на Prom.ua?</data></node>
+    <node id="page:/howto/format/readyscriptformat"><data key="type">page</data><data key="label">Как выгрузить товары в ReadyScript?</data></node>
+    <node id="page:/howto/format/rozetkaymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на Rozetka.com.ua?</data></node>
+    <node id="page:/howto/format/samarskieroditeliformat"><data key="type">page</data><data key="label">Как выгрузить товары на Самарские родители?</data></node>
+    <node id="page:/howto/format/serpokformat"><data key="type">page</data><data key="label">Как выгрузить товары на Serpok.ru?</data></node>
+    <node id="page:/howto/format/shopifyformat"><data key="type">page</data><data key="label">Как выгрузить товары на Shopify (shopify.com)?</data></node>
+    <node id="page:/howto/format/showcaseformat"><data key="type">page</data><data key="label">Витрины товаров</data></node>
+    <node id="page:/howto/format/simplacmsformat"><data key="type">page</data><data key="label">Как выгрузить товары в Simpla CMS?</data></node>
+    <node id="page:/howto/format/spkostromaformat"><data key="type">page</data><data key="label">Как выгрузить товары на СП Кострома?</data></node>
+    <node id="page:/howto/format/spprotonformat"><data key="type">page</data><data key="label">Как выгрузить товары на сайты СП-Протон?</data></node>
+    <node id="page:/howto/format/storelandformat"><data key="type">page</data><data key="label">Как выгрузить товары в Storeland?</data></node>
+    <node id="page:/howto/format/stospformat"><data key="type">page</data><data key="label">Как выгрузить товары на 100 СП?</data></node>
+    <node id="page:/howto/format/supermamkiformat"><data key="type">page</data><data key="label">Как выгрузить товары на Супермамки?</data></node>
+    <node id="page:/howto/format/superpuperformat"><data key="type">page</data><data key="label">Как выгрузить товары на сайт SuperPuper.ru?</data></node>
+    <node id="page:/howto/format/tildacsvformat"><data key="type">page</data><data key="label">Как выгрузить товары на Tilda (tilda.cc) в CSV?</data></node>
+    <node id="page:/howto/format/tildaymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на Tilda (tilda.cc) в YML?</data></node>
+    <node id="page:/howto/format/tom70format"><data key="type">page</data><data key="label">Как выгрузить товары на сайты СП с модулем Tom70?</data></node>
+    <node id="page:/howto/format/uralcmscsvformat"><data key="type">page</data><data key="label">Как выгрузить товары для Ural CMS (uralcms.ru)?</data></node>
+    <node id="page:/howto/format/ushopymlformat"><data key="type">page</data><data key="label">Как выгрузить товары на uShop (ucoz.ru)?</data></node>
+    <node id="page:/howto/format/vkalbumsformat"><data key="type">page</data><data key="label">Как выгрузить товары в альбомы ВКонтакте?</data></node>
+    <node id="page:/howto/format/vkformat"><data key="type">page</data><data key="label">Как выгрузить товары в ВКонтакте?</data></node>
+    <node id="page:/howto/format/webasystshopscriptformat"><data key="type">page</data><data key="label">Как выгрузить товары в Webasyst Shop-Script?</data></node>
+    <node id="page:/howto/format/wixformat"><data key="type">page</data><data key="label">Как выгрузить товары в Wix?</data></node>
+    <node id="page:/howto/format/woocommerceformat"><data key="type">page</data><data key="label">Как выгрузить товары в WooCommerce?</data></node>
+    <node id="page:/howto/format/xlsformat"><data key="type">page</data><data key="label">Как выгрузить товары в Excel?</data></node>
+    <node id="page:/howto/format/xmlformat"><data key="type">page</data><data key="label">Как выгрузить товары в XML?</data></node>
+    <node id="page:/howto/format/ymlformat"><data key="type">page</data><data key="label">Как выгрузить товары в YML?</data></node>
+    <node id="page:/howto/format/zaprosto24format"><data key="type">page</data><data key="label">Как выгрузить товары на Запросто 24?</data></node>
+    <node id="page:/howto/mods/cols-cut"><data key="type">page</data><data key="label">Обрезание характеристик товаров</data></node>
+    <node id="page:/howto/mods/cols-remove"><data key="type">page</data><data key="label">Удаление характеристик товаров</data></node>
+    <node id="page:/howto/mods/cols-rename"><data key="type">page</data><data key="label">Переименование характеристик товаров</data></node>
+    <node id="page:/howto/mods/cols-replace"><data key="type">page</data><data key="label">Поиск и замена</data></node>
+    <node id="page:/howto/mods/cols-sort"><data key="type">page</data><data key="label">Сортировка характеристик товаров</data></node>
+    <node id="page:/howto/mods/cols-split"><data key="type">page</data><data key="label">Разделение характеристик товаров</data></node>
+    <node id="page:/howto/mods/cols-strip-html"><data key="type">page</data><data key="label">Удаление HTML-тегов из характеристик</data></node>
+    <node id="page:/howto/mods/cols"><data key="type">page</data><data key="label">Редактирование полей товаров</data></node>
+    <node id="page:/howto/mods/copying"><data key="type">page</data><data key="label">Копирование/Вставка и шаблоны редактирования</data></node>
+    <node id="page:/howto/mods/deduplication"><data key="type">page</data><data key="label">Удаление дублей товаров</data></node>
+    <node id="page:/howto/mods/filter"><data key="type">page</data><data key="label">Фильтрация товаров</data></node>
+    <node id="page:/howto/mods/html-remove-children"><data key="type">page</data><data key="label">Удаление HTML элементов по CSS селектору</data></node>
+    <node id="page:/howto/mods/images"><data key="type">page</data><data key="label">Редактирование фото товаров</data></node>
+    <node id="page:/howto/mods/images/background"><data key="type">page</data><data key="label">Добавить фон на фотографии</data></node>
+    <node id="page:/howto/mods/images/count"><data key="type">page</data><data key="label">Ограничение числа фото товара</data></node>
+    <node id="page:/howto/mods/images/cut"><data key="type">page</data><data key="label">Обрезать фото перед выгрузкой</data></node>
+    <node id="page:/howto/mods/images/embed"><data key="type">page</data><data key="label">Вписать фото в размер с обрезкой</data></node>
+    <node id="page:/howto/mods/images/overlay"><data key="type">page</data><data key="label">Наложение изображения на фотографии</data></node>
+    <node id="page:/howto/mods/images/resize"><data key="type">page</data><data key="label">Изменить размер фото перед выгрузкой</data></node>
+    <node id="page:/howto/mods/images/text"><data key="type">page</data><data key="label">Наложение текста на фотографии товаров</data></node>
+    <node id="page:/howto/mods/images/transparent"><data key="type">page</data><data key="label">Сделать цвет прозрачным на фотографиях</data></node>
+    <node id="page:/howto/mods/price"><data key="type">page</data><data key="label">Изменение цен и конвертацию валют</data></node>
+    <node id="page:/howto/mods/publish"><data key="type">page</data><data key="label">Изменение наличия товаров</data></node>
+    <node id="page:/howto/mods/sort"><data key="type">page</data><data key="label">Сортировка товаров</data></node>
+    <node id="page:/howto/parser-categories"><data key="type">page</data><data key="label">Ручное добавление категорий</data></node>
+    <node id="page:/howto/parser-compare"><data key="type">page</data><data key="label">Сравнение парсингов</data></node>
+    <node id="page:/howto/referral"><data key="type">page</data><data key="label">Реферальная программа Q-Parser</data></node>
+    <node id="page:/howto/social"><data key="type">page</data><data key="label">Выгрузка товаров в социальные сети</data></node>
+    <node id="page:/reviews"><data key="type">page</data><data key="label">Отзывы Q-Parser</data></node>
+    <node id="page:/"><data key="type">page</data><data key="label">Товары с сайтов — готовые к продаже и всегда актуальные</data></node>
+    <node id="page:/supplier"><data key="type">page</data><data key="label">Оплатите сайт один раз — загружают все ваши клиенты</data></node>
+    <node id="page:/supplier/widget"><data key="type">page</data><data key="label">Виджет для парсинга товаров с вашего сайта</data></node>
+    <node id="page:/tariffs"><data key="type">page</data><data key="label">Тарифы и цены Q-Parser</data></node>
+    <node id="page:/what-can"><data key="type">page</data><data key="label">Что умеет Q-Parser</data></node>
+    <node id="endpoint:GET /api/v1/me"><data key="type">endpoint</data><data key="label">GET /api/v1/me</data></node>
+    <node id="concept:me"><data key="type">concept</data><data key="label">me</data></node>
+    <node id="endpoint:GET /api/v1/catalog"><data key="type">endpoint</data><data key="label">GET /api/v1/catalog</data></node>
+    <node id="concept:catalog"><data key="type">concept</data><data key="label">catalog</data></node>
+    <node id="endpoint:GET /api/v1/website/:domain"><data key="type">endpoint</data><data key="label">GET /api/v1/website/:domain</data></node>
+    <node id="concept:website"><data key="type">concept</data><data key="label">website</data></node>
+    <node id="endpoint:GET /api/v1/credentials"><data key="type">endpoint</data><data key="label">GET /api/v1/credentials</data></node>
+    <node id="concept:credentials"><data key="type">concept</data><data key="label">credentials</data></node>
+    <node id="endpoint:POST /api/v1/credentials"><data key="type">endpoint</data><data key="label">POST /api/v1/credentials</data></node>
+    <node id="endpoint:POST /api/v1/categories"><data key="type">endpoint</data><data key="label">POST /api/v1/categories</data></node>
+    <node id="concept:categories"><data key="type">concept</data><data key="label">categories</data></node>
+    <node id="endpoint:GET /api/v1/categories/:id"><data key="type">endpoint</data><data key="label">GET /api/v1/categories/:id</data></node>
+    <node id="endpoint:POST /api/v1/parser"><data key="type">endpoint</data><data key="label">POST /api/v1/parser</data></node>
+    <node id="concept:parser"><data key="type">concept</data><data key="label">parser</data></node>
+    <node id="endpoint:GET /api/v1/parser/list"><data key="type">endpoint</data><data key="label">GET /api/v1/parser/list</data></node>
+    <node id="concept:list"><data key="type">concept</data><data key="label">list</data></node>
+    <node id="endpoint:GET /api/v1/parser/:id"><data key="type">endpoint</data><data key="label">GET /api/v1/parser/:id</data></node>
+    <node id="endpoint:POST /api/v1/parser/:id/stop"><data key="type">endpoint</data><data key="label">POST /api/v1/parser/:id/stop</data></node>
+    <node id="concept:stop"><data key="type">concept</data><data key="label">stop</data></node>
+    <node id="endpoint:POST /api/v1/parser/:id/resume"><data key="type">endpoint</data><data key="label">POST /api/v1/parser/:id/resume</data></node>
+    <node id="concept:resume"><data key="type">concept</data><data key="label">resume</data></node>
+    <node id="endpoint:GET /api/v1/parser/:id/goods"><data key="type">endpoint</data><data key="label">GET /api/v1/parser/:id/goods</data></node>
+    <node id="concept:goods"><data key="type">concept</data><data key="label">goods</data></node>
+    <node id="endpoint:GET /api/v1/format"><data key="type">endpoint</data><data key="label">GET /api/v1/format</data></node>
+    <node id="concept:format"><data key="type">concept</data><data key="label">format</data></node>
+    <node id="endpoint:POST /api/v1/export"><data key="type">endpoint</data><data key="label">POST /api/v1/export</data></node>
+    <node id="concept:export"><data key="type">concept</data><data key="label">export</data></node>
+    <node id="endpoint:GET /api/v1/export/:id"><data key="type">endpoint</data><data key="label">GET /api/v1/export/:id</data></node>
+    <node id="format:advantshopv1format"><data key="type">format</data><data key="label">Как выгрузить товары в Advantshop 1.0?</data></node>
+    <node id="platform:advantshop 1.0"><data key="type">platform</data><data key="label">Advantshop 1.0</data></node>
+    <node id="category:cms"><data key="type">concept</data><data key="label">cms</data></node>
+    <node id="format:advantshopv2format"><data key="type">format</data><data key="label">Как выгрузить товары в Advantshop 2.0?</data></node>
+    <node id="platform:advantshop 2.0"><data key="type">platform</data><data key="label">Advantshop 2.0</data></node>
+    <node id="format:alltradesformat"><data key="type">format</data><data key="label">Как выгрузить товары на AllTrades?</data></node>
+    <node id="platform:alltrades"><data key="type">platform</data><data key="label">AllTrades</data></node>
+    <node id="format:bitrixcsvformat"><data key="type">format</data><data key="label">Как выгрузить товары в 1С-Битрикс (Bitrix)?</data></node>
+    <node id="platform:1с-битрикс (bitrix)"><data key="type">platform</data><data key="label">1С-Битрикс (Bitrix)</data></node>
+    <node id="format:botobotformat"><data key="type">format</data><data key="label">Как выгрузить товары в Botobot?</data></node>
+    <node id="platform:botobot"><data key="type">platform</data><data key="label">Botobot</data></node>
+    <node id="format:cmss3format"><data key="type">format</data><data key="label">Как выгрузить товары для CMS.S3 (Megagroup)?</data></node>
+    <node id="platform:cms.s3 (megagroup)"><data key="type">platform</data><data key="label">CMS.S3 (Megagroup)</data></node>
+    <node id="format:cscartformat"><data key="type">format</data><data key="label">Как выгрузить товары на CS-Cart?</data></node>
+    <node id="platform:cs-cart"><data key="type">platform</data><data key="label">CS-Cart</data></node>
+    <node id="format:diskauntscsvformat"><data key="type">format</data><data key="label">Как выгрузить товары на маркетплейс Diskaunts?</data></node>
+    <node id="platform:маркетплейс diskaunts"><data key="type">platform</data><data key="label">маркетплейс Diskaunts</data></node>
+    <node id="format:eshoperformat"><data key="type">format</data><data key="label">Как выгрузить товары в Eshoper?</data></node>
+    <node id="platform:eshoper"><data key="type">platform</data><data key="label">Eshoper</data></node>
+    <node id="format:hostcmsformat"><data key="type">format</data><data key="label">Как выгрузить товары на HostCMS?</data></node>
+    <node id="platform:hostcms"><data key="type">platform</data><data key="label">HostCMS</data></node>
+    <node id="format:insalescsvformat"><data key="type">format</data><data key="label">Как выгрузить товары в InSales?</data></node>
+    <node id="platform:insales"><data key="type">platform</data><data key="label">InSales</data></node>
+    <node id="format:insalesxlsformat"><data key="type">format</data><data key="label">Как выгрузить товары в InSales?</data></node>
+    <node id="format:joomlaformat"><data key="type">format</data><data key="label">Как выгрузить товары в Joomla (Excel2JS)?</data></node>
+    <node id="platform:joomla (excel2js)"><data key="type">platform</data><data key="label">Joomla (Excel2JS)</data></node>
+    <node id="format:joomshoppingformat"><data key="type">format</data><data key="label">Как выгрузить товары в JoomShopping?</data></node>
+    <node id="platform:joomshopping"><data key="type">platform</data><data key="label">JoomShopping</data></node>
+    <node id="format:lpmotorformat"><data key="type">format</data><data key="label">Как выгрузить товары для LPmotor (lpmotor.ru)?</data></node>
+    <node id="platform:lpmotor (lpmotor.ru)"><data key="type">platform</data><data key="label">LPmotor (lpmotor.ru)</data></node>
+    <node id="format:mogutaformat"><data key="type">format</data><data key="label">Как выгрузить товары в Moguta?</data></node>
+    <node id="platform:moguta"><data key="type">platform</data><data key="label">Moguta</data></node>
+    <node id="format:okaycmsformat"><data key="type">format</data><data key="label">Как выгрузить товары на OkayCMS?</data></node>
+    <node id="platform:okaycms"><data key="type">platform</data><data key="label">OkayCMS</data></node>
+    <node id="format:opencartcsvliteformat"><data key="type">format</data><data key="label">Как выгрузить товары в OpenCart модулем CSV Export/Import Light?</data></node>
+    <node id="platform:opencart модулем csv export/import light"><data key="type">platform</data><data key="label">OpenCart модулем CSV Export/Import Light</data></node>
+    <node id="format:opencartcsvpriceproformat"><data key="type">format</data><data key="label">Как выгрузить товары для OpenCart в формате CSV Price Pro?</data></node>
+    <node id="platform:opencart в формате csv price pro"><data key="type">platform</data><data key="label">OpenCart в формате CSV Price Pro</data></node>
+    <node id="format:opencartexportimportformat"><data key="type">format</data><data key="label">Как выгрузить товары в OpenCart?</data></node>
+    <node id="platform:opencart"><data key="type">platform</data><data key="label">OpenCart</data></node>
+    <node id="format:openmallformat"><data key="type">format</data><data key="label">Как выгрузить товары на OpenMall?</data></node>
+    <node id="platform:openmall"><data key="type">platform</data><data key="label">OpenMall</data></node>
+    <node id="format:osclassadimporterformat"><data key="type">format</data><data key="label">Как выгрузить товары в Osclass?</data></node>
+    <node id="platform:osclass"><data key="type">platform</data><data key="label">Osclass</data></node>
+    <node id="format:phpshopformat"><data key="type">format</data><data key="label">Как выгрузить товары в PHPShop?</data></node>
+    <node id="platform:phpshop"><data key="type">platform</data><data key="label">PHPShop</data></node>
+    <node id="format:prestashopformat"><data key="type">format</data><data key="label">Как выгрузить товары в PrestaShop?</data></node>
+    <node id="platform:prestashop"><data key="type">platform</data><data key="label">PrestaShop</data></node>
+    <node id="format:prestashopmagiconestoremanagerformat"><data key="type">format</data><data key="label">Как выгрузить товары в PrestaShop MagicOne Store Manager?</data></node>
+    <node id="platform:prestashop magicone store manager"><data key="type">platform</data><data key="label">PrestaShop MagicOne Store Manager</data></node>
+    <node id="format:readyscriptformat"><data key="type">format</data><data key="label">Как выгрузить товары в ReadyScript?</data></node>
+    <node id="platform:readyscript"><data key="type">platform</data><data key="label">ReadyScript</data></node>
+    <node id="format:shopifyformat"><data key="type">format</data><data key="label">Как выгрузить товары на Shopify (shopify.com)?</data></node>
+    <node id="platform:shopify (shopify.com)"><data key="type">platform</data><data key="label">Shopify (shopify.com)</data></node>
+    <node id="format:simplacmsformat"><data key="type">format</data><data key="label">Как выгрузить товары в Simpla CMS?</data></node>
+    <node id="platform:simpla cms"><data key="type">platform</data><data key="label">Simpla CMS</data></node>
+    <node id="format:storelandformat"><data key="type">format</data><data key="label">Как выгрузить товары в Storeland?</data></node>
+    <node id="platform:storeland"><data key="type">platform</data><data key="label">Storeland</data></node>
+    <node id="format:tildacsvformat"><data key="type">format</data><data key="label">Как выгрузить товары на Tilda (tilda.cc) в CSV?</data></node>
+    <node id="platform:tilda (tilda.cc) в csv"><data key="type">platform</data><data key="label">Tilda (tilda.cc) в CSV</data></node>
+    <node id="format:tildaymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на Tilda (tilda.cc) в YML?</data></node>
+    <node id="platform:tilda (tilda.cc) в yml"><data key="type">platform</data><data key="label">Tilda (tilda.cc) в YML</data></node>
+    <node id="format:uralcmscsvformat"><data key="type">format</data><data key="label">Как выгрузить товары для Ural CMS (uralcms.ru)?</data></node>
+    <node id="platform:ural cms (uralcms.ru)"><data key="type">platform</data><data key="label">Ural CMS (uralcms.ru)</data></node>
+    <node id="format:ushopymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на uShop (ucoz.ru)?</data></node>
+    <node id="platform:ushop (ucoz.ru)"><data key="type">platform</data><data key="label">uShop (ucoz.ru)</data></node>
+    <node id="format:webasystshopscriptformat"><data key="type">format</data><data key="label">Как выгрузить товары в Webasyst Shop-Script?</data></node>
+    <node id="platform:webasyst shop-script"><data key="type">platform</data><data key="label">Webasyst Shop-Script</data></node>
+    <node id="format:wixformat"><data key="type">format</data><data key="label">Как выгрузить товары в Wix?</data></node>
+    <node id="platform:wix"><data key="type">platform</data><data key="label">Wix</data></node>
+    <node id="format:woocommerceformat"><data key="type">format</data><data key="label">Как выгрузить товары в WooCommerce?</data></node>
+    <node id="platform:woocommerce"><data key="type">platform</data><data key="label">WooCommerce</data></node>
+    <node id="format:commercemlformat"><data key="type">format</data><data key="label">Как выгрузить товары в CommerceML (1С)?</data></node>
+    <node id="platform:commerceml (1с)"><data key="type">platform</data><data key="label">CommerceML (1С)</data></node>
+    <node id="category:commerce"><data key="type">concept</data><data key="label">commerce</data></node>
+    <node id="format:moyskladformat"><data key="type">format</data><data key="label">Как выгрузить товары в МойСклад?</data></node>
+    <node id="platform:мойсклад"><data key="type">platform</data><data key="label">МойСклад</data></node>
+    <node id="format:csvformat"><data key="type">format</data><data key="label">Как выгрузить товары в CSV?</data></node>
+    <node id="platform:csv"><data key="type">platform</data><data key="label">CSV</data></node>
+    <node id="category:file"><data key="type">concept</data><data key="label">file</data></node>
+    <node id="format:jsonformat"><data key="type">format</data><data key="label">Как выгрузить товары в JSON?</data></node>
+    <node id="platform:json"><data key="type">platform</data><data key="label">JSON</data></node>
+    <node id="format:xlsformat"><data key="type">format</data><data key="label">Как выгрузить товары в Excel?</data></node>
+    <node id="platform:excel"><data key="type">platform</data><data key="label">Excel</data></node>
+    <node id="format:xmlformat"><data key="type">format</data><data key="label">Как выгрузить товары в XML?</data></node>
+    <node id="platform:xml"><data key="type">platform</data><data key="label">XML</data></node>
+    <node id="format:ymlformat"><data key="type">format</data><data key="label">Как выгрузить товары в YML?</data></node>
+    <node id="platform:yml"><data key="type">platform</data><data key="label">YML</data></node>
+    <node id="format:epicentrkymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?</data></node>
+    <node id="platform:epicentrk (epicentrk.ua) в yml"><data key="type">platform</data><data key="label">Epicentrk (epicentrk.ua) в YML</data></node>
+    <node id="category:marketplace"><data key="type">concept</data><data key="label">marketplace</data></node>
+    <node id="format:kaspixmlformat"><data key="type">format</data><data key="label">Как выгрузить цены и наличие товаров на Kaspi.kz?</data></node>
+    <node id="platform:как выгрузить цены и наличие товаров на kaspi.kz"><data key="type">platform</data><data key="label">Как выгрузить цены и наличие товаров на Kaspi.kz</data></node>
+    <node id="format:megamarketymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на Мегамаркет?</data></node>
+    <node id="platform:мегамаркет"><data key="type">platform</data><data key="label">Мегамаркет</data></node>
+    <node id="format:promuaymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на Prom.ua?</data></node>
+    <node id="platform:prom.ua"><data key="type">platform</data><data key="label">Prom.ua</data></node>
+    <node id="format:rozetkaymlformat"><data key="type">format</data><data key="label">Как выгрузить товары на Rozetka.com.ua?</data></node>
+    <node id="platform:rozetka.com.ua"><data key="type">platform</data><data key="label">Rozetka.com.ua</data></node>
+    <node id="format:facebookcsvformat"><data key="type">format</data><data key="label">Как выгрузить товары в каталоги Facebook* (CSV)?</data></node>
+    <node id="platform:каталоги facebook* (csv)"><data key="type">platform</data><data key="label">каталоги Facebook* (CSV)</data></node>
+    <node id="category:social"><data key="type">concept</data><data key="label">social</data></node>
+    <node id="format:facebookxmlfeedformat"><data key="type">format</data><data key="label">Как выгрузить товары в каталоги Facebook*?</data></node>
+    <node id="platform:каталоги facebook*"><data key="type">platform</data><data key="label">каталоги Facebook*</data></node>
+    <node id="format:googlemerchantformat"><data key="type">format</data><data key="label">Как выгрузить товары в Google Merchant Center?</data></node>
+    <node id="platform:google merchant center"><data key="type">platform</data><data key="label">Google Merchant Center</data></node>
+    <node id="format:okalbumsformat"><data key="type">format</data><data key="label">Как выгрузить товары в альбомы Одноклассники?</data></node>
+    <node id="platform:альбомы одноклассники"><data key="type">platform</data><data key="label">альбомы Одноклассники</data></node>
+    <node id="format:okformat"><data key="type">format</data><data key="label">Как выгрузить товары в Одноклассники?</data></node>
+    <node id="platform:одноклассники"><data key="type">platform</data><data key="label">Одноклассники</data></node>
+    <node id="format:showcaseformat"><data key="type">format</data><data key="label">Витрины товаров</data></node>
+    <node id="platform:витрины товаров"><data key="type">platform</data><data key="label">Витрины товаров</data></node>
+    <node id="format:vkalbumsformat"><data key="type">format</data><data key="label">Как выгрузить товары в альбомы ВКонтакте?</data></node>
+    <node id="platform:альбомы вконтакте"><data key="type">platform</data><data key="label">альбомы ВКонтакте</data></node>
+    <node id="format:vkformat"><data key="type">format</data><data key="label">Как выгрузить товары в ВКонтакте?</data></node>
+    <node id="platform:вконтакте"><data key="type">platform</data><data key="label">ВКонтакте</data></node>
+    <node id="format:amadyformat"><data key="type">format</data><data key="label">Как выгрузить товары на Амади?</data></node>
+    <node id="platform:амади"><data key="type">platform</data><data key="label">Амади</data></node>
+    <node id="category:sp"><data key="type">concept</data><data key="label">sp</data></node>
+    <node id="format:kupivspformat"><data key="type">format</data><data key="label">Как выгрузить товары на сайт Kupivsp.ru?</data></node>
+    <node id="platform:сайт kupivsp.ru"><data key="type">platform</data><data key="label">сайт Kupivsp.ru</data></node>
+    <node id="format:materinstvoshopformat"><data key="type">format</data><data key="label">Как выгрузить товары на Материнство (materinstvo-shop.ru)?</data></node>
+    <node id="platform:материнство (materinstvo-shop.ru)"><data key="type">platform</data><data key="label">Материнство (materinstvo-shop.ru)</data></node>
+    <node id="format:mikaiformat"><data key="type">format</data><data key="label">Как выгрузить товары на Mikai?</data></node>
+    <node id="platform:mikai"><data key="type">platform</data><data key="label">Mikai</data></node>
+    <node id="format:ok24format"><data key="type">format</data><data key="label">Как выгрузить товары на 24-ok.ru?</data></node>
+    <node id="platform:24-ok.ru"><data key="type">platform</data><data key="label">24-ok.ru</data></node>
+    <node id="format:pokupki63format"><data key="type">format</data><data key="label">Как выгрузить товары на 63pokupki.ru?</data></node>
+    <node id="platform:63pokupki.ru"><data key="type">platform</data><data key="label">63pokupki.ru</data></node>
+    <node id="format:pokupkiprostoformat"><data key="type">format</data><data key="label">Как выгрузить товары на Покупки-просто?</data></node>
+    <node id="platform:покупки-просто"><data key="type">platform</data><data key="label">Покупки-просто</data></node>
+    <node id="format:samarskieroditeliformat"><data key="type">format</data><data key="label">Как выгрузить товары на Самарские родители?</data></node>
+    <node id="platform:самарские родители"><data key="type">platform</data><data key="label">Самарские родители</data></node>
+    <node id="format:serpokformat"><data key="type">format</data><data key="label">Как выгрузить товары на Serpok.ru?</data></node>
+    <node id="platform:serpok.ru"><data key="type">platform</data><data key="label">Serpok.ru</data></node>
+    <node id="format:spkostromaformat"><data key="type">format</data><data key="label">Как выгрузить товары на СП Кострома?</data></node>
+    <node id="platform:сп кострома"><data key="type">platform</data><data key="label">СП Кострома</data></node>
+    <node id="format:spprotonformat"><data key="type">format</data><data key="label">Как выгрузить товары на сайты СП-Протон?</data></node>
+    <node id="platform:сайты сп-протон"><data key="type">platform</data><data key="label">сайты СП-Протон</data></node>
+    <node id="format:stospformat"><data key="type">format</data><data key="label">Как выгрузить товары на 100 СП?</data></node>
+    <node id="platform:100 сп"><data key="type">platform</data><data key="label">100 СП</data></node>
+    <node id="format:supermamkiformat"><data key="type">format</data><data key="label">Как выгрузить товары на Супермамки?</data></node>
+    <node id="platform:супермамки"><data key="type">platform</data><data key="label">Супермамки</data></node>
+    <node id="format:superpuperformat"><data key="type">format</data><data key="label">Как выгрузить товары на сайт SuperPuper.ru?</data></node>
+    <node id="platform:сайт superpuper.ru"><data key="type">platform</data><data key="label">сайт SuperPuper.ru</data></node>
+    <node id="format:tom70format"><data key="type">format</data><data key="label">Как выгрузить товары на сайты СП с модулем Tom70?</data></node>
+    <node id="platform:сайты сп с модулем tom70"><data key="type">platform</data><data key="label">сайты СП с модулем Tom70</data></node>
+    <node id="format:zaprosto24format"><data key="type">format</data><data key="label">Как выгрузить товары на Запросто 24?</data></node>
+    <node id="platform:запросто 24"><data key="type">platform</data><data key="label">Запросто 24</data></node>
+    <node id="plan:Day"><data key="type">plan</data><data key="label">Day (295 RUB/день)</data></node>
+    <node id="limit:parallel_downloads=3"><data key="type">limit</data><data key="label">3 parallel downloads</data></node>
+    <node id="limit:ai_points=10"><data key="type">limit</data><data key="label">10 AI Points</data></node>
+    <node id="plan:Pro"><data key="type">plan</data><data key="label">Pro (2495 RUB/мес)</data></node>
+    <node id="limit:parallel_downloads=20"><data key="type">limit</data><data key="label">20 parallel downloads</data></node>
+    <node id="limit:ai_points=10000"><data key="type">limit</data><data key="label">10000 AI Points</data></node>
+    <node id="plan:Lite"><data key="type">plan</data><data key="label">Lite (995 RUB/мес)</data></node>
+    <node id="limit:parallel_downloads=10"><data key="type">limit</data><data key="label">10 parallel downloads</data></node>
+    <node id="limit:ai_points=100"><data key="type">limit</data><data key="label">100 AI Points</data></node>
+    <node id="plan:Пробная версия"><data key="type">plan</data><data key="label">Пробная версия (0 RUB/trial)</data></node>
+    <node id="limit:parallel_downloads=1"><data key="type">limit</data><data key="label">1 parallel downloads</data></node>
+    <node id="claim:1"><data key="type">claim</data><data key="label">q-parser-api base_url base</data></node>
+    <node id="entity:q-parser-api"><data key="type">entity</data><data key="label">q-parser-api</data></node>
+    <node id="claim:2"><data key="type">claim</data><data key="label">q-parser-api auth header</data></node>
+    <node id="claim:3"><data key="type">claim</data><data key="label">q-parser-api endpoint_count count</data></node>
+    <node id="claim:4"><data key="type">claim</data><data key="label">q-parser-api concurrency_limit парсингов</data></node>
+    <node id="claim:5"><data key="type">claim</data><data key="label">q-parser-api concurrency_limit выгрузок</data></node>
+    <node id="claim:6"><data key="type">claim</data><data key="label">q-parser-api page_size_max pagination</data></node>
+    <node id="claim:7"><data key="type">claim</data><data key="label">q-parser-api page_size_max pagination</data></node>
+    <node id="claim:8"><data key="type">claim</data><data key="label">q-parser-api page_size_max pagination</data></node>
+    <node id="claim:9"><data key="type">claim</data><data key="label">q-parser-plan price Day</data></node>
+    <node id="entity:q-parser-plan"><data key="type">entity</data><data key="label">q-parser-plan</data></node>
+    <node id="claim:10"><data key="type">claim</data><data key="label">q-parser-plan price Pro</data></node>
+    <node id="claim:11"><data key="type">claim</data><data key="label">q-parser-plan price Lite</data></node>
+    <node id="claim:12"><data key="type">claim</data><data key="label">q-parser-plan price Пробная версия</data></node>
+    <node id="claim:13"><data key="type">claim</data><data key="label">q-parser-webhooks signature headers</data></node>
+    <node id="entity:q-parser-webhooks"><data key="type">entity</data><data key="label">q-parser-webhooks</data></node>
+    <node id="claim:14"><data key="type">claim</data><data key="label">q-parser-webhooks retry_schedule seconds</data></node>
+    <node id="claim:15"><data key="type">claim</data><data key="label">q-parser-webhooks max_addresses per_automation</data></node>
+    <node id="track:competitors"><data key="type">research_track</data><data key="label">Competitor Research Report — Q-Parser Platform</data></node>
+    <node id="track:marketplaces-ru"><data key="type">research_track</data><data key="label">RU Marketplace Capability Matrix</data></node>
+    <node id="track:marketplaces-cn"><data key="type">research_track</data><data key="label">Chinese Marketplaces: Supply vs Sales Channel Analysis</data></node>
+    <node id="track:marketplaces-global"><data key="type">research_track</data><data key="label">Global Marketplace API Comparison Report</data></node>
+    <node id="track:platforms"><data key="type">research_track</data><data key="label">Q-Parser Storefront Platform Research Report</data></node>
+    <node id="track:demand"><data key="type">research_track</data><data key="label">Demand Data Sources &amp; Pipeline Research</data></node>
+    <node id="track:inherited"><data key="type">research_track</data><data key="label">inherited</data></node>
+    <node id="marketplace:ru:Ozon Seller"><data key="type">marketplace</data><data key="label">Ozon Seller</data></node>
+    <node id="layer:ru"><data key="type">layer</data><data key="label">ru</data></node>
+    <node id="marketplace:ru:Wildberries"><data key="type">marketplace</data><data key="label">Wildberries</data></node>
+    <node id="marketplace:ru:Yandex Market"><data key="type">marketplace</data><data key="label">Yandex Market</data></node>
+    <node id="marketplace:ru:Megamarket"><data key="type">marketplace</data><data key="label">Megamarket</data></node>
+    <node id="marketplace:ru:Avito"><data key="type">marketplace</data><data key="label">Avito</data></node>
+    <node id="marketplace:ru:Kaspi.kz"><data key="type">marketplace</data><data key="label">Kaspi.kz</data></node>
+    <node id="marketplace:ru:Uzum Market"><data key="type">marketplace</data><data key="label">Uzum Market</data></node>
+    <node id="marketplace:ru:Wildberries KZ/BY"><data key="type">marketplace</data><data key="label">Wildberries KZ/BY</data></node>
+    <node id="marketplace:cn:1688"><data key="type">marketplace</data><data key="label">1688</data></node>
+    <node id="layer:cn"><data key="type">layer</data><data key="label">cn</data></node>
+    <node id="marketplace:cn:Taobao / Tmall"><data key="type">marketplace</data><data key="label">Taobao / Tmall</data></node>
+    <node id="marketplace:cn:Alibaba.com"><data key="type">marketplace</data><data key="label">Alibaba.com</data></node>
+    <node id="marketplace:cn:Pinduoduo"><data key="type">marketplace</data><data key="label">Pinduoduo</data></node>
+    <node id="marketplace:cn:JD.com"><data key="type">marketplace</data><data key="label">JD.com</data></node>
+    <node id="marketplace:cn:Douyin"><data key="type">marketplace</data><data key="label">Douyin</data></node>
+    <node id="marketplace:cn:AliExpress"><data key="type">marketplace</data><data key="label">AliExpress</data></node>
+    <node id="marketplace:cn:Temu"><data key="type">marketplace</data><data key="label">Temu</data></node>
+    <node id="marketplace:cn:Shein Marketplace"><data key="type">marketplace</data><data key="label">Shein Marketplace</data></node>
+    <node id="marketplace:cn:Ozon Global"><data key="type">marketplace</data><data key="label">Ozon Global</data></node>
+    <node id="marketplace:cn:WB China"><data key="type">marketplace</data><data key="label">WB China</data></node>
+    <node id="marketplace:cn:Xianyu / Goofish"><data key="type">marketplace</data><data key="label">Xianyu / Goofish</data></node>
+    <node id="marketplace:global:Amazon EU"><data key="type">marketplace</data><data key="label">Amazon EU</data></node>
+    <node id="layer:global"><data key="type">layer</data><data key="label">global</data></node>
+    <node id="marketplace:global:eBay"><data key="type">marketplace</data><data key="label">eBay</data></node>
+    <node id="marketplace:global:Etsy"><data key="type">marketplace</data><data key="label">Etsy</data></node>
+    <node id="marketplace:global:Allegro"><data key="type">marketplace</data><data key="label">Allegro</data></node>
+    <node id="marketplace:global:Kaufland"><data key="type">marketplace</data><data key="label">Kaufland</data></node>
+    <node id="marketplace:global:Bol.com"><data key="type">marketplace</data><data key="label">Bol.com</data></node>
+    <node id="marketplace:global:Cdiscount"><data key="type">marketplace</data><data key="label">Cdiscount</data></node>
+    <node id="marketplace:global:Zalando"><data key="type">marketplace</data><data key="label">Zalando</data></node>
+    <node id="marketplace:global:OTTO"><data key="type">marketplace</data><data key="label">OTTO</data></node>
+    <node id="marketplace:global:Fnac"><data key="type">marketplace</data><data key="label">Fnac</data></node>
+    <node id="marketplace:global:ManoMano"><data key="type">marketplace</data><data key="label">ManoMano</data></node>
+    <node id="marketplace:global:eMAG"><data key="type">marketplace</data><data key="label">eMAG</data></node>
+    <node id="marketplace:global:Heureka"><data key="type">marketplace</data><data key="label">Heureka</data></node>
+    <node id="marketplace:global:Idealo"><data key="type">marketplace</data><data key="label">Idealo</data></node>
+    <node id="marketplace:global:Amazon US/CA"><data key="type">marketplace</data><data key="label">Amazon US/CA</data></node>
+    <node id="marketplace:global:eBay US"><data key="type">marketplace</data><data key="label">eBay US</data></node>
+    <node id="marketplace:global:Etsy US"><data key="type">marketplace</data><data key="label">Etsy US</data></node>
+    <node id="marketplace:global:Walmart"><data key="type">marketplace</data><data key="label">Walmart</data></node>
+    <node id="marketplace:global:TikTok Shop US"><data key="type">marketplace</data><data key="label">TikTok Shop US</data></node>
+    <node id="marketplace:global:Newegg"><data key="type">marketplace</data><data key="label">Newegg</data></node>
+    <node id="marketplace:global:Wayfair"><data key="type">marketplace</data><data key="label">Wayfair</data></node>
+    <node id="marketplace:global:Target Plus"><data key="type">marketplace</data><data key="label">Target Plus</data></node>
+    <node id="marketplace:global:Best Buy"><data key="type">marketplace</data><data key="label">Best Buy</data></node>
+    <node id="marketplace:global:Mercado Libre"><data key="type">marketplace</data><data key="label">Mercado Libre</data></node>
+    <node id="marketplace:global:Amazon Brazil"><data key="type">marketplace</data><data key="label">Amazon Brazil</data></node>
+    <node id="marketplace:global:Magazine Luiza"><data key="type">marketplace</data><data key="label">Magazine Luiza</data></node>
+    <node id="marketplace:global:Americanas"><data key="type">marketplace</data><data key="label">Americanas</data></node>
+    <node id="marketplace:global:Falabella"><data key="type">marketplace</data><data key="label">Falabella</data></node>
+    <node id="marketplace:global:Shopee"><data key="type">marketplace</data><data key="label">Shopee</data></node>
+    <node id="marketplace:global:Lazada"><data key="type">marketplace</data><data key="label">Lazada</data></node>
+    <node id="marketplace:global:Tokopedia"><data key="type">marketplace</data><data key="label">Tokopedia</data></node>
+    <node id="marketplace:global:TikTok Shop SEA"><data key="type">marketplace</data><data key="label">TikTok Shop SEA</data></node>
+    <node id="marketplace:global:Rakuten"><data key="type">marketplace</data><data key="label">Rakuten</data></node>
+    <node id="marketplace:global:Yahoo Shopping"><data key="type">marketplace</data><data key="label">Yahoo Shopping</data></node>
+    <node id="marketplace:global:Mercari"><data key="type">marketplace</data><data key="label">Mercari</data></node>
+    <node id="marketplace:global:Coupang"><data key="type">marketplace</data><data key="label">Coupang</data></node>
+    <node id="marketplace:global:Naver Smart Store"><data key="type">marketplace</data><data key="label">Naver Smart Store</data></node>
+    <node id="marketplace:global:Amazon.ae"><data key="type">marketplace</data><data key="label">Amazon.ae</data></node>
+    <node id="marketplace:global:Noon"><data key="type">marketplace</data><data key="label">Noon</data></node>
+    <node id="marketplace:global:Trendyol"><data key="type">marketplace</data><data key="label">Trendyol</data></node>
+    <node id="marketplace:global:Hepsiburada"><data key="type">marketplace</data><data key="label">Hepsiburada</data></node>
+    <node id="marketplace:global:n11"><data key="type">marketplace</data><data key="label">n11</data></node>
+    <node id="marketplace:global:Jumia"><data key="type">marketplace</data><data key="label">Jumia</data></node>
+    <node id="marketplace:global:Takealot"><data key="type">marketplace</data><data key="label">Takealot</data></node>
+    <node id="marketplace:global:Amazon AU"><data key="type">marketplace</data><data key="label">Amazon AU</data></node>
+    <node id="marketplace:global:eBay AU"><data key="type">marketplace</data><data key="label">eBay AU</data></node>
+    <node id="marketplace:global:Catch"><data key="type">marketplace</data><data key="label">Catch</data></node>
+    <node id="marketplace:global:Trade Me"><data key="type">marketplace</data><data key="label">Trade Me</data></node>
+    <node id="adr:0001-layered-channel-adapters"><data key="type">adr</data><data key="label">ADR 0001 — Layered channel adapters (RU / CN / global / CIS)</data></node>
+    <node id="adr:0002-supply-vs-sales-ports"><data key="type">adr</data><data key="label">ADR 0002 — Supply adapters and sales adapters are different ports</data></node>
+    <node id="adr:0003-write-path"><data key="type">adr</data><data key="label">ADR 0003 — Writes go through Proposal → Policy → Execution → Verification</data></node>
+    <node id="adr:0004-atomised-knowledge"><data key="type">adr</data><data key="label">ADR 0004 — Atomised knowledge with provenance</data></node>
+    <node id="adr:0005-content-rights-gate"><data key="type">adr</data><data key="label">ADR 0005 — Content rights gate before publishing</data></node>
+    <node id="adr:0006-storefront-platform-medusa"><data key="type">adr</data><data key="label">ADR 0006 — Storefront platform: Medusa v2</data></node>
+    <node id="asset:asset.wbchina.ozon-openapi"><data key="type">asset</data><data key="label">Ozon Seller API OpenAPI schema</data></node>
+    <node id="asset:asset.wbchina.wb-specs"><data key="type">asset</data><data key="label">Wildberries 13 OpenAPI specs</data></node>
+    <node id="asset:asset.wbchina.adapter-spec"><data key="type">asset</data><data key="label">Marketplace adapter specification</data></node>
+    <node id="asset:asset.wbchina.schema"><data key="type">asset</data><data key="label">Marketplace platform Postgres schema</data></node>
+    <node id="asset:asset.wbchina.governance"><data key="type">asset</data><data key="label">Proposal -&gt; Policy -&gt; Execution -&gt; Verification</data></node>
+    <node id="asset:asset.wbchina.market-graph"><data key="type">asset</data><data key="label">RU seller-tools market graph</data></node>
+    <node id="asset:asset.wbchina.oss-stack"><data key="type">asset</data><data key="label">Open-source stack and license traps</data></node>
+    <node id="asset:asset.alibaba.pricing"><data key="type">asset</data><data key="label">Destination-aware price observation schema</data></node>
+    <node id="asset:asset.alibaba.static-first"><data key="type">asset</data><data key="label">Static-first storefront with .md twins and llms.txt</data></node>
+    <node id="asset:asset.alibaba.identity"><data key="type">asset</data><data key="label">Product identity candidate model</data></node>
+    <node id="asset:asset.chinaauto.wiki"><data key="type">asset</data><data key="label">Atomised knowledge contract</data></node>
+    <node id="asset:asset.chinaauto.verify"><data key="type">asset</data><data key="label">Crawler-view site verification</data></node>
+    <node id="asset:asset.goofish.negative"><data key="type">asset</data><data key="label">Xianyu / Goofish negative results</data></node>
+    <node id="asset:asset.niche-radar.model"><data key="type">asset</data><data key="label">Demand metrics and niche model</data></node>
+    <edge id="e0" source="page:/howto/api" target="endpoint:GET /api/v1/me"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e1" source="endpoint:GET /api/v1/me" target="concept:me"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e2" source="page:/howto/api" target="endpoint:GET /api/v1/catalog"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e3" source="endpoint:GET /api/v1/catalog" target="concept:catalog"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e4" source="page:/howto/api" target="endpoint:GET /api/v1/website/:domain"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e5" source="endpoint:GET /api/v1/website/:domain" target="concept:website"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e6" source="page:/howto/api" target="endpoint:GET /api/v1/credentials"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e7" source="endpoint:GET /api/v1/credentials" target="concept:credentials"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e8" source="page:/howto/api" target="endpoint:POST /api/v1/credentials"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e9" source="endpoint:POST /api/v1/credentials" target="concept:credentials"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e10" source="page:/howto/api" target="endpoint:POST /api/v1/categories"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e11" source="endpoint:POST /api/v1/categories" target="concept:categories"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e12" source="page:/howto/api" target="endpoint:GET /api/v1/categories/:id"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e13" source="endpoint:GET /api/v1/categories/:id" target="concept:categories"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e14" source="page:/howto/api" target="endpoint:POST /api/v1/parser"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e15" source="endpoint:POST /api/v1/parser" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e16" source="page:/howto/api" target="endpoint:GET /api/v1/parser/list"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e17" source="endpoint:GET /api/v1/parser/list" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e18" source="endpoint:GET /api/v1/parser/list" target="concept:list"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e19" source="page:/howto/api" target="endpoint:GET /api/v1/parser/:id"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e20" source="endpoint:GET /api/v1/parser/:id" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e21" source="page:/howto/api" target="endpoint:POST /api/v1/parser/:id/stop"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e22" source="endpoint:POST /api/v1/parser/:id/stop" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e23" source="endpoint:POST /api/v1/parser/:id/stop" target="concept:stop"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e24" source="page:/howto/api" target="endpoint:POST /api/v1/parser/:id/resume"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e25" source="endpoint:POST /api/v1/parser/:id/resume" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e26" source="endpoint:POST /api/v1/parser/:id/resume" target="concept:resume"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e27" source="page:/howto/api" target="endpoint:GET /api/v1/parser/:id/goods"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e28" source="endpoint:GET /api/v1/parser/:id/goods" target="concept:parser"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e29" source="endpoint:GET /api/v1/parser/:id/goods" target="concept:goods"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e30" source="page:/howto/api" target="endpoint:GET /api/v1/format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e31" source="endpoint:GET /api/v1/format" target="concept:format"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e32" source="page:/howto/api" target="endpoint:POST /api/v1/export"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e33" source="endpoint:POST /api/v1/export" target="concept:export"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e34" source="page:/howto/api" target="endpoint:GET /api/v1/export/:id"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e35" source="endpoint:GET /api/v1/export/:id" target="concept:export"><data key="relation">OPERATES_ON</data></edge>
+    <edge id="e36" source="page:/howto/format/advantshopv1format" target="format:advantshopv1format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e37" source="format:advantshopv1format" target="platform:advantshop 1.0"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e38" source="format:advantshopv1format" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e39" source="page:/howto/format/advantshopv2format" target="format:advantshopv2format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e40" source="format:advantshopv2format" target="platform:advantshop 2.0"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e41" source="format:advantshopv2format" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e42" source="page:/howto/format/alltradesformat" target="format:alltradesformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e43" source="format:alltradesformat" target="platform:alltrades"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e44" source="format:alltradesformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e45" source="page:/howto/format/bitrixcsvformat" target="format:bitrixcsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e46" source="format:bitrixcsvformat" target="platform:1с-битрикс (bitrix)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e47" source="format:bitrixcsvformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e48" source="page:/howto/format/botobotformat" target="format:botobotformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e49" source="format:botobotformat" target="platform:botobot"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e50" source="format:botobotformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e51" source="page:/howto/format/cmss3format" target="format:cmss3format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e52" source="format:cmss3format" target="platform:cms.s3 (megagroup)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e53" source="format:cmss3format" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e54" source="page:/howto/format/cscartformat" target="format:cscartformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e55" source="format:cscartformat" target="platform:cs-cart"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e56" source="format:cscartformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e57" source="page:/howto/format/diskauntscsvformat" target="format:diskauntscsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e58" source="format:diskauntscsvformat" target="platform:маркетплейс diskaunts"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e59" source="format:diskauntscsvformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e60" source="page:/howto/format/eshoperformat" target="format:eshoperformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e61" source="format:eshoperformat" target="platform:eshoper"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e62" source="format:eshoperformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e63" source="page:/howto/format/hostcmsformat" target="format:hostcmsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e64" source="format:hostcmsformat" target="platform:hostcms"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e65" source="format:hostcmsformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e66" source="page:/howto/format/insalescsvformat" target="format:insalescsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e67" source="format:insalescsvformat" target="platform:insales"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e68" source="format:insalescsvformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e69" source="page:/howto/format/insalesxlsformat" target="format:insalesxlsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e70" source="format:insalesxlsformat" target="platform:insales"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e71" source="format:insalesxlsformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e72" source="page:/howto/format/joomlaformat" target="format:joomlaformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e73" source="format:joomlaformat" target="platform:joomla (excel2js)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e74" source="format:joomlaformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e75" source="page:/howto/format/joomshoppingformat" target="format:joomshoppingformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e76" source="format:joomshoppingformat" target="platform:joomshopping"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e77" source="format:joomshoppingformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e78" source="page:/howto/format/lpmotorformat" target="format:lpmotorformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e79" source="format:lpmotorformat" target="platform:lpmotor (lpmotor.ru)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e80" source="format:lpmotorformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e81" source="page:/howto/format/mogutaformat" target="format:mogutaformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e82" source="format:mogutaformat" target="platform:moguta"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e83" source="format:mogutaformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e84" source="page:/howto/format/okaycmsformat" target="format:okaycmsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e85" source="format:okaycmsformat" target="platform:okaycms"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e86" source="format:okaycmsformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e87" source="page:/howto/format/opencartcsvliteformat" target="format:opencartcsvliteformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e88" source="format:opencartcsvliteformat" target="platform:opencart модулем csv export/import light"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e89" source="format:opencartcsvliteformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e90" source="page:/howto/format/opencartcsvpriceproformat" target="format:opencartcsvpriceproformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e91" source="format:opencartcsvpriceproformat" target="platform:opencart в формате csv price pro"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e92" source="format:opencartcsvpriceproformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e93" source="page:/howto/format/opencartexportimportformat" target="format:opencartexportimportformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e94" source="format:opencartexportimportformat" target="platform:opencart"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e95" source="format:opencartexportimportformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e96" source="page:/howto/format/openmallformat" target="format:openmallformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e97" source="format:openmallformat" target="platform:openmall"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e98" source="format:openmallformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e99" source="page:/howto/format/osclassadimporterformat" target="format:osclassadimporterformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e100" source="format:osclassadimporterformat" target="platform:osclass"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e101" source="format:osclassadimporterformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e102" source="page:/howto/format/phpshopformat" target="format:phpshopformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e103" source="format:phpshopformat" target="platform:phpshop"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e104" source="format:phpshopformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e105" source="page:/howto/format/prestashopformat" target="format:prestashopformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e106" source="format:prestashopformat" target="platform:prestashop"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e107" source="format:prestashopformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e108" source="page:/howto/format/prestashopmagiconestoremanagerformat" target="format:prestashopmagiconestoremanagerformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e109" source="format:prestashopmagiconestoremanagerformat" target="platform:prestashop magicone store manager"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e110" source="format:prestashopmagiconestoremanagerformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e111" source="page:/howto/format/readyscriptformat" target="format:readyscriptformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e112" source="format:readyscriptformat" target="platform:readyscript"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e113" source="format:readyscriptformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e114" source="page:/howto/format/shopifyformat" target="format:shopifyformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e115" source="format:shopifyformat" target="platform:shopify (shopify.com)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e116" source="format:shopifyformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e117" source="page:/howto/format/simplacmsformat" target="format:simplacmsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e118" source="format:simplacmsformat" target="platform:simpla cms"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e119" source="format:simplacmsformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e120" source="page:/howto/format/storelandformat" target="format:storelandformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e121" source="format:storelandformat" target="platform:storeland"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e122" source="format:storelandformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e123" source="page:/howto/format/tildacsvformat" target="format:tildacsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e124" source="format:tildacsvformat" target="platform:tilda (tilda.cc) в csv"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e125" source="format:tildacsvformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e126" source="page:/howto/format/tildaymlformat" target="format:tildaymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e127" source="format:tildaymlformat" target="platform:tilda (tilda.cc) в yml"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e128" source="format:tildaymlformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e129" source="page:/howto/format/uralcmscsvformat" target="format:uralcmscsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e130" source="format:uralcmscsvformat" target="platform:ural cms (uralcms.ru)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e131" source="format:uralcmscsvformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e132" source="page:/howto/format/ushopymlformat" target="format:ushopymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e133" source="format:ushopymlformat" target="platform:ushop (ucoz.ru)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e134" source="format:ushopymlformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e135" source="page:/howto/format/webasystshopscriptformat" target="format:webasystshopscriptformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e136" source="format:webasystshopscriptformat" target="platform:webasyst shop-script"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e137" source="format:webasystshopscriptformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e138" source="page:/howto/format/wixformat" target="format:wixformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e139" source="format:wixformat" target="platform:wix"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e140" source="format:wixformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e141" source="page:/howto/format/woocommerceformat" target="format:woocommerceformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e142" source="format:woocommerceformat" target="platform:woocommerce"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e143" source="format:woocommerceformat" target="category:cms"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e144" source="page:/howto/format/commercemlformat" target="format:commercemlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e145" source="format:commercemlformat" target="platform:commerceml (1с)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e146" source="format:commercemlformat" target="category:commerce"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e147" source="page:/howto/format/moyskladformat" target="format:moyskladformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e148" source="format:moyskladformat" target="platform:мойсклад"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e149" source="format:moyskladformat" target="category:commerce"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e150" source="page:/howto/format/csvformat" target="format:csvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e151" source="format:csvformat" target="platform:csv"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e152" source="format:csvformat" target="category:file"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e153" source="page:/howto/format/jsonformat" target="format:jsonformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e154" source="format:jsonformat" target="platform:json"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e155" source="format:jsonformat" target="category:file"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e156" source="page:/howto/format/xlsformat" target="format:xlsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e157" source="format:xlsformat" target="platform:excel"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e158" source="format:xlsformat" target="category:file"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e159" source="page:/howto/format/xmlformat" target="format:xmlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e160" source="format:xmlformat" target="platform:xml"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e161" source="format:xmlformat" target="category:file"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e162" source="page:/howto/format/ymlformat" target="format:ymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e163" source="format:ymlformat" target="platform:yml"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e164" source="format:ymlformat" target="category:file"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e165" source="page:/howto/format/epicentrkymlformat" target="format:epicentrkymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e166" source="format:epicentrkymlformat" target="platform:epicentrk (epicentrk.ua) в yml"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e167" source="format:epicentrkymlformat" target="category:marketplace"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e168" source="page:/howto/format/kaspixmlformat" target="format:kaspixmlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e169" source="format:kaspixmlformat" target="platform:как выгрузить цены и наличие товаров на kaspi.kz"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e170" source="format:kaspixmlformat" target="category:marketplace"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e171" source="page:/howto/format/megamarketymlformat" target="format:megamarketymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e172" source="format:megamarketymlformat" target="platform:мегамаркет"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e173" source="format:megamarketymlformat" target="category:marketplace"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e174" source="page:/howto/format/promuaymlformat" target="format:promuaymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e175" source="format:promuaymlformat" target="platform:prom.ua"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e176" source="format:promuaymlformat" target="category:marketplace"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e177" source="page:/howto/format/rozetkaymlformat" target="format:rozetkaymlformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e178" source="format:rozetkaymlformat" target="platform:rozetka.com.ua"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e179" source="format:rozetkaymlformat" target="category:marketplace"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e180" source="page:/howto/format/facebookcsvformat" target="format:facebookcsvformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e181" source="format:facebookcsvformat" target="platform:каталоги facebook* (csv)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e182" source="format:facebookcsvformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e183" source="page:/howto/format/facebookxmlfeedformat" target="format:facebookxmlfeedformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e184" source="format:facebookxmlfeedformat" target="platform:каталоги facebook*"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e185" source="format:facebookxmlfeedformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e186" source="page:/howto/format/googlemerchantformat" target="format:googlemerchantformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e187" source="format:googlemerchantformat" target="platform:google merchant center"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e188" source="format:googlemerchantformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e189" source="page:/howto/format/okalbumsformat" target="format:okalbumsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e190" source="format:okalbumsformat" target="platform:альбомы одноклассники"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e191" source="format:okalbumsformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e192" source="page:/howto/format/okformat" target="format:okformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e193" source="format:okformat" target="platform:одноклассники"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e194" source="format:okformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e195" source="page:/howto/format/showcaseformat" target="format:showcaseformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e196" source="format:showcaseformat" target="platform:витрины товаров"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e197" source="format:showcaseformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e198" source="page:/howto/format/vkalbumsformat" target="format:vkalbumsformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e199" source="format:vkalbumsformat" target="platform:альбомы вконтакте"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e200" source="format:vkalbumsformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e201" source="page:/howto/format/vkformat" target="format:vkformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e202" source="format:vkformat" target="platform:вконтакте"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e203" source="format:vkformat" target="category:social"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e204" source="page:/howto/format/amadyformat" target="format:amadyformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e205" source="format:amadyformat" target="platform:амади"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e206" source="format:amadyformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e207" source="page:/howto/format/kupivspformat" target="format:kupivspformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e208" source="format:kupivspformat" target="platform:сайт kupivsp.ru"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e209" source="format:kupivspformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e210" source="page:/howto/format/materinstvoshopformat" target="format:materinstvoshopformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e211" source="format:materinstvoshopformat" target="platform:материнство (materinstvo-shop.ru)"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e212" source="format:materinstvoshopformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e213" source="page:/howto/format/mikaiformat" target="format:mikaiformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e214" source="format:mikaiformat" target="platform:mikai"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e215" source="format:mikaiformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e216" source="page:/howto/format/ok24format" target="format:ok24format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e217" source="format:ok24format" target="platform:24-ok.ru"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e218" source="format:ok24format" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e219" source="page:/howto/format/pokupki63format" target="format:pokupki63format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e220" source="format:pokupki63format" target="platform:63pokupki.ru"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e221" source="format:pokupki63format" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e222" source="page:/howto/format/pokupkiprostoformat" target="format:pokupkiprostoformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e223" source="format:pokupkiprostoformat" target="platform:покупки-просто"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e224" source="format:pokupkiprostoformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e225" source="page:/howto/format/samarskieroditeliformat" target="format:samarskieroditeliformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e226" source="format:samarskieroditeliformat" target="platform:самарские родители"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e227" source="format:samarskieroditeliformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e228" source="page:/howto/format/serpokformat" target="format:serpokformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e229" source="format:serpokformat" target="platform:serpok.ru"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e230" source="format:serpokformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e231" source="page:/howto/format/spkostromaformat" target="format:spkostromaformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e232" source="format:spkostromaformat" target="platform:сп кострома"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e233" source="format:spkostromaformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e234" source="page:/howto/format/spprotonformat" target="format:spprotonformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e235" source="format:spprotonformat" target="platform:сайты сп-протон"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e236" source="format:spprotonformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e237" source="page:/howto/format/stospformat" target="format:stospformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e238" source="format:stospformat" target="platform:100 сп"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e239" source="format:stospformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e240" source="page:/howto/format/supermamkiformat" target="format:supermamkiformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e241" source="format:supermamkiformat" target="platform:супермамки"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e242" source="format:supermamkiformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e243" source="page:/howto/format/superpuperformat" target="format:superpuperformat"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e244" source="format:superpuperformat" target="platform:сайт superpuper.ru"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e245" source="format:superpuperformat" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e246" source="page:/howto/format/tom70format" target="format:tom70format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e247" source="format:tom70format" target="platform:сайты сп с модулем tom70"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e248" source="format:tom70format" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e249" source="page:/howto/format/zaprosto24format" target="format:zaprosto24format"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e250" source="format:zaprosto24format" target="platform:запросто 24"><data key="relation">EXPORTS_TO</data></edge>
+    <edge id="e251" source="format:zaprosto24format" target="category:sp"><data key="relation">IN_CATEGORY</data></edge>
+    <edge id="e252" source="page:/tariffs" target="plan:Day"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e253" source="plan:Day" target="limit:parallel_downloads=3"><data key="relation">LIMITS</data></edge>
+    <edge id="e254" source="plan:Day" target="limit:ai_points=10"><data key="relation">INCLUDES</data></edge>
+    <edge id="e255" source="page:/tariffs" target="plan:Pro"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e256" source="plan:Pro" target="limit:parallel_downloads=20"><data key="relation">LIMITS</data></edge>
+    <edge id="e257" source="plan:Pro" target="limit:ai_points=10000"><data key="relation">INCLUDES</data></edge>
+    <edge id="e258" source="page:/tariffs" target="plan:Lite"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e259" source="plan:Lite" target="limit:parallel_downloads=10"><data key="relation">LIMITS</data></edge>
+    <edge id="e260" source="plan:Lite" target="limit:ai_points=100"><data key="relation">INCLUDES</data></edge>
+    <edge id="e261" source="page:/tariffs" target="plan:Пробная версия"><data key="relation">DOCUMENTS</data></edge>
+    <edge id="e262" source="plan:Пробная версия" target="limit:parallel_downloads=1"><data key="relation">LIMITS</data></edge>
+    <edge id="e263" source="entity:q-parser-api" target="claim:1"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e264" source="claim:1" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e265" source="entity:q-parser-api" target="claim:2"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e266" source="claim:2" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e267" source="entity:q-parser-api" target="claim:3"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e268" source="claim:3" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e269" source="entity:q-parser-api" target="claim:4"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e270" source="claim:4" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e271" source="entity:q-parser-api" target="claim:5"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e272" source="claim:5" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e273" source="entity:q-parser-api" target="claim:6"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e274" source="claim:6" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e275" source="entity:q-parser-api" target="claim:7"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e276" source="claim:7" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e277" source="entity:q-parser-api" target="claim:8"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e278" source="claim:8" target="page:/howto/api"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e279" source="entity:q-parser-plan" target="claim:9"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e280" source="claim:9" target="page:/tariffs"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e281" source="entity:q-parser-plan" target="claim:10"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e282" source="claim:10" target="page:/tariffs"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e283" source="entity:q-parser-plan" target="claim:11"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e284" source="claim:11" target="page:/tariffs"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e285" source="entity:q-parser-plan" target="claim:12"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e286" source="claim:12" target="page:/tariffs"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e287" source="entity:q-parser-webhooks" target="claim:13"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e288" source="claim:13" target="page:/howto/automata/webhooks"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e289" source="entity:q-parser-webhooks" target="claim:14"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e290" source="claim:14" target="page:/howto/automata/webhooks"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e291" source="entity:q-parser-webhooks" target="claim:15"><data key="relation">HAS_CLAIM</data></edge>
+    <edge id="e292" source="claim:15" target="page:/howto/automata/webhooks"><data key="relation">EVIDENCED_BY</data></edge>
+    <edge id="e293" source="marketplace:ru:Ozon Seller" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e294" source="marketplace:ru:Wildberries" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e295" source="marketplace:ru:Yandex Market" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e296" source="marketplace:ru:Megamarket" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e297" source="marketplace:ru:Avito" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e298" source="marketplace:ru:Kaspi.kz" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e299" source="marketplace:ru:Uzum Market" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e300" source="marketplace:ru:Wildberries KZ/BY" target="layer:ru"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e301" source="marketplace:cn:1688" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e302" source="marketplace:cn:Taobao / Tmall" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e303" source="marketplace:cn:Alibaba.com" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e304" source="marketplace:cn:Pinduoduo" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e305" source="marketplace:cn:JD.com" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e306" source="marketplace:cn:Douyin" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e307" source="marketplace:cn:AliExpress" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e308" source="marketplace:cn:Temu" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e309" source="marketplace:cn:Shein Marketplace" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e310" source="marketplace:cn:Ozon Global" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e311" source="marketplace:cn:WB China" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e312" source="marketplace:cn:Xianyu / Goofish" target="layer:cn"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e313" source="marketplace:global:Amazon EU" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e314" source="marketplace:global:eBay" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e315" source="marketplace:global:Etsy" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e316" source="marketplace:global:Allegro" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e317" source="marketplace:global:Kaufland" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e318" source="marketplace:global:Bol.com" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e319" source="marketplace:global:Cdiscount" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e320" source="marketplace:global:Zalando" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e321" source="marketplace:global:OTTO" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e322" source="marketplace:global:Fnac" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e323" source="marketplace:global:ManoMano" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e324" source="marketplace:global:eMAG" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e325" source="marketplace:global:Heureka" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e326" source="marketplace:global:Idealo" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e327" source="marketplace:global:Amazon US/CA" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e328" source="marketplace:global:eBay US" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e329" source="marketplace:global:Etsy US" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e330" source="marketplace:global:Walmart" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e331" source="marketplace:global:TikTok Shop US" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e332" source="marketplace:global:Newegg" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e333" source="marketplace:global:Wayfair" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e334" source="marketplace:global:Target Plus" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e335" source="marketplace:global:Best Buy" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e336" source="marketplace:global:Mercado Libre" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e337" source="marketplace:global:Amazon Brazil" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e338" source="marketplace:global:Magazine Luiza" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e339" source="marketplace:global:Americanas" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e340" source="marketplace:global:Falabella" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e341" source="marketplace:global:Shopee" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e342" source="marketplace:global:Lazada" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e343" source="marketplace:global:Tokopedia" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e344" source="marketplace:global:TikTok Shop SEA" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e345" source="marketplace:global:Rakuten" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e346" source="marketplace:global:Yahoo Shopping" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e347" source="marketplace:global:Mercari" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e348" source="marketplace:global:Coupang" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e349" source="marketplace:global:Naver Smart Store" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e350" source="marketplace:global:Amazon.ae" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e351" source="marketplace:global:Noon" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e352" source="marketplace:global:Trendyol" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e353" source="marketplace:global:Hepsiburada" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e354" source="marketplace:global:n11" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e355" source="marketplace:global:Jumia" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e356" source="marketplace:global:Takealot" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e357" source="marketplace:global:Amazon AU" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e358" source="marketplace:global:eBay AU" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e359" source="marketplace:global:Catch" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e360" source="marketplace:global:Trade Me" target="layer:global"><data key="relation">IN_LAYER</data></edge>
+    <edge id="e361" source="asset.wbchina.ozon-openapi" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e362" source="asset.wbchina.wb-specs" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e363" source="asset.wbchina.adapter-spec" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e364" source="asset.wbchina.schema" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e365" source="asset.wbchina.governance" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e366" source="asset.wbchina.market-graph" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e367" source="asset.wbchina.oss-stack" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e368" source="asset.alibaba.pricing" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e369" source="asset.alibaba.static-first" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e370" source="asset.alibaba.identity" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e371" source="asset.chinaauto.wiki" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e372" source="asset.chinaauto.verify" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e373" source="asset.goofish.negative" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e374" source="asset.niche-radar.model" target="project:q-parser.ru"><data key="relation">REUSED_IN</data></edge>
+    <edge id="e375" source="track:competitors" target="record:competitors:Q-Parser"><data key="relation">CONTAINS</data></edge>
+    <edge id="e376" source="track:competitors" target="record:competitors:CloudParser / Облачный парсер"><data key="relation">CONTAINS</data></edge>
+    <edge id="e377" source="track:competitors" target="record:competitors:CatalogLoader / PriceMatrix"><data key="relation">CONTAINS</data></edge>
+    <edge id="e378" source="track:competitors" target="record:competitors:ALL RIVAL"><data key="relation">CONTAINS</data></edge>
+    <edge id="e379" source="track:competitors" target="record:competitors:MarketParser"><data key="relation">CONTAINS</data></edge>
+    <edge id="e380" source="track:competitors" target="record:competitors:ParserOK"><data key="relation">CONTAINS</data></edge>
+    <edge id="e381" source="track:competitors" target="record:competitors:Apify"><data key="relation">CONTAINS</data></edge>
+    <edge id="e382" source="track:competitors" target="record:competitors:Bright Data"><data key="relation">CONTAINS</data></edge>
+    <edge id="e383" source="track:competitors" target="record:competitors:Zyte"><data key="relation">CONTAINS</data></edge>
+    <edge id="e384" source="track:competitors" target="record:competitors:Oxylabs"><data key="relation">CONTAINS</data></edge>
+    <edge id="e385" source="track:competitors" target="record:competitors:ScrapingBee"><data key="relation">CONTAINS</data></edge>
+    <edge id="e386" source="track:competitors" target="record:competitors:Octoparse"><data key="relation">CONTAINS</data></edge>
+    <edge id="e387" source="track:competitors" target="record:competitors:ParseHub"><data key="relation">CONTAINS</data></edge>
+    <edge id="e388" source="track:competitors" target="record:competitors:DataFeedWatch"><data key="relation">CONTAINS</data></edge>
+    <edge id="e389" source="track:competitors" target="record:competitors:Productsup"><data key="relation">CONTAINS</data></edge>
+    <edge id="e390" source="track:competitors" target="record:competitors:GoDataFeed"><data key="relation">CONTAINS</data></edge>
+    <edge id="e391" source="track:competitors" target="record:competitors:Lengow"><data key="relation">CONTAINS</data></edge>
+    <edge id="e392" source="track:competitors" target="record:competitors:Feedonomics"><data key="relation">CONTAINS</data></edge>
+    <edge id="e393" source="track:competitors" target="record:competitors:Channable"><data key="relation">CONTAINS</data></edge>
+    <edge id="e394" source="track:competitors" target="record:competitors:Sellbrite"><data key="relation">CONTAINS</data></edge>
+    <edge id="e395" source="track:competitors" target="record:competitors:ChannelAdvisor / Rithum"><data key="relation">CONTAINS</data></edge>
+    <edge id="e396" source="track:competitors" target="record:competitors:LitCommerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e397" source="track:competitors" target="record:competitors:Shopify Marketplace Connect (formerly Codisto)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e398" source="track:competitors" target="record:competitors:Shopify"><data key="relation">CONTAINS</data></edge>
+    <edge id="e399" source="track:competitors" target="record:competitors:WooCommerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e400" source="track:competitors" target="record:competitors:BigCommerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e401" source="track:competitors" target="record:competitors:Medusa Cloud"><data key="relation">CONTAINS</data></edge>
+    <edge id="e402" source="track:competitors" target="record:competitors:Saleor Cloud"><data key="relation">CONTAINS</data></edge>
+    <edge id="e403" source="track:competitors" target="record:competitors:Vendure"><data key="relation">CONTAINS</data></edge>
+    <edge id="e404" source="track:competitors" target="record:competitors:Bitrix24"><data key="relation">CONTAINS</data></edge>
+    <edge id="e405" source="track:competitors" target="record:competitors:InSales"><data key="relation">CONTAINS</data></edge>
+    <edge id="e406" source="track:competitors" target="record:competitors:Advantshop"><data key="relation">CONTAINS</data></edge>
+    <edge id="e407" source="track:competitors" target="record:competitors:Tilda"><data key="relation">CONTAINS</data></edge>
+    <edge id="e408" source="track:marketplaces-ru" target="record:marketplaces-ru:Ozon Seller API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e409" source="track:marketplaces-ru" target="record:marketplaces-ru:Wildberries"><data key="relation">CONTAINS</data></edge>
+    <edge id="e410" source="track:marketplaces-ru" target="record:marketplaces-ru:Yandex Market Partner API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e411" source="track:marketplaces-ru" target="record:marketplaces-ru:Megamarket (СберМегамаркет)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e412" source="track:marketplaces-ru" target="record:marketplaces-ru:Avito"><data key="relation">CONTAINS</data></edge>
+    <edge id="e413" source="track:marketplaces-ru" target="record:marketplaces-ru:Kaspi.kz"><data key="relation">CONTAINS</data></edge>
+    <edge id="e414" source="track:marketplaces-cn" target="record:marketplaces-cn:1688"><data key="relation">CONTAINS</data></edge>
+    <edge id="e415" source="track:marketplaces-cn" target="record:marketplaces-cn:Taobao/Tmall"><data key="relation">CONTAINS</data></edge>
+    <edge id="e416" source="track:marketplaces-cn" target="record:marketplaces-cn:Pinduoduo"><data key="relation">CONTAINS</data></edge>
+    <edge id="e417" source="track:marketplaces-cn" target="record:marketplaces-cn:JD.com"><data key="relation">CONTAINS</data></edge>
+    <edge id="e418" source="track:marketplaces-cn" target="record:marketplaces-cn:Douyin/TikTok China"><data key="relation">CONTAINS</data></edge>
+    <edge id="e419" source="track:marketplaces-cn" target="record:marketplaces-cn:Alibaba.com (B2B)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e420" source="track:marketplaces-cn" target="record:marketplaces-cn:AliExpress"><data key="relation">CONTAINS</data></edge>
+    <edge id="e421" source="track:marketplaces-cn" target="record:marketplaces-cn:Temu"><data key="relation">CONTAINS</data></edge>
+    <edge id="e422" source="track:marketplaces-cn" target="record:marketplaces-cn:Ozon Global"><data key="relation">CONTAINS</data></edge>
+    <edge id="e423" source="track:marketplaces-cn" target="record:marketplaces-cn:WB China (Wildberries China)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e424" source="track:marketplaces-cn" target="record:marketplaces-cn:Xianyu/Goofish"><data key="relation">CONTAINS</data></edge>
+    <edge id="e425" source="track:marketplaces-global" target="record:marketplaces-global:Amazon SP-API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e426" source="track:marketplaces-global" target="record:marketplaces-global:eBay Sell APIs"><data key="relation">CONTAINS</data></edge>
+    <edge id="e427" source="track:marketplaces-global" target="record:marketplaces-global:Etsy Open API v3"><data key="relation">CONTAINS</data></edge>
+    <edge id="e428" source="track:marketplaces-global" target="record:marketplaces-global:Walmart Marketplace"><data key="relation">CONTAINS</data></edge>
+    <edge id="e429" source="track:marketplaces-global" target="record:marketplaces-global:TikTok Shop Partner API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e430" source="track:marketplaces-global" target="record:marketplaces-global:Allegro REST API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e431" source="track:marketplaces-global" target="record:marketplaces-global:Kaufland Seller API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e432" source="track:marketplaces-global" target="record:marketplaces-global:Bol.com"><data key="relation">CONTAINS</data></edge>
+    <edge id="e433" source="track:marketplaces-global" target="record:marketplaces-global:Cdiscount (via Octopia)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e434" source="track:marketplaces-global" target="record:marketplaces-global:Zalando (zDirect)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e435" source="track:marketplaces-global" target="record:marketplaces-global:Mercado Libre"><data key="relation">CONTAINS</data></edge>
+    <edge id="e436" source="track:marketplaces-global" target="record:marketplaces-global:Shopee Open Platform"><data key="relation">CONTAINS</data></edge>
+    <edge id="e437" source="track:marketplaces-global" target="record:marketplaces-global:Lazada Open Platform"><data key="relation">CONTAINS</data></edge>
+    <edge id="e438" source="track:marketplaces-global" target="record:marketplaces-global:Rakuten RMS"><data key="relation">CONTAINS</data></edge>
+    <edge id="e439" source="track:marketplaces-global" target="record:marketplaces-global:Google Merchant Center"><data key="relation">CONTAINS</data></edge>
+    <edge id="e440" source="track:marketplaces-global" target="record:marketplaces-global:Meta Commerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e441" source="track:platforms" target="record:platforms:Medusa v2"><data key="relation">CONTAINS</data></edge>
+    <edge id="e442" source="track:platforms" target="record:platforms:Saleor"><data key="relation">CONTAINS</data></edge>
+    <edge id="e443" source="track:platforms" target="record:platforms:Vendure"><data key="relation">CONTAINS</data></edge>
+    <edge id="e444" source="track:platforms" target="record:platforms:Shopify (Plus for B2B/multi-store)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e445" source="track:platforms" target="record:platforms:WooCommerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e446" source="track:platforms" target="record:platforms:BigCommerce"><data key="relation">CONTAINS</data></edge>
+    <edge id="e447" source="track:platforms" target="record:platforms:1C-Bitrix (Bitrix CMS)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e448" source="track:platforms" target="record:platforms:InSales"><data key="relation">CONTAINS</data></edge>
+    <edge id="e449" source="track:platforms" target="record:platforms:Advantshop"><data key="relation">CONTAINS</data></edge>
+    <edge id="e450" source="track:platforms" target="record:platforms:Tilda"><data key="relation">CONTAINS</data></edge>
+    <edge id="e451" source="track:platforms" target="record:platforms:Custom Next.js + PostgreSQL"><data key="relation">CONTAINS</data></edge>
+    <edge id="e452" source="track:demand" target="record:demand:Yandex Wordstat"><data key="relation">CONTAINS</data></edge>
+    <edge id="e453" source="track:demand" target="record:demand:Bukvarix Top Keywords CSV"><data key="relation">CONTAINS</data></edge>
+    <edge id="e454" source="track:demand" target="record:demand:Bukvarix API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e455" source="track:demand" target="record:demand:Yandex Market Seller Cabinet"><data key="relation">CONTAINS</data></edge>
+    <edge id="e456" source="track:demand" target="record:demand:Ozon Seller Analytics"><data key="relation">CONTAINS</data></edge>
+    <edge id="e457" source="track:demand" target="record:demand:Wildberries Seller Cabinet"><data key="relation">CONTAINS</data></edge>
+    <edge id="e458" source="track:demand" target="record:demand:MPSTATS"><data key="relation">CONTAINS</data></edge>
+    <edge id="e459" source="track:demand" target="record:demand:Avito Demand"><data key="relation">CONTAINS</data></edge>
+    <edge id="e460" source="track:demand" target="record:demand:Google Trends (RU)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e461" source="track:demand" target="record:demand:Google Trends (Global)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e462" source="track:demand" target="record:demand:Amazon Brand Analytics / Product Opportunity Explorer"><data key="relation">CONTAINS</data></edge>
+    <edge id="e463" source="track:demand" target="record:demand:TikTok Creative Center"><data key="relation">CONTAINS</data></edge>
+    <edge id="e464" source="track:demand" target="record:demand:Pinterest Trends"><data key="relation">CONTAINS</data></edge>
+    <edge id="e465" source="track:demand" target="record:demand:Exploding Topics"><data key="relation">CONTAINS</data></edge>
+    <edge id="e466" source="track:demand" target="record:demand:Glimpse"><data key="relation">CONTAINS</data></edge>
+    <edge id="e467" source="track:demand" target="record:demand:Semrush API v4"><data key="relation">CONTAINS</data></edge>
+    <edge id="e468" source="track:demand" target="record:demand:Ahrefs API"><data key="relation">CONTAINS</data></edge>
+    <edge id="e469" source="track:demand" target="record:demand:DataForSEO"><data key="relation">CONTAINS</data></edge>
+    <edge id="e470" source="track:demand" target="record:demand:Marketplace Search Suggestions"><data key="relation">CONTAINS</data></edge>
+    <edge id="e471" source="track:demand" target="record:demand:Category Bestseller Ranks"><data key="relation">CONTAINS</data></edge>
+    <edge id="e472" source="track:demand" target="record:demand:Out-of-Stock / Нехватка Signals"><data key="relation">CONTAINS</data></edge>
+    <edge id="e473" source="track:demand" target="record:demand:Sales Rank / BSR History"><data key="relation">CONTAINS</data></edge>
+    <edge id="e474" source="track:demand" target="record:demand:Review Velocity &amp; Sentiment"><data key="relation">CONTAINS</data></edge>
+    <edge id="e475" source="track:demand" target="record:demand:Search Query Reports (Seller Cabinet)"><data key="relation">CONTAINS</data></edge>
+    <edge id="e476" source="track:demand" target="record:demand:Ad Keyword Reports (Bidder Data)"><data key="relation">CONTAINS</data></edge>
+  </graph>
+</graphml>

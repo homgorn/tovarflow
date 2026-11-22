@@ -1,0 +1,142 @@
+[
+  {
+    "id": "asset.wbchina.ozon-openapi",
+    "name": "Ozon Seller API OpenAPI schema",
+    "path": "H:/susa ai 500/wb china/ozon-seller-api-openapi.json",
+    "category": "marketplace-spec",
+    "license": "vendor terms; keep local",
+    "reuse": "read-only reference",
+    "notes": "4.25 MB, 482 paths. Do not commit; fetch with a script.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.wb-specs",
+    "name": "Wildberries 13 OpenAPI specs",
+    "path": "H:/susa ai 500/wb china/wb-api-specs/",
+    "category": "marketplace-spec",
+    "license": "vendor terms; keep local",
+    "reuse": "read-only reference",
+    "notes": "general, products, orders FBS/DBW/DBS, pickup, FBW, promotion, communications, tariffs, analytics, reports, finances.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.adapter-spec",
+    "name": "Marketplace adapter specification",
+    "path": "H:/susa ai 500/wb china/docs/specs/002-marketplace-adapters/spec.md",
+    "category": "contract",
+    "license": "proprietary, owner's project",
+    "reuse": "adopt",
+    "notes": "Capability profiles, error mapping, rate limiter, idempotency, contract tests.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.schema",
+    "name": "Marketplace platform Postgres schema",
+    "path": "H:/susa ai 500/wb china/docs/data/schema.sql",
+    "category": "schema",
+    "license": "proprietary, owner's project",
+    "reuse": "adopt and extend",
+    "notes": "tenant/RLS, account/credential, product/listing/offer/price_history, orders, proposal/policy/execution/verification/event.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.governance",
+    "name": "Proposal -> Policy -> Execution -> Verification",
+    "path": "H:/susa ai 500/wb china/docs/architecture/",
+    "category": "architecture",
+    "license": "proprietary, owner's project",
+    "reuse": "adopt",
+    "notes": "ADR-001 hexagonal core, ADR-006 no browser in nightly, ADR-007 MCP as product.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.market-graph",
+    "name": "RU seller-tools market graph",
+    "path": "H:/susa ai 500/wb china/docs/market/KNOWLEDGE_GRAPH.md",
+    "category": "research",
+    "license": "proprietary, owner's project",
+    "reuse": "merge",
+    "notes": "JAFO, MPSTATS, Kirsty, MPSpace, TrueStats, SalesFinder; capability matrix.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.wbchina.oss-stack",
+    "name": "Open-source stack and license traps",
+    "path": "H:/susa ai 500/wb china/docs/competitive/OPENSOURCE_STACK.md",
+    "category": "policy",
+    "license": "proprietary, owner's project",
+    "reuse": "adopt",
+    "notes": "MIT repricer, MCP catalogs, GPL/AGPL traps, Temporal/Redis choices.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.alibaba.pricing",
+    "name": "Destination-aware price observation schema",
+    "path": "C:/susa ai/alibaba ali temu/db/migrations/0002_pricing.sql",
+    "category": "schema",
+    "license": "check repository LICENSE",
+    "reuse": "adopt",
+    "notes": "price is a function of product + destination; is_complete; daily rollup; fake-discount anomaly.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.alibaba.static-first",
+    "name": "Static-first storefront with .md twins and llms.txt",
+    "path": "C:/susa ai/alibaba ali temu/apps/web/",
+    "category": "storefront",
+    "license": "check repository LICENSE",
+    "reuse": "adopt",
+    "notes": "server-rendered HTML, L7 guard, sitemap, llms.txt.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.alibaba.identity",
+    "name": "Product identity candidate model",
+    "path": "C:/susa ai/alibaba ali temu/db/migrations/0002_pricing.sql",
+    "category": "schema",
+    "license": "check repository LICENSE",
+    "reuse": "adopt",
+    "notes": "candidate matches with signals, never auto-merged.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.chinaauto.wiki",
+    "name": "Atomised knowledge contract",
+    "path": "C:/susa ai/china auto/wiki/SCHEMA.md",
+    "category": "knowledge",
+    "license": "check repository LICENSE",
+    "reuse": "adopt",
+    "notes": "concept/source/finding/question, confidence, status, resolves_when.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.chinaauto.verify",
+    "name": "Crawler-view site verification",
+    "path": "C:/susa ai/china auto/tools/verify_site.py",
+    "category": "verification",
+    "license": "check repository LICENSE",
+    "reuse": "adopt",
+    "notes": "checks the raw HTTP response, not the rendered DOM.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.goofish.negative",
+    "name": "Xianyu / Goofish negative results",
+    "path": "C:/susa ai/goofish/DECISION.md",
+    "category": "research",
+    "license": "owner's project",
+    "reuse": "avoid",
+    "notes": "ToS bans automation, CSR shell, CN phone + real-name, payment blockers.",
+    "confidence": "measured"
+  },
+  {
+    "id": "asset.niche-radar.model",
+    "name": "Demand metrics and niche model",
+    "path": "C:/susa ai/niche-radar/docs/data-model.md",
+    "category": "demand",
+    "license": "check repository LICENSE",
+    "reuse": "adopt or sidecar",
+    "notes": "B/R/A/G/C/P, priority_v1, niches, hypotheses, read-only MCP.",
+    "confidence": "measured"
+  }
+]

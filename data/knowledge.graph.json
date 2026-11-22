@@ -1,0 +1,5587 @@
+{
+  "nodes": [
+    {
+      "id": "page:/agreement",
+      "type": "page",
+      "label": "Пользовательское соглашение сервиса Q-Parser",
+      "source_id": 1
+    },
+    {
+      "id": "page:/blog",
+      "type": "page",
+      "label": "Свежие обновления и полезные статьи",
+      "source_id": 2
+    },
+    {
+      "id": "page:/catalog",
+      "type": "page",
+      "label": "Каталог сайтов для парсинга Q-Parser",
+      "source_id": 3
+    },
+    {
+      "id": "page:/faq",
+      "type": "page",
+      "label": "Вопросы — Ответы",
+      "source_id": 4
+    },
+    {
+      "id": "page:/howto",
+      "type": "page",
+      "label": "Как выгружать товары с помощью парсера Q-Parser",
+      "source_id": 5
+    },
+    {
+      "id": "page:/howto/additional-css-selectors",
+      "type": "page",
+      "label": "Парсинг по CSS селекторам",
+      "source_id": 6
+    },
+    {
+      "id": "page:/howto/ai/agent",
+      "type": "page",
+      "label": "Как запустить AI редактирование",
+      "source_id": 7
+    },
+    {
+      "id": "page:/howto/ai/images",
+      "type": "page",
+      "label": "Генерация и редактирование фото товаров",
+      "source_id": 8
+    },
+    {
+      "id": "page:/howto/ai/models",
+      "type": "page",
+      "label": "AI модели",
+      "source_id": 9
+    },
+    {
+      "id": "page:/howto/ai/points",
+      "type": "page",
+      "label": "Что такое AI Points",
+      "source_id": 10
+    },
+    {
+      "id": "page:/howto/ai/prompt-writing",
+      "type": "page",
+      "label": "Составление запросов к AI",
+      "source_id": 11
+    },
+    {
+      "id": "page:/howto/ai/unwatermark",
+      "type": "page",
+      "label": "Удаление водяных знаков с фото товаров",
+      "source_id": 12
+    },
+    {
+      "id": "page:/howto/ai/web-search",
+      "type": "page",
+      "label": "Веб-поиск в AI редактировании",
+      "source_id": 13
+    },
+    {
+      "id": "page:/howto/api",
+      "type": "page",
+      "label": "API разработчикам",
+      "source_id": 14
+    },
+    {
+      "id": "page:/howto/automata",
+      "type": "page",
+      "label": "Автоматическая выгрузка по расписанию",
+      "source_id": 15
+    },
+    {
+      "id": "page:/howto/automata/edit",
+      "type": "page",
+      "label": "Настройка автовыгрузок Q-Parser",
+      "source_id": 16
+    },
+    {
+      "id": "page:/howto/automata/webhooks",
+      "type": "page",
+      "label": "Webhooks автовыгрузок Q-Parser",
+      "source_id": 17
+    },
+    {
+      "id": "page:/howto/button",
+      "type": "page",
+      "label": "Кнопка парсера в браузер",
+      "source_id": 18
+    },
+    {
+      "id": "page:/howto/erange",
+      "type": "page",
+      "label": "Частичная выгрузка товаров",
+      "source_id": 19
+    },
+    {
+      "id": "page:/howto/file-headers",
+      "type": "page",
+      "label": "Управление заголовками файлов",
+      "source_id": 20
+    },
+    {
+      "id": "page:/howto/filestorage",
+      "type": "page",
+      "label": "Файловые хранилища",
+      "source_id": 21
+    },
+    {
+      "id": "page:/howto/format",
+      "type": "page",
+      "label": "Форматы выгрузки товаров",
+      "source_id": 22
+    },
+    {
+      "id": "page:/howto/format/advantshopv1format",
+      "type": "page",
+      "label": "Как выгрузить товары в Advantshop 1.0?",
+      "source_id": 23
+    },
+    {
+      "id": "page:/howto/format/advantshopv2format",
+      "type": "page",
+      "label": "Как выгрузить товары в Advantshop 2.0?",
+      "source_id": 24
+    },
+    {
+      "id": "page:/howto/format/alltradesformat",
+      "type": "page",
+      "label": "Как выгрузить товары на AllTrades?",
+      "source_id": 25
+    },
+    {
+      "id": "page:/howto/format/amadyformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Амади?",
+      "source_id": 26
+    },
+    {
+      "id": "page:/howto/format/bitrixcsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары в 1С-Битрикс (Bitrix)?",
+      "source_id": 27
+    },
+    {
+      "id": "page:/howto/format/botobotformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Botobot?",
+      "source_id": 28
+    },
+    {
+      "id": "page:/howto/format/cmss3format",
+      "type": "page",
+      "label": "Как выгрузить товары для CMS.S3 (Megagroup)?",
+      "source_id": 29
+    },
+    {
+      "id": "page:/howto/format/commercemlformat",
+      "type": "page",
+      "label": "Как выгрузить товары в CommerceML (1С)?",
+      "source_id": 30
+    },
+    {
+      "id": "page:/howto/format/cscartformat",
+      "type": "page",
+      "label": "Как выгрузить товары на CS-Cart?",
+      "source_id": 31
+    },
+    {
+      "id": "page:/howto/format/csvformat",
+      "type": "page",
+      "label": "Как выгрузить товары в CSV?",
+      "source_id": 32
+    },
+    {
+      "id": "page:/howto/format/diskauntscsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары на маркетплейс Diskaunts?",
+      "source_id": 33
+    },
+    {
+      "id": "page:/howto/format/epicentrkymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?",
+      "source_id": 34
+    },
+    {
+      "id": "page:/howto/format/eshoperformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Eshoper?",
+      "source_id": 35
+    },
+    {
+      "id": "page:/howto/format/facebookcsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары в каталоги Facebook* (CSV)?",
+      "source_id": 36
+    },
+    {
+      "id": "page:/howto/format/facebookxmlfeedformat",
+      "type": "page",
+      "label": "Как выгрузить товары в каталоги Facebook*?",
+      "source_id": 37
+    },
+    {
+      "id": "page:/howto/format/googlemerchantformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Google Merchant Center?",
+      "source_id": 38
+    },
+    {
+      "id": "page:/howto/format/hostcmsformat",
+      "type": "page",
+      "label": "Как выгрузить товары на HostCMS?",
+      "source_id": 39
+    },
+    {
+      "id": "page:/howto/format/insalescsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары в InSales?",
+      "source_id": 40
+    },
+    {
+      "id": "page:/howto/format/insalesxlsformat",
+      "type": "page",
+      "label": "Как выгрузить товары в InSales?",
+      "source_id": 41
+    },
+    {
+      "id": "page:/howto/format/joomlaformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Joomla (Excel2JS)?",
+      "source_id": 42
+    },
+    {
+      "id": "page:/howto/format/joomshoppingformat",
+      "type": "page",
+      "label": "Как выгрузить товары в JoomShopping?",
+      "source_id": 43
+    },
+    {
+      "id": "page:/howto/format/jsonformat",
+      "type": "page",
+      "label": "Как выгрузить товары в JSON?",
+      "source_id": 44
+    },
+    {
+      "id": "page:/howto/format/kaspixmlformat",
+      "type": "page",
+      "label": "Как выгрузить цены и наличие товаров на Kaspi.kz?",
+      "source_id": 45
+    },
+    {
+      "id": "page:/howto/format/kupivspformat",
+      "type": "page",
+      "label": "Как выгрузить товары на сайт Kupivsp.ru?",
+      "source_id": 46
+    },
+    {
+      "id": "page:/howto/format/lpmotorformat",
+      "type": "page",
+      "label": "Как выгрузить товары для LPmotor (lpmotor.ru)?",
+      "source_id": 47
+    },
+    {
+      "id": "page:/howto/format/materinstvoshopformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Материнство (materinstvo-shop.ru)?",
+      "source_id": 48
+    },
+    {
+      "id": "page:/howto/format/megamarketymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Мегамаркет?",
+      "source_id": 49
+    },
+    {
+      "id": "page:/howto/format/mikaiformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Mikai?",
+      "source_id": 50
+    },
+    {
+      "id": "page:/howto/format/mogutaformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Moguta?",
+      "source_id": 51
+    },
+    {
+      "id": "page:/howto/format/moyskladformat",
+      "type": "page",
+      "label": "Как выгрузить товары в МойСклад?",
+      "source_id": 52
+    },
+    {
+      "id": "page:/howto/format/ok24format",
+      "type": "page",
+      "label": "Как выгрузить товары на 24-ok.ru?",
+      "source_id": 53
+    },
+    {
+      "id": "page:/howto/format/okalbumsformat",
+      "type": "page",
+      "label": "Как выгрузить товары в альбомы Одноклассники?",
+      "source_id": 54
+    },
+    {
+      "id": "page:/howto/format/okaycmsformat",
+      "type": "page",
+      "label": "Как выгрузить товары на OkayCMS?",
+      "source_id": 55
+    },
+    {
+      "id": "page:/howto/format/okformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Одноклассники?",
+      "source_id": 56
+    },
+    {
+      "id": "page:/howto/format/opencartcsvliteformat",
+      "type": "page",
+      "label": "Как выгрузить товары в OpenCart модулем CSV Export/Import Light?",
+      "source_id": 57
+    },
+    {
+      "id": "page:/howto/format/opencartcsvpriceproformat",
+      "type": "page",
+      "label": "Как выгрузить товары для OpenCart в формате CSV Price Pro?",
+      "source_id": 58
+    },
+    {
+      "id": "page:/howto/format/opencartexportimportformat",
+      "type": "page",
+      "label": "Как выгрузить товары в OpenCart?",
+      "source_id": 59
+    },
+    {
+      "id": "page:/howto/format/openmallformat",
+      "type": "page",
+      "label": "Как выгрузить товары на OpenMall?",
+      "source_id": 60
+    },
+    {
+      "id": "page:/howto/format/osclassadimporterformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Osclass?",
+      "source_id": 61
+    },
+    {
+      "id": "page:/howto/format/phpshopformat",
+      "type": "page",
+      "label": "Как выгрузить товары в PHPShop?",
+      "source_id": 62
+    },
+    {
+      "id": "page:/howto/format/pokupki63format",
+      "type": "page",
+      "label": "Как выгрузить товары на 63pokupki.ru?",
+      "source_id": 63
+    },
+    {
+      "id": "page:/howto/format/pokupkiprostoformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Покупки-просто?",
+      "source_id": 64
+    },
+    {
+      "id": "page:/howto/format/prestashopformat",
+      "type": "page",
+      "label": "Как выгрузить товары в PrestaShop?",
+      "source_id": 65
+    },
+    {
+      "id": "page:/howto/format/prestashopmagiconestoremanagerformat",
+      "type": "page",
+      "label": "Как выгрузить товары в PrestaShop MagicOne Store Manager?",
+      "source_id": 66
+    },
+    {
+      "id": "page:/howto/format/promuaymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Prom.ua?",
+      "source_id": 67
+    },
+    {
+      "id": "page:/howto/format/readyscriptformat",
+      "type": "page",
+      "label": "Как выгрузить товары в ReadyScript?",
+      "source_id": 68
+    },
+    {
+      "id": "page:/howto/format/rozetkaymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Rozetka.com.ua?",
+      "source_id": 69
+    },
+    {
+      "id": "page:/howto/format/samarskieroditeliformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Самарские родители?",
+      "source_id": 70
+    },
+    {
+      "id": "page:/howto/format/serpokformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Serpok.ru?",
+      "source_id": 71
+    },
+    {
+      "id": "page:/howto/format/shopifyformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Shopify (shopify.com)?",
+      "source_id": 72
+    },
+    {
+      "id": "page:/howto/format/showcaseformat",
+      "type": "page",
+      "label": "Витрины товаров",
+      "source_id": 73
+    },
+    {
+      "id": "page:/howto/format/simplacmsformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Simpla CMS?",
+      "source_id": 74
+    },
+    {
+      "id": "page:/howto/format/spkostromaformat",
+      "type": "page",
+      "label": "Как выгрузить товары на СП Кострома?",
+      "source_id": 75
+    },
+    {
+      "id": "page:/howto/format/spprotonformat",
+      "type": "page",
+      "label": "Как выгрузить товары на сайты СП-Протон?",
+      "source_id": 76
+    },
+    {
+      "id": "page:/howto/format/storelandformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Storeland?",
+      "source_id": 77
+    },
+    {
+      "id": "page:/howto/format/stospformat",
+      "type": "page",
+      "label": "Как выгрузить товары на 100 СП?",
+      "source_id": 78
+    },
+    {
+      "id": "page:/howto/format/supermamkiformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Супермамки?",
+      "source_id": 79
+    },
+    {
+      "id": "page:/howto/format/superpuperformat",
+      "type": "page",
+      "label": "Как выгрузить товары на сайт SuperPuper.ru?",
+      "source_id": 80
+    },
+    {
+      "id": "page:/howto/format/tildacsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Tilda (tilda.cc) в CSV?",
+      "source_id": 81
+    },
+    {
+      "id": "page:/howto/format/tildaymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на Tilda (tilda.cc) в YML?",
+      "source_id": 82
+    },
+    {
+      "id": "page:/howto/format/tom70format",
+      "type": "page",
+      "label": "Как выгрузить товары на сайты СП с модулем Tom70?",
+      "source_id": 83
+    },
+    {
+      "id": "page:/howto/format/uralcmscsvformat",
+      "type": "page",
+      "label": "Как выгрузить товары для Ural CMS (uralcms.ru)?",
+      "source_id": 84
+    },
+    {
+      "id": "page:/howto/format/ushopymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары на uShop (ucoz.ru)?",
+      "source_id": 85
+    },
+    {
+      "id": "page:/howto/format/vkalbumsformat",
+      "type": "page",
+      "label": "Как выгрузить товары в альбомы ВКонтакте?",
+      "source_id": 86
+    },
+    {
+      "id": "page:/howto/format/vkformat",
+      "type": "page",
+      "label": "Как выгрузить товары в ВКонтакте?",
+      "source_id": 87
+    },
+    {
+      "id": "page:/howto/format/webasystshopscriptformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Webasyst Shop-Script?",
+      "source_id": 88
+    },
+    {
+      "id": "page:/howto/format/wixformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Wix?",
+      "source_id": 89
+    },
+    {
+      "id": "page:/howto/format/woocommerceformat",
+      "type": "page",
+      "label": "Как выгрузить товары в WooCommerce?",
+      "source_id": 90
+    },
+    {
+      "id": "page:/howto/format/xlsformat",
+      "type": "page",
+      "label": "Как выгрузить товары в Excel?",
+      "source_id": 91
+    },
+    {
+      "id": "page:/howto/format/xmlformat",
+      "type": "page",
+      "label": "Как выгрузить товары в XML?",
+      "source_id": 92
+    },
+    {
+      "id": "page:/howto/format/ymlformat",
+      "type": "page",
+      "label": "Как выгрузить товары в YML?",
+      "source_id": 93
+    },
+    {
+      "id": "page:/howto/format/zaprosto24format",
+      "type": "page",
+      "label": "Как выгрузить товары на Запросто 24?",
+      "source_id": 94
+    },
+    {
+      "id": "page:/howto/mods/cols-cut",
+      "type": "page",
+      "label": "Обрезание характеристик товаров",
+      "source_id": 95
+    },
+    {
+      "id": "page:/howto/mods/cols-remove",
+      "type": "page",
+      "label": "Удаление характеристик товаров",
+      "source_id": 96
+    },
+    {
+      "id": "page:/howto/mods/cols-rename",
+      "type": "page",
+      "label": "Переименование характеристик товаров",
+      "source_id": 97
+    },
+    {
+      "id": "page:/howto/mods/cols-replace",
+      "type": "page",
+      "label": "Поиск и замена",
+      "source_id": 98
+    },
+    {
+      "id": "page:/howto/mods/cols-sort",
+      "type": "page",
+      "label": "Сортировка характеристик товаров",
+      "source_id": 99
+    },
+    {
+      "id": "page:/howto/mods/cols-split",
+      "type": "page",
+      "label": "Разделение характеристик товаров",
+      "source_id": 100
+    },
+    {
+      "id": "page:/howto/mods/cols-strip-html",
+      "type": "page",
+      "label": "Удаление HTML-тегов из характеристик",
+      "source_id": 101
+    },
+    {
+      "id": "page:/howto/mods/cols",
+      "type": "page",
+      "label": "Редактирование полей товаров",
+      "source_id": 102
+    },
+    {
+      "id": "page:/howto/mods/copying",
+      "type": "page",
+      "label": "Копирование/Вставка и шаблоны редактирования",
+      "source_id": 103
+    },
+    {
+      "id": "page:/howto/mods/deduplication",
+      "type": "page",
+      "label": "Удаление дублей товаров",
+      "source_id": 104
+    },
+    {
+      "id": "page:/howto/mods/filter",
+      "type": "page",
+      "label": "Фильтрация товаров",
+      "source_id": 105
+    },
+    {
+      "id": "page:/howto/mods/html-remove-children",
+      "type": "page",
+      "label": "Удаление HTML элементов по CSS селектору",
+      "source_id": 106
+    },
+    {
+      "id": "page:/howto/mods/images",
+      "type": "page",
+      "label": "Редактирование фото товаров",
+      "source_id": 107
+    },
+    {
+      "id": "page:/howto/mods/images/background",
+      "type": "page",
+      "label": "Добавить фон на фотографии",
+      "source_id": 108
+    },
+    {
+      "id": "page:/howto/mods/images/count",
+      "type": "page",
+      "label": "Ограничение числа фото товара",
+      "source_id": 109
+    },
+    {
+      "id": "page:/howto/mods/images/cut",
+      "type": "page",
+      "label": "Обрезать фото перед выгрузкой",
+      "source_id": 110
+    },
+    {
+      "id": "page:/howto/mods/images/embed",
+      "type": "page",
+      "label": "Вписать фото в размер с обрезкой",
+      "source_id": 111
+    },
+    {
+      "id": "page:/howto/mods/images/overlay",
+      "type": "page",
+      "label": "Наложение изображения на фотографии",
+      "source_id": 112
+    },
+    {
+      "id": "page:/howto/mods/images/resize",
+      "type": "page",
+      "label": "Изменить размер фото перед выгрузкой",
+      "source_id": 113
+    },
+    {
+      "id": "page:/howto/mods/images/text",
+      "type": "page",
+      "label": "Наложение текста на фотографии товаров",
+      "source_id": 114
+    },
+    {
+      "id": "page:/howto/mods/images/transparent",
+      "type": "page",
+      "label": "Сделать цвет прозрачным на фотографиях",
+      "source_id": 115
+    },
+    {
+      "id": "page:/howto/mods/price",
+      "type": "page",
+      "label": "Изменение цен и конвертацию валют",
+      "source_id": 116
+    },
+    {
+      "id": "page:/howto/mods/publish",
+      "type": "page",
+      "label": "Изменение наличия товаров",
+      "source_id": 117
+    },
+    {
+      "id": "page:/howto/mods/sort",
+      "type": "page",
+      "label": "Сортировка товаров",
+      "source_id": 118
+    },
+    {
+      "id": "page:/howto/parser-categories",
+      "type": "page",
+      "label": "Ручное добавление категорий",
+      "source_id": 119
+    },
+    {
+      "id": "page:/howto/parser-compare",
+      "type": "page",
+      "label": "Сравнение парсингов",
+      "source_id": 120
+    },
+    {
+      "id": "page:/howto/referral",
+      "type": "page",
+      "label": "Реферальная программа Q-Parser",
+      "source_id": 121
+    },
+    {
+      "id": "page:/howto/social",
+      "type": "page",
+      "label": "Выгрузка товаров в социальные сети",
+      "source_id": 122
+    },
+    {
+      "id": "page:/reviews",
+      "type": "page",
+      "label": "Отзывы Q-Parser",
+      "source_id": 123
+    },
+    {
+      "id": "page:/",
+      "type": "page",
+      "label": "Товары с сайтов — готовые к продаже и всегда актуальные",
+      "source_id": 124
+    },
+    {
+      "id": "page:/supplier",
+      "type": "page",
+      "label": "Оплатите сайт один раз — загружают все ваши клиенты",
+      "source_id": 125
+    },
+    {
+      "id": "page:/supplier/widget",
+      "type": "page",
+      "label": "Виджет для парсинга товаров с вашего сайта",
+      "source_id": 126
+    },
+    {
+      "id": "page:/tariffs",
+      "type": "page",
+      "label": "Тарифы и цены Q-Parser",
+      "source_id": 127
+    },
+    {
+      "id": "page:/what-can",
+      "type": "page",
+      "label": "Что умеет Q-Parser",
+      "source_id": 128
+    },
+    {
+      "id": "endpoint:GET /api/v1/me",
+      "type": "endpoint",
+      "label": "GET /api/v1/me",
+      "source_id": 14
+    },
+    {
+      "id": "concept:me",
+      "type": "concept",
+      "label": "me",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/catalog",
+      "type": "endpoint",
+      "label": "GET /api/v1/catalog",
+      "source_id": 14
+    },
+    {
+      "id": "concept:catalog",
+      "type": "concept",
+      "label": "catalog",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/website/:domain",
+      "type": "endpoint",
+      "label": "GET /api/v1/website/:domain",
+      "source_id": 14
+    },
+    {
+      "id": "concept:website",
+      "type": "concept",
+      "label": "website",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/credentials",
+      "type": "endpoint",
+      "label": "GET /api/v1/credentials",
+      "source_id": 14
+    },
+    {
+      "id": "concept:credentials",
+      "type": "concept",
+      "label": "credentials",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:POST /api/v1/credentials",
+      "type": "endpoint",
+      "label": "POST /api/v1/credentials",
+      "source_id": 14
+    },
+    {
+      "id": "endpoint:POST /api/v1/categories",
+      "type": "endpoint",
+      "label": "POST /api/v1/categories",
+      "source_id": 14
+    },
+    {
+      "id": "concept:categories",
+      "type": "concept",
+      "label": "categories",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/categories/:id",
+      "type": "endpoint",
+      "label": "GET /api/v1/categories/:id",
+      "source_id": 14
+    },
+    {
+      "id": "endpoint:POST /api/v1/parser",
+      "type": "endpoint",
+      "label": "POST /api/v1/parser",
+      "source_id": 14
+    },
+    {
+      "id": "concept:parser",
+      "type": "concept",
+      "label": "parser",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/parser/list",
+      "type": "endpoint",
+      "label": "GET /api/v1/parser/list",
+      "source_id": 14
+    },
+    {
+      "id": "concept:list",
+      "type": "concept",
+      "label": "list",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/parser/:id",
+      "type": "endpoint",
+      "label": "GET /api/v1/parser/:id",
+      "source_id": 14
+    },
+    {
+      "id": "endpoint:POST /api/v1/parser/:id/stop",
+      "type": "endpoint",
+      "label": "POST /api/v1/parser/:id/stop",
+      "source_id": 14
+    },
+    {
+      "id": "concept:stop",
+      "type": "concept",
+      "label": "stop",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:POST /api/v1/parser/:id/resume",
+      "type": "endpoint",
+      "label": "POST /api/v1/parser/:id/resume",
+      "source_id": 14
+    },
+    {
+      "id": "concept:resume",
+      "type": "concept",
+      "label": "resume",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/parser/:id/goods",
+      "type": "endpoint",
+      "label": "GET /api/v1/parser/:id/goods",
+      "source_id": 14
+    },
+    {
+      "id": "concept:goods",
+      "type": "concept",
+      "label": "goods",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/format",
+      "type": "endpoint",
+      "label": "GET /api/v1/format",
+      "source_id": 14
+    },
+    {
+      "id": "concept:format",
+      "type": "concept",
+      "label": "format",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:POST /api/v1/export",
+      "type": "endpoint",
+      "label": "POST /api/v1/export",
+      "source_id": 14
+    },
+    {
+      "id": "concept:export",
+      "type": "concept",
+      "label": "export",
+      "source_id": null
+    },
+    {
+      "id": "endpoint:GET /api/v1/export/:id",
+      "type": "endpoint",
+      "label": "GET /api/v1/export/:id",
+      "source_id": 14
+    },
+    {
+      "id": "format:advantshopv1format",
+      "type": "format",
+      "label": "Как выгрузить товары в Advantshop 1.0?",
+      "source_id": null
+    },
+    {
+      "id": "platform:advantshop 1.0",
+      "type": "platform",
+      "label": "Advantshop 1.0",
+      "source_id": null
+    },
+    {
+      "id": "category:cms",
+      "type": "concept",
+      "label": "cms",
+      "source_id": null
+    },
+    {
+      "id": "format:advantshopv2format",
+      "type": "format",
+      "label": "Как выгрузить товары в Advantshop 2.0?",
+      "source_id": null
+    },
+    {
+      "id": "platform:advantshop 2.0",
+      "type": "platform",
+      "label": "Advantshop 2.0",
+      "source_id": null
+    },
+    {
+      "id": "format:alltradesformat",
+      "type": "format",
+      "label": "Как выгрузить товары на AllTrades?",
+      "source_id": null
+    },
+    {
+      "id": "platform:alltrades",
+      "type": "platform",
+      "label": "AllTrades",
+      "source_id": null
+    },
+    {
+      "id": "format:bitrixcsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары в 1С-Битрикс (Bitrix)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:1с-битрикс (bitrix)",
+      "type": "platform",
+      "label": "1С-Битрикс (Bitrix)",
+      "source_id": null
+    },
+    {
+      "id": "format:botobotformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Botobot?",
+      "source_id": null
+    },
+    {
+      "id": "platform:botobot",
+      "type": "platform",
+      "label": "Botobot",
+      "source_id": null
+    },
+    {
+      "id": "format:cmss3format",
+      "type": "format",
+      "label": "Как выгрузить товары для CMS.S3 (Megagroup)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:cms.s3 (megagroup)",
+      "type": "platform",
+      "label": "CMS.S3 (Megagroup)",
+      "source_id": null
+    },
+    {
+      "id": "format:cscartformat",
+      "type": "format",
+      "label": "Как выгрузить товары на CS-Cart?",
+      "source_id": null
+    },
+    {
+      "id": "platform:cs-cart",
+      "type": "platform",
+      "label": "CS-Cart",
+      "source_id": null
+    },
+    {
+      "id": "format:diskauntscsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары на маркетплейс Diskaunts?",
+      "source_id": null
+    },
+    {
+      "id": "platform:маркетплейс diskaunts",
+      "type": "platform",
+      "label": "маркетплейс Diskaunts",
+      "source_id": null
+    },
+    {
+      "id": "format:eshoperformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Eshoper?",
+      "source_id": null
+    },
+    {
+      "id": "platform:eshoper",
+      "type": "platform",
+      "label": "Eshoper",
+      "source_id": null
+    },
+    {
+      "id": "format:hostcmsformat",
+      "type": "format",
+      "label": "Как выгрузить товары на HostCMS?",
+      "source_id": null
+    },
+    {
+      "id": "platform:hostcms",
+      "type": "platform",
+      "label": "HostCMS",
+      "source_id": null
+    },
+    {
+      "id": "format:insalescsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары в InSales?",
+      "source_id": null
+    },
+    {
+      "id": "platform:insales",
+      "type": "platform",
+      "label": "InSales",
+      "source_id": null
+    },
+    {
+      "id": "format:insalesxlsformat",
+      "type": "format",
+      "label": "Как выгрузить товары в InSales?",
+      "source_id": null
+    },
+    {
+      "id": "format:joomlaformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Joomla (Excel2JS)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:joomla (excel2js)",
+      "type": "platform",
+      "label": "Joomla (Excel2JS)",
+      "source_id": null
+    },
+    {
+      "id": "format:joomshoppingformat",
+      "type": "format",
+      "label": "Как выгрузить товары в JoomShopping?",
+      "source_id": null
+    },
+    {
+      "id": "platform:joomshopping",
+      "type": "platform",
+      "label": "JoomShopping",
+      "source_id": null
+    },
+    {
+      "id": "format:lpmotorformat",
+      "type": "format",
+      "label": "Как выгрузить товары для LPmotor (lpmotor.ru)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:lpmotor (lpmotor.ru)",
+      "type": "platform",
+      "label": "LPmotor (lpmotor.ru)",
+      "source_id": null
+    },
+    {
+      "id": "format:mogutaformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Moguta?",
+      "source_id": null
+    },
+    {
+      "id": "platform:moguta",
+      "type": "platform",
+      "label": "Moguta",
+      "source_id": null
+    },
+    {
+      "id": "format:okaycmsformat",
+      "type": "format",
+      "label": "Как выгрузить товары на OkayCMS?",
+      "source_id": null
+    },
+    {
+      "id": "platform:okaycms",
+      "type": "platform",
+      "label": "OkayCMS",
+      "source_id": null
+    },
+    {
+      "id": "format:opencartcsvliteformat",
+      "type": "format",
+      "label": "Как выгрузить товары в OpenCart модулем CSV Export/Import Light?",
+      "source_id": null
+    },
+    {
+      "id": "platform:opencart модулем csv export/import light",
+      "type": "platform",
+      "label": "OpenCart модулем CSV Export/Import Light",
+      "source_id": null
+    },
+    {
+      "id": "format:opencartcsvpriceproformat",
+      "type": "format",
+      "label": "Как выгрузить товары для OpenCart в формате CSV Price Pro?",
+      "source_id": null
+    },
+    {
+      "id": "platform:opencart в формате csv price pro",
+      "type": "platform",
+      "label": "OpenCart в формате CSV Price Pro",
+      "source_id": null
+    },
+    {
+      "id": "format:opencartexportimportformat",
+      "type": "format",
+      "label": "Как выгрузить товары в OpenCart?",
+      "source_id": null
+    },
+    {
+      "id": "platform:opencart",
+      "type": "platform",
+      "label": "OpenCart",
+      "source_id": null
+    },
+    {
+      "id": "format:openmallformat",
+      "type": "format",
+      "label": "Как выгрузить товары на OpenMall?",
+      "source_id": null
+    },
+    {
+      "id": "platform:openmall",
+      "type": "platform",
+      "label": "OpenMall",
+      "source_id": null
+    },
+    {
+      "id": "format:osclassadimporterformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Osclass?",
+      "source_id": null
+    },
+    {
+      "id": "platform:osclass",
+      "type": "platform",
+      "label": "Osclass",
+      "source_id": null
+    },
+    {
+      "id": "format:phpshopformat",
+      "type": "format",
+      "label": "Как выгрузить товары в PHPShop?",
+      "source_id": null
+    },
+    {
+      "id": "platform:phpshop",
+      "type": "platform",
+      "label": "PHPShop",
+      "source_id": null
+    },
+    {
+      "id": "format:prestashopformat",
+      "type": "format",
+      "label": "Как выгрузить товары в PrestaShop?",
+      "source_id": null
+    },
+    {
+      "id": "platform:prestashop",
+      "type": "platform",
+      "label": "PrestaShop",
+      "source_id": null
+    },
+    {
+      "id": "format:prestashopmagiconestoremanagerformat",
+      "type": "format",
+      "label": "Как выгрузить товары в PrestaShop MagicOne Store Manager?",
+      "source_id": null
+    },
+    {
+      "id": "platform:prestashop magicone store manager",
+      "type": "platform",
+      "label": "PrestaShop MagicOne Store Manager",
+      "source_id": null
+    },
+    {
+      "id": "format:readyscriptformat",
+      "type": "format",
+      "label": "Как выгрузить товары в ReadyScript?",
+      "source_id": null
+    },
+    {
+      "id": "platform:readyscript",
+      "type": "platform",
+      "label": "ReadyScript",
+      "source_id": null
+    },
+    {
+      "id": "format:shopifyformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Shopify (shopify.com)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:shopify (shopify.com)",
+      "type": "platform",
+      "label": "Shopify (shopify.com)",
+      "source_id": null
+    },
+    {
+      "id": "format:simplacmsformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Simpla CMS?",
+      "source_id": null
+    },
+    {
+      "id": "platform:simpla cms",
+      "type": "platform",
+      "label": "Simpla CMS",
+      "source_id": null
+    },
+    {
+      "id": "format:storelandformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Storeland?",
+      "source_id": null
+    },
+    {
+      "id": "platform:storeland",
+      "type": "platform",
+      "label": "Storeland",
+      "source_id": null
+    },
+    {
+      "id": "format:tildacsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Tilda (tilda.cc) в CSV?",
+      "source_id": null
+    },
+    {
+      "id": "platform:tilda (tilda.cc) в csv",
+      "type": "platform",
+      "label": "Tilda (tilda.cc) в CSV",
+      "source_id": null
+    },
+    {
+      "id": "format:tildaymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Tilda (tilda.cc) в YML?",
+      "source_id": null
+    },
+    {
+      "id": "platform:tilda (tilda.cc) в yml",
+      "type": "platform",
+      "label": "Tilda (tilda.cc) в YML",
+      "source_id": null
+    },
+    {
+      "id": "format:uralcmscsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары для Ural CMS (uralcms.ru)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:ural cms (uralcms.ru)",
+      "type": "platform",
+      "label": "Ural CMS (uralcms.ru)",
+      "source_id": null
+    },
+    {
+      "id": "format:ushopymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на uShop (ucoz.ru)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:ushop (ucoz.ru)",
+      "type": "platform",
+      "label": "uShop (ucoz.ru)",
+      "source_id": null
+    },
+    {
+      "id": "format:webasystshopscriptformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Webasyst Shop-Script?",
+      "source_id": null
+    },
+    {
+      "id": "platform:webasyst shop-script",
+      "type": "platform",
+      "label": "Webasyst Shop-Script",
+      "source_id": null
+    },
+    {
+      "id": "format:wixformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Wix?",
+      "source_id": null
+    },
+    {
+      "id": "platform:wix",
+      "type": "platform",
+      "label": "Wix",
+      "source_id": null
+    },
+    {
+      "id": "format:woocommerceformat",
+      "type": "format",
+      "label": "Как выгрузить товары в WooCommerce?",
+      "source_id": null
+    },
+    {
+      "id": "platform:woocommerce",
+      "type": "platform",
+      "label": "WooCommerce",
+      "source_id": null
+    },
+    {
+      "id": "format:commercemlformat",
+      "type": "format",
+      "label": "Как выгрузить товары в CommerceML (1С)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:commerceml (1с)",
+      "type": "platform",
+      "label": "CommerceML (1С)",
+      "source_id": null
+    },
+    {
+      "id": "category:commerce",
+      "type": "concept",
+      "label": "commerce",
+      "source_id": null
+    },
+    {
+      "id": "format:moyskladformat",
+      "type": "format",
+      "label": "Как выгрузить товары в МойСклад?",
+      "source_id": null
+    },
+    {
+      "id": "platform:мойсклад",
+      "type": "platform",
+      "label": "МойСклад",
+      "source_id": null
+    },
+    {
+      "id": "format:csvformat",
+      "type": "format",
+      "label": "Как выгрузить товары в CSV?",
+      "source_id": null
+    },
+    {
+      "id": "platform:csv",
+      "type": "platform",
+      "label": "CSV",
+      "source_id": null
+    },
+    {
+      "id": "category:file",
+      "type": "concept",
+      "label": "file",
+      "source_id": null
+    },
+    {
+      "id": "format:jsonformat",
+      "type": "format",
+      "label": "Как выгрузить товары в JSON?",
+      "source_id": null
+    },
+    {
+      "id": "platform:json",
+      "type": "platform",
+      "label": "JSON",
+      "source_id": null
+    },
+    {
+      "id": "format:xlsformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Excel?",
+      "source_id": null
+    },
+    {
+      "id": "platform:excel",
+      "type": "platform",
+      "label": "Excel",
+      "source_id": null
+    },
+    {
+      "id": "format:xmlformat",
+      "type": "format",
+      "label": "Как выгрузить товары в XML?",
+      "source_id": null
+    },
+    {
+      "id": "platform:xml",
+      "type": "platform",
+      "label": "XML",
+      "source_id": null
+    },
+    {
+      "id": "format:ymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары в YML?",
+      "source_id": null
+    },
+    {
+      "id": "platform:yml",
+      "type": "platform",
+      "label": "YML",
+      "source_id": null
+    },
+    {
+      "id": "format:epicentrkymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Epicentrk (epicentrk.ua) в YML?",
+      "source_id": null
+    },
+    {
+      "id": "platform:epicentrk (epicentrk.ua) в yml",
+      "type": "platform",
+      "label": "Epicentrk (epicentrk.ua) в YML",
+      "source_id": null
+    },
+    {
+      "id": "category:marketplace",
+      "type": "concept",
+      "label": "marketplace",
+      "source_id": null
+    },
+    {
+      "id": "format:kaspixmlformat",
+      "type": "format",
+      "label": "Как выгрузить цены и наличие товаров на Kaspi.kz?",
+      "source_id": null
+    },
+    {
+      "id": "platform:как выгрузить цены и наличие товаров на kaspi.kz",
+      "type": "platform",
+      "label": "Как выгрузить цены и наличие товаров на Kaspi.kz",
+      "source_id": null
+    },
+    {
+      "id": "format:megamarketymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Мегамаркет?",
+      "source_id": null
+    },
+    {
+      "id": "platform:мегамаркет",
+      "type": "platform",
+      "label": "Мегамаркет",
+      "source_id": null
+    },
+    {
+      "id": "format:promuaymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Prom.ua?",
+      "source_id": null
+    },
+    {
+      "id": "platform:prom.ua",
+      "type": "platform",
+      "label": "Prom.ua",
+      "source_id": null
+    },
+    {
+      "id": "format:rozetkaymlformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Rozetka.com.ua?",
+      "source_id": null
+    },
+    {
+      "id": "platform:rozetka.com.ua",
+      "type": "platform",
+      "label": "Rozetka.com.ua",
+      "source_id": null
+    },
+    {
+      "id": "format:facebookcsvformat",
+      "type": "format",
+      "label": "Как выгрузить товары в каталоги Facebook* (CSV)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:каталоги facebook* (csv)",
+      "type": "platform",
+      "label": "каталоги Facebook* (CSV)",
+      "source_id": null
+    },
+    {
+      "id": "category:social",
+      "type": "concept",
+      "label": "social",
+      "source_id": null
+    },
+    {
+      "id": "format:facebookxmlfeedformat",
+      "type": "format",
+      "label": "Как выгрузить товары в каталоги Facebook*?",
+      "source_id": null
+    },
+    {
+      "id": "platform:каталоги facebook*",
+      "type": "platform",
+      "label": "каталоги Facebook*",
+      "source_id": null
+    },
+    {
+      "id": "format:googlemerchantformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Google Merchant Center?",
+      "source_id": null
+    },
+    {
+      "id": "platform:google merchant center",
+      "type": "platform",
+      "label": "Google Merchant Center",
+      "source_id": null
+    },
+    {
+      "id": "format:okalbumsformat",
+      "type": "format",
+      "label": "Как выгрузить товары в альбомы Одноклассники?",
+      "source_id": null
+    },
+    {
+      "id": "platform:альбомы одноклассники",
+      "type": "platform",
+      "label": "альбомы Одноклассники",
+      "source_id": null
+    },
+    {
+      "id": "format:okformat",
+      "type": "format",
+      "label": "Как выгрузить товары в Одноклассники?",
+      "source_id": null
+    },
+    {
+      "id": "platform:одноклассники",
+      "type": "platform",
+      "label": "Одноклассники",
+      "source_id": null
+    },
+    {
+      "id": "format:showcaseformat",
+      "type": "format",
+      "label": "Витрины товаров",
+      "source_id": null
+    },
+    {
+      "id": "platform:витрины товаров",
+      "type": "platform",
+      "label": "Витрины товаров",
+      "source_id": null
+    },
+    {
+      "id": "format:vkalbumsformat",
+      "type": "format",
+      "label": "Как выгрузить товары в альбомы ВКонтакте?",
+      "source_id": null
+    },
+    {
+      "id": "platform:альбомы вконтакте",
+      "type": "platform",
+      "label": "альбомы ВКонтакте",
+      "source_id": null
+    },
+    {
+      "id": "format:vkformat",
+      "type": "format",
+      "label": "Как выгрузить товары в ВКонтакте?",
+      "source_id": null
+    },
+    {
+      "id": "platform:вконтакте",
+      "type": "platform",
+      "label": "ВКонтакте",
+      "source_id": null
+    },
+    {
+      "id": "format:amadyformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Амади?",
+      "source_id": null
+    },
+    {
+      "id": "platform:амади",
+      "type": "platform",
+      "label": "Амади",
+      "source_id": null
+    },
+    {
+      "id": "category:sp",
+      "type": "concept",
+      "label": "sp",
+      "source_id": null
+    },
+    {
+      "id": "format:kupivspformat",
+      "type": "format",
+      "label": "Как выгрузить товары на сайт Kupivsp.ru?",
+      "source_id": null
+    },
+    {
+      "id": "platform:сайт kupivsp.ru",
+      "type": "platform",
+      "label": "сайт Kupivsp.ru",
+      "source_id": null
+    },
+    {
+      "id": "format:materinstvoshopformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Материнство (materinstvo-shop.ru)?",
+      "source_id": null
+    },
+    {
+      "id": "platform:материнство (materinstvo-shop.ru)",
+      "type": "platform",
+      "label": "Материнство (materinstvo-shop.ru)",
+      "source_id": null
+    },
+    {
+      "id": "format:mikaiformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Mikai?",
+      "source_id": null
+    },
+    {
+      "id": "platform:mikai",
+      "type": "platform",
+      "label": "Mikai",
+      "source_id": null
+    },
+    {
+      "id": "format:ok24format",
+      "type": "format",
+      "label": "Как выгрузить товары на 24-ok.ru?",
+      "source_id": null
+    },
+    {
+      "id": "platform:24-ok.ru",
+      "type": "platform",
+      "label": "24-ok.ru",
+      "source_id": null
+    },
+    {
+      "id": "format:pokupki63format",
+      "type": "format",
+      "label": "Как выгрузить товары на 63pokupki.ru?",
+      "source_id": null
+    },
+    {
+      "id": "platform:63pokupki.ru",
+      "type": "platform",
+      "label": "63pokupki.ru",
+      "source_id": null
+    },
+    {
+      "id": "format:pokupkiprostoformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Покупки-просто?",
+      "source_id": null
+    },
+    {
+      "id": "platform:покупки-просто",
+      "type": "platform",
+      "label": "Покупки-просто",
+      "source_id": null
+    },
+    {
+      "id": "format:samarskieroditeliformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Самарские родители?",
+      "source_id": null
+    },
+    {
+      "id": "platform:самарские родители",
+      "type": "platform",
+      "label": "Самарские родители",
+      "source_id": null
+    },
+    {
+      "id": "format:serpokformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Serpok.ru?",
+      "source_id": null
+    },
+    {
+      "id": "platform:serpok.ru",
+      "type": "platform",
+      "label": "Serpok.ru",
+      "source_id": null
+    },
+    {
+      "id": "format:spkostromaformat",
+      "type": "format",
+      "label": "Как выгрузить товары на СП Кострома?",
+      "source_id": null
+    },
+    {
+      "id": "platform:сп кострома",
+      "type": "platform",
+      "label": "СП Кострома",
+      "source_id": null
+    },
+    {
+      "id": "format:spprotonformat",
+      "type": "format",
+      "label": "Как выгрузить товары на сайты СП-Протон?",
+      "source_id": null
+    },
+    {
+      "id": "platform:сайты сп-протон",
+      "type": "platform",
+      "label": "сайты СП-Протон",
+      "source_id": null
+    },
+    {
+      "id": "format:stospformat",
+      "type": "format",
+      "label": "Как выгрузить товары на 100 СП?",
+      "source_id": null
+    },
+    {
+      "id": "platform:100 сп",
+      "type": "platform",
+      "label": "100 СП",
+      "source_id": null
+    },
+    {
+      "id": "format:supermamkiformat",
+      "type": "format",
+      "label": "Как выгрузить товары на Супермамки?",
+      "source_id": null
+    },
+    {
+      "id": "platform:супермамки",
+      "type": "platform",
+      "label": "Супермамки",
+      "source_id": null
+    },
+    {
+      "id": "format:superpuperformat",
+      "type": "format",
+      "label": "Как выгрузить товары на сайт SuperPuper.ru?",
+      "source_id": null
+    },
+    {
+      "id": "platform:сайт superpuper.ru",
+      "type": "platform",
+      "label": "сайт SuperPuper.ru",
+      "source_id": null
+    },
+    {
+      "id": "format:tom70format",
+      "type": "format",
+      "label": "Как выгрузить товары на сайты СП с модулем Tom70?",
+      "source_id": null
+    },
+    {
+      "id": "platform:сайты сп с модулем tom70",
+      "type": "platform",
+      "label": "сайты СП с модулем Tom70",
+      "source_id": null
+    },
+    {
+      "id": "format:zaprosto24format",
+      "type": "format",
+      "label": "Как выгрузить товары на Запросто 24?",
+      "source_id": null
+    },
+    {
+      "id": "platform:запросто 24",
+      "type": "platform",
+      "label": "Запросто 24",
+      "source_id": null
+    },
+    {
+      "id": "plan:Day",
+      "type": "plan",
+      "label": "Day (295 RUB/день)",
+      "source_id": null
+    },
+    {
+      "id": "limit:parallel_downloads=3",
+      "type": "limit",
+      "label": "3 parallel downloads",
+      "source_id": null
+    },
+    {
+      "id": "limit:ai_points=10",
+      "type": "limit",
+      "label": "10 AI Points",
+      "source_id": null
+    },
+    {
+      "id": "plan:Pro",
+      "type": "plan",
+      "label": "Pro (2495 RUB/мес)",
+      "source_id": null
+    },
+    {
+      "id": "limit:parallel_downloads=20",
+      "type": "limit",
+      "label": "20 parallel downloads",
+      "source_id": null
+    },
+    {
+      "id": "limit:ai_points=10000",
+      "type": "limit",
+      "label": "10000 AI Points",
+      "source_id": null
+    },
+    {
+      "id": "plan:Lite",
+      "type": "plan",
+      "label": "Lite (995 RUB/мес)",
+      "source_id": null
+    },
+    {
+      "id": "limit:parallel_downloads=10",
+      "type": "limit",
+      "label": "10 parallel downloads",
+      "source_id": null
+    },
+    {
+      "id": "limit:ai_points=100",
+      "type": "limit",
+      "label": "100 AI Points",
+      "source_id": null
+    },
+    {
+      "id": "plan:Пробная версия",
+      "type": "plan",
+      "label": "Пробная версия (0 RUB/trial)",
+      "source_id": null
+    },
+    {
+      "id": "limit:parallel_downloads=1",
+      "type": "limit",
+      "label": "1 parallel downloads",
+      "source_id": null
+    },
+    {
+      "id": "claim:1",
+      "type": "claim",
+      "label": "q-parser-api base_url base",
+      "source_id": 14
+    },
+    {
+      "id": "entity:q-parser-api",
+      "type": "entity",
+      "label": "q-parser-api",
+      "source_id": null
+    },
+    {
+      "id": "claim:2",
+      "type": "claim",
+      "label": "q-parser-api auth header",
+      "source_id": 14
+    },
+    {
+      "id": "claim:3",
+      "type": "claim",
+      "label": "q-parser-api endpoint_count count",
+      "source_id": 14
+    },
+    {
+      "id": "claim:4",
+      "type": "claim",
+      "label": "q-parser-api concurrency_limit парсингов",
+      "source_id": 14
+    },
+    {
+      "id": "claim:5",
+      "type": "claim",
+      "label": "q-parser-api concurrency_limit выгрузок",
+      "source_id": 14
+    },
+    {
+      "id": "claim:6",
+      "type": "claim",
+      "label": "q-parser-api page_size_max pagination",
+      "source_id": 14
+    },
+    {
+      "id": "claim:7",
+      "type": "claim",
+      "label": "q-parser-api page_size_max pagination",
+      "source_id": 14
+    },
+    {
+      "id": "claim:8",
+      "type": "claim",
+      "label": "q-parser-api page_size_max pagination",
+      "source_id": 14
+    },
+    {
+      "id": "claim:9",
+      "type": "claim",
+      "label": "q-parser-plan price Day",
+      "source_id": 127
+    },
+    {
+      "id": "entity:q-parser-plan",
+      "type": "entity",
+      "label": "q-parser-plan",
+      "source_id": null
+    },
+    {
+      "id": "claim:10",
+      "type": "claim",
+      "label": "q-parser-plan price Pro",
+      "source_id": 127
+    },
+    {
+      "id": "claim:11",
+      "type": "claim",
+      "label": "q-parser-plan price Lite",
+      "source_id": 127
+    },
+    {
+      "id": "claim:12",
+      "type": "claim",
+      "label": "q-parser-plan price Пробная версия",
+      "source_id": 127
+    },
+    {
+      "id": "claim:13",
+      "type": "claim",
+      "label": "q-parser-webhooks signature headers",
+      "source_id": 17
+    },
+    {
+      "id": "entity:q-parser-webhooks",
+      "type": "entity",
+      "label": "q-parser-webhooks",
+      "source_id": null
+    },
+    {
+      "id": "claim:14",
+      "type": "claim",
+      "label": "q-parser-webhooks retry_schedule seconds",
+      "source_id": 17
+    },
+    {
+      "id": "claim:15",
+      "type": "claim",
+      "label": "q-parser-webhooks max_addresses per_automation",
+      "source_id": 17
+    },
+    {
+      "id": "track:competitors",
+      "type": "research_track",
+      "label": "Competitor Research Report — Q-Parser Platform"
+    },
+    {
+      "id": "track:marketplaces-ru",
+      "type": "research_track",
+      "label": "RU Marketplace Capability Matrix"
+    },
+    {
+      "id": "track:marketplaces-cn",
+      "type": "research_track",
+      "label": "Chinese Marketplaces: Supply vs Sales Channel Analysis"
+    },
+    {
+      "id": "track:marketplaces-global",
+      "type": "research_track",
+      "label": "Global Marketplace API Comparison Report"
+    },
+    {
+      "id": "track:platforms",
+      "type": "research_track",
+      "label": "Q-Parser Storefront Platform Research Report"
+    },
+    {
+      "id": "track:demand",
+      "type": "research_track",
+      "label": "Demand Data Sources & Pipeline Research"
+    },
+    {
+      "id": "track:inherited",
+      "type": "research_track",
+      "label": "inherited"
+    },
+    {
+      "id": "marketplace:ru:Ozon Seller",
+      "type": "marketplace",
+      "label": "Ozon Seller"
+    },
+    {
+      "id": "layer:ru",
+      "type": "layer",
+      "label": "ru"
+    },
+    {
+      "id": "marketplace:ru:Wildberries",
+      "type": "marketplace",
+      "label": "Wildberries"
+    },
+    {
+      "id": "marketplace:ru:Yandex Market",
+      "type": "marketplace",
+      "label": "Yandex Market"
+    },
+    {
+      "id": "marketplace:ru:Megamarket",
+      "type": "marketplace",
+      "label": "Megamarket"
+    },
+    {
+      "id": "marketplace:ru:Avito",
+      "type": "marketplace",
+      "label": "Avito"
+    },
+    {
+      "id": "marketplace:ru:Kaspi.kz",
+      "type": "marketplace",
+      "label": "Kaspi.kz"
+    },
+    {
+      "id": "marketplace:ru:Uzum Market",
+      "type": "marketplace",
+      "label": "Uzum Market"
+    },
+    {
+      "id": "marketplace:ru:Wildberries KZ/BY",
+      "type": "marketplace",
+      "label": "Wildberries KZ/BY"
+    },
+    {
+      "id": "marketplace:cn:1688",
+      "type": "marketplace",
+      "label": "1688"
+    },
+    {
+      "id": "layer:cn",
+      "type": "layer",
+      "label": "cn"
+    },
+    {
+      "id": "marketplace:cn:Taobao / Tmall",
+      "type": "marketplace",
+      "label": "Taobao / Tmall"
+    },
+    {
+      "id": "marketplace:cn:Alibaba.com",
+      "type": "marketplace",
+      "label": "Alibaba.com"
+    },
+    {
+      "id": "marketplace:cn:Pinduoduo",
+      "type": "marketplace",
+      "label": "Pinduoduo"
+    },
+    {
+      "id": "marketplace:cn:JD.com",
+      "type": "marketplace",
+      "label": "JD.com"
+    },
+    {
+      "id": "marketplace:cn:Douyin",
+      "type": "marketplace",
+      "label": "Douyin"
+    },
+    {
+      "id": "marketplace:cn:AliExpress",
+      "type": "marketplace",
+      "label": "AliExpress"
+    },
+    {
+      "id": "marketplace:cn:Temu",
+      "type": "marketplace",
+      "label": "Temu"
+    },
+    {
+      "id": "marketplace:cn:Shein Marketplace",
+      "type": "marketplace",
+      "label": "Shein Marketplace"
+    },
+    {
+      "id": "marketplace:cn:Ozon Global",
+      "type": "marketplace",
+      "label": "Ozon Global"
+    },
+    {
+      "id": "marketplace:cn:WB China",
+      "type": "marketplace",
+      "label": "WB China"
+    },
+    {
+      "id": "marketplace:cn:Xianyu / Goofish",
+      "type": "marketplace",
+      "label": "Xianyu / Goofish"
+    },
+    {
+      "id": "marketplace:global:Amazon EU",
+      "type": "marketplace",
+      "label": "Amazon EU"
+    },
+    {
+      "id": "layer:global",
+      "type": "layer",
+      "label": "global"
+    },
+    {
+      "id": "marketplace:global:eBay",
+      "type": "marketplace",
+      "label": "eBay"
+    },
+    {
+      "id": "marketplace:global:Etsy",
+      "type": "marketplace",
+      "label": "Etsy"
+    },
+    {
+      "id": "marketplace:global:Allegro",
+      "type": "marketplace",
+      "label": "Allegro"
+    },
+    {
+      "id": "marketplace:global:Kaufland",
+      "type": "marketplace",
+      "label": "Kaufland"
+    },
+    {
+      "id": "marketplace:global:Bol.com",
+      "type": "marketplace",
+      "label": "Bol.com"
+    },
+    {
+      "id": "marketplace:global:Cdiscount",
+      "type": "marketplace",
+      "label": "Cdiscount"
+    },
+    {
+      "id": "marketplace:global:Zalando",
+      "type": "marketplace",
+      "label": "Zalando"
+    },
+    {
+      "id": "marketplace:global:OTTO",
+      "type": "marketplace",
+      "label": "OTTO"
+    },
+    {
+      "id": "marketplace:global:Fnac",
+      "type": "marketplace",
+      "label": "Fnac"
+    },
+    {
+      "id": "marketplace:global:ManoMano",
+      "type": "marketplace",
+      "label": "ManoMano"
+    },
+    {
+      "id": "marketplace:global:eMAG",
+      "type": "marketplace",
+      "label": "eMAG"
+    },
+    {
+      "id": "marketplace:global:Heureka",
+      "type": "marketplace",
+      "label": "Heureka"
+    },
+    {
+      "id": "marketplace:global:Idealo",
+      "type": "marketplace",
+      "label": "Idealo"
+    },
+    {
+      "id": "marketplace:global:Amazon US/CA",
+      "type": "marketplace",
+      "label": "Amazon US/CA"
+    },
+    {
+      "id": "marketplace:global:eBay US",
+      "type": "marketplace",
+      "label": "eBay US"
+    },
+    {
+      "id": "marketplace:global:Etsy US",
+      "type": "marketplace",
+      "label": "Etsy US"
+    },
+    {
+      "id": "marketplace:global:Walmart",
+      "type": "marketplace",
+      "label": "Walmart"
+    },
+    {
+      "id": "marketplace:global:TikTok Shop US",
+      "type": "marketplace",
+      "label": "TikTok Shop US"
+    },
+    {
+      "id": "marketplace:global:Newegg",
+      "type": "marketplace",
+      "label": "Newegg"
+    },
+    {
+      "id": "marketplace:global:Wayfair",
+      "type": "marketplace",
+      "label": "Wayfair"
+    },
+    {
+      "id": "marketplace:global:Target Plus",
+      "type": "marketplace",
+      "label": "Target Plus"
+    },
+    {
+      "id": "marketplace:global:Best Buy",
+      "type": "marketplace",
+      "label": "Best Buy"
+    },
+    {
+      "id": "marketplace:global:Mercado Libre",
+      "type": "marketplace",
+      "label": "Mercado Libre"
+    },
+    {
+      "id": "marketplace:global:Amazon Brazil",
+      "type": "marketplace",
+      "label": "Amazon Brazil"
+    },
+    {
+      "id": "marketplace:global:Magazine Luiza",
+      "type": "marketplace",
+      "label": "Magazine Luiza"
+    },
+    {
+      "id": "marketplace:global:Americanas",
+      "type": "marketplace",
+      "label": "Americanas"
+    },
+    {
+      "id": "marketplace:global:Falabella",
+      "type": "marketplace",
+      "label": "Falabella"
+    },
+    {
+      "id": "marketplace:global:Shopee",
+      "type": "marketplace",
+      "label": "Shopee"
+    },
+    {
+      "id": "marketplace:global:Lazada",
+      "type": "marketplace",
+      "label": "Lazada"
+    },
+    {
+      "id": "marketplace:global:Tokopedia",
+      "type": "marketplace",
+      "label": "Tokopedia"
+    },
+    {
+      "id": "marketplace:global:TikTok Shop SEA",
+      "type": "marketplace",
+      "label": "TikTok Shop SEA"
+    },
+    {
+      "id": "marketplace:global:Rakuten",
+      "type": "marketplace",
+      "label": "Rakuten"
+    },
+    {
+      "id": "marketplace:global:Yahoo Shopping",
+      "type": "marketplace",
+      "label": "Yahoo Shopping"
+    },
+    {
+      "id": "marketplace:global:Mercari",
+      "type": "marketplace",
+      "label": "Mercari"
+    },
+    {
+      "id": "marketplace:global:Coupang",
+      "type": "marketplace",
+      "label": "Coupang"
+    },
+    {
+      "id": "marketplace:global:Naver Smart Store",
+      "type": "marketplace",
+      "label": "Naver Smart Store"
+    },
+    {
+      "id": "marketplace:global:Amazon.ae",
+      "type": "marketplace",
+      "label": "Amazon.ae"
+    },
+    {
+      "id": "marketplace:global:Noon",
+      "type": "marketplace",
+      "label": "Noon"
+    },
+    {
+      "id": "marketplace:global:Trendyol",
+      "type": "marketplace",
+      "label": "Trendyol"
+    },
+    {
+      "id": "marketplace:global:Hepsiburada",
+      "type": "marketplace",
+      "label": "Hepsiburada"
+    },
+    {
+      "id": "marketplace:global:n11",
+      "type": "marketplace",
+      "label": "n11"
+    },
+    {
+      "id": "marketplace:global:Jumia",
+      "type": "marketplace",
+      "label": "Jumia"
+    },
+    {
+      "id": "marketplace:global:Takealot",
+      "type": "marketplace",
+      "label": "Takealot"
+    },
+    {
+      "id": "marketplace:global:Amazon AU",
+      "type": "marketplace",
+      "label": "Amazon AU"
+    },
+    {
+      "id": "marketplace:global:eBay AU",
+      "type": "marketplace",
+      "label": "eBay AU"
+    },
+    {
+      "id": "marketplace:global:Catch",
+      "type": "marketplace",
+      "label": "Catch"
+    },
+    {
+      "id": "marketplace:global:Trade Me",
+      "type": "marketplace",
+      "label": "Trade Me"
+    },
+    {
+      "id": "adr:0001-layered-channel-adapters",
+      "type": "adr",
+      "label": "ADR 0001 — Layered channel adapters (RU / CN / global / CIS)"
+    },
+    {
+      "id": "adr:0002-supply-vs-sales-ports",
+      "type": "adr",
+      "label": "ADR 0002 — Supply adapters and sales adapters are different ports"
+    },
+    {
+      "id": "adr:0003-write-path",
+      "type": "adr",
+      "label": "ADR 0003 — Writes go through Proposal → Policy → Execution → Verification"
+    },
+    {
+      "id": "adr:0004-atomised-knowledge",
+      "type": "adr",
+      "label": "ADR 0004 — Atomised knowledge with provenance"
+    },
+    {
+      "id": "adr:0005-content-rights-gate",
+      "type": "adr",
+      "label": "ADR 0005 — Content rights gate before publishing"
+    },
+    {
+      "id": "adr:0006-storefront-platform-medusa",
+      "type": "adr",
+      "label": "ADR 0006 — Storefront platform: Medusa v2"
+    },
+    {
+      "id": "asset:asset.wbchina.ozon-openapi",
+      "type": "asset",
+      "label": "Ozon Seller API OpenAPI schema"
+    },
+    {
+      "id": "asset:asset.wbchina.wb-specs",
+      "type": "asset",
+      "label": "Wildberries 13 OpenAPI specs"
+    },
+    {
+      "id": "asset:asset.wbchina.adapter-spec",
+      "type": "asset",
+      "label": "Marketplace adapter specification"
+    },
+    {
+      "id": "asset:asset.wbchina.schema",
+      "type": "asset",
+      "label": "Marketplace platform Postgres schema"
+    },
+    {
+      "id": "asset:asset.wbchina.governance",
+      "type": "asset",
+      "label": "Proposal -> Policy -> Execution -> Verification"
+    },
+    {
+      "id": "asset:asset.wbchina.market-graph",
+      "type": "asset",
+      "label": "RU seller-tools market graph"
+    },
+    {
+      "id": "asset:asset.wbchina.oss-stack",
+      "type": "asset",
+      "label": "Open-source stack and license traps"
+    },
+    {
+      "id": "asset:asset.alibaba.pricing",
+      "type": "asset",
+      "label": "Destination-aware price observation schema"
+    },
+    {
+      "id": "asset:asset.alibaba.static-first",
+      "type": "asset",
+      "label": "Static-first storefront with .md twins and llms.txt"
+    },
+    {
+      "id": "asset:asset.alibaba.identity",
+      "type": "asset",
+      "label": "Product identity candidate model"
+    },
+    {
+      "id": "asset:asset.chinaauto.wiki",
+      "type": "asset",
+      "label": "Atomised knowledge contract"
+    },
+    {
+      "id": "asset:asset.chinaauto.verify",
+      "type": "asset",
+      "label": "Crawler-view site verification"
+    },
+    {
+      "id": "asset:asset.goofish.negative",
+      "type": "asset",
+      "label": "Xianyu / Goofish negative results"
+    },
+    {
+      "id": "asset:asset.niche-radar.model",
+      "type": "asset",
+      "label": "Demand metrics and niche model"
+    }
+  ],
+  "edges": [
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/me",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/me",
+      "target": "concept:me",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/catalog",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/catalog",
+      "target": "concept:catalog",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/website/:domain",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/website/:domain",
+      "target": "concept:website",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/credentials",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/credentials",
+      "target": "concept:credentials",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/credentials",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/credentials",
+      "target": "concept:credentials",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/categories",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/categories",
+      "target": "concept:categories",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/categories/:id",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/categories/:id",
+      "target": "concept:categories",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/parser",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/parser",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/parser/list",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/parser/list",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/parser/list",
+      "target": "concept:list",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/parser/:id",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/parser/:id",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/parser/:id/stop",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/parser/:id/stop",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/parser/:id/stop",
+      "target": "concept:stop",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/parser/:id/resume",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/parser/:id/resume",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/parser/:id/resume",
+      "target": "concept:resume",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/parser/:id/goods",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/parser/:id/goods",
+      "target": "concept:parser",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/parser/:id/goods",
+      "target": "concept:goods",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/format",
+      "target": "concept:format",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:POST /api/v1/export",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:POST /api/v1/export",
+      "target": "concept:export",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/api",
+      "target": "endpoint:GET /api/v1/export/:id",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "endpoint:GET /api/v1/export/:id",
+      "target": "concept:export",
+      "relation": "OPERATES_ON",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/advantshopv1format",
+      "target": "format:advantshopv1format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:advantshopv1format",
+      "target": "platform:advantshop 1.0",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:advantshopv1format",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/advantshopv2format",
+      "target": "format:advantshopv2format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:advantshopv2format",
+      "target": "platform:advantshop 2.0",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:advantshopv2format",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/alltradesformat",
+      "target": "format:alltradesformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:alltradesformat",
+      "target": "platform:alltrades",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:alltradesformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/bitrixcsvformat",
+      "target": "format:bitrixcsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:bitrixcsvformat",
+      "target": "platform:1с-битрикс (bitrix)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:bitrixcsvformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/botobotformat",
+      "target": "format:botobotformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:botobotformat",
+      "target": "platform:botobot",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:botobotformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/cmss3format",
+      "target": "format:cmss3format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:cmss3format",
+      "target": "platform:cms.s3 (megagroup)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:cmss3format",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/cscartformat",
+      "target": "format:cscartformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:cscartformat",
+      "target": "platform:cs-cart",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:cscartformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/diskauntscsvformat",
+      "target": "format:diskauntscsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:diskauntscsvformat",
+      "target": "platform:маркетплейс diskaunts",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:diskauntscsvformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/eshoperformat",
+      "target": "format:eshoperformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:eshoperformat",
+      "target": "platform:eshoper",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:eshoperformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/hostcmsformat",
+      "target": "format:hostcmsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:hostcmsformat",
+      "target": "platform:hostcms",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:hostcmsformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/insalescsvformat",
+      "target": "format:insalescsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:insalescsvformat",
+      "target": "platform:insales",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:insalescsvformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/insalesxlsformat",
+      "target": "format:insalesxlsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:insalesxlsformat",
+      "target": "platform:insales",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:insalesxlsformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/joomlaformat",
+      "target": "format:joomlaformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:joomlaformat",
+      "target": "platform:joomla (excel2js)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:joomlaformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/joomshoppingformat",
+      "target": "format:joomshoppingformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:joomshoppingformat",
+      "target": "platform:joomshopping",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:joomshoppingformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/lpmotorformat",
+      "target": "format:lpmotorformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:lpmotorformat",
+      "target": "platform:lpmotor (lpmotor.ru)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:lpmotorformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/mogutaformat",
+      "target": "format:mogutaformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:mogutaformat",
+      "target": "platform:moguta",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:mogutaformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/okaycmsformat",
+      "target": "format:okaycmsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okaycmsformat",
+      "target": "platform:okaycms",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okaycmsformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/opencartcsvliteformat",
+      "target": "format:opencartcsvliteformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartcsvliteformat",
+      "target": "platform:opencart модулем csv export/import light",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartcsvliteformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/opencartcsvpriceproformat",
+      "target": "format:opencartcsvpriceproformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartcsvpriceproformat",
+      "target": "platform:opencart в формате csv price pro",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartcsvpriceproformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/opencartexportimportformat",
+      "target": "format:opencartexportimportformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartexportimportformat",
+      "target": "platform:opencart",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:opencartexportimportformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/openmallformat",
+      "target": "format:openmallformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:openmallformat",
+      "target": "platform:openmall",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:openmallformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/osclassadimporterformat",
+      "target": "format:osclassadimporterformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:osclassadimporterformat",
+      "target": "platform:osclass",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:osclassadimporterformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/phpshopformat",
+      "target": "format:phpshopformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:phpshopformat",
+      "target": "platform:phpshop",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:phpshopformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/prestashopformat",
+      "target": "format:prestashopformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:prestashopformat",
+      "target": "platform:prestashop",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:prestashopformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/prestashopmagiconestoremanagerformat",
+      "target": "format:prestashopmagiconestoremanagerformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:prestashopmagiconestoremanagerformat",
+      "target": "platform:prestashop magicone store manager",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:prestashopmagiconestoremanagerformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/readyscriptformat",
+      "target": "format:readyscriptformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:readyscriptformat",
+      "target": "platform:readyscript",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:readyscriptformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/shopifyformat",
+      "target": "format:shopifyformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:shopifyformat",
+      "target": "platform:shopify (shopify.com)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:shopifyformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/simplacmsformat",
+      "target": "format:simplacmsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:simplacmsformat",
+      "target": "platform:simpla cms",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:simplacmsformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/storelandformat",
+      "target": "format:storelandformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:storelandformat",
+      "target": "platform:storeland",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:storelandformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/tildacsvformat",
+      "target": "format:tildacsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tildacsvformat",
+      "target": "platform:tilda (tilda.cc) в csv",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tildacsvformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/tildaymlformat",
+      "target": "format:tildaymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tildaymlformat",
+      "target": "platform:tilda (tilda.cc) в yml",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tildaymlformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/uralcmscsvformat",
+      "target": "format:uralcmscsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:uralcmscsvformat",
+      "target": "platform:ural cms (uralcms.ru)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:uralcmscsvformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/ushopymlformat",
+      "target": "format:ushopymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ushopymlformat",
+      "target": "platform:ushop (ucoz.ru)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ushopymlformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/webasystshopscriptformat",
+      "target": "format:webasystshopscriptformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:webasystshopscriptformat",
+      "target": "platform:webasyst shop-script",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:webasystshopscriptformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/wixformat",
+      "target": "format:wixformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:wixformat",
+      "target": "platform:wix",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:wixformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/woocommerceformat",
+      "target": "format:woocommerceformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:woocommerceformat",
+      "target": "platform:woocommerce",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:woocommerceformat",
+      "target": "category:cms",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/commercemlformat",
+      "target": "format:commercemlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:commercemlformat",
+      "target": "platform:commerceml (1с)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:commercemlformat",
+      "target": "category:commerce",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/moyskladformat",
+      "target": "format:moyskladformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:moyskladformat",
+      "target": "platform:мойсклад",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:moyskladformat",
+      "target": "category:commerce",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/csvformat",
+      "target": "format:csvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:csvformat",
+      "target": "platform:csv",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:csvformat",
+      "target": "category:file",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/jsonformat",
+      "target": "format:jsonformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:jsonformat",
+      "target": "platform:json",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:jsonformat",
+      "target": "category:file",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/xlsformat",
+      "target": "format:xlsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:xlsformat",
+      "target": "platform:excel",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:xlsformat",
+      "target": "category:file",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/xmlformat",
+      "target": "format:xmlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:xmlformat",
+      "target": "platform:xml",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:xmlformat",
+      "target": "category:file",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/ymlformat",
+      "target": "format:ymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ymlformat",
+      "target": "platform:yml",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ymlformat",
+      "target": "category:file",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/epicentrkymlformat",
+      "target": "format:epicentrkymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:epicentrkymlformat",
+      "target": "platform:epicentrk (epicentrk.ua) в yml",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:epicentrkymlformat",
+      "target": "category:marketplace",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/kaspixmlformat",
+      "target": "format:kaspixmlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:kaspixmlformat",
+      "target": "platform:как выгрузить цены и наличие товаров на kaspi.kz",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:kaspixmlformat",
+      "target": "category:marketplace",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/megamarketymlformat",
+      "target": "format:megamarketymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:megamarketymlformat",
+      "target": "platform:мегамаркет",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:megamarketymlformat",
+      "target": "category:marketplace",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/promuaymlformat",
+      "target": "format:promuaymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:promuaymlformat",
+      "target": "platform:prom.ua",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:promuaymlformat",
+      "target": "category:marketplace",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/rozetkaymlformat",
+      "target": "format:rozetkaymlformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:rozetkaymlformat",
+      "target": "platform:rozetka.com.ua",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:rozetkaymlformat",
+      "target": "category:marketplace",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/facebookcsvformat",
+      "target": "format:facebookcsvformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:facebookcsvformat",
+      "target": "platform:каталоги facebook* (csv)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:facebookcsvformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/facebookxmlfeedformat",
+      "target": "format:facebookxmlfeedformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:facebookxmlfeedformat",
+      "target": "platform:каталоги facebook*",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:facebookxmlfeedformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/googlemerchantformat",
+      "target": "format:googlemerchantformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:googlemerchantformat",
+      "target": "platform:google merchant center",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:googlemerchantformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/okalbumsformat",
+      "target": "format:okalbumsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okalbumsformat",
+      "target": "platform:альбомы одноклассники",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okalbumsformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/okformat",
+      "target": "format:okformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okformat",
+      "target": "platform:одноклассники",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:okformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/showcaseformat",
+      "target": "format:showcaseformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:showcaseformat",
+      "target": "platform:витрины товаров",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:showcaseformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/vkalbumsformat",
+      "target": "format:vkalbumsformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:vkalbumsformat",
+      "target": "platform:альбомы вконтакте",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:vkalbumsformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/vkformat",
+      "target": "format:vkformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:vkformat",
+      "target": "platform:вконтакте",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:vkformat",
+      "target": "category:social",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/amadyformat",
+      "target": "format:amadyformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:amadyformat",
+      "target": "platform:амади",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:amadyformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/kupivspformat",
+      "target": "format:kupivspformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:kupivspformat",
+      "target": "platform:сайт kupivsp.ru",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:kupivspformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/materinstvoshopformat",
+      "target": "format:materinstvoshopformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:materinstvoshopformat",
+      "target": "platform:материнство (materinstvo-shop.ru)",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:materinstvoshopformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/mikaiformat",
+      "target": "format:mikaiformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:mikaiformat",
+      "target": "platform:mikai",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:mikaiformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/ok24format",
+      "target": "format:ok24format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ok24format",
+      "target": "platform:24-ok.ru",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:ok24format",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/pokupki63format",
+      "target": "format:pokupki63format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:pokupki63format",
+      "target": "platform:63pokupki.ru",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:pokupki63format",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/pokupkiprostoformat",
+      "target": "format:pokupkiprostoformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:pokupkiprostoformat",
+      "target": "platform:покупки-просто",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:pokupkiprostoformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/samarskieroditeliformat",
+      "target": "format:samarskieroditeliformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:samarskieroditeliformat",
+      "target": "platform:самарские родители",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:samarskieroditeliformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/serpokformat",
+      "target": "format:serpokformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:serpokformat",
+      "target": "platform:serpok.ru",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:serpokformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/spkostromaformat",
+      "target": "format:spkostromaformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:spkostromaformat",
+      "target": "platform:сп кострома",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:spkostromaformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/spprotonformat",
+      "target": "format:spprotonformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:spprotonformat",
+      "target": "platform:сайты сп-протон",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:spprotonformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/stospformat",
+      "target": "format:stospformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:stospformat",
+      "target": "platform:100 сп",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:stospformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/supermamkiformat",
+      "target": "format:supermamkiformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:supermamkiformat",
+      "target": "platform:супермамки",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:supermamkiformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/superpuperformat",
+      "target": "format:superpuperformat",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:superpuperformat",
+      "target": "platform:сайт superpuper.ru",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:superpuperformat",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/tom70format",
+      "target": "format:tom70format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tom70format",
+      "target": "platform:сайты сп с модулем tom70",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:tom70format",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/howto/format/zaprosto24format",
+      "target": "format:zaprosto24format",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:zaprosto24format",
+      "target": "platform:запросто 24",
+      "relation": "EXPORTS_TO",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "format:zaprosto24format",
+      "target": "category:sp",
+      "relation": "IN_CATEGORY",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/tariffs",
+      "target": "plan:Day",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Day",
+      "target": "limit:parallel_downloads=3",
+      "relation": "LIMITS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Day",
+      "target": "limit:ai_points=10",
+      "relation": "INCLUDES",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/tariffs",
+      "target": "plan:Pro",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Pro",
+      "target": "limit:parallel_downloads=20",
+      "relation": "LIMITS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Pro",
+      "target": "limit:ai_points=10000",
+      "relation": "INCLUDES",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/tariffs",
+      "target": "plan:Lite",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Lite",
+      "target": "limit:parallel_downloads=10",
+      "relation": "LIMITS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Lite",
+      "target": "limit:ai_points=100",
+      "relation": "INCLUDES",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "page:/tariffs",
+      "target": "plan:Пробная версия",
+      "relation": "DOCUMENTS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "plan:Пробная версия",
+      "target": "limit:parallel_downloads=1",
+      "relation": "LIMITS",
+      "confidence": "measured",
+      "source_id": null
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:1",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:1",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:2",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:2",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:3",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:3",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:4",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:4",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:5",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:5",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:6",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:6",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:7",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:7",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-api",
+      "target": "claim:8",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "claim:8",
+      "target": "page:/howto/api",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 14
+    },
+    {
+      "source": "entity:q-parser-plan",
+      "target": "claim:9",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "claim:9",
+      "target": "page:/tariffs",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "entity:q-parser-plan",
+      "target": "claim:10",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "claim:10",
+      "target": "page:/tariffs",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "entity:q-parser-plan",
+      "target": "claim:11",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "claim:11",
+      "target": "page:/tariffs",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "entity:q-parser-plan",
+      "target": "claim:12",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "claim:12",
+      "target": "page:/tariffs",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 127
+    },
+    {
+      "source": "entity:q-parser-webhooks",
+      "target": "claim:13",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "claim:13",
+      "target": "page:/howto/automata/webhooks",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "entity:q-parser-webhooks",
+      "target": "claim:14",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "claim:14",
+      "target": "page:/howto/automata/webhooks",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "entity:q-parser-webhooks",
+      "target": "claim:15",
+      "relation": "HAS_CLAIM",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "claim:15",
+      "target": "page:/howto/automata/webhooks",
+      "relation": "EVIDENCED_BY",
+      "confidence": "measured",
+      "source_id": 17
+    },
+    {
+      "source": "marketplace:ru:Ozon Seller",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Wildberries",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Yandex Market",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Megamarket",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Avito",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Kaspi.kz",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Uzum Market",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:ru:Wildberries KZ/BY",
+      "relation": "IN_LAYER",
+      "target": "layer:ru"
+    },
+    {
+      "source": "marketplace:cn:1688",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Taobao / Tmall",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Alibaba.com",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Pinduoduo",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:JD.com",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Douyin",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:AliExpress",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Temu",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Shein Marketplace",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Ozon Global",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:WB China",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:cn:Xianyu / Goofish",
+      "relation": "IN_LAYER",
+      "target": "layer:cn"
+    },
+    {
+      "source": "marketplace:global:Amazon EU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Etsy",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Allegro",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Kaufland",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Bol.com",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Cdiscount",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Zalando",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:OTTO",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Fnac",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:ManoMano",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eMAG",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Heureka",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Idealo",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon US/CA",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Etsy US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Walmart",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:TikTok Shop US",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Newegg",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Wayfair",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Target Plus",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Best Buy",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Mercado Libre",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon Brazil",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Magazine Luiza",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Americanas",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Falabella",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Shopee",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Lazada",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Tokopedia",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:TikTok Shop SEA",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Rakuten",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Yahoo Shopping",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Mercari",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Coupang",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Naver Smart Store",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon.ae",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Noon",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Trendyol",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Hepsiburada",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:n11",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Jumia",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Takealot",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Amazon AU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:eBay AU",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Catch",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "marketplace:global:Trade Me",
+      "relation": "IN_LAYER",
+      "target": "layer:global"
+    },
+    {
+      "source": "asset.wbchina.ozon-openapi",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.wb-specs",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.adapter-spec",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.schema",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.governance",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.market-graph",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.wbchina.oss-stack",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.pricing",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.static-first",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.alibaba.identity",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.chinaauto.wiki",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.chinaauto.verify",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.goofish.negative",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "asset.niche-radar.model",
+      "relation": "REUSED_IN",
+      "target": "project:q-parser.ru",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Q-Parser",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:CloudParser / Облачный парсер",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:CatalogLoader / PriceMatrix",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ALL RIVAL",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:MarketParser",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ParserOK",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Apify",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Bright Data",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Zyte",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Oxylabs",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ScrapingBee",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Octoparse",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ParseHub",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:DataFeedWatch",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Productsup",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:GoDataFeed",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Lengow",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Feedonomics",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Channable",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Sellbrite",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:ChannelAdvisor / Rithum",
+      "confidence": "not_verified"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:LitCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Shopify Marketplace Connect (formerly Codisto)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Shopify",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:WooCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:BigCommerce",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Medusa Cloud",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Saleor Cloud",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Vendure",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Bitrix24",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:InSales",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Advantshop",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:competitors",
+      "relation": "CONTAINS",
+      "target": "record:competitors:Tilda",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Ozon Seller API",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Wildberries",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Yandex Market Partner API",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Megamarket (СберМегамаркет)",
+      "confidence": "medium"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Avito",
+      "confidence": "high"
+    },
+    {
+      "source": "track:marketplaces-ru",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-ru:Kaspi.kz",
+      "confidence": "medium"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:1688",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Taobao/Tmall",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Pinduoduo",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:JD.com",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Douyin/TikTok China",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Alibaba.com (B2B)",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:AliExpress",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Temu",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Ozon Global",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:WB China (Wildberries China)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-cn",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-cn:Xianyu/Goofish",
+      "confidence": "10"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Amazon SP-API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:eBay Sell APIs",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Etsy Open API v3",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Walmart Marketplace",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:TikTok Shop Partner API",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Allegro REST API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Kaufland Seller API",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Bol.com",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Cdiscount (via Octopia)",
+      "confidence": "5"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Zalando (zDirect)",
+      "confidence": "9"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Mercado Libre",
+      "confidence": "8"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Shopee Open Platform",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Lazada Open Platform",
+      "confidence": "7"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Rakuten RMS",
+      "confidence": "3"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Google Merchant Center",
+      "confidence": "10"
+    },
+    {
+      "source": "track:marketplaces-global",
+      "relation": "CONTAINS",
+      "target": "record:marketplaces-global:Meta Commerce",
+      "confidence": "6"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Medusa v2",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Saleor",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Vendure",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Shopify (Plus for B2B/multi-store)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:WooCommerce",
+      "confidence": "6"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:BigCommerce",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:1C-Bitrix (Bitrix CMS)",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:InSales",
+      "confidence": "8"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Advantshop",
+      "confidence": "7"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Tilda",
+      "confidence": "9"
+    },
+    {
+      "source": "track:platforms",
+      "relation": "CONTAINS",
+      "target": "record:platforms:Custom Next.js + PostgreSQL",
+      "confidence": "9"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Yandex Wordstat",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Bukvarix Top Keywords CSV",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Bukvarix API",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Yandex Market Seller Cabinet",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ozon Seller Analytics",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Wildberries Seller Cabinet",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:MPSTATS",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Avito Demand",
+      "confidence": "inferred"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Google Trends (RU)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Google Trends (Global)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Amazon Brand Analytics / Product Opportunity Explorer",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:TikTok Creative Center",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Pinterest Trends",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Exploding Topics",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Glimpse",
+      "confidence": "inferred"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Semrush API v4",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ahrefs API",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:DataForSEO",
+      "confidence": "reported"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Marketplace Search Suggestions",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Category Bestseller Ranks",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Out-of-Stock / Нехватка Signals",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Sales Rank / BSR History",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Review Velocity & Sentiment",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Search Query Reports (Seller Cabinet)",
+      "confidence": "measured"
+    },
+    {
+      "source": "track:demand",
+      "relation": "CONTAINS",
+      "target": "record:demand:Ad Keyword Reports (Bidder Data)",
+      "confidence": "measured"
+    }
+  ]
+}

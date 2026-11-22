@@ -1,0 +1,462 @@
+{
+  "sources": [
+    {
+      "name": "Yandex Wordstat",
+      "type": "keyword_volume",
+      "region": "RU",
+      "access": "web_ui_free",
+      "cost": "free",
+      "limits": "~1000 req/day soft cap; no bulk export; CAPTCHA on heavy use",
+      "url": "https://wordstat.yandex.ru",
+      "confidence": "reported",
+      "notes": "Exact/broad frequency for RU regions. No official public API. Third-party wrappers violate ToS. No historical API."
+    },
+    {
+      "name": "Bukvarix Top Keywords CSV",
+      "type": "keyword_volume_corpus",
+      "region": "RU",
+      "access": "free_registration_download",
+      "cost": "free",
+      "limits": "Free tier: 1M rows/export, 3M max with registration. 6 historical ordinal snapshots.",
+      "url": "https://www.bukvarix.com/top-keywords/",
+      "confidence": "measured",
+      "notes": "Best free RU demand corpus. Powers niche-radar. Columns: rank, phrase, words, chars, broad_freq (6 snapshots), exact_freq (6 snapshots). Ordinal axis, no calendar dates."
+    },
+    {
+      "name": "Bukvarix API",
+      "type": "keyword_volume_api",
+      "region": "RU",
+      "access": "api_key_free_or_paid",
+      "cost": "free / paid_tiers",
+      "limits": "Free key 'free' matches unregistered UI limits. Rate-limited (429 on burst). CSV/JSON/TSV output.",
+      "url": "https://api.bukvarix.com",
+      "confidence": "reported",
+      "notes": "Endpoints: keyword search (simple/list), domain analysis, top-keywords export. UTF-8 BOM optional."
+    },
+    {
+      "name": "Yandex Market Seller Cabinet",
+      "type": "marketplace_native",
+      "region": "RU",
+      "access": "seller_account_api_partner",
+      "cost": "free_for_sellers",
+      "limits": "Partner API only; rate limits per method.",
+      "url": "https://market.yandex.ru/sellers",
+      "confidence": "reported",
+      "notes": "Category demand, search queries in category, competitor pricing, stock signals. No public keyword volume API."
+    },
+    {
+      "name": "Ozon Seller Analytics",
+      "type": "marketplace_native",
+      "region": "RU",
+      "access": "seller_account_api",
+      "cost": "free_for_sellers",
+      "limits": "API v3/v4; RPS limits, daily quotas per endpoint.",
+      "url": "https://seller.ozon.ru",
+      "confidence": "reported",
+      "notes": "Search query stats, category trends, sales velocity, stockouts, review velocity."
+    },
+    {
+      "name": "Wildberries Seller Cabinet",
+      "type": "marketplace_native",
+      "region": "RU",
+      "access": "seller_account_api",
+      "cost": "free_for_sellers",
+      "limits": "API; RPS limits, daily quotas.",
+      "url": "https://sellers.wildberries.ru",
+      "confidence": "reported",
+      "notes": "Search queries, category demand, sales ranks, stock/out-of-stock signals, review counts."
+    },
+    {
+      "name": "MPSTATS",
+      "type": "marketplace_intelligence_saas",
+      "region": "RU",
+      "access": "paid_saas_api_mcp",
+      "cost": "5520–29746 ₽/mo (annual 1+1 promo)",
+      "limits": "Tiered: cabinets, employees, module limits. API access on all paid tiers.",
+      "url": "https://mpstats.io",
+      "confidence": "measured",
+      "notes": "Best RU marketplace intelligence. External analytics (demand, niches, competitor pricing, sales forecasts), internal analytics, bidder, repricer, SKU auditor. MCP + REST API."
+    },
+    {
+      "name": "Avito Demand",
+      "type": "classifieds_demand",
+      "region": "RU",
+      "access": "web_ui_only",
+      "cost": "free",
+      "limits": "No bulk export; manual category browsing only.",
+      "url": "https://avito.ru",
+      "confidence": "inferred",
+      "notes": "Classifieds demand ≠ e-commerce demand. Useful for local services, used goods, real estate niches."
+    },
+    {
+      "name": "Google Trends (RU)",
+      "type": "trend_index",
+      "region": "RU",
+      "access": "web_ui_free_unofficial_api",
+      "cost": "free",
+      "limits": "UI daily quota; pytrends fragile, undocumented, rate-limited.",
+      "url": "https://trends.google.com/trends/",
+      "confidence": "measured",
+      "notes": "Relative interest (0–100), geo drill-down, related queries, real-time trends. No absolute volumes."
+    },
+    {
+      "name": "Google Trends (Global)",
+      "type": "trend_index",
+      "region": "GLOBAL",
+      "access": "web_ui_free_unofficial_api",
+      "cost": "free",
+      "limits": "UI daily quota; pytrends fragile, undocumented, rate-limited.",
+      "url": "https://trends.google.com/trends/",
+      "confidence": "measured",
+      "notes": "Global + per-country. Relative index only. Use for seasonality, geo comparison, breakout detection."
+    },
+    {
+      "name": "Amazon Brand Analytics / Product Opportunity Explorer",
+      "type": "marketplace_native",
+      "region": "GLOBAL",
+      "access": "brand_registry_sp_api",
+      "cost": "free_for_eligible_sellers",
+      "limits": "SP-API rate limits per role; BA/POE gated behind Brand Registry.",
+      "url": "https://advertising.amazon.com",
+      "confidence": "reported",
+      "notes": "Best Amazon demand signal. Search frequency rank, click/share/conversion share, niche score, market size estimates."
+    },
+    {
+      "name": "TikTok Creative Center",
+      "type": "social_trend_intelligence",
+      "region": "GLOBAL",
+      "access": "free_account_ads_api",
+      "cost": "free / ads_api",
+      "limits": "Business Center required for API; rate limits apply.",
+      "url": "https://ads.tiktok.com/creative-center",
+      "confidence": "reported",
+      "notes": "Trending hashtags, sounds, creators, top ads, keyword insights (CCK). Strong for viral product discovery."
+    },
+    {
+      "name": "Pinterest Trends",
+      "type": "trend_index",
+      "region": "GLOBAL",
+      "access": "web_ui_free_ads_api",
+      "cost": "free / ads_api",
+      "limits": "Ads API standard rate limits.",
+      "url": "https://trends.pinterest.com/",
+      "confidence": "reported",
+      "notes": "Seasonal trends, keyword volume index, demographic breakdown. Strong for DIY, home, fashion, food."
+    },
+    {
+      "name": "Exploding Topics",
+      "type": "early_trend_detection_saas",
+      "region": "GLOBAL",
+      "access": "paid_saas_api",
+      "cost": "$39–249/mo",
+      "limits": "Pro: 100–2000 tracked trends, 10–500 analyses, CSV export on Business+. Trends API available.",
+      "url": "https://explodingtopics.com",
+      "confidence": "measured",
+      "notes": "1.1M+ topics, ML + human curation, 12+ month lead time. Meta-trends, trending products, startups. Owned by Semrush."
+    },
+    {
+      "name": "Glimpse",
+      "type": "trend_database_saas",
+      "region": "GLOBAL",
+      "access": "enterprise_saas",
+      "cost": "custom_enterprise",
+      "limits": "Not public.",
+      "url": "https://glimpse.com",
+      "confidence": "inferred",
+      "notes": "Trend database + alerting. Less transparent methodology."
+    },
+    {
+      "name": "Semrush API v4",
+      "type": "seo_keyword_api",
+      "region": "GLOBAL",
+      "access": "paid_seo_business_plus_units",
+      "cost": "SEO Business ~$499/mo + units ($0.10–$10/1k units)",
+      "limits": "Unit-based pricing per endpoint; Traffic & Market API separate access.",
+      "url": "https://developer.semrush.com",
+      "confidence": "measured",
+      "notes": "26.4B keywords, 808M domains, 43T backlinks, 142 geo DBs. Keyword volume, KD, intent, SERP features, traffic estimates."
+    },
+    {
+      "name": "Ahrefs API",
+      "type": "seo_keyword_api",
+      "region": "GLOBAL",
+      "access": "enterprise_only",
+      "cost": "custom ($500–$5000+/mo typical)",
+      "limits": "Rate limits per tier; OpenAPI spec available.",
+      "url": "https://ahrefs.com/api",
+      "confidence": "measured",
+      "notes": "Keywords Explorer, Site Explorer, Rank Tracker, Content Explorer. High-quality clickstream-backed volumes."
+    },
+    {
+      "name": "DataForSEO",
+      "type": "seo_keyword_api",
+      "region": "GLOBAL",
+      "access": "pay_as_you_go_api",
+      "cost": "~$0.001–$0.01/req",
+      "limits": "Concurrent requests limit; generous free trial.",
+      "url": "https://dataforseo.com",
+      "confidence": "reported",
+      "notes": "SERP API, Keywords Data API (GKP, clickstream), Merchant API (Amazon, Google Shopping). Good for programmatic scale."
+    },
+    {
+      "name": "Marketplace Search Suggestions",
+      "type": "marketplace_native_signal",
+      "region": "RU_GLOBAL",
+      "access": "public_suggest_endpoints",
+      "cost": "free",
+      "limits": "Rate limited per platform.",
+      "url": "multiple",
+      "confidence": "measured",
+      "notes": "Real-time user intent, long-tail variants, emerging phrasing. Available on Yandex, Google, Ozon, WB, Amazon, AliExpress."
+    },
+    {
+      "name": "Category Bestseller Ranks",
+      "type": "marketplace_native_signal",
+      "region": "RU_GLOBAL",
+      "access": "seller_cabinet_public_pages",
+      "cost": "free",
+      "limits": "Public pages scrapable; seller API for authenticated.",
+      "url": "multiple",
+      "confidence": "measured",
+      "notes": "Relative demand within category, velocity proxy."
+    },
+    {
+      "name": "Out-of-Stock / Нехватка Signals",
+      "type": "marketplace_native_signal",
+      "region": "RU_GLOBAL",
+      "access": "seller_tools_mpstats",
+      "cost": "free_seller_tools / paid_mpstats",
+      "limits": "MPSTATS provides structured feed; seller cabinets show own stock.",
+      "url": "https://mpstats.io",
+      "confidence": "measured",
+      "notes": "Unmet demand, supply gaps, competitor weakness. Strongest unit-economics proxy."
+    },
+    {
+      "name": "Sales Rank / BSR History",
+      "type": "marketplace_native_signal",
+      "region": "GLOBAL",
+      "access": "seller_tools_keepa_mpstats",
+      "cost": "free_limited / paid",
+      "limits": "Keepa free tier limited; MPSTATS full history on paid.",
+      "url": "multiple",
+      "confidence": "measured",
+      "notes": "Velocity, seasonality, competitor benchmarking."
+    },
+    {
+      "name": "Review Velocity & Sentiment",
+      "type": "marketplace_native_signal",
+      "region": "RU_GLOBAL",
+      "access": "seller_cabinet_mpstats_scraping",
+      "cost": "free_seller / paid_mpstats",
+      "limits": "Seller cabinet own products; MPSTATS competitor tracking.",
+      "url": "multiple",
+      "confidence": "measured",
+      "notes": "Product-market fit, quality signals, launch traction."
+    },
+    {
+      "name": "Search Query Reports (Seller Cabinet)",
+      "type": "marketplace_native_signal",
+      "region": "RU",
+      "access": "seller_api_ui",
+      "cost": "free_for_sellers",
+      "limits": "Requires active seller account on Ozon/WB/Yandex Market.",
+      "url": "multiple",
+      "confidence": "measured",
+      "notes": "Exact phrases buyers use, impression/share/conversion. Highest-confidence demand signal for RU marketplaces."
+    },
+    {
+      "name": "Ad Keyword Reports (Bidder Data)",
+      "type": "marketplace_native_signal",
+      "region": "RU",
+      "access": "mpstats_bidder_seller_ad_cabinet",
+      "cost": "paid_mpstats / free_seller_ad_cabinet",
+      "limits": "MPSTATS Bidder on all paid tiers; seller ad cabinet for own campaigns.",
+      "url": "https://mpstats.io/instruments/wildberries/bidder",
+      "confidence": "measured",
+      "notes": "CPC, CTR, conversion, ROAS per keyword — unit economics proxy."
+    }
+  ],
+  "methods": [
+    {
+      "name": "Token n-gram Clustering",
+      "type": "clustering",
+      "region": "ANY",
+      "access": "builtin_niche_radar",
+      "cost": "free",
+      "limits": "Language-agnostic; misses semantic synonyms.",
+      "url": "C:\\susa ai\\niche-radar (keyword_tokens + pg_trgm)",
+      "confidence": "measured",
+      "notes": "Used by niche-radar. Fast, works on 3M phrases. Good for RU morphology."
+    },
+    {
+      "name": "Embedding-based Clustering (SBERT/LaBSE)",
+      "type": "clustering",
+      "region": "ANY",
+      "access": "python_library",
+      "cost": "free (local compute)",
+      "limits": "Requires GPU for 3M+ phrases; multilingual models available.",
+      "url": "https://www.sbert.net",
+      "confidence": "measured",
+      "notes": "Semantic clusters, cross-language. Use for cluster labeling + merging token clusters."
+    },
+    {
+      "name": "SERP Overlap Clustering",
+      "type": "clustering",
+      "region": "GLOBAL",
+      "access": "dataforseo_semrush_api",
+      "cost": "paid_per_request",
+      "limits": "Expensive at scale (~$0.01/keyword).",
+      "url": "https://dataforseo.com",
+      "confidence": "reported",
+      "notes": "Search-intent alignment. Use only for high-value niches."
+    },
+    {
+      "name": "Co-occurrence in Search Sessions",
+      "type": "clustering",
+      "region": "RU",
+      "access": "mpstats_yandex_metrica",
+      "cost": "paid_mpstats / free_own_metrica",
+      "limits": "Requires clickstream access.",
+      "url": "https://mpstats.io",
+      "confidence": "inferred",
+      "notes": "Behavioral intent. MPSTATS may offer via custom research."
+    },
+    {
+      "name": "Niche Radar Metrics (B/R/A/G/C/P)",
+      "type": "metrics_computation",
+      "region": "RU",
+      "access": "builtin_niche_radar",
+      "cost": "free",
+      "limits": "Requires ≥4 complete snapshots. Ordinal time axis only.",
+      "url": "C:\\susa ai\\niche-radar (docs/data-model.md)",
+      "confidence": "measured",
+      "notes": "B=(f1+f2)/2, R=(f[n-1]+fn)/2, A=R-B, G=(R-B)/B, C=#{f[i]>f[i-1]}/(n-1), P=fn/max(f). Transparent, versioned."
+    },
+    {
+      "name": "Priority_v1 Scoring",
+      "type": "scoring",
+      "region": "RU",
+      "access": "builtin_niche_radar",
+      "cost": "free",
+      "limits": "Heuristic for primary screening only. No competition/economics data.",
+      "url": "C:\\susa ai\\niche-radar (docs/data-model.md §7.4)",
+      "confidence": "measured",
+      "notes": "priority = 100×(0.30g + 0.25a + 0.20C + 0.15v + 0.10T). g=clip(G/2), a=clip(ln(1+max(A,0))/ln(10001)), v=clip(ln(1+fn)/ln(100001))."
+    },
+    {
+      "name": "Seasonality Detection (Google Trends)",
+      "type": "trend_detection",
+      "region": "GLOBAL",
+      "access": "web_ui_pytrends",
+      "cost": "free",
+      "limits": "Relative index only; 5-year max history; weekly granularity.",
+      "url": "https://trends.google.com",
+      "confidence": "measured",
+      "notes": "Peak_month / Avg_month over 12mo. Index 0.5–2.0 acceptable; avoid extreme seasonality (>3x)."
+    },
+    {
+      "name": "Early Trend Detection (Exploding Topics)",
+      "type": "trend_detection",
+      "region": "GLOBAL",
+      "access": "paid_saas_api",
+      "cost": "$39–249/mo",
+      "limits": "Pro: 100–2000 tracked trends. API access on Business+.",
+      "url": "https://explodingtopics.com/feature/et-api",
+      "confidence": "measured",
+      "notes": "12+ month lead time. Meta-trends, trending products, startups. ML + human curation."
+    },
+    {
+      "name": "Competition Density Estimation",
+      "type": "competition_analysis",
+      "region": "RU_GLOBAL",
+      "access": "mpstats_seller_cabinet",
+      "cost": "paid_mpstats / free_seller",
+      "limits": "Seller cabinet shows own category; MPSTATS shows all.",
+      "url": "https://mpstats.io",
+      "confidence": "measured",
+      "notes": "#sellers / demand_volume. Threshold <0.05 sellers per 1k searches."
+    },
+    {
+      "name": "Unit Economics Gate (MPSTATS Calculator + Bidder)",
+      "type": "unit_economics",
+      "region": "RU",
+      "access": "paid_mpstats",
+      "cost": "included_in_mpstats_subscription",
+      "limits": "Requires MPSTATS subscription.",
+      "url": "https://mpstats.io/instruments/calculator",
+      "confidence": "measured",
+      "notes": "(Avg_price × Conv_rate × Margin) / CPC. Target >3.0. Inputs: price, fees, CPC, conv_rate, return_rate, margin_target."
+    },
+    {
+      "name": "ICEEE Experiment Prioritization",
+      "type": "experiment_prioritization",
+      "region": "ANY",
+      "access": "framework",
+      "cost": "free",
+      "limits": "Subjective scoring; requires team calibration.",
+      "url": "https://www.experimentationhub.com/iceee",
+      "confidence": "reported",
+      "notes": "Impact, Confidence, Ease, Ethics, Evidence. Use for hypothesis queue ordering."
+    },
+    {
+      "name": "Keyword Expansion via Bukvarix API",
+      "type": "keyword_expansion",
+      "region": "RU",
+      "access": "api_free_key",
+      "cost": "free",
+      "limits": "Rate limited; 100 phrases/search free, 300 registered.",
+      "url": "https://www.bukvarix.com/api_keywords.html",
+      "confidence": "measured",
+      "notes": "Simple + list search modes. Use for seed → long-tail expansion before clustering."
+    },
+    {
+      "name": "Semrush Keyword Magic / Gap Analysis",
+      "type": "keyword_expansion",
+      "region": "GLOBAL",
+      "access": "paid_seo_business_api",
+      "cost": "SEO Business + units",
+      "limits": "Unit cost per request.",
+      "url": "https://developer.semrush.com/api/v4/seo/keyword-reports",
+      "confidence": "measured",
+      "notes": "Related keywords, questions, intent classification, KD, volume. Good for global niche expansion."
+    }
+  ],
+  "local_asset_assessment": {
+    "name": "niche-radar",
+    "path": "C:\\susa ai\\niche-radar",
+    "stack": "Laravel 13 + React 18 + PostgreSQL 17 + pg_trgm, Docker Compose",
+    "data_source": "Bukvarix Top Keywords CSV (up to 3M, 6 ordinal snapshots, exact+broad)",
+    "core_metrics": ["B", "R", "A", "G", "C", "P", "T", "priority_v1"],
+    "entities": ["keywords", "observations", "metric_runs", "niches (versioned)", "hypotheses", "rule_sets"],
+    "interfaces": ["REST API (/api/v1, OpenAPI 3)", "Read-only MCP (12 tools + methodology)", "React UI"],
+    "strengths": [
+      "Proven normalized schema with materialized metrics",
+      "Transparent versioned metric formulas (B/R/A/G/C/P)",
+      "Token index (keyword_tokens + pg_trgm) for fast search",
+      "MCP server ready for AI agent integration",
+      "Idempotent import pipeline (3M rows, SHA-256 dedup, background jobs)",
+      "Zero external dependencies, local-first, no API keys"
+    ],
+    "gaps": [
+      "Single source (Bukvarix only)",
+      "Ordinal snapshots only (no calendar dates)",
+      "No competition / unit economics data",
+      "No global (non-RU) keywords",
+      "No marketplace-native signals (rank, stockout, review velocity, ad keywords)",
+      "No experiment tracking (ICEEE, results)",
+      "PHP/Laravel stack may need wrapping for Python/TS agents"
+    ],
+    "reuse_decision": "ADOPT_AS_CORE_SERVICE_AND_EXTEND",
+    "rationale": "Schema covers 80% of demand layer needs. MCP+REST ready for agent integration. Import pipeline battle-tested. Methodology transparent and auditable. Zero marginal cost.",
+    "extension_plan": [
+      "Add 'source' column to observations/dataset_scans (migration)",
+      "New entity: marketplace_signals (SKU-level: rank, stock, reviews, ad_kw)",
+      "New entity: unit_economics (per niche/SKU hypothesis)",
+      "New entity: experiments (ICEEE, status, results)",
+      "Adapters: MPSTATS API, Seller APIs, Semrush, Google Trends, TikTok (Laravel Jobs)",
+      "Date enrichment: map ordinal → calendar via dated sources (background job)",
+      "Python metric library port (B/R/A/G/C/P) for non-PHP agents"
+    ],
+    "deployment": "Run as sidecar service (Docker Compose) on same host. q-parser.ru agents call MCP/REST."
+  }
+}

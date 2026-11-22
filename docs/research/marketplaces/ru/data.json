@@ -1,0 +1,429 @@
+{
+  "generated_at": "2026-11-22T00:00:00Z",
+  "platforms": [
+    {
+      "platform": "Ozon Seller API",
+      "role": "sales",
+      "auth": {
+        "model": "api_key_client_id",
+        "headers": ["Client-Id", "Api-Key"],
+        "token_source": "Seller Cabinet → Settings → API",
+        "expiry": "unlimited_revocable",
+        "scopes": "granular_per_method_groups",
+        "source": "measured"
+      },
+      "api_style": {
+        "protocol": "REST",
+        "base_url": "https://api-seller.ozon.ru",
+        "versioning": "url_path_v1_to_v6",
+        "format": "JSON",
+        "pagination": "cursor_based",
+        "source": "measured"
+      },
+      "product_import": {
+        "method": "api_only",
+        "endpoints": ["/v3/product/import", "/v1/product/import-by-sku"],
+        "feed_support": false,
+        "required_attributes": "category_specific_via_description_category_tree",
+        "category_mapping": "hierarchical_tree_type_id_required",
+        "media": {
+          "endpoint": "/v1/product/pictures/import",
+          "max_px": 3600,
+          "formats": ["JPEG", "PNG", "WebP"],
+          "max_mb": 20
+        },
+        "moderation": "async_status_via_import_info",
+        "variants": "sku_based_offer_id_product_id",
+        "source": "measured"
+      },
+      "price_write": {
+        "endpoints": ["/v1/product/import/prices", "/v5/product/info/prices"],
+        "frequency": "near_real_time",
+        "validation": "category_min_max_rules",
+        "idempotency": "offer_id_price_key",
+        "source": "measured"
+      },
+      "stock_write": {
+        "endpoints": ["/v2/products/stocks", "/v1/product/info/stocks-by-warehouse/fbo", "/v1/product/info/stocks-by-warehouse/fbs"],
+        "warehouse_types": ["FBO", "FBS", "rFBS"],
+        "granularity": "per_sku_per_warehouse_present_reserved",
+        "sync_latency": "seconds",
+        "source": "measured"
+      },
+      "order_read": {
+        "endpoints": ["/v3/posting/fbo/list", "/v3/posting/fbs/list", "/v4/posting/fbs/list", "/v2/order/create"],
+        "models": ["FBO", "FBS", "rFBS", "FBP"],
+        "status_flow": "awaiting_packaging → awaiting_deliver → delivering → delivered",
+        "webhooks": "notifications_api_v1_notification_*",
+        "source": "measured"
+      },
+      "returns": {
+        "endpoints": ["/v1/returns/list", "/v1/returns/company/fbs/info", "/v1/return/giveout/*"],
+        "flow": "buyer_initiates → seller_confirms_rejects → giveout_barcode → utilization",
+        "automation": "partial_api_some_ui_only",
+        "source": "measured"
+      },
+      "rate_limits": {
+        "general": "~50-100_req_min_unofficial",
+        "finance": "31_day_window_auto_split_required",
+        "premium_analytics": "separate_quotas",
+        "source": "reported"
+      },
+      "sandbox": {
+        "availability": false,
+        "notes": "No public sandbox; contract tests on fixtures (FR-029, FR-030)",
+        "source": "reported"
+      },
+      "docs_url": "https://docs.ozon.ru/api/seller/",
+      "confidence": "high",
+      "notes": "OpenAPI spec 482 paths; Premium Plus required for feedback answer; Premium for chat; Finance window ≤31 days",
+      "observed_at": "2026-11-02"
+    },
+    {
+      "platform": "Wildberries",
+      "role": "sales",
+      "auth": {
+        "model": "jwt_per_domain",
+        "headers": ["Authorization: Bearer <token>"],
+        "token_source": "Seller Cabinet → Settings → API (12 token scopes)",
+        "expiry": "long_lived_refresh_via_ui",
+        "scopes": "13_domains_content_marketplace_statistics_advert_discounts_supplies_finance_etc",
+        "source": "measured"
+      },
+      "api_style": {
+        "protocol": "REST",
+        "base_urls": [
+          "https://marketplace-api.wildberries.ru",
+          "https://seller-analytics-api.wildberries.ru",
+          "https://content-api.wildberries.ru",
+          "https://advert-api.wildberries.ru",
+          "https://feedbacks-api.wildberries.ru",
+          "https://discounts-prices-api.wildberries.ru",
+          "https://common-api.wildberries.ru",
+          "https://supplies-api.wildberries.ru",
+          "https://finance-api.wildberries.ru",
+          "https://user-management-api.wildberries.ru",
+          "https://advert-media-api.wildberries.ru",
+          "https://dp-calendar-api.wildberries.ru",
+          "https://statistics-api.wildberries.ru",
+          "https://documents-api.wildberries.ru",
+          "https://returns-api.wildberries.ru"
+        ],
+        "versioning": "path_v1_v2_v3_content_v2_v3",
+        "format": "JSON",
+        "pagination": "limit_offset_or_page_size",
+        "source": "measured"
+      },
+      "product_import": {
+        "method": "api_only",
+        "endpoints": ["/content/v2/cards/upload", "/content/v2/cards/update"],
+        "feed_support": false,
+        "required_attributes": "subject_specific_via_content_v2_object_charcs_subjectId",
+        "category_mapping": "subject_tree_content_v2_object_parent_all_all",
+        "media": {
+          "endpoint": "/content/v3/media/file + /content/v3/media/save",
+          "max_mb": 50,
+          "formats": ["JPEG", "PNG"]
+        },
+        "moderation": "async_error_list_via_content_v2_cards_error_list_quarantine_on_price_anomaly",
+        "variants": "nmID_size_characteristics",
+        "source": "measured"
+      },
+      "price_write": {
+        "endpoints": ["/api/v2/upload/task", "/api/v2/upload/task/club-discount", "/api/v3/stocks/{warehouseId}"],
+        "validation": "quarantine_if_price_below_one_third_reference",
+        "frequency": "buffer_task_model_async",
+        "source": "measured"
+      },
+      "stock_write": {
+        "endpoints": ["PUT/DELETE /api/v3/stocks/{warehouseId}"],
+        "warehouses": "via /api/v3/warehouses FBO_FBS",
+        "granularity": "per_nmID_size_warehouseId",
+        "source": "measured"
+      },
+      "order_read": {
+        "endpoints": ["/api/v3/orders/new", "/api/v3/orders", "/api/v3/dbw/orders/new", "/api/v3/dbs/orders/new"],
+        "models": ["FBS", "FBW", "DBS", "Click&Collect"],
+        "status_flow": "new → confirm → assemble → deliver/cancel",
+        "stickers": "/api/v3/orders/stickers PDF",
+        "source": "measured"
+      },
+      "returns": {
+        "endpoints": ["/api/v1/claims", "PATCH /api/v1/claim"],
+        "flow": "claim → seller_decision → refund_replace",
+        "source": "measured"
+      },
+      "rate_limits": {
+        "stats_api": "1_req_min_hard",
+        "content_api": "~100-200_req_min_unofficial",
+        "marketplace_api": "~200_req_min_unofficial",
+        "429_handling": "Retry-After header; 3 consecutive → account pause",
+        "source": "mixed"
+      },
+      "sandbox": {
+        "availability": false,
+        "notes": "No public sandbox; test tokens on staging products",
+        "source": "reported"
+      },
+      "docs_url": "https://dev.wildberries.ru/",
+      "confidence": "high",
+      "notes": "13 domains × read/write; 290 operations; frequent API changes; ЧЗ labeling via order meta endpoints; price quarantine hard block",
+      "observed_at": "2026-11-02"
+    },
+    {
+      "platform": "Yandex Market Partner API",
+      "role": "sales",
+      "auth": {
+        "model": "api_key_preferred_oauth_legacy",
+        "headers": ["Api-Key"],
+        "token_source": "Partner Cabinet → Settings → API Keys",
+        "expiry": "unlimited_apikey_1_year_oauth",
+        "scopes": "granular_all-methods_inventory-and-order-processing_pricing_offers-and-cards-management_promotion_plus_readonly_variants",
+        "source": "reported"
+      },
+      "api_style": {
+        "protocol": "REST + Webhooks",
+        "base_url": "https://api.partner.market.yandex.ru",
+        "versioning": "path_v1_v2",
+        "format": "JSON",
+        "pagination": "pageToken_limit_max_100",
+        "source": "reported"
+      },
+      "product_import": {
+        "method": "api_and_feed",
+        "endpoints": ["/v2/businesses/{businessId}/offer-mappings"],
+        "feed_support": true,
+        "feed_format": "YML (Yandex Market Language) primary, CSV via FTP/HTTP",
+        "required_attributes": "category_specific_via_categories_tree_gtin_ean_mandatory_most",
+        "category_mapping": "categoryId_from_tree_mapping_endpoint_auto_match",
+        "media": "up_to_50_images_max_10mb_JPEG_PNG_HTTPS_URLs",
+        "moderation": "async_state_in_offer_mapping_rejection_reasons_in_response",
+        "variants": "offerId_color_size_vendorCode",
+        "source": "reported"
+      },
+      "price_write": {
+        "endpoints": ["/v2/businesses/{businessId}/offer-prices/updates"],
+        "feed": "YML_price_element",
+        "frequency": "near_real_time_api_feed_refresh_per_schedule",
+        "source": "reported"
+      },
+      "stock_write": {
+        "endpoints": ["/v2/businesses/{businessId}/offer-stocks/updates"],
+        "granularity": "per_offer_per_warehouse_warehouseId",
+        "models": ["FBS", "FBY"],
+        "source": "reported"
+      },
+      "order_read": {
+        "endpoints": ["/v1/businesses/{businessId}/orders"],
+        "filters": "status_date_pageToken_limit_50",
+        "webhooks": "order_create_update_status_change_chat_returns_reviews",
+        "models": ["FBS", "FBY", "DBS", "Express"],
+        "source": "reported"
+      },
+      "returns": {
+        "endpoints": ["/v1/businesses/{businessId}/returns"],
+        "flow": "buyer_request → seller_accept_reject → refund",
+        "source": "reported"
+      },
+      "rate_limits": {
+        "campaigns_list": "1000_req_hour",
+        "general": "not_documented_429_with_RetryAfter",
+        "source": "inferred"
+      },
+      "sandbox": {
+        "availability": true,
+        "notes": "Test environment with test token",
+        "source": "reported"
+      },
+      "docs_url": "https://yandex.ru/dev/market/partner-api/doc/ru/",
+      "confidence": "high",
+      "notes": "GTIN/EAN mandatory most categories; YML feed HTTPS required; Data localization 152-FZ; Russian/CIS entity with Russian tax registration",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Megamarket (СберМегамаркет)",
+      "role": "sales",
+      "auth": {
+        "model": "bearer_token_merchant_basic_auth_mm_to_merchant",
+        "headers": ["Authorization: Bearer <token>", "Basic Auth (MM→merchant)"],
+        "token_source": "Seller Cabinet → Settings → API Integration → Generate Token",
+        "expiry": "unlimited_revocable",
+        "environments": "separate_tokens_test_production",
+        "source": "reported"
+      },
+      "api_style": {
+        "protocol": "REST_POST_only_merchant_endpoints + Webhooks_MM_to_merchant",
+        "base_url": "merchant_hosted_HTTPS_endpoint_MM_calls_merchant",
+        "format": "JSON",
+        "ssl": "valid_CA_signed_cert_required_no_self_signed",
+        "source": "reported"
+      },
+      "product_import": {
+        "method": "feed_primary_api_secondary",
+        "feed_support": true,
+        "feed_format": "YML/CSV/JSON_via_FTP_HTTP_scheduled_pull_by_MM",
+        "required_attributes": "category_specific_gtin_ean_brand_model",
+        "category_mapping": "MM_category_tree_in_cabinet",
+        "media": "URLs_in_feed_max_20mb_JPEG_PNG",
+        "moderation": "async_status_in_cabinet",
+        "source": "reported"
+      },
+      "price_write": {
+        "endpoints": ["/prices_update_merchant_hosted"],
+        "feed": "YML_price_element",
+        "frequency": "feed_per_schedule_api_on_demand",
+        "source": "reported"
+      },
+      "stock_write": {
+        "endpoints": ["/stocks_update_merchant_hosted"],
+        "feed": "YML_stock_element",
+        "models": ["FBS", "FBO", "DBS", "C&C", "P&C"],
+        "source": "reported"
+      },
+      "order_read": {
+        "webhooks_mm_to_merchant": ["order/new", "order/cancel", "order/confirm", "order/packing", "order/reject", "order/shipping", "sticker/print", "order/search", "order/get"],
+        "merchant_to_mm_api": "not_documented_callback_model",
+        "source": "reported"
+      },
+      "returns": {
+        "webhooks": ["return/new", "return/confirm", "return/cancel"],
+        "source": "reported"
+      },
+      "rate_limits": {
+        "notes": "Not documented; likely IP-based on merchant endpoint",
+        "source": "inferred"
+      },
+      "sandbox": {
+        "availability": true,
+        "notes": "Test token + test environment",
+        "source": "reported"
+      },
+      "docs_url": "https://partner-wiki.megamarket.ru/merchant-api/ (auth required)",
+      "confidence": "medium",
+      "notes": "Merchant must host HTTPS endpoint with valid CA cert; API activation requires personal manager approval; No public OpenAPI spec; Docs behind auth; Russian entity required (Sber ecosystem)",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Avito",
+      "role": "sales",
+      "auth": {
+        "model": "oauth2_client_credentials_app_specific_authorization_code_user_data",
+        "token_endpoint": "https://api.avito.ru/token",
+        "headers": ["Authorization: Bearer <access_token>"],
+        "expiry": "24_hours_access_token_refresh_via_client_credentials",
+        "scopes": "per_api_Ads_Chat_Delivery_Autoload_Balance_etc",
+        "source": "reported"
+      },
+      "api_style": {
+        "protocol": "REST_OpenAPI_3.0",
+        "base_url": "https://api.avito.ru",
+        "domains": "51_separate_APIs_Ads_Chat_Delivery_Autoload_Stats_etc",
+        "format": "JSON",
+        "source": "reported"
+      },
+      "product_import": {
+        "method": "api_and_autoload_feed",
+        "endpoints": ["/ads", "/autoload"],
+        "feed_support": true,
+        "feed_format": "XML_JSON_via_Autoload",
+        "required_attributes": "category_specific_via_categories_list",
+        "category_mapping": "category_tree_with_parameters",
+        "media": "upload_via_media_endpoints_max_50mb",
+        "moderation": "async_status_in_ad_object",
+        "source": "reported"
+      },
+      "price_write": {
+        "endpoints": ["PATCH /ads/{id}/price"],
+        "source": "reported"
+      },
+      "stock_write": {
+        "endpoints": ["PATCH /ads/{id}/quantity"],
+        "source": "reported"
+      },
+      "order_read": {
+        "endpoints": ["Delivery_API: /orders", "/orders/{id}/status"],
+        "models": ["Avito_Delivery_C2C_B2C", "Pickup_points"],
+        "source": "reported"
+      },
+      "returns": {
+        "endpoints": "Delivery_API_returns_flow",
+        "source": "reported"
+      },
+      "rate_limits": {
+        "notes": "Not publicly documented; per-app quotas; 429 with Retry-After",
+        "source": "inferred"
+      },
+      "sandbox": {
+        "availability": true,
+        "notes": "Pre-production environment",
+        "source": "reported"
+      },
+      "docs_url": "https://www.avito.ru/developers https://developers.avito.ru/api-catalog",
+      "confidence": "high",
+      "notes": "51 APIs — complexity explosion; Separate app registration per scope with review; Avito Delivery requires separate contract; Russian entity or verified individual; Category restrictions apply",
+      "observed_at": "2026-11-22"
+    },
+    {
+      "platform": "Kaspi.kz",
+      "role": "sales",
+      "auth": {
+        "model": "x_auth_token_header_seller_generated",
+        "headers": ["X-Auth-Token"],
+        "token_source": "Seller Cabinet → Settings → API Token",
+        "expiry": "unlimited_revocable",
+        "format": "JSON_API_vnd.api+json",
+        "source": "reported"
+      },
+      "api_style": {
+        "protocol": "REST_JSON_API_spec",
+        "base_url": "https://kaspi.kz/shop/api/v2/",
+        "versioning": "path_v2",
+        "format": "application/vnd.api+json",
+        "pagination": "page_number_page_size_max_100",
+        "source": "reported"
+      },
+      "product_import": {
+        "method": "api_only",
+        "endpoints": ["POST /products"],
+        "feed_support": false,
+        "required_attributes": "category_specific_gtin_ean_brand",
+        "category_mapping": "category_tree_via_API",
+        "media": "image_URLs_in_product_create_update",
+        "moderation": "async_status_in_product_object",
+        "source": "reported"
+      },
+      "price_write": {
+        "endpoints": ["PATCH /products/{id}"],
+        "source": "reported"
+      },
+      "stock_write": {
+        "endpoints": ["PATCH /products/{id}"],
+        "source": "reported"
+      },
+      "order_read": {
+        "endpoints": ["GET /orders"],
+        "filters": "filter[orders][state] filter[orders][creationDate] include[orders]=user",
+        "page_size_max": 100,
+        "models": ["Pickup", "Delivery"],
+        "source": "measured"
+      },
+      "returns": {
+        "notes": "Not documented; likely via order status transitions",
+        "source": "inferred"
+      },
+      "rate_limits": {
+        "notes": "Not documented; page size max 100; likely per-token quotas",
+        "source": "inferred"
+      },
+      "sandbox": {
+        "availability": false,
+        "notes": "No public sandbox",
+        "source": "inferred"
+      },
+      "docs_url": "https://guide.kaspi.kz/partner/ru/shop/api/general/q3193 https://kaspi.kz/merchantcabinet/support/pages/viewpage.action?pageId=917615",
+      "confidence": "medium",
+      "notes": "Kazakhstan entity (IP/TOO) or CIS with local tax registration mandatory; Kaspi Bank account required; Contract with Kaspi.kz Marketplace; JSON API format non-standard tooling; Docs in Confluence (auth); Returns/order write not well documented; Data residency Kazakhstan",
+      "observed_at": "2026-11-22"
+    }
+  ]
+}

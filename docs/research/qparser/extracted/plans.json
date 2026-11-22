@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Day",
+    "price_rub": 295,
+    "period": "день",
+    "parallel_downloads": 3,
+    "ai_points": 10,
+    "features": [
+      "Тариф на 24 часа",
+      "Оффлайн-парсинг",
+      "[AI редактирование товаров](/howto/ai)",
+      "[Без парсинга по расписанию](/howto/automata)",
+      "[Редактирование товаров](/howto/mods)",
+      "[Редактирование фото на лету](/howto/mods/images)",
+      "[1 произвольный CSS селектор](/howto/additional-css-selectors)"
+    ],
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured"
+  },
+  {
+    "name": "Pro",
+    "price_rub": 2495,
+    "period": "мес",
+    "parallel_downloads": 20,
+    "ai_points": 10000,
+    "features": [
+      "Оффлайн-парсинг",
+      "[AI редактирование товаров](/howto/ai)",
+      "[Автовыгрузки по расписанию](/howto/automata)",
+      "[Редактирование товаров](/howto/mods)",
+      "[Редактирование фото на лету](/howto/mods/images)",
+      "[До 100 произвольных CSS селекторов](/howto/additional-css-selectors)"
+    ],
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured"
+  },
+  {
+    "name": "Lite",
+    "price_rub": 995,
+    "period": "мес",
+    "parallel_downloads": 10,
+    "ai_points": 100,
+    "features": [
+      "Оффлайн-парсинг",
+      "[AI редактирование товаров](/howto/ai)",
+      "[Автовыгрузки по расписанию](/howto/automata)",
+      "[Редактирование товаров](/howto/mods)",
+      "[Редактирование фото на лету](/howto/mods/images)",
+      "[1 произвольный CSS селектор](/howto/additional-css-selectors)"
+    ],
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured"
+  },
+  {
+    "name": "Пробная версия",
+    "price_rub": 0,
+    "period": "trial",
+    "parallel_downloads": 1,
+    "ai_points": null,
+    "features": [
+      "Только бесплатные сайты",
+      "Оффлайн-парсинг",
+      "До 50 товаров  на платных сайтах",
+      "[AI редактирование товаров](/howto/ai)",
+      "[Без парсинга по расписанию](/howto/automata)",
+      "[Редактирование товаров](/howto/mods)",
+      "[Редактирование фото на лету](/howto/mods/images)",
+      "[1 произвольный CSS селектор](/howto/additional-css-selectors)",
+      "Парсинг всего каталога сайтов. Никаких ограничений по числу доступных сайтов;",
+      "Выгрузка в любой поддерживаемый формат файла или соцсети;",
+      "Уведомления об окончании парсинга товаров;",
+      "Парсинг или выгрузка не прервутся, если тариф закончится;"
+    ],
+    "source_url": "https://q-parser.ru/tariffs",
+    "confidence": "measured"
+  }
+]

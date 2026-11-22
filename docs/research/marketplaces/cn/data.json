@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-11-22",
+  "methodology": "Primary source verification from official docs, developer portals, and prior research artifacts. Every claim marked with evidence type: verified (measured from primary source), reported (credible secondary source with URL+date), inferred (logical deduction), hypothesis (unconfirmed).",
+  "platforms": [
+    {
+      "platform": "1688",
+      "role": "supply",
+      "api_available": true,
+      "entity_required": "Enterprise developer account (foreign corp OK for dev account; procurement needs China receiving entity)",
+      "auth": "AppKey + AppSecret + OAuth 2.0 access_token + MD5 signature",
+      "catalog_access": "Full site via alibaba.product.get (not just own products); item_search, item_search_img; wholesale sourcing APIs (alibaba.wholesale.goods.search, alibaba.wholesale.supplier.get)",
+      "order_model": "Procurement tracking via alibaba.trade.get, orderList.get, refund.get; buyer places order on your platform → you call 1688 procurement API → supplier ships to CN consolidation warehouse → your forwarder",
+      "cross_border_notes": "Domestic CN logistics only; cross-border fulfillment is buyer's responsibility. CN labeling laws apply. Currency: CNY to supplier. SAFE currency control applies to outbound payments from CN.",
+      "tos_risk": "Low for authorized API use. Cross-border/procurement apps need separate application review. ToS permits programmatic access for approved developers.",
+      "docs_url": "https://developer.aliyun.com/article/1758810 (official Alibaba Cloud Dev Community, 2026-08-27); open.1688.com",
+      "confidence": 9,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-08",
+      "key_findings": [
+        "Enterprise developer account required (individual devs have limited permissions)",
+        "Public product catalog fully accessible via alibaba.product.get — key difference vs Taobao",
+        "Wholesale sourcing APIs (寻源通) require separate permission application",
+        "Basic APIs free; high-frequency/advanced features need paid resource packages",
+        "Procurement loop: overseas order → 1688 procurement → CN warehouse → forwarder"
+      ]
+    },
+    {
+      "platform": "Taobao/Tmall",
+      "role": "supply",
+      "api_available": true,
+      "entity_required": "Foreign corporation OK; adzone_id from pub.alimama.com (Taobao Union account)",
+      "auth": "TOP protocol; adzone_id (mm_xxx_xxx_12345678 last segment); MD5/HMAC signature",
+      "catalog_access": "taobao.ovs.tbk.material.item.optional — overseas union catalog. Sites: GLOBAL (no restricted logic), HK, TW, MY, SG, AU, CA, MO. Languages: zh_CN, en_US. Returns click_url, coupon_share_url, income_rate, commission types (MKT/SP/COMMON/ZX).",
+      "order_model": "Affiliate redirect only. User clicks promotion_link → Taobao/Tmall → purchase → commission on TradeCompleted. Cookie window: 3 days (per AliExpress pattern).",
+      "cross_border_notes": "No customs/logistics involvement — pure affiliate. Alimama settles commissions to foreign bank accounts (HK/US). GLOBAL site bypasses restricted sales logic.",
+      "tos_risk": "Low for authorized Taobao Union affiliates. Must comply with Alimama promotion rules. No scraping permitted.",
+      "docs_url": "https://developer.alibaba.com/docs/api.htm?apiId=72807 (official Taobao Open Platform, live 2026)",
+      "confidence": 9,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-08",
+      "key_findings": [
+        "Explicit overseas API with multi-site support (GLOBAL, HK, TW, SG, MY, AU, CA, MO)",
+        "English language support (en_US)",
+        "Returns ready-to-use affiliate links (click_url, coupon_share_url)",
+        "Commission rates included in response (income_rate, commission_type)",
+        "adzone_id required from pub.alimama.com"
+      ]
+    },
+    {
+      "platform": "Pinduoduo",
+      "role": "supply",
+      "api_available": false,
+      "entity_required": "N/A",
+      "auth": "N/A",
+      "catalog_access": "No public catalog/sourcing API. Merchant open platform (open.pinduoduo.com) is for sellers managing own stores only.",
+      "order_model": "N/A",
+      "cross_border_notes": "Cross-border = Temu (separate entity, no API). No programmatic sourcing from Pinduoduo domestic catalog.",
+      "tos_risk": "N/A — no public API to violate",
+      "docs_url": "no public API",
+      "confidence": 8,
+      "evidence_type": "inferred",
+      "observed_at": "2026-11-22",
+      "key_findings": [
+        "Open platform is merchant-facing only (seller tools, not buyer/sourcing)",
+        "Temu is PDD's cross-border arm but has no public API (see Temu entry)",
+        "No affiliate program with public API discovered"
+      ]
+    },
+    {
+      "platform": "JD.com",
+      "role": "supply",
+      "api_available": false,
+      "entity_required": "N/A",
+      "auth": "N/A",
+      "catalog_access": "No public affiliate/sourcing API. JD Open Platform (open.jd.com) is for merchants. JD Worldwide requires merchant onboarding.",
+      "order_model": "N/A",
+      "cross_border_notes": "JD Worldwide is merchant-onboarding only. No programmatic product feed for foreign affiliates/sourcers.",
+      "tos_risk": "N/A",
+      "docs_url": "no public API",
+      "confidence": 8,
+      "evidence_type": "inferred",
+      "observed_at": "2026-11-22",
+      "key_findings": [
+        "JD Open Platform targets merchants, not affiliates/sourcers",
+        "JD Worldwide cross-border entry requires Chinese entity + invitation"
+      ]
+    },
+    {
+      "platform": "Douyin/TikTok China",
+      "role": "supply",
+      "api_available": false,
+      "entity_required": "N/A",
+      "auth": "N/A",
+      "catalog_access": "No public sourcing API. Douyin Shop (抖音小店) open platform is for merchants only. TikTok Shop cross-border is separate program.",
+      "order_model": "N/A",
+      "cross_border_notes": "TikTok Shop cross-border requires application/approval per market. No public product feed API.",
+      "tos_risk": "N/A",
+      "docs_url": "no public API",
+      "confidence": 7,
+      "evidence_type": "inferred",
+      "observed_at": "2026-11-22",
+      "key_findings": [
+        "Douyin Shop API: merchant order/product management only",
+        "TikTok Shop: separate cross-border seller program, not a sourcing API"
+      ]
+    },
+    {
+      "platform": "Alibaba.com (B2B)",
+      "role": "both",
+      "api_available": true,
+      "entity_required": "Affiliate: foreign corp OK. Merchant API: paid GGS (Gold Supplier) subscription required.",
+      "auth": "Affiliate: Alimama/proprietary tracking (no MMP). Merchant API: TOP protocol, AppKey+AppSecret+session, HMAC/MD5.",
+      "catalog_access": "Affiliate: portals.aliexpress.com/adcenter/affiliateProductSearch.htm (manual search). Merchant API: alibala.product.search (needs permission, free tier QPS=10). No public bulk catalog API for affiliates.",
+      "order_model": "Affiliate: redirect to Alibaba.com → TradeCompleted settlement (180-day window). Commission: new buyer <$5k 8% (ads.alibaba.com) / 2.59%-6.91% (Awin); existing buyer <$5k 3%. Fixed fees for larger orders. Russia/Ukraine/Iran/NK/Syria/Cuba/Nigeria blocked.",
+      "cross_border_notes": "Alibaba.com is B2B export FROM China. Foreign sellers cannot use it as sales channel. Affiliate commissions paid to foreign bank. No MMP/AppsFlyer — proprietary attribution only.",
+      "tos_risk": "Medium: country restrictions (Russia blocked), no third-party tracking, 180-day settlement window, commission assessed on 'traffic quality' at Alibaba's discretion.",
+      "docs_url": "https://ads.alibaba.com/ (affiliate); https://developer.alibaba.com/docs/doc.htm?articleId=118416 (merchant Open API); Awin merchant 17945",
+      "confidence": 8,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-08",
+      "key_findings": [
+        "Affiliate program real: up to 15% commission (ads.alibaba.com) or 2.59%-6.91% (Awin)",
+        "Russia and 6 other countries blocked from commission eligibility",
+        "Merchant Open API requires paid Gold Supplier subscription",
+        "Product search API exists but gated (permission + QPS=10 free tier)",
+        "Settlement only on TradeCompleted; 180-day max order-to-payment gap"
+      ]
+    },
+    {
+      "platform": "AliExpress",
+      "role": "sales",
+      "api_available": true,
+      "entity_required": "Foreign corporation OK. Requires AliExpress Portals approval + business license + Open Platform dev account.",
+      "auth": "OAuth 2.0 (oauth.aliexpress.com/authorize + /token) + TOP protocol (gw.api.taobao.com/router/rest) with HMAC/MD5 (NO SHA-256).",
+      "catalog_access": "11 affiliate endpoints: hotproduct.query, hotproduct.download (bulk + promotion_link), product.query, product.smartmatch, productdetail.get, category.get, image.search, featuredpromo.get, featuredpromo.products.get, cutflow.test. Returns: commission_rate, hot_product_commission_rate, original_price, sale_price, target_app_sale_price (per target_currency), ship_to_country pricing, delivery_days, evaluate_rate, lastest_volume, product images/video, category taxonomy.",
+      "order_model": "Affiliate redirect via promotion_link (s.click.aliexpress.com). ship_to_country returns destination-country price per tax policy. delivery_days: 3/5/7/10. target_currency (16), target_language (22).",
+      "cross_border_notes": "Landed cost computable from feed: ship_to_country + delivery_days = per-destination pricing + logistics. Multi-currency/multi-language built into API. Russia (RUB) and EU currencies supported. Seller is Chinese; AliExpress handles cross-border logistics.",
+      "tos_risk": "Low for approved affiliates. Daily quota ~5,000 req/day (unverified, 2025 source). Manual review ~2 days. Affiliate API access separate from Dropship API (different permission scope).",
+      "docs_url": "http://open.alitrip.com/docs/api.htm?apiId=45794 (hotproduct.query); http://open.alitrip.com/docs/api.htm?apiId=48598 (hotproduct.download); https://openservice.aliexpress.com/doc/api.htm; https://portals.aliexpress.com/",
+      "confidence": 9,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-08",
+      "key_findings": [
+        "11 verified affiliate endpoints on TOP protocol",
+        "hotproduct.download includes promotion_link (ready-made tracking links) — highest value endpoint",
+        "ship_to_country returns price per destination tax policy — landed cost is a lookup, not simulation",
+        "target_currency (16) + target_language (22) = pre-localized titles/prices",
+        "HMAC/MD5 only — no SHA-256 (community SDKs reporting SHA-256 are wrong)",
+        "Onboarding: Portals approval → Open Platform dev account → Affiliate API app type → biz license"
+      ]
+    },
+    {
+      "platform": "Temu",
+      "role": "sales",
+      "api_available": false,
+      "entity_required": "N/A",
+      "auth": "N/A",
+      "catalog_access": "None. partner.temu.com returns 702-byte JS shell ('enable JavaScript'). temu.com/temu-partner.html returns 2,889-byte empty shell. No developer docs, endpoints, SDK, auth docs, rate limits.",
+      "order_model": "N/A",
+      "cross_border_notes": "Temu handles cross-border logistics internally. No programmatic access for affiliates or sellers.",
+      "tos_risk": "High if attempting grey automation. No public API = any scraping/automation is ToS violation.",
+      "docs_url": "no public API",
+      "confidence": 7,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-08",
+      "key_findings": [
+        "Both official partner URLs are JS-only shells with no server-rendered content",
+        "No developer documentation, endpoint catalogue, SDK, or authentication documentation discoverable",
+        "Private/invite-only API possible but unconfirmed (confidence 4/10)",
+        "Strategic recommendation: curated human CSV only; grey automation rejected"
+      ]
+    },
+    {
+      "platform": "Ozon Global",
+      "role": "sales",
+      "api_available": true,
+      "entity_required": "Chinese legal entity required (separate international seller cabinet)",
+      "auth": "API Key + Client ID (Header)",
+      "catalog_access": "Seller API variant: product import, list, price, analytics. Similar to domestic Ozon Seller API (~70% coverage) but with currency operations.",
+      "order_model": "Order management via API. International shipping integration required. FBO/FBS models. Seller handles CN export customs + RU import customs.",
+      "cross_border_notes": "Currency control: CNY/RUB (CIPS, not SWIFT). Chinese export docs + Russian import docs (EAC, ГОСТ certificates). VAT/NDFL complexity. API coverage ~65%. Browser automation fallback easy.",
+      "tos_risk": "Low for authorized sellers. Strict product certification requirements. Chinese entity mandatory.",
+      "docs_url": "https://docs.ozon.ru/global (official)",
+      "confidence": 8,
+      "evidence_type": "reported (H:\\susa ai 500\\wb china\\MARKETPLACE_APIS.md, 2026-11-02)",
+      "observed_at": "2026-11-02",
+      "key_findings": [
+        "Separate international seller cabinet required",
+        "Chinese legal entity mandatory",
+        "Currency control CNY/RUB; CIPS not SWIFT",
+        "Stricter product certificates vs domestic Ozon",
+        "API coverage ~65%; browser automation easy fallback"
+      ]
+    },
+    {
+      "platform": "WB China (Wildberries China)",
+      "role": "sales",
+      "api_available": true,
+      "entity_required": "Chinese legal entity required",
+      "auth": "JWT Token (Header) — obtained in seller cabinet",
+      "catalog_access": "Content API (cards), Marketplace API (orders/supplies), Statistics API, Advertising API, Prices API. Similar to WB Russia but Chinese UI.",
+      "order_model": "Orders, supplies, warehouses via API. Logistics: China warehouses → Russia (FBO/FBS).",
+      "cross_border_notes": "Taxes: Chinese export + Russian import. Timezone sync required. Language: CN/RU only. API coverage ~55%. High 2FA impact. Browser automation complex (captcha, fingerprinting).",
+      "tos_risk": "Low for authorized sellers. Chinese UI and strict 2FA are operational barriers.",
+      "docs_url": "https://dev.wildberries.ru (official, Chinese/Russian)",
+      "confidence": 7,
+      "evidence_type": "reported (H:\\susa ai 500\\wb china\\MARKETPLACE_APIS.md, 2026-11-02)",
+      "observed_at": "2026-11-02",
+      "key_findings": [
+        "Chinese legal entity mandatory",
+        "Chinese-only UI (requires localization)",
+        "API coverage ~55% (lower than Ozon)",
+        "High 2FA friction; browser automation difficult",
+        "Logistics: CN warehouse → RU (FBO/FBS)"
+      ]
+    },
+    {
+      "platform": "Xianyu/Goofish",
+      "role": "supply",
+      "api_available": false,
+      "entity_required": "Chinese individual + 实名认证 (real-name verification) + Chinese phone number. Foreign entities cannot legally operate accounts.",
+      "auth": "QR-code login only (no username/password). mtop/h5api endpoints exist (h5api.m.goofish.com) but protected by x5secdata anti-bot. DeviceId, utid, x-sign required.",
+      "catalog_access": "No public API. CSR-only SPA (no SSR). mtop endpoints reverse-engineered but require valid session + anti-bot tokens. Region-gated: iOS app absent from US App Store; content filtered by region.",
+      "order_model": "No programmatic order flow. Alipay CN only. Domestic C2C transactions only.",
+      "cross_border_notes": "Payoneer blocked by SAFE 汇发〔2019〕13号 (requires 'store binding' transaction data — inapplicable to service/platform models). HK entity does not bypass PRC regulations (粤港地下钱庄 crackdown 2025-2026). AI labeling law (标识办法, 2025-09-01) mandatory.",
+      "tos_risk": "CRITICAL. ToS §4.2.2(六) prohibits commercial use of content. §4.6.3 bans automated access, scraping, circumvention of region limits. Legal + technical + payment blockers at every layer.",
+      "docs_url": "no public API",
+      "confidence": 10,
+      "evidence_type": "verified",
+      "observed_at": "2026-10-01",
+      "key_findings": [
+        "VERDICT: CLOSED — technically, legally, payment-wise blocked (goofish DECISION.md)",
+        "CSR-only SPA, no SSR; x5secdata WAF blocks automated requests",
+        "CN phone + 实名认证 mandatory; region-gated (iOS not in US App Store)",
+        "ToS §4.2.2(六) bans commercial use; §4.6.3 bans automation/scraping",
+        "Payoneer blocked by 汇发〔2019〕13号; HK entity not a legal workaround",
+        "AI content labeling law (标识办法) applies to any 中国 传播服务",
+        "EU AI Act Art. 50 extraterritorial deployer liability if AI output used in EU"
+      ]
+    }
+  ],
+  "summary": {
+    "integratable_supply": ["1688", "Taobao/Tmall (via Taobao Union Overseas)"],
+    "integratable_sales": ["AliExpress (affiliate)", "Ozon Global (with CN entity)", "WB China (with CN entity, hard)"],
+    "partial_both": ["Alibaba.com (affiliate only; merchant API needs GGS)"],
+    "dead_ends_supply": ["Pinduoduo", "JD.com", "Douyin/TikTok China"],
+    "dead_ends_sales": ["Temu"],
+    "traps": ["Xianyu/Goofish"]
+  }
+}
