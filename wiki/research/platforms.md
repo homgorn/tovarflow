@@ -7,7 +7,7 @@ tags:
 sources:
   - docs/research/platforms/REPORT.md
 confidence: "mixed"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Q-Parser Storefront Platform Research Report

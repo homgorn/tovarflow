@@ -7,7 +7,7 @@ tags:
 sources:
   - docs/research/marketplaces/ru/REPORT.md
 confidence: "mixed"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # RU Marketplace Capability Matrix

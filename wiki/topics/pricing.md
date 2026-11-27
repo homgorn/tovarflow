@@ -8,10 +8,12 @@ tags:
 sources:
   - https://q-parser.ru/tariffs
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Pricing and limits
+
+Четыре тарифа Q-Parser: Trial 0 ₽, Day 295 ₽/сутки, Lite 995 ₽/мес, Pro 2495 ₽/мес. Параллельных загрузок 1 / 3 / 10 / 20; AI Points 10 / 100 / 10 000. Данные измерены 22.11.2026.
 
 Source: https://q-parser.ru/tariffs (measured 2026-11-22).
 

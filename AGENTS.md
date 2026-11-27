@@ -104,6 +104,18 @@ python tools/merge_graphs.py             # combined knowledge graph
 python tools/status.py                   # current counts
 ```
 
+Create `.env` from `.env.example` and paste the key from `https://q-parser.ru/my/profile` into
+`QPARSER_API_KEY`. `.env` is gitignored. Never send a key in chat. For local development use
+`USE_MOCK=1` or `--mock` — no key and no paid plan needed.
+
+```bash
+python tools/qparser_client.py --domain demo-home.ru --mock
+python tools/ingest.py --domain demo-home.ru --mock --limit 100
+python tools/replay.py --domain demo-home.ru
+python tools/aeo_lint.py
+python tools/health.py --full
+```
+
 A change is not done until the relevant gate passes and the wiki is regenerated.
 
 ## 6. Research rules
@@ -124,11 +136,13 @@ A change is not done until the relevant gate passes and the wiki is regenerated.
 - The wiki and graph are updated.
 - No rule above is violated, even if all tests pass.
 
-## 8. Current state (2026-11-22)
+## 8. Current state (2026-11-27)
 
 Done: corpus 128/128, 16 endpoints, 72 formats, 4 plans, SQLite + FTS5, graph, wiki; architecture,
-constitution, six ADRs, roadmap, backlog; six research tracks (competitors, RU, CN, global,
-platforms, demand), synthesis, inherited-assets registry.
+constitution, seven ADRs, roadmap, backlog; nine research tracks (competitors, RU, CN, global,
+platforms, demand, WordPress, admin, inherited assets), synthesis, inherited-assets registry;
+Answer-First/AEO contract and lint; Q-Parser client, mock API emulator and first vertical slice
+(100 goods ingested, canonical replay verified).
 
-Next: Q-Parser client and one-domain ingest; Medusa v2 + Next.js storefront MVP; margin ledger;
-Ozon/WB adapters at L2; Google Merchant feed.
+Next: live Q-Parser key for a real domain; Medusa v2 + Next.js storefront MVP with AEO templates;
+margin ledger; Ozon/WB adapters at L2; Google Merchant feed; WordPress sync v1.

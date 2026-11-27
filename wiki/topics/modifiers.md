@@ -8,7 +8,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/mods
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Product and image modifiers

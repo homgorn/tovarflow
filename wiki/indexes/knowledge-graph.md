@@ -6,12 +6,12 @@ tags:
   - index
 sources: []
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Knowledge graph
 
-**Nodes:** 432 · **Edges:** 477 · Generated: 2026-11-22
+**Nodes:** 434 · **Edges:** 477 · Generated: 2026-11-27
 
 Merged from the Q-Parser corpus graph and the research graph. JSON and GraphML are in `data/`.
 
@@ -27,8 +27,8 @@ Merged from the Q-Parser corpus graph and the research graph. JSON and GraphML a
 | `endpoint` | 16 |
 | `claim` | 15 |
 | `asset` | 14 |
+| `research_track` | 9 |
 | `limit` | 7 |
-| `research_track` | 7 |
 | `adr` | 6 |
 | `plan` | 4 |
 | `entity` | 3 |

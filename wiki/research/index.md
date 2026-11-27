@@ -7,12 +7,12 @@ tags:
 sources:
   - (none)
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Research knowledge base
 
-**Tracks complete:** 6/7 · **Records:** 102 · **Marketplaces mapped:** 68 · **Inherited assets:** 14
+**Tracks complete:** 8/9 · **Records:** 102 · **Marketplaces mapped:** 68 · **Inherited assets:** 14
 
 Each track keeps a narrative `REPORT.md`, machine-readable `data.json` and a source/date on
 every fact. The SQLite file `data/research.sqlite` holds the same records plus FTS5.
@@ -28,6 +28,8 @@ every fact. The SQLite file `data/research.sqlite` holds the same records plus F
 | [[research/platforms\|Q-Parser Storefront Platform Research Report]] | complete | 11 | [REPORT](../../docs/research/platforms/REPORT.md) | [data.json](../../docs/research/platforms/data.json) |
 | [[research/demand\|Demand Data Sources & Pipeline Research]] | complete | 25 | [REPORT](../../docs/research/demand/REPORT.md) | [data.json](../../docs/research/demand/data.json) |
 | [[research/inherited\|inherited]] | pending | 0 | — | — |
+| [[research/wordpress\|WordPress Synchronisation Transport & Architecture Decision (2026)]] | complete | 0 | [REPORT](../../docs/research/wordpress/REPORT.md) | [data.json](../../docs/research/wordpress/data.json) |
+| [[research/admin\|Admin Console Decision: Medusa Admin Extended vs Separate Operator Console]] | complete | 0 | [REPORT](../../docs/research/admin/REPORT.md) | [data.json](../../docs/research/admin/data.json) |
 
 ## Marketplaces
 

@@ -8,7 +8,7 @@ tags:
 sources:
   - docs/roadmap/world-marketplaces.md
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # World marketplaces

@@ -8,10 +8,12 @@ tags:
 sources:
   - https://q-parser.ru/howto/api
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Limits and quotas
+
+Источник: https://q-parser.ru/howto/api. Измерено 22.11.2026.
 
 These are hard constraints the ingestion pipeline must respect. Values are measured from the API page.
 

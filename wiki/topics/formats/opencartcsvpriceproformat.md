@@ -8,7 +8,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/format/opencartcsvpriceproformat
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Как выгрузить товары для OpenCart в формате CSV Price Pro?

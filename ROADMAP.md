@@ -64,6 +64,8 @@ Scope:
 - Listing state machine and moderation queue.
 - Order import and tracking push for one channel.
 - Reconciliation: parsed vs published vs rejected vs sold.
+- Admin MVP: Medusa Admin extended for catalogue/orders + a Next.js/Refine operator console for
+  proposals, listings and reconciliation (research `docs/research/admin/`).
 
 Exit criteria:
 
@@ -83,6 +85,11 @@ Scope:
 - Payments and delivery for RU.
 - Content pages, legal pages, returns policy.
 - Performance budget: LCP < 2.5 s on mobile, CLS < 0.1.
+- Answer-First/AEO templates, spec table, `<dl>` facts, primary-source links and `aeo_lint` gate.
+- WordPress sync v1: separate installs managed by MainWP, WooCommerce REST v3 (`wc/v3`) with
+  Application Passwords, batches ≤100, outbox + Action Scheduler, media via `/wp/v2/media`.
+  **Do not use Multisite for independent WooCommerce shops** (`switch_to_blog()` cache corruption,
+  network-activated WC overhead, single DB = SPOF). MCP is an AI-admin tool, not a bulk sync bus.
 
 Exit criteria:
 
@@ -119,6 +126,8 @@ Scope:
 - TikTok Shop / Zalando evaluation and, if approved, one pilot.
 - Multi-currency, tax and settlement.
 - Localised storefronts (EN first).
+- WordPress fleet scale: 100–1000 sites, per-site workers, system cron instead of WP-Cron,
+  Redis object cache and CDN purge; MainWP for bulk updates/backups.
 
 Exit criteria:
 
@@ -169,6 +178,8 @@ Scope:
 - Observability, SLOs, incident runbooks.
 - Cost control: AI points, scraping, storage, egress.
 - Security: secrets, RLS, audit, threat model.
+- WordPress hardening: block `/wp-json/batch/v1` until WP ≥ 7.0.3 is confirmed (CVE-2026-63030),
+  least-privilege sync users, per-site secret rotation.
 
 Exit criteria:
 

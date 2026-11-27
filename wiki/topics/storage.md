@@ -9,7 +9,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/filestorage
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # File storage delivery

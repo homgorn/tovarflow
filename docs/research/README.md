@@ -13,6 +13,8 @@
 | Global marketplaces | `marketplaces/global/` | complete | 16 |
 | Storefront platforms | `platforms/` | complete | 11 |
 | Demand and niches | `demand/` | complete | — |
+| WordPress transport | `wordpress/` | complete | — |
+| Admin console | `admin/` | complete | — |
 | Inherited assets | `inherited/` | complete | 14 |
 
 ## Method

@@ -8,7 +8,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/format/pokupki63format
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Как выгрузить товары на 63pokupki.ru?

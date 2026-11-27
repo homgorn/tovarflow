@@ -8,7 +8,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/format/advantshopv1format
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Как выгрузить товары в Advantshop 1.0?

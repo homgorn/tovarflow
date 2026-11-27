@@ -30,6 +30,8 @@ TRACK_DIRS = [
     ("platforms", "platforms", "general"),
     ("demand", "demand", "general"),
     ("inherited", "inherited", "general"),
+    ("wordpress", "wordpress", "global"),
+    ("admin", "admin", "general"),
 ]
 
 SCHEMA = """

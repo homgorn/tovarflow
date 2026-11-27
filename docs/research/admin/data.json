@@ -1,0 +1,346 @@
+{
+  "options": [
+    {
+      "id": "medusa_admin_v2_extended",
+      "name": "Medusa Admin v2 (Extended with Custom UI Routes)",
+      "license": "MIT",
+      "self_host": true,
+      "pricing": {
+        "model": "Free self-host",
+        "cloud": "Medusa Cloud (usage-based, not public)",
+        "source_url": "https://docs.medusajs.com/learn/fundamentals/admin/ui-routes",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low–Medium",
+      "domain_fit_score": 18,
+      "multi_tenancy_rls": "Store Module + community RLS pattern (not native); requires middleware + PG session vars",
+      "custom_entities": "UI Routes, Widgets, Admin API; sidebar integration, breadcrumbs, dynamic titles",
+      "approval_workflows": "Via Medusa Workflows + custom UI routes; B2B approval module exists",
+      "audit_logs": "Not native; add via middleware / pgaudit / custom table",
+      "scores": {
+        "domain_fit": 18,
+        "dev_speed": 13,
+        "multi_tenancy_rbac": 12,
+        "extensibility": 14,
+        "license_tco": 15,
+        "ops_observability": 7,
+        "ux_non_tech": 8
+      },
+      "total_weighted": 87,
+      "notes": "Best for commerce-native screens (products, orders, customers). Platform entities (proposals, reconciliation) feel forced."
+    },
+    {
+      "id": "nextjs_refine_custom",
+      "name": "Next.js 15 + Refine (Ant Design) + shadcn/ui",
+      "license": "Apache 2.0 (Refine) / MIT (Next.js, shadcn/ui)",
+      "self_host": true,
+      "pricing": {
+        "model": "Refine Pro $20/mo (AI credits); self-host free",
+        "cloud": "Refine Cloud hosting via Netlify included in Pro",
+        "source_url": "https://refine.dev/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Medium",
+      "domain_fit_score": 19,
+      "multi_tenancy_rls": "First-class via dataProvider + accessControlProvider (CASL/Cerberos); RLS at PG layer",
+      "custom_entities": "First-class; Refine resources = any entity; Inferencer auto-generates CRUD",
+      "approval_workflows": "Code-first; React Flow / custom state machines; full control",
+      "audit_logs": "Build or integrate (e.g., pgaudit + Refine audit log page)",
+      "scores": {
+        "domain_fit": 19,
+        "dev_speed": 11,
+        "multi_tenancy_rbac": 14,
+        "extensibility": 15,
+        "license_tco": 15,
+        "ops_observability": 8,
+        "ux_non_tech": 9
+      },
+      "total_weighted": 89,
+      "notes": "Full control for platform entities. Best paired with Medusa Admin for commerce screens."
+    },
+    {
+      "id": "retool",
+      "name": "Retool",
+      "license": "Proprietary",
+      "self_host": "Enterprise only (since Feb 2026)",
+      "pricing": {
+        "model": "Team $10/u/mo (builder), Business $50/u/mo, Enterprise quote (self-host)",
+        "cloud": "Retool Cloud included",
+        "source_url": "https://retool.com/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low",
+      "domain_fit_score": 10,
+      "multi_tenancy_rls": "Workspaces = tenants; granular RBAC only on Enterprise; audit logs Business+",
+      "custom_entities": "Via resources (REST/GraphQL/SQL) + custom React components",
+      "approval_workflows": "Retool Workflows + approval blocks; visual builder",
+      "audit_logs": "Business+ (query + user action logs); streaming on Enterprise",
+      "scores": {
+        "domain_fit": 10,
+        "dev_speed": 14,
+        "multi_tenancy_rbac": 10,
+        "extensibility": 11,
+        "license_tco": 6,
+        "ops_observability": 9,
+        "ux_non_tech": 10
+      },
+      "total_weighted": 70,
+      "notes": "Expensive at scale; self-host gated to Enterprise. Good for ops panels, not domain admin."
+    },
+    {
+      "id": "appsmith",
+      "name": "Appsmith",
+      "license": "Apache 2.0 (Community Edition)",
+      "self_host": true,
+      "pricing": {
+        "model": "Cloud Free 5u, Business $15/u/mo, Enterprise $2,500/mo (100u); self-host CE free",
+        "cloud": "Appsmith Cloud",
+        "source_url": "https://appsmith.com/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low",
+      "domain_fit_score": 11,
+      "multi_tenancy_rls": "Workspaces + custom roles (Enterprise); audit logs Enterprise",
+      "custom_entities": "Custom pages + JS logic; entities via datasources",
+      "approval_workflows": "Workflows (Business+) + custom JS",
+      "audit_logs": "Enterprise only",
+      "scores": {
+        "domain_fit": 11,
+        "dev_speed": 13,
+        "multi_tenancy_rbac": 11,
+        "extensibility": 12,
+        "license_tco": 13,
+        "ops_observability": 8,
+        "ux_non_tech": 9
+      },
+      "total_weighted": 77,
+      "notes": "Strong open-source option; Enterprise needed for SSO/SCIM/audit. CE is capable for many internal tools."
+    },
+    {
+      "id": "forest_admin",
+      "name": "Forest Admin",
+      "license": "Proprietary",
+      "self_host": true,
+      "pricing": {
+        "model": "Sandbox free, Starter $499/mo, Professional $1,999/mo, Enterprise $5,999/mo",
+        "cloud": "UI hosted; agent runs on-prem (data never leaves)",
+        "source_url": "https://forestadmin.com/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low",
+      "domain_fit_score": 12,
+      "multi_tenancy_rls": "Cross-team workflows, AI agent RBAC, external user provisioning",
+      "custom_entities": "Smart Actions on collections; collections = DB tables",
+      "approval_workflows": "Approvals & escalations (core feature); dispatcher + inbox",
+      "audit_logs": "Unlimited retention all plans; decision-trace reasoning log",
+      "scores": {
+        "domain_fit": 12,
+        "dev_speed": 13,
+        "multi_tenancy_rbac": 13,
+        "extensibility": 10,
+        "license_tco": 7,
+        "ops_observability": 10,
+        "ux_non_tech": 9
+      },
+      "total_weighted": 74,
+      "notes": "Fintech/ops focus; pricing per Action + user. Not ideal for catalogue domain."
+    },
+    {
+      "id": "directus",
+      "name": "Directus",
+      "license": "MSCL (Monospace Sustainable Core License) — source-available",
+      "self_host": true,
+      "pricing": {
+        "model": "Cloud Core $89/mo (3 seats, 25 collections), Team $588/mo, Enterprise custom; self-host free <$5M rev (Open Innovation Grant)",
+        "cloud": "Directus Cloud",
+        "source_url": "https://directus.com/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low–Medium",
+      "domain_fit_score": 16,
+      "multi_tenancy_rls": "Projects = tenants; RBAC policies per role; multi-instance or shared schema",
+      "custom_entities": "Collections = tables; full CRUD + relations + flows",
+      "approval_workflows": "Flows (visual) + approval steps; webhook triggers",
+      "audit_logs": "Activity log (core) + revisions (before/after snapshots)",
+      "scores": {
+        "domain_fit": 16,
+        "dev_speed": 12,
+        "multi_tenancy_rbac": 14,
+        "extensibility": 13,
+        "license_tco": 12,
+        "ops_observability": 9,
+        "ux_non_tech": 8
+      },
+      "total_weighted": 84,
+      "notes": "Strong data-first admin; free self-host for qualifying orgs. Good alternative if not using Medusa."
+    },
+    {
+      "id": "novu_triggerdev",
+      "name": "Novu / Trigger.dev (Notifications + Workflows only)",
+      "license": "Apache 2.0 (both)",
+      "self_host": true,
+      "pricing": {
+        "model": "Novu: Free 10k runs, Pro $30/mo, Team $250/mo, Ent custom; Trigger: Free $5 credits, Hobby $10, Pro $50, Ent custom",
+        "cloud": "Both offer cloud + self-host",
+        "source_url": "https://novu.co/pricing",
+        "observed_at": "2026-11-27",
+        "confidence": "measured"
+      },
+      "dev_effort": "Low (for notifications/workflows)",
+      "domain_fit_score": 4,
+      "multi_tenancy_rls": "Novu: multi-tenancy support (Enterprise); Trigger: namespaces/orgs",
+      "custom_entities": "N/A — not an admin panel",
+      "approval_workflows": "Workflow approval steps (Trigger.dev wait.for + human-in-loop)",
+      "audit_logs": "Novu Team+ (RBAC + audit); Trigger Enterprise (RBAC + SOC2)",
+      "scores": {
+        "domain_fit": 4,
+        "dev_speed": 8,
+        "multi_tenancy_rbac": 3,
+        "extensibility": 5,
+        "license_tco": 10,
+        "ops_observability": 9,
+        "ux_non_tech": 4
+      },
+      "total_weighted": 43,
+      "notes": "Complementary for notifications/durable execution, not an admin console replacement."
+    },
+    {
+      "id": "wordpress_admin",
+      "name": "WordPress Admin (Multisite / GrabWP Tenancy)",
+      "license": "GPL-2.0+",
+      "self_host": true,
+      "pricing": {
+        "model": "Free core; GrabWP Tenancy Pro paid (contact); hosting varies",
+        "cloud": "WP hosting providers",
+        "source_url": "https://grabwp.com/blog/multisite-vs-multi-tenancy-wordpress-comparison",
+        "observed_at": "2026-11-27",
+        "confidence": "reported"
+      },
+      "dev_effort": "Low (if WP-centric)",
+      "domain_fit_score": 6,
+      "multi_tenancy_rls": "Multisite (shared DB, shared tables) or GrabWP Tenancy (isolated DB per tenant)",
+      "custom_entities": "Custom post types + ACF / Meta Box; limited to WP data model",
+      "approval_workflows": "Plugin-dependent (e.g., PublishPress, Edit Flow)",
+      "audit_logs": "Plugin-dependent (WP Activity Log, Stream)",
+      "scores": {
+        "domain_fit": 6,
+        "dev_speed": 10,
+        "multi_tenancy_rbac": 8,
+        "extensibility": 7,
+        "license_tco": 10,
+        "ops_observability": 5,
+        "ux_non_tech": 7
+      },
+      "total_weighted": 53,
+      "notes": "Only viable if WordPress sites are the primary product. Not a platform admin."
+    }
+  ],
+  "decision_matrix_weights": {
+    "domain_fit": 20,
+    "dev_speed": 15,
+    "multi_tenancy_rbac": 15,
+    "extensibility": 15,
+    "license_tco": 15,
+    "ops_observability": 10,
+    "ux_non_tech": 10
+  },
+  "recommended_architecture": {
+    "approach": "Hybrid: Medusa Admin (commerce) + Next.js/Refine (platform operations)",
+    "rationale": "Medusa Admin scores 18/20 on commerce domain fit; Refine scores 19/20 on platform domain fit. Combined ~93 weighted. Avoids second monolith via shared PG schema + RLS + dual API mount.",
+    "components": {
+      "commerce_admin": "Medusa Admin v2 extended with UI Routes for parse runs, mapping, margin rules",
+      "platform_console": "Next.js 15 + Refine (Ant Design) + shadcn/ui for proposals, reconciliation, marketplace connectors, WordPress fleet, alerts, demand briefs",
+      "shared_api": "Medusa Admin API (/admin) + Platform API (/platform) on same Medusa backend",
+      "auth_rbac": "Medusa Auth + Platform JWT; CASL abilities from role_policy; PG RLS via app.current_tenant",
+      "audit": "pgaudit + audit_log table (insert-only trigger on all write tables)",
+      "impersonation": "Platform admin 'View as Tenant' sets app.current_tenant; logged in audit_log"
+    }
+  },
+  "phased_plan": {
+    "phase_0_foundations": {
+      "weeks": "1-2",
+      "tasks": [
+        "PostgreSQL schema with tenant_id on all tables + RLS policies",
+        "app.current_tenant middleware (AsyncLocalStorage → PG session var)",
+        "Shared audit_log table + trigger function",
+        "CASL policy loader (roles → abilities) seeded from role_policy",
+        "Medusa v2 backend with Store Module (multi-store = tenant)"
+      ]
+    },
+    "phase_1_mvp_admin": {
+      "weeks": "3-6",
+      "goal": "One tenant, one supplier, end-to-end parse → price → publish → list → order → reconcile",
+      "screens": [
+        { "screen": "Tenant / Storefront CRUD", "where": "Medusa Admin (UI Route under Settings)", "effort_days": 3 },
+        { "screen": "Supplier / Source + Parse Run", "where": "Medusa Admin (UI Route nested Products)", "effort_days": 5 },
+        { "screen": "Category/Attribute Mapping", "where": "Medusa Admin (UI Route)", "effort_days": 4 },
+        { "screen": "Catalogue Browse + Margin Rule", "where": "Medusa Admin (native + Widget)", "effort_days": 3 },
+        { "screen": "Listing State / Moderation Queue", "where": "Refine App (new)", "effort_days": 6 },
+        { "screen": "Order / Return / Settlement", "where": "Medusa Admin (native)", "effort_days": 0 },
+        { "screen": "Reconciliation Deltas", "where": "Refine App", "effort_days": 5 },
+        { "screen": "Audit Log Viewer", "where": "Refine App (shared)", "effort_days": 3 }
+      ]
+    },
+    "phase_2_operator_console": {
+      "weeks": "7-12",
+      "screens": [
+        { "screen": "Proposal Approval Queue (L0–L3)", "where": "Refine App", "effort_days": 8 },
+        { "screen": "Marketplace Accounts / Capability Profiles", "where": "Refine App", "effort_days": 6 },
+        { "screen": "Media Rights / Content Proof", "where": "Refine App", "effort_days": 5 },
+        { "screen": "Alerts / Runbooks / Incidents", "where": "Refine App", "effort_days": 4 },
+        { "screen": "Demand / Niche Briefs", "where": "Refine App", "effort_days": 5 },
+        { "screen": "WordPress Fleet Health", "where": "Refine App", "effort_days": 6 },
+        { "screen": "RBAC Admin (roles, policies, impersonation)", "where": "Refine App", "effort_days": 5 },
+        { "screen": "Cross-tenant Reporting / Platform Dashboards", "where": "Refine App", "effort_days": 4 }
+      ]
+    },
+    "phase_3_tenant_self_service": {
+      "weeks": "13-18",
+      "tasks": [
+        "Tenant-scoped Refine portal (white-labelled) for supplier onboarding, mapping, margin rules, listing review",
+        "Medusa Admin remains platform-only; tenants get simplified Merchant Portal (Refine subset)",
+        "Billing / usage metering per tenant"
+      ]
+    }
+  },
+  "gaps_and_risks": [
+    {
+      "risk": "Medusa multi-tenancy RLS not native; community pattern may lag core updates",
+      "likelihood": "Medium",
+      "impact": "High",
+      "mitigation": "Pin Medusa version; contribute fixes upstream; test RLS on every upgrade"
+    },
+    {
+      "risk": "Two UIs = potential UX fragmentation",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Shared design tokens (Tailwind + shadcn/ui); consistent sidebar patterns; single sign-on"
+    },
+    {
+      "risk": "Refine learning curve for team",
+      "likelihood": "Low",
+      "impact": "Medium",
+      "mitigation": "1-week spike; use Refine CLI templates; pair with Medusa Admin SDK patterns"
+    },
+    {
+      "risk": "Audit log performance at scale",
+      "likelihood": "Low",
+      "impact": "High",
+      "mitigation": "Partition audit_log by month; async write via pg_notify + worker"
+    },
+    {
+      "risk": "WordPress fleet health requires WP-CLI / REST API access per site",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Build wp_site agent (Trigger.dev) that pushes health to platform API"
+    }
+  ],
+  "generated_at": "2026-11-27",
+  "confidence_overall": "measured"
+}

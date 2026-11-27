@@ -64,6 +64,24 @@ Acceptance:
 2. The brief is linked to categories and products.
 3. A storefront without a brief is allowed only as an experiment, marked as such.
 
+## 2A. Answer-First / AEO contract
+
+Every product, category and documentation page follows `docs/architecture/04-answer-first-aeo.md`:
+
+1. A direct factual answer in the first **150–300 characters** under the H1: name, SKU, brand,
+   price, currency, availability, units, delivery, warranty.
+2. Chunks of 200–500 tokens (~800–2000 characters), split at headings; our corpus chunker uses
+   ~1400 characters.
+3. High fact density: exact numbers with units and sources; unknown is written as unknown, not zero.
+4. A specification `<table>`, a price-explanation table and a `<dl>` of short facts.
+5. At least one `primary` source link to a manufacturer, register or official rule.
+6. Entity consistency: SKU, GTIN, brand and canonical URL come from the canonical catalogue, never
+   retyped per channel; NAP agrees with Google Business Profile / OpenStreetMap where applicable.
+7. All of the above is present in **raw HTML without JavaScript**.
+
+`tools/aeo_lint.py` is the gate. The ranking mechanics are confidence 7/10; the specific citation
+uplift was supplied by the owner and is not independently measured here.
+
 ## 3. Functional requirements
 
 - **FR-001** Server-rendered catalogue; JavaScript enhances, never gates content.

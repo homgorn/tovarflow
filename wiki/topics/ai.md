@@ -7,7 +7,7 @@ tags:
 sources:
   - https://q-parser.ru/howto/ai
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # AI capabilities

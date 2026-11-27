@@ -393,6 +393,15 @@ def build_wiki(conn: sqlite3.Connection) -> None:
     body = [
         "# Q-Parser Knowledge Base",
         "",
+        "128 страниц документации Q-Parser, 16 REST-эндпоинтов, 72 формата выгрузки и 4 тарифа. "
+        "Корпус собран 22.11.2026: 0 пропусков, 442 579 символов; каждый факт имеет URL-источник и дату.",
+        "",
+        "| Артефакт | Значение | Источник |",
+        "|---|---|---|",
+        "| API-эндпоинты | 16 | https://q-parser.ru/howto/api |",
+        "| Форматы выгрузки | 72 | https://q-parser.ru/howto/format |",
+        "| Тарифы | 4 | https://q-parser.ru/tariffs |",
+        "",
         f"**Corpus:** {len(pages)} pages · **API endpoints:** {len(endpoints)} · "
         f"**Export formats:** {len(formats)} · **Tariff plans:** {len(plans)} · **Claims:** {len(claims)}",
         "",
@@ -432,6 +441,7 @@ def build_wiki(conn: sqlite3.Connection) -> None:
         "- [[research/inherited-assets]] — reusable projects and license policy.",
         "- [[indexes/marketplaces-world]] — world coverage map with status and priority.",
         "- [[research/adr]] — architecture decisions.",
+        "- [[topics/aeo]] — Answer-First contract for AI search ranking.",
         "",
         "## Research tracks (raw)",
         "",
@@ -449,6 +459,9 @@ def build_wiki(conn: sqlite3.Connection) -> None:
     api_body = [
         "# Q-Parser REST API",
         "",
+        "16 REST-методов по адресу https://q-parser.ru/api/v1. Авторизация через `Authorization: Bearer` "
+        "или `X-Api-Key`, ошибки `{error:{code,message}}`, даты в unix ms; лимит 1000 записей на страницу.",
+        "",
         "Base URL `https://q-parser.ru/api/v1`. Auth: `Authorization: Bearer <key>` or `X-Api-Key: <key>`.",
         "Errors: `{ \"error\": { \"code\": \"...\", \"message\": \"...\" } }`; dates are unix milliseconds.",
         "Source: [[sources]] · `https://q-parser.ru/howto/api`.",
@@ -462,9 +475,9 @@ def build_wiki(conn: sqlite3.Connection) -> None:
     for method, path, summary, request, response in endpoints:
         api_body += [f"## {method} {path}", "", summary, ""]
         if request:
-            api_body += ["**Request**", "", request, ""]
+            api_body += ["#### Request", "", request, ""]
         if response:
-            api_body += ["**Response**", "", response, ""]
+            api_body += ["#### Response", "", response, ""]
     write_wiki(WIKI / "topics" / "api.md", {
         "id": "api", "title": "Q-Parser REST API", "tags": ["qparser", "api", "rest"],
         "sources": ["https://q-parser.ru/howto/api"], "confidence": "measured", "updated": TODAY,
@@ -539,6 +552,9 @@ def build_wiki(conn: sqlite3.Connection) -> None:
     price_body = [
         "# Pricing and limits",
         "",
+        "Четыре тарифа Q-Parser: Trial 0 ₽, Day 295 ₽/сутки, Lite 995 ₽/мес, Pro 2495 ₽/мес. "
+        "Параллельных загрузок 1 / 3 / 10 / 20; AI Points 10 / 100 / 10 000. Данные измерены 22.11.2026.",
+        "",
         "Source: https://q-parser.ru/tariffs (measured 2026-11-22).",
         "",
         "| Plan | Price | Parallel downloads | AI Points |",
@@ -575,6 +591,8 @@ def build_wiki(conn: sqlite3.Connection) -> None:
     # ---------- limits ----------
     limit_body = [
         "# Limits and quotas",
+        "",
+        "Источник: https://q-parser.ru/howto/api. Измерено 22.11.2026.",
         "",
         "These are hard constraints the ingestion pipeline must respect. Values are measured from the API page.",
         "",
@@ -625,6 +643,14 @@ def build_wiki(conn: sqlite3.Connection) -> None:
             "id": topic, "title": title, "tags": tags,
             "sources": [f"https://q-parser.ru{path}"], "confidence": "measured", "updated": TODAY,
         }, f"# {title}\n\n" + (row[0] if row else ""))
+
+    aeo_source = ROOT / "docs" / "architecture" / "04-answer-first-aeo.md"
+    if aeo_source.exists():
+        write_wiki(WIKI / "topics" / "aeo.md", {
+            "id": "aeo", "title": "Answer-First / AEO", "tags": ["aeo", "seo", "content"],
+            "sources": ["docs/architecture/04-answer-first-aeo.md"],
+            "confidence": "mixed", "updated": TODAY,
+        }, aeo_source.read_text(encoding="utf-8"))
 
     # ---------- indexes ----------
     idx = ["# By endpoint", "", "| Method | Path | Purpose |", "|---|---|---|"]

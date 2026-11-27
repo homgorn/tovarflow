@@ -8,10 +8,12 @@ tags:
 sources:
   - https://q-parser.ru/howto/api
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Q-Parser REST API
+
+16 REST-методов по адресу https://q-parser.ru/api/v1. Авторизация через `Authorization: Bearer` или `X-Api-Key`, ошибки `{error:{code,message}}`, даты в unix ms; лимит 1000 записей на страницу.
 
 Base URL `https://q-parser.ru/api/v1`. Auth: `Authorization: Bearer <key>` or `X-Api-Key: <key>`.
 Errors: `{ "error": { "code": "...", "message": "..." } }`; dates are unix milliseconds.
@@ -40,14 +42,14 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Каталог сайтов, доступных для парсинга: поиск по названию, описанию и домену.
 
-**Request**
+#### Request
 
 - `q` — поисковый запрос (необязательно). Можно передать домен или URL
 - `free=1` — только сайты с бесплатным парсингом
 - `limit` — размер страницы, по умолчанию 100, максимум 1000
 - `offset` — смещение, по умолчанию 0
 
-**Response**
+#### Response
 
 - `total` — всего сайтов по фильтру
 - `limit`, `offset` — фактическая пагинация
@@ -59,7 +61,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Запускает сбор категорий сайта. Если список уже есть в кэше, сразу возвращается `completed` без повторного сбора.
 
-**Response**
+#### Response
 
 - `id` — идентификатор задачи, его передают в `GET /api/v1/categories/:id`
 - `status` — `running` или `completed`
@@ -68,11 +70,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Статус и результат сбора категорий.
 
-**Request**
+#### Request
 
 `id` задачи из `POST /api/v1/categories`.
 
-**Response**
+#### Response
 
 - `id` — идентификатор задачи
 - `status` — `running`, `completed` или `error`
@@ -83,11 +85,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Список сохранённых логинов для сайтов, где нужна авторизация. Пароли не возвращаются.
 
-**Request**
+#### Request
 
 необязательный query-параметр `domain` — фильтр по сайту.
 
-**Response**
+#### Response
 
 объект `credentials` — массив записей:
 
@@ -100,7 +102,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Добавляет логин и пароль. Если такая пара уже есть, пароль обновляется, `id` остаётся прежним.
 
-**Response**
+#### Response
 
 `id`, `login`, `domain`.
 
@@ -108,7 +110,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Запускает выгрузку товаров парсинга в выбранный формат.
 
-**Response**
+#### Response
 
 `id` выгрузки (UUID).
 
@@ -116,11 +118,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Статус выгрузки: очередь, прогресс, файлы или ссылки результата.
 
-**Request**
+#### Request
 
 `id` в пути — UUID выгрузки из `POST /api/v1/export`.
 
-**Response**
+#### Response
 
 - `id` — идентификатор выгрузки
 - `status` — `queued`, `running`, `completed`, `canceled` или `error`
@@ -139,7 +141,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Список форматов выгрузки: идентификаторы, названия и схема опций.
 
-**Response**
+#### Response
 
 объект `formats` — массив записей:
 
@@ -152,7 +154,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Текущий пользователь: тариф, баланс и AI Points.
 
-**Response**
+#### Response
 
 - `email` — email пользователя
 - `tariff_id` — идентификатор тарифа
@@ -164,7 +166,7 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Запускает парсинг товаров. Полноценный парсинг платного сайта — только с действующим тарифом. Пробный парсинг — с `trial: true`, доступен без тарифа. Если `categories` не передан или пустой, список категорий будет загружен автоматически
 
-**Response**
+#### Response
 
 `id` парсинга в виде `id1234567`.
 
@@ -172,11 +174,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Статус парсинга: очередь, прогресс, ошибка.
 
-**Request**
+#### Request
 
 `id` в пути — полный id парсинга, например `id1234567`.
 
-**Response**
+#### Response
 
 - `id` — идентификатор парсинга
 - `status` — `queued`, `running`, `completed`, `canceled` или `error`
@@ -194,13 +196,13 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Список товаров парсинга с постраничной выдачей.
 
-**Request**
+#### Request
 
 - `id` в пути — полный id парсинга, например `id1234567`
 - `limit` — размер страницы, по умолчанию 100, максимум 1000
 - `offset` — смещение, по умолчанию 0
 
-**Response**
+#### Response
 
 - `total` — всего товаров
 - `limit`, `offset` — фактическая пагинация
@@ -210,11 +212,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Возобновляет вручную остановленный парсинг — то же, что кнопка «Возобновить». Парсинг должен быть в статусе `canceled` и не в архиве. Успешно завершенный, завершенный с ошибкой, еще идущий или архивный парсинг возобновить нельзя:
 
-**Request**
+#### Request
 
 `id` в пути — полный id парсинга, например `id1234567`. Тело запроса не нужно.
 
-**Response**
+#### Response
 
 тот же объект, что у `GET /api/v1/parser/:id`. После возобновления `status` — `queued` или `running`.
 
@@ -222,11 +224,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Останавливает незавершенный парсинг — то же, что кнопка «Остановить» в интерфейсе. Парсинг в очереди или в работе переходит в статус `canceled`. Уже завершенный или уже остановленный парсинг остановить нельзя: ответ `unprocessable`.
 
-**Request**
+#### Request
 
 `id` в пути — полный id парсинга, например `id1234567`. Тело запроса не нужно.
 
-**Response**
+#### Response
 
 тот же объект, что у `GET /api/v1/parser/:id`. После остановки `status` — `canceled`.
 
@@ -234,12 +236,12 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 История парсингов.
 
-**Request**
+#### Request
 
 - `limit` — размер страницы, по умолчанию 100, максимум 1000
 - `offset` — смещение, по умолчанию 0
 
-**Response**
+#### Response
 
 - `total` — всего парсингов
 - `limit`, `offset` — фактическая пагинация
@@ -249,11 +251,11 @@ Source: [[sources]] · `https://q-parser.ru/howto/api`.
 
 Схема настроек парсера для сайта: нужна ли авторизация, ручные категории и какие опции передавать при запуске.
 
-**Request**
+#### Request
 
 `domain` в пути (например `example.com`).
 
-**Response**
+#### Response
 
 - `domain` — канонический домен
 - `protocol` — `http` или `https`

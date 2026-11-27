@@ -1,0 +1,12 @@
+{
+  "domain": "demo-home.ru",
+  "parse_id": "id4416100",
+  "run_id": "33f0a19f7476ac3f6b676072",
+  "goods_processed": 100,
+  "goods_written": 100,
+  "unknown_publish": 32,
+  "unmapped_keys": [],
+  "canonical_hash": "7e43ceff9998d046a2319f27cf7057fae4c23d84ef924b9e66100087409a5c9a",
+  "generated_at": "2026-11-27T01:28:27+00:00",
+  "storage": "data/catalog.sqlite"
+}

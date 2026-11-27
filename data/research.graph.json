@@ -36,6 +36,16 @@
       "label": "inherited"
     },
     {
+      "id": "track:wordpress",
+      "type": "research_track",
+      "label": "WordPress Synchronisation Transport & Architecture Decision (2026)"
+    },
+    {
+      "id": "track:admin",
+      "type": "research_track",
+      "label": "Admin Console Decision: Medusa Admin Extended vs Separate Operator Console"
+    },
+    {
       "id": "marketplace:ru:Ozon Seller",
       "type": "marketplace",
       "label": "Ozon Seller"

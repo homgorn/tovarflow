@@ -1,0 +1,591 @@
+{
+  "transports": [
+    {
+      "option": "WooCommerce REST API v3 (wc/v3)",
+      "type": "REST/HTTPS push",
+      "auth": ["Application Passwords (core ≥5.6)", "OAuth1 (WooCommerce)", "JWT (plugin)", "Cookie+Nonce (browser)"],
+      "pros": [
+        "Native, no extra plugins required",
+        "Full product/variation/attribute/media CRUD",
+        "Batch endpoint (100 items/request) at /wp-json/wc/v3/products/batch",
+        "Official libraries: JavaScript, PHP, Python, Ruby",
+        "Link header pagination (RFC 5988)",
+        "HPOS-compatible",
+        "Webhook support for real-time events",
+        "Idempotency achievable via custom header + filter"
+      ],
+      "cons": [
+        "No native rate limiting (requires Wordfence/Kadence plugin)",
+        "Batch endpoint /wp-json/batch/v1 has CVE-2026-63030 RCE (mitigate: block in nginx)",
+        "No native idempotency keys",
+        "Partial failure in batch (not atomic)",
+        "Per-site credentials management needed"
+      ],
+      "scale_fit": "10–1000 sites, 10k–1M SKUs with outbox + Action Scheduler High Volume",
+      "license": "GPL-3 (WooCommerce core)",
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "observed_at": "2026-11-27",
+      "confidence": "measured"
+    },
+    {
+      "option": "WordPress REST API v2 (wp/v2)",
+      "type": "REST/HTTPS push",
+      "auth": ["Application Passwords", "Cookie+Nonce", "JWT (plugin)", "OAuth1 (plugin)"],
+      "pros": [
+        "Core endpoints for posts, pages, media, taxonomies, users",
+        "Required for non-Woo content sites",
+        "Same auth as wc/v3"
+      ],
+      "cons": [
+        "No product/variation/attribute endpoints",
+        "Must pair with wc/v3 for WooCommerce",
+        "Same rate limiting gap"
+      ],
+      "scale_fit": "Same as wc/v3 for content sites",
+      "license": "GPL-2+ (WordPress core)",
+      "url": "https://developer.wordpress.org/rest-api/reference/",
+      "observed_at": "2026-10-14",
+      "confidence": "measured"
+    },
+    {
+      "option": "WPGraphQL",
+      "type": "GraphQL/HTTPS single endpoint",
+      "auth": ["Application Passwords (recommended)", "JWT plugin", "Cookie+Nonce", "Basic Auth plugin"],
+      "pros": [
+        "Precise field selection (less over-fetch)",
+        "Relay-style cursor pagination",
+        "WPGraphQL Smart Cache extension for CDN/edge invalidation",
+        "Mutations for write operations",
+        "Schema introspection for tooling"
+      ],
+      "cons": [
+        "Mutations are synchronous single-threaded (no batch)",
+        "N+1 resolver risk on deep nesting",
+        "Extra plugin dependency (GPL-3)",
+        "Schema introspection adds attack surface",
+        "Not optimized for bulk write throughput",
+        "Learning curve for team"
+      ],
+      "scale_fit": "10–100 sites, read-heavy headless; NOT ideal for bulk write",
+      "license": "GPL-3",
+      "url": "https://www.wpgraphql.com/docs/",
+      "observed_at": "2026-11-27",
+      "confidence": "measured"
+    },
+    {
+      "option": "WP-CLI (wp wc product ...)",
+      "type": "CLI over SSH",
+      "auth": ["SSH keys + WP user"],
+      "pros": [
+        "Full product CRUD via CLI",
+        "wc product import/export uses same CSV engine as admin",
+        "--batch-size tunable",
+        "--porcelain output for scripting",
+        "Works offline / without HTTP layer",
+        "Parallelizable with xargs -P"
+      ],
+      "cons": [
+        "Requires SSH access per site",
+        "No real-time capability",
+        "Serial by default",
+        "Not a transport for hub→site push",
+        "Credential management via SSH keys + WP users"
+      ],
+      "scale_fit": "10–1000 sites for bulk loads/migrations; NOT for real-time sync",
+      "license": "GPL-2+ (WP-CLI), GPL-3 (WC-CLI)",
+      "url": "https://developer.woocommerce.com/docs/wc-cli/wc-cli-commands/wc-product/",
+      "observed_at": "2026-11-27",
+      "confidence": "measured"
+    },
+    {
+      "option": "XML-RPC",
+      "type": "XML/HTTPS push",
+      "auth": ["Username/password"],
+      "pros": [
+        "Legacy compatibility only"
+      ],
+      "cons": [
+        "Deprecated, disabled by default in modern WP",
+        "CVE-2026-63030 batch RCE vulnerability",
+        "No WooCommerce endpoints",
+        "Security liability",
+        "No active development"
+      ],
+      "scale_fit": "DO NOT USE",
+      "license": "GPL-2+",
+      "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-63030/",
+      "observed_at": "2026-07-17",
+      "confidence": "measured"
+    },
+    {
+      "option": "Direct MySQL (wp_posts, wp_postmeta, wp_wc_*)",
+      "type": "Direct database write",
+      "auth": ["Database credentials"],
+      "pros": [
+        "Raw speed for millions of rows"
+      ],
+      "cons": [
+        "Bypasses ALL hooks (price calc, stock sync, cache invalidation, SEO plugins)",
+        "Object cache corruption (switch_to_blog ticket #14992)",
+        "HPOS sync divergence",
+        "No referential integrity enforcement",
+        "Schema changes break on WC update",
+        "Requires maintenance mode for safety"
+      ],
+      "scale_fit": "NEVER for sync; only one-time migration with WP maintenance mode",
+      "license": "GPL-2+",
+      "url": "https://core.trac.wordpress.org/ticket/14992",
+      "observed_at": "2026-11-27",
+      "confidence": "measured"
+    },
+    {
+      "option": "CSV/XML Import (WP All Import / WC Product Import Export)",
+      "type": "File-based import via plugin",
+      "auth": ["WP admin / FTP / HTTP"],
+      "pros": [
+        "Handles 200MB+ files, 100k+ records on shared hosting",
+        "Visual mapping UI",
+        "Scheduled imports",
+        "ACF/WooCommerce add-ons",
+        "WC core importer included (wc product import/export CLI)"
+      ],
+      "cons": [
+        "Requires plugin install (GPL)",
+        "File staging needed",
+        "Not real-time",
+        "Mapping maintenance overhead",
+        "Plugin updates can break mappings"
+      ],
+      "scale_fit": "One-off migrations, catalog loads >50k SKUs",
+      "license": "GPL (WP All Import), GPL-3 (WC core importer)",
+      "url": "https://wpmayor.com/wp-all-import-3-0-review-csv-xml-import-plugin-for-wordpress/",
+      "observed_at": "2026-11-27",
+      "confidence": "reported"
+    },
+    {
+      "option": "WooCommerce Webhooks",
+      "type": "HTTPS push from WordPress",
+      "auth": ["HMAC SHA256 signature (X-WC-Webhook-Signature)"],
+      "pros": [
+        "Real-time events (product.created, updated, deleted, restored)",
+        "Retry with exponential backoff via Action Scheduler",
+        "Signature verification for security",
+        "Reduces polling load"
+      ],
+      "cons": [
+        "Known bug: orders only sent once (ShippingEasy 2026)",
+        "Delivery failures not always visible in UI",
+        "No batch support",
+        "Payload size limits",
+        "Requires public HTTPS endpoint on hub"
+      ],
+      "scale_fit": "10–1000 sites for delta sync; pair with REST pull reconciliation",
+      "license": "GPL-3",
+      "url": "https://support.shippingeasy.com/hc/en-us/community/posts/4407618958619",
+      "observed_at": "2026-11-27",
+      "confidence": "reported"
+    },
+    {
+      "option": "MCP (Model Context Protocol) for WordPress",
+      "type": "AI-agent tool protocol",
+      "auth": ["Application Passwords (per-site config)"],
+      "pros": [
+        "10+ servers exist in 2026",
+        "Exposes WP REST/GraphQL as MCP tools",
+        "Claude/Cursor/VS Code integration",
+        "MainWP MCP server available"
+      ],
+      "cons": [
+        "91.8% of audited MCP servers require NO authentication (keusch.wien 2026)",
+        "Designed for LLM agent use, NOT system-to-system bulk sync",
+        "No queue, rate limiting, idempotency, or batching",
+        "Single-request tool model",
+        "Maturity: experimental/early adoption"
+      ],
+      "scale_fit": "NOT suitable as sync transport; only for AI-assisted admin tasks",
+      "license": "Mixed (MIT/GPL)",
+      "url": "https://make.wordpress.org/ai/2025/07/17/mcp-adapter/",
+      "observed_at": "2025-07-17",
+      "confidence": "measured"
+    },
+    {
+      "option": "Message Queue / Outbox + WP-side Pull (Action Scheduler)",
+      "type": "Hybrid (hub writes outbox, WP pulls via cron)",
+      "auth": ["Application Passwords (for WP pull)"],
+      "pros": [
+        "Decouples hub from WP availability",
+        "Survives WP downtime/restarts",
+        "Action Scheduler is WooCommerce native",
+        "High Volume plugin adds concurrent runners",
+        "Persistent queue table with retry/backoff",
+        "Scales horizontally per site"
+      ],
+      "cons": [
+        "WP-Cron unreliable (must disable, use system cron)",
+        "Queue table grows (cleanup job needed)",
+        "Additional infrastructure (Kafka/Redis/DB outbox)",
+        "More moving parts to monitor"
+      ],
+      "scale_fit": "REQUIRED for 100+ sites / 100k+ SKUs",
+      "license": "GPL-3 (Action Scheduler)",
+      "url": "https://developer.woocommerce.com/2026/06/17/changes-to-action-scheduler/",
+      "observed_at": "2026-06-17",
+      "confidence": "measured"
+    }
+  ],
+  "multisite_findings": [
+    {
+      "aspect": "REST endpoints per subsite",
+      "finding": "https://site.network.com/wp-json/wp/v2/posts and /wp-json/wc/v3/products work per subsite",
+      "recommendation": "Use separate installs; if Multisite, treat each subsite as independent endpoint",
+      "confidence": "measured",
+      "source": "https://developer.wordpress.org/rest-api/reference/",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "aspect": "switch_to_blog() object cache",
+      "finding": "Corrupts object cache (core ticket #14992); alloptions cached globally, not flushed on switch",
+      "recommendation": "Avoid in sync code; if forced, wp_cache_flush() after each switch (performance killer)",
+      "confidence": "measured",
+      "source": "https://core.trac.wordpress.org/ticket/14992",
+      "observed_at": "2026-11-27"
+    },
+    {
+      "aspect": "Network-activated plugins",
+      "finding": "Load on EVERY subsite request; WooCommerce init adds ~200ms overhead per subsite",
+      "recommendation": "Do not network-activate WooCommerce; activate per subsite only",
+      "confidence": "reported",
+      "source": "https://stackharbor.com/en/knowledge-base/wordpress-multisite-operations/",
+      "observed_at": "2026-11-27"
+    },
+    {
+      "aspect": "Single database",
+      "finding": "wp_2_posts, wp_2_postmeta... shared MySQL = single point of failure, backup/restore complexity",
+      "recommendation": "Separate installs = isolated blast radius",
+      "confidence": "inferred",
+      "source": "architectural knowledge",
+      "observed_at": "2026-11-27"
+    },
+    {
+      "aspect": "Plugin compatibility",
+      "finding": "Many plugins not Multisite-tested; license keys often per-site",
+      "recommendation": "Separate installs avoid license/compatibility traps",
+      "confidence": "reported",
+      "source": "https://aioseo.com/best-wordpress-multisite-plugins/",
+      "observed_at": "2026-11-27"
+    }
+  ],
+  "auth_methods": [
+    {
+      "method": "Application Passwords",
+      "since": "WP 5.6 (2020)",
+      "scope": "Per-user, per-app, revocable",
+      "storage": "Core wp_usermeta",
+      "rate_limits": "None native; add via Wordfence/Kadence/Rate Limit plugin",
+      "idempotency": "Not native; implement client-side (idempotency-key header + server filter)",
+      "audit": "WP activity log plugins",
+      "confidence": "measured",
+      "source": "https://developer.wordpress.org/rest-api/reference/application-passwords/",
+      "observed_at": "2026-10-14"
+    },
+    {
+      "method": "OAuth1 (WooCommerce)",
+      "since": "WC 2.6",
+      "scope": "Consumer key/secret, read/write per key",
+      "storage": "WC wp_woocommerce_api_keys",
+      "rate_limits": "Same as Application Passwords",
+      "idempotency": "Same as Application Passwords",
+      "audit": "Same as Application Passwords",
+      "confidence": "measured",
+      "source": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "observed_at": "2026-11-27"
+    },
+    {
+      "method": "JWT (plugin)",
+      "since": "Plugin-dependent",
+      "scope": "Short-lived tokens, refresh",
+      "storage": "Plugin tables",
+      "rate_limits": "Same as Application Passwords",
+      "idempotency": "Same as Application Passwords",
+      "audit": "Same as Application Passwords",
+      "confidence": "reported",
+      "source": "https://www.wpgraphql.com/docs/authentication-and-authorization",
+      "observed_at": "2026-11-27"
+    }
+  ],
+  "data_mapping": [
+    {
+      "canonical": "product.id (SKU)",
+      "woocommerce": "sku (unique, required)",
+      "notes": "Primary key for upsert"
+    },
+    {
+      "canonical": "product.gtin",
+      "woocommerce": "meta_data: [{key:\"_gtin\", value:\"...\"}]",
+      "notes": "Custom meta; Yoast/SEO plugins read this"
+    },
+    {
+      "canonical": "product.name",
+      "woocommerce": "name",
+      "notes": "Required"
+    },
+    {
+      "canonical": "product.description",
+      "woocommerce": "description (HTML allowed)",
+      "notes": ""
+    },
+    {
+      "canonical": "product.type",
+      "woocommerce": "type (simple, variable, variation, grouped, external)",
+      "notes": ""
+    },
+    {
+      "canonical": "product.categories[]",
+      "woocommerce": "categories: [{id: N}]",
+      "notes": "Must exist first; create via /wc/v3/products/categories"
+    },
+    {
+      "canonical": "product.attributes[]",
+      "woocommerce": "attributes: [{id: N, options:[\"...\"], variation:true, visible:true}]",
+      "notes": "Global attributes via /wc/v3/products/attributes"
+    },
+    {
+      "canonical": "product.variations[]",
+      "woocommerce": "Separate POST /wc/v3/products/<parent_id>/variations/batch",
+      "notes": "Each variation = SKU, price, stock, image, attributes"
+    },
+    {
+      "canonical": "product.images[]",
+      "woocommerce": "images: [{src:\"https://...\", alt:\"...\", position:0}]",
+      "notes": "Upload via /wp/v2/media first, use returned id"
+    },
+    {
+      "canonical": "product.featured_image",
+      "woocommerce": "featured_media: <media_id>",
+      "notes": "Set after media upload"
+    },
+    {
+      "canonical": "product.price",
+      "woocommerce": "regular_price (string, \"19.99\")",
+      "notes": "String, not float"
+    },
+    {
+      "canonical": "product.stock_quantity",
+      "woocommerce": "stock_quantity (integer)",
+      "notes": "Requires manage_stock: true"
+    },
+    {
+      "canonical": "product.meta",
+      "woocommerce": "meta_data: [{key, value}]",
+      "notes": "Arbitrary; prefix _ for private"
+    }
+  ],
+  "scale_recommendations": [
+    {
+      "tier": "Small",
+      "sites": 10,
+      "skus": "10k",
+      "architecture": "Hub → REST (parallel 5/site)",
+      "concurrency": "50 req/s aggregate",
+      "cron": "System cron every 5 min + webhooks",
+      "cache_invalidation": "wc/v3 purges object cache automatically; add wp_cache_flush() on batch complete"
+    },
+    {
+      "tier": "Medium",
+      "sites": 100,
+      "skus": "100k",
+      "architecture": "Hub → Outbox (Kafka/Redis) → WP Action Scheduler (High Volume plugin)",
+      "concurrency": "10 runners/site, 50 batch size",
+      "cron": "Disable WP-Cron; system cron */2 * * * * wp action-scheduler run --site=<id>",
+      "cache_invalidation": "WPGraphQL Smart Cache tags + X-GraphQL-Keys or REST Cache-Control: no-cache"
+    },
+    {
+      "tier": "Large",
+      "sites": 1000,
+      "skus": "1M",
+      "architecture": "Hub → Outbox → MainWP fleet → per-site workers (K8s jobs)",
+      "concurrency": "20 runners/site, 25 batch size",
+      "cron": "Dedicated queue workers per site (not WP-Cron)",
+      "cache_invalidation": "Per-site Redis Object Cache (WP_CACHE_KEY_SALT) + CDN purge API"
+    }
+  ],
+  "plugins_tools": [
+    {
+      "tool": "WooCommerce REST API (core)",
+      "purpose": "Primary transport",
+      "license": "GPL-3",
+      "can_depend": true,
+      "notes": "In core, no extra install. Official libs: JS/PHP/Python/Ruby"
+    },
+    {
+      "tool": "WPGraphQL",
+      "purpose": "Complex reads, headless",
+      "license": "GPL-3",
+      "can_depend": true,
+      "notes": "Optional; Smart Cache extension for CDN"
+    },
+    {
+      "tool": "WP All Import + WC Add-on",
+      "purpose": "One-off massive CSV/XML imports",
+      "license": "GPL (plugin)",
+      "can_depend": true,
+      "notes": "200MB+ files, scheduled, visual mapping"
+    },
+    {
+      "tool": "WooCommerce Product Import Export (core)",
+      "purpose": "CSV export/import via admin/CLI",
+      "license": "GPL-3",
+      "can_depend": true,
+      "notes": "wc product export/import CLI"
+    },
+    {
+      "tool": "MainWP Dashboard + Child",
+      "purpose": "Fleet management (updates, backups, health, custom hooks)",
+      "license": "GPL-2+",
+      "can_depend": true,
+      "notes": "700k+ child sites, open source, 1000+ hooks for automation, MCP server exists"
+    },
+    {
+      "tool": "ManageWP",
+      "purpose": "SaaS fleet alternative",
+      "license": "Proprietary (GoDaddy)",
+      "can_depend": false,
+      "notes": "Vendor lock-in, per-site fees"
+    },
+    {
+      "tool": "Action Scheduler High Volume",
+      "purpose": "Scale background jobs",
+      "license": "GPL-3",
+      "can_depend": true,
+      "notes": "WC official plugin, required for >100 sites"
+    },
+    {
+      "tool": "REST API Log / Query Monitor",
+      "purpose": "Debugging, audit",
+      "license": "GPL",
+      "can_depend": true,
+      "notes": "Dev/staging only; log all sync requests/responses"
+    },
+    {
+      "tool": "Wordfence / Kadence Security",
+      "purpose": "Rate limiting, WAF",
+      "license": "Freemium",
+      "can_depend": true,
+      "notes": "Block /batch/v1 until patched"
+    }
+  ],
+  "phased_plan": [
+    {
+      "phase": 0,
+      "goal": "Secrets & fleet bootstrap",
+      "transport": "—",
+      "deliverables": [
+        "Vault/AppPwd per site",
+        "MainWP Dashboard + Child on all sites",
+        "DISABLE_WP_CRON",
+        "Redis object cache",
+        "HPOS enabled"
+      ],
+      "exit_criteria": "100% sites connected, health checks green"
+    },
+    {
+      "phase": 1,
+      "goal": "One-site MVP (10k SKUs)",
+      "transport": "REST wc/v3 batch + webhooks",
+      "deliverables": [
+        "Sync client (Python/JS)",
+        "Outbox table",
+        "Action Scheduler High Volume",
+        "Idempotency-key filter",
+        "Media upload flow"
+      ],
+      "exit_criteria": "Full catalog sync <30 min, delta <60s, 0 data loss in 7-day soak"
+    },
+    {
+      "phase": 2,
+      "goal": "10 sites, 100k SKUs",
+      "transport": "REST + outbox pull",
+      "deliverables": [
+        "Parallel sync workers (5/site)",
+        "Per-site rate-limit config",
+        "Reconciliation job (nightly)",
+        "MainWP custom hook for bulk actions"
+      ],
+      "exit_criteria": "10 sites sync <2h, reconciliation drift <0.1%"
+    },
+    {
+      "phase": 3,
+      "goal": "100 sites, 500k SKUs",
+      "transport": "Outbox + Action Scheduler",
+      "deliverables": [
+        "Kafka/Redis outbox",
+        "Dedicated queue workers (K8s)",
+        "WPGraphQL Smart Cache for read-heavy fronts",
+        "CDN purge integration"
+      ],
+      "exit_criteria": "100 sites sync <4h, P99 delta latency <5min"
+    },
+    {
+      "phase": 4,
+      "goal": "1000 sites, 1M SKUs",
+      "transport": "Fleet orchestration",
+      "deliverables": [
+        "MainWP custom plugin for fleet-wide ops",
+        "Blue/green deploy per site",
+        "Automated rollback on health check fail",
+        "Multi-region workers"
+      ],
+      "exit_criteria": "1000 sites sync <8h, zero-downtime deploy, RPO <1h"
+    }
+  ],
+  "risks_gaps": [
+    {
+      "risk": "CVE-2026-63030 batch endpoint RCE",
+      "likelihood": "High (unpatched sites)",
+      "impact": "Critical",
+      "mitigation": "Block /batch/v1 in nginx/WAF until WP 7.0.3+ confirmed"
+    },
+    {
+      "risk": "switch_to_blog() object cache corruption",
+      "likelihood": "High if Multisite used",
+      "impact": "High",
+      "mitigation": "Do not use Multisite for WooCommerce; separate installs"
+    },
+    {
+      "risk": "Webhook \"orders sent once\" bug",
+      "likelihood": "Medium (WC core)",
+      "impact": "Medium",
+      "mitigation": "Reconciliation pull every 15 min; don't rely solely on webhooks for orders"
+    },
+    {
+      "risk": "Rate limiting not native",
+      "likelihood": "Certain",
+      "impact": "Medium",
+      "mitigation": "Deploy Wordfence/Kadence rate limit on all sites; configure per-sync-user limits"
+    },
+    {
+      "risk": "Action Scheduler queue bloat",
+      "likelihood": "High at scale",
+      "impact": "High",
+      "mitigation": "High Volume plugin + custom cleanup job (DELETE completed >7 days)"
+    },
+    {
+      "risk": "HPOS sync divergence",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Monitor wp wc hpos status; never disable sync once enabled"
+    },
+    {
+      "risk": "Plugin incompatibility on Multisite",
+      "likelihood": "High if Multisite",
+      "impact": "High",
+      "mitigation": "Avoid Multisite for independent shops"
+    },
+    {
+      "risk": "Application Password rotation",
+      "likelihood": "Low",
+      "impact": "Medium",
+      "mitigation": "Automate rotation every 90 days via MainWP hook + Vault"
+    }
+  ]
+}

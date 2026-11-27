@@ -7,7 +7,7 @@ tags:
 sources:
   - docs/research/demand/REPORT.md
 confidence: "mixed"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Demand Data Sources & Pipeline Research

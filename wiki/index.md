@@ -7,10 +7,18 @@ tags:
 sources:
   - https://q-parser.ru/howto/api
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Q-Parser Knowledge Base
+
+128 страниц документации Q-Parser, 16 REST-эндпоинтов, 72 формата выгрузки и 4 тарифа. Корпус собран 22.11.2026: 0 пропусков, 442 579 символов; каждый факт имеет URL-источник и дату.
+
+| Артефакт | Значение | Источник |
+|---|---|---|
+| API-эндпоинты | 16 | https://q-parser.ru/howto/api |
+| Форматы выгрузки | 72 | https://q-parser.ru/howto/format |
+| Тарифы | 4 | https://q-parser.ru/tariffs |
 
 **Corpus:** 128 pages · **API endpoints:** 16 · **Export formats:** 72 · **Tariff plans:** 4 · **Claims:** 15
 
@@ -50,6 +58,7 @@ in `docs/research/qparser/manifest.jsonl`. Facts are labelled `measured`, `repor
 - [[research/inherited-assets]] — reusable projects and license policy.
 - [[indexes/marketplaces-world]] — world coverage map with status and priority.
 - [[research/adr]] — architecture decisions.
+- [[topics/aeo]] — Answer-First contract for AI search ranking.
 
 ## Research tracks (raw)
 

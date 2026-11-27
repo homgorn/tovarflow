@@ -15,10 +15,21 @@ layers, designed but not built. The storefront platform is **Medusa v2 + Next.js
 | Q-Parser corpus | 128/128 pages, 442k chars, 100% coverage |
 | Structured extraction | 16 endpoints, 72 formats, 4 plans, 15 sourced claims |
 | Knowledge base | SQLite + FTS5 (826 chunks), graph 334 nodes / 293 edges, LLM wiki |
-| Research | competitors, RU, CN, global, platforms, demand complete; synthesis written |
-| Architecture | layers, domain model, adapter contract, write path, data/knowledge |
-| Specs | constitution + 5 specs + 6 ADRs |
-| Code | not started; this repository is the foundation |
+| Research | competitors, RU, CN, global, platforms, demand, WordPress, admin complete; synthesis written |
+| AEO | Answer-First contract, chunk/table/citation rules, `aeo_lint` gate |
+| First slice | Q-Parser client + mock API + 100 goods ingested into canonical SQLite; replay verified |
+| Admin | hybrid decision: Medusa Admin + Next.js/Refine (research complete) |
+| Code | foundation tools only; production services not started |
+
+## Where to put the Q-Parser API key
+
+```bash
+copy .env.example .env
+```
+
+Then set `QPARSER_API_KEY` in `.env` to the value from `https://q-parser.ru/my/profile`.
+`.env` is gitignored; the client sends the key only in `Authorization: Bearer` and never logs it.
+If you do not have a key yet, use `--mock` or `USE_MOCK=1` — a local emulator covers the same API.
 
 ## Quick start
 
@@ -32,6 +43,10 @@ python tools/query_kb.py "webhook signature"
 python tools/query_research.py "WB token"
 python tools/mock_qparser.py --port 8765   # local API emulator, no key needed
 python tools/smoke_mock.py                 # 15 contract checks against the emulator
+python tools/ingest.py --domain demo-home.ru --mock --limit 100
+python tools/replay.py --domain demo-home.ru
+python tools/aeo_lint.py
+python tools/health.py --full               # all gates
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.
@@ -72,12 +87,17 @@ Three layers are deliberately separate:
 - **Global first** is Google Merchant Center, then Bol.com/Walmart, not Amazon.
 - **No auto-merge** of supplier products; identity matches are candidates.
 - **No publish without a content right.**
+- **WordPress:** separate WP installs + MainWP, never Multisite for independent shops; `wc/v3`
+  REST with Application Passwords and an outbox; MCP is for AI admin, not bulk sync.
+- **Admin:** hybrid Medusa Admin (commerce) + Next.js/Refine (platform operations), shared RLS.
+- **AEO:** Answer-First lead in the first 150–300 characters, fact-dense tables, primary sources,
+  consistent entity fields, raw-HTML gate.
 - **No deletion without double human confirmation.**
 
 ## Roadmap
 
-See [ROADMAP.md](ROADMAP.md). Next milestone: ingest one real domain end to end, build the margin
-ledger, and ship a Medusa + Next.js storefront MVP with a valid YML feed.
+See [ROADMAP.md](ROADMAP.md). Next milestone: ingest a live domain with a real key, ship the
+Medusa + Next.js storefront MVP with AEO templates, then Ozon/WB L2 and WordPress sync v1.
 
 ## License
 

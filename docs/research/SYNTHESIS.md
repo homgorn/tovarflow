@@ -117,6 +117,9 @@ These layers were not in the first brief. Each one can kill a launch if ignored.
 | 18 | **Affiliate/partner channel** | A second demand source without inventory risk | Admitad/Taobao Union evaluation |
 | 19 | **Brand, domain, legal entity** | Marketplace accounts need an entity and documents | Entity checklist per layer |
 | 20 | **Data licensing and privacy** | Parsing ToS and personal data law | Rights/privacy register |
+| 21 | **WordPress fleet** | Many sites are a control-plane problem, not a REST problem | `specs/006`, MainWP, outbox |
+| 22 | **Admin console** | Operators need proposals/moderation/reconciliation, not only products | `specs/007`, hybrid console |
+| 23 | **AI search ranking (AEO)** | A page invisible to a crawler is not a page | `docs/architecture/04-answer-first-aeo.md`, `aeo_lint` |
 
 ## 6. Numbers to keep on the wall
 

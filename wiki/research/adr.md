@@ -7,7 +7,7 @@ tags:
 sources:
   - (none)
 confidence: "measured"
-updated: "2026-11-22"
+updated: "2026-11-27"
 ---
 
 # Architecture decision records
