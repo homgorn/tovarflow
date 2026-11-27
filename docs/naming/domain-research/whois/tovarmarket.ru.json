@@ -1,0 +1,28 @@
+{
+  "domain": "tovarmarket.ru",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:45:54+00:00",
+  "attempts": [
+    {
+      "source": "whois.tcinet.ru",
+      "query": "tovarmarket.ru",
+      "checked_at": "2026-11-27T08:45:54+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarmarket.ru\\20261127T084555491157Z.txt"
+    }
+  ],
+  "status": "taken",
+  "created": "2007-08-09T20:00:00Z",
+  "reason": "WHOIS record matches the queried domain",
+  "source": "whois.tcinet.ru",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "taken",
+      "created": "2007-08-09T20:00:00Z",
+      "reason": "WHOIS record matches the queried domain",
+      "source": "whois.tcinet.ru",
+      "backend": "registry"
+    }
+  ]
+}

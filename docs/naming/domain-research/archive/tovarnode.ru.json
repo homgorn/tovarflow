@@ -1,0 +1,16 @@
+{
+  "domain": "tovarnode.ru",
+  "stage": "archive",
+  "checked_at": "2026-11-27T08:47:23+00:00",
+  "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarnode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+  "attempts": [
+    {
+      "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarnode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+      "query": "",
+      "checked_at": "2026-11-27T08:47:23+00:00",
+      "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+    }
+  ],
+  "status": "error",
+  "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+}

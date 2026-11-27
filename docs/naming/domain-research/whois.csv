@@ -1,0 +1,7 @@
+domain,status,checked_at,source,backend,created,reason
+tovarflow.com,available,2026-11-27T08:47:47+00:00,whois.verisign-grs.com,registry,,WHOIS explicitly reports no record
+catalogflow.com,taken,2026-11-27T08:48:01+00:00,whois.verisign-grs.com,registry,2021-10-12T18:15:26Z,WHOIS record matches the queried domain
+vitrinaflow.com,taken,2026-11-27T08:48:04+00:00,whois.verisign-grs.com,registry,2026-08-23T14:43:07Z,WHOIS record matches the queried domain
+tovarflow.ru,available,2026-11-27T08:48:07+00:00,whois.tcinet.ru,registry,,WHOIS explicitly reports no record
+catalogflow.ru,available,2026-11-27T08:48:07+00:00,whois.tcinet.ru,registry,,WHOIS explicitly reports no record
+vitrinaflow.ru,available,2026-11-27T08:48:09+00:00,whois.tcinet.ru,registry,,WHOIS explicitly reports no record

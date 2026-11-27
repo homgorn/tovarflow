@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-11-27T08:49:00Z",
+  "method": "WHOIS via domain_check.py; Wayback CDX wildcard; Google exact quoted query in browser; Yandex exact query blocked by captcha",
+  "chosen": {
+    "name": "TovarFlow",
+    "domain_ru": "tovarflow.ru",
+    "domain_com": "tovarflow.com",
+    "reading": "товар флоу",
+    "seo_roots": ["товар", "поток товаров", "парсинг товаров", "каталог", "витрина"],
+    "confidence": 8,
+    "confidence_note": "Availability measured twice; history check incomplete because Yandex was blocked"
+  },
+  "funnel": {
+    "bases_before_filter": 65,
+    "removed_by_reading_rule": 12,
+    "full_ru_domains": 53,
+    "whois_available": 49,
+    "whois_taken": 4,
+    "wayback_no_captures": 19,
+    "wayback_captures": 2,
+    "wayback_error": 28,
+    "finalists_checked_again": 6
+  },
+  "finalists": [
+    {"domain": "tovarflow.ru", "whois": "available", "wayback": "no_captures", "google_exact": "no relevant exact mentions", "yandex_exact": "blocked", "verdict": "recommended"},
+    {"domain": "tovarflow.com", "whois": "available", "wayback": "not checked", "google_exact": "not checked", "yandex_exact": "blocked", "verdict": "recommended for global"},
+    {"domain": "catalogflow.ru", "whois": "available", "wayback": "no_captures", "verdict": "runner-up"},
+    {"domain": "vitrinaflow.ru", "whois": "available", "wayback": "no_captures", "verdict": "runner-up"},
+    {"domain": "catalogflow.com", "whois": "taken", "verdict": "excluded"},
+    {"domain": "vitrinaflow.com", "whois": "taken", "verdict": "excluded"}
+  ],
+  "limits": [
+    "A free WHOIS result is not proof of a clean history.",
+    "Wayback errors (28 domains) were not resolved for all candidates.",
+    "Yandex exact query returned a captcha; recorded as blocked, not as 'no results'.",
+    "Registrar price and legal trademark check were not performed."
+  ]
+}

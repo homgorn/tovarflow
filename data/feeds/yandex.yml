@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-11-27 08:52">
+  <shop>
+    <name>TovarFlow</name>
+    <company>TovarFlow</company>
+    <url>https://tovarflow.ru</url>
+    <currencies><currency id="RUB" rate="1"/></currencies>
+    <categories><category id="9fd59f8401">Кухня</category><category id="1bbba2f88a">Текстиль</category></categories>
+    <offers><offer id="1" available="false">
+  <name>Товар 1 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/1</url>
+  <price>26412.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>1</model>
+  <vendorCode>1</vendorCode>
+  <description>Описание товара 1. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="2" available="false">
+  <name>Товар 2 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/2</url>
+  <price>5105.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>2</model>
+  <vendorCode>2</vendorCode>
+  <description>Описание товара 2. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="3" available="false">
+  <name>Товар 3 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/3</url>
+  <price>7310.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>3</model>
+  <vendorCode>3</vendorCode>
+  <description>Описание товара 3. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="4" available="false">
+  <name>Товар 4 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/4</url>
+  <price>22852.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>4</model>
+  <vendorCode>4</vendorCode>
+  <description>Описание товара 4. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="5" available="false">
+  <name>Товар 5 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/5</url>
+  <price>20337.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>5</model>
+  <vendorCode>5</vendorCode>
+  <description>Описание товара 5. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="6" available="false">
+  <name>Товар 6 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/6</url>
+  <price>19065.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>6</model>
+  <vendorCode>6</vendorCode>
+  <description>Описание товара 6. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="7" available="false">
+  <name>Товар 7 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/7</url>
+  <price>24725.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>7</model>
+  <vendorCode>7</vendorCode>
+  <description>Описание товара 7. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="8" available="false">
+  <name>Товар 8 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/8</url>
+  <price>28597.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>8</model>
+  <vendorCode>8</vendorCode>
+  <description>Описание товара 8. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="9" available="false">
+  <name>Товар 9 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/9</url>
+  <price>15075.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>9</model>
+  <vendorCode>9</vendorCode>
+  <description>Описание товара 9. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="10" available="false">
+  <name>Товар 10 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/10</url>
+  <price>10105.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>10</model>
+  <vendorCode>10</vendorCode>
+  <description>Описание товара 10. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="11" available="false">
+  <name>Товар 11 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/11</url>
+  <price>6807.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>11</model>
+  <vendorCode>11</vendorCode>
+  <description>Описание товара 11. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="12" available="false">
+  <name>Товар 12 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/12</url>
+  <price>13137.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>12</model>
+  <vendorCode>12</vendorCode>
+  <description>Описание товара 12. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="13" available="false">
+  <name>Товар 13 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/13</url>
+  <price>27510.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>13</model>
+  <vendorCode>13</vendorCode>
+  <description>Описание товара 13. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="14" available="false">
+  <name>Товар 14 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/14</url>
+  <price>14777.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>14</model>
+  <vendorCode>14</vendorCode>
+  <description>Описание товара 14. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="15" available="false">
+  <name>Товар 15 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/15</url>
+  <price>34762.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>15</model>
+  <vendorCode>15</vendorCode>
+  <description>Описание товара 15. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="16" available="false">
+  <name>Товар 16 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/16</url>
+  <price>12077.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>16</model>
+  <vendorCode>16</vendorCode>
+  <description>Описание товара 16. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="17" available="false">
+  <name>Товар 17 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/17</url>
+  <price>19542.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>17</model>
+  <vendorCode>17</vendorCode>
+  <description>Описание товара 17. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="18" available="false">
+  <name>Товар 18 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/18</url>
+  <price>31865.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>18</model>
+  <vendorCode>18</vendorCode>
+  <description>Описание товара 18. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="19" available="false">
+  <name>Товар 19 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/19</url>
+  <price>10797.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>19</model>
+  <vendorCode>19</vendorCode>
+  <description>Описание товара 19. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="20" available="false">
+  <name>Товар 20 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/20</url>
+  <price>15877.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>20</model>
+  <vendorCode>20</vendorCode>
+  <description>Описание товара 20. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="21" available="false">
+  <name>Товар 21 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/21</url>
+  <price>11985.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>21</model>
+  <vendorCode>21</vendorCode>
+  <description>Описание товара 21. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="22" available="false">
+  <name>Товар 22 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/22</url>
+  <price>18080.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>22</model>
+  <vendorCode>22</vendorCode>
+  <description>Описание товара 22. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="23" available="false">
+  <name>Товар 23 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/23</url>
+  <price>7142.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>23</model>
+  <vendorCode>23</vendorCode>
+  <description>Описание товара 23. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="24" available="false">
+  <name>Товар 24 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/24</url>
+  <price>28500.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>24</model>
+  <vendorCode>24</vendorCode>
+  <description>Описание товара 24. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="25" available="false">
+  <name>Товар 25 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/25</url>
+  <price>18370.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>25</model>
+  <vendorCode>25</vendorCode>
+  <description>Описание товара 25. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="26" available="false">
+  <name>Товар 26 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/26</url>
+  <price>30800.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>26</model>
+  <vendorCode>26</vendorCode>
+  <description>Описание товара 26. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="27" available="false">
+  <name>Товар 27 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/27</url>
+  <price>36100.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>27</model>
+  <vendorCode>27</vendorCode>
+  <description>Описание товара 27. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="28" available="false">
+  <name>Товар 28 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/28</url>
+  <price>7427.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>28</model>
+  <vendorCode>28</vendorCode>
+  <description>Описание товара 28. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="29" available="false">
+  <name>Товар 29 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/29</url>
+  <price>31125.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>29</model>
+  <vendorCode>29</vendorCode>
+  <description>Описание товара 29. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="30" available="false">
+  <name>Товар 30 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/30</url>
+  <price>12987.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>30</model>
+  <vendorCode>30</vendorCode>
+  <description>Описание товара 30. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="31" available="false">
+  <name>Товар 31 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/31</url>
+  <price>15485.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>31</model>
+  <vendorCode>31</vendorCode>
+  <description>Описание товара 31. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="32" available="false">
+  <name>Товар 32 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/32</url>
+  <price>18870.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>32</model>
+  <vendorCode>32</vendorCode>
+  <description>Описание товара 32. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="33" available="false">
+  <name>Товар 33 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/33</url>
+  <price>36725.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>33</model>
+  <vendorCode>33</vendorCode>
+  <description>Описание товара 33. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="34" available="false">
+  <name>Товар 34 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/34</url>
+  <price>23585.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>34</model>
+  <vendorCode>34</vendorCode>
+  <description>Описание товара 34. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="35" available="false">
+  <name>Товар 35 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/35</url>
+  <price>9585.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>35</model>
+  <vendorCode>35</vendorCode>
+  <description>Описание товара 35. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="36" available="false">
+  <name>Товар 36 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/36</url>
+  <price>31060.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>36</model>
+  <vendorCode>36</vendorCode>
+  <description>Описание товара 36. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="37" available="false">
+  <name>Товар 37 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/37</url>
+  <price>29142.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>37</model>
+  <vendorCode>37</vendorCode>
+  <description>Описание товара 37. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="38" available="false">
+  <name>Товар 38 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/38</url>
+  <price>34517.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>38</model>
+  <vendorCode>38</vendorCode>
+  <description>Описание товара 38. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="39" available="false">
+  <name>Товар 39 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/39</url>
+  <price>30495.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>39</model>
+  <vendorCode>39</vendorCode>
+  <description>Описание товара 39. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="40" available="false">
+  <name>Товар 40 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/40</url>
+  <price>17215.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>40</model>
+  <vendorCode>40</vendorCode>
+  <description>Описание товара 40. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="41" available="false">
+  <name>Товар 41 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/41</url>
+  <price>25690.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>41</model>
+  <vendorCode>41</vendorCode>
+  <description>Описание товара 41. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="42" available="false">
+  <name>Товар 42 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/42</url>
+  <price>9840.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>42</model>
+  <vendorCode>42</vendorCode>
+  <description>Описание товара 42. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="43" available="false">
+  <name>Товар 43 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/43</url>
+  <price>26430.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>43</model>
+  <vendorCode>43</vendorCode>
+  <description>Описание товара 43. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="44" available="false">
+  <name>Товар 44 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/44</url>
+  <price>29470.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>44</model>
+  <vendorCode>44</vendorCode>
+  <description>Описание товара 44. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="45" available="false">
+  <name>Товар 45 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/45</url>
+  <price>30120.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>45</model>
+  <vendorCode>45</vendorCode>
+  <description>Описание товара 45. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="46" available="false">
+  <name>Товар 46 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/46</url>
+  <price>21080.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>46</model>
+  <vendorCode>46</vendorCode>
+  <description>Описание товара 46. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="47" available="false">
+  <name>Товар 47 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/47</url>
+  <price>9215.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>47</model>
+  <vendorCode>47</vendorCode>
+  <description>Описание товара 47. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="48" available="false">
+  <name>Товар 48 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/48</url>
+  <price>11060.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>48</model>
+  <vendorCode>48</vendorCode>
+  <description>Описание товара 48. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="49" available="false">
+  <name>Товар 49 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/49</url>
+  <price>22377.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>49</model>
+  <vendorCode>49</vendorCode>
+  <description>Описание товара 49. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="50" available="false">
+  <name>Товар 50 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/50</url>
+  <price>29405.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>50</model>
+  <vendorCode>50</vendorCode>
+  <description>Описание товара 50. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="51" available="false">
+  <name>Товар 51 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/51</url>
+  <price>21617.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>51</model>
+  <vendorCode>51</vendorCode>
+  <description>Описание товара 51. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="52" available="false">
+  <name>Товар 52 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/52</url>
+  <price>11015.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>52</model>
+  <vendorCode>52</vendorCode>
+  <description>Описание товара 52. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="53" available="false">
+  <name>Товар 53 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/53</url>
+  <price>5822.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>53</model>
+  <vendorCode>53</vendorCode>
+  <description>Описание товара 53. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="54" available="false">
+  <name>Товар 54 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/54</url>
+  <price>36380.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>54</model>
+  <vendorCode>54</vendorCode>
+  <description>Описание товара 54. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="55" available="false">
+  <name>Товар 55 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/55</url>
+  <price>12680.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>55</model>
+  <vendorCode>55</vendorCode>
+  <description>Описание товара 55. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="56" available="false">
+  <name>Товар 56 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/56</url>
+  <price>24972.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>56</model>
+  <vendorCode>56</vendorCode>
+  <description>Описание товара 56. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="57" available="false">
+  <name>Товар 57 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/57</url>
+  <price>36155.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>57</model>
+  <vendorCode>57</vendorCode>
+  <description>Описание товара 57. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="58" available="false">
+  <name>Товар 58 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/58</url>
+  <price>27557.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>58</model>
+  <vendorCode>58</vendorCode>
+  <description>Описание товара 58. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="59" available="false">
+  <name>Товар 59 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/59</url>
+  <price>4607.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>59</model>
+  <vendorCode>59</vendorCode>
+  <description>Описание товара 59. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="60" available="false">
+  <name>Товар 60 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/60</url>
+  <price>15605.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>60</model>
+  <vendorCode>60</vendorCode>
+  <description>Описание товара 60. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="61" available="false">
+  <name>Товар 61 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/61</url>
+  <price>11847.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>61</model>
+  <vendorCode>61</vendorCode>
+  <description>Описание товара 61. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="62" available="false">
+  <name>Товар 62 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/62</url>
+  <price>22630.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>62</model>
+  <vendorCode>62</vendorCode>
+  <description>Описание товара 62. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="63" available="false">
+  <name>Товар 63 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/63</url>
+  <price>14577.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>63</model>
+  <vendorCode>63</vendorCode>
+  <description>Описание товара 63. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="64" available="false">
+  <name>Товар 64 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/64</url>
+  <price>36502.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>64</model>
+  <vendorCode>64</vendorCode>
+  <description>Описание товара 64. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="65" available="false">
+  <name>Товар 65 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/65</url>
+  <price>12227.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>65</model>
+  <vendorCode>65</vendorCode>
+  <description>Описание товара 65. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="66" available="false">
+  <name>Товар 66 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/66</url>
+  <price>10232.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>66</model>
+  <vendorCode>66</vendorCode>
+  <description>Описание товара 66. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="67" available="false">
+  <name>Товар 67 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/67</url>
+  <price>37950.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>67</model>
+  <vendorCode>67</vendorCode>
+  <description>Описание товара 67. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="68" available="false">
+  <name>Товар 68 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/68</url>
+  <price>18265.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>68</model>
+  <vendorCode>68</vendorCode>
+  <description>Описание товара 68. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="69" available="false">
+  <name>Товар 69 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/69</url>
+  <price>32137.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>69</model>
+  <vendorCode>69</vendorCode>
+  <description>Описание товара 69. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="70" available="false">
+  <name>Товар 70 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/70</url>
+  <price>12455.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>70</model>
+  <vendorCode>70</vendorCode>
+  <description>Описание товара 70. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="71" available="false">
+  <name>Товар 71 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/71</url>
+  <price>3845.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>71</model>
+  <vendorCode>71</vendorCode>
+  <description>Описание товара 71. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="72" available="false">
+  <name>Товар 72 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/72</url>
+  <price>36890.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>72</model>
+  <vendorCode>72</vendorCode>
+  <description>Описание товара 72. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="73" available="false">
+  <name>Товар 73 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/73</url>
+  <price>2535.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>73</model>
+  <vendorCode>73</vendorCode>
+  <description>Описание товара 73. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="74" available="false">
+  <name>Товар 74 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/74</url>
+  <price>22102.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>74</model>
+  <vendorCode>74</vendorCode>
+  <description>Описание товара 74. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="75" available="false">
+  <name>Товар 75 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/75</url>
+  <price>25552.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>75</model>
+  <vendorCode>75</vendorCode>
+  <description>Описание товара 75. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="76" available="false">
+  <name>Товар 76 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/76</url>
+  <price>5262.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>76</model>
+  <vendorCode>76</vendorCode>
+  <description>Описание товара 76. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="77" available="false">
+  <name>Товар 77 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/77</url>
+  <price>12285.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>77</model>
+  <vendorCode>77</vendorCode>
+  <description>Описание товара 77. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="78" available="false">
+  <name>Товар 78 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/78</url>
+  <price>6810.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>78</model>
+  <vendorCode>78</vendorCode>
+  <description>Описание товара 78. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="79" available="false">
+  <name>Товар 79 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/79</url>
+  <price>17050.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>79</model>
+  <vendorCode>79</vendorCode>
+  <description>Описание товара 79. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="80" available="false">
+  <name>Товар 80 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/80</url>
+  <price>11355.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>80</model>
+  <vendorCode>80</vendorCode>
+  <description>Описание товара 80. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="81" available="false">
+  <name>Товар 81 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/81</url>
+  <price>25617.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>81</model>
+  <vendorCode>81</vendorCode>
+  <description>Описание товара 81. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="82" available="false">
+  <name>Товар 82 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/82</url>
+  <price>25945.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>82</model>
+  <vendorCode>82</vendorCode>
+  <description>Описание товара 82. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">S</param><param name="Цвет">серый</param>
+</offer><offer id="83" available="false">
+  <name>Товар 83 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/83</url>
+  <price>28777.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>83</model>
+  <vendorCode>83</vendorCode>
+  <description>Описание товара 83. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="84" available="false">
+  <name>Товар 84 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/84</url>
+  <price>33130.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>84</model>
+  <vendorCode>84</vendorCode>
+  <description>Описание товара 84. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">белый</param>
+</offer><offer id="85" available="false">
+  <name>Товар 85 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/85</url>
+  <price>21810.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>85</model>
+  <vendorCode>85</vendorCode>
+  <description>Описание товара 85. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="86" available="false">
+  <name>Товар 86 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/86</url>
+  <price>37547.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>86</model>
+  <vendorCode>86</vendorCode>
+  <description>Описание товара 86. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="87" available="false">
+  <name>Товар 87 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/87</url>
+  <price>17895.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>87</model>
+  <vendorCode>87</vendorCode>
+  <description>Описание товара 87. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="88" available="false">
+  <name>Товар 88 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/88</url>
+  <price>13682.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Lumen</vendor>
+  <model>88</model>
+  <vendorCode>88</vendorCode>
+  <description>Описание товара 88. Тестовые данные для разработки.</description>
+  <param name="Материал">керамика</param><param name="Размер">L</param><param name="Цвет">серый</param>
+</offer><offer id="89" available="false">
+  <name>Товар 89 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/89</url>
+  <price>3517.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>89</model>
+  <vendorCode>89</vendorCode>
+  <description>Описание товара 89. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">чёрный</param>
+</offer><offer id="90" available="false">
+  <name>Товар 90 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/90</url>
+  <price>7467.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>90</model>
+  <vendorCode>90</vendorCode>
+  <description>Описание товара 90. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="91" available="false">
+  <name>Товар 91 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/91</url>
+  <price>26267.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Delta</vendor>
+  <model>91</model>
+  <vendorCode>91</vendorCode>
+  <description>Описание товара 91. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">чёрный</param>
+</offer><offer id="92" available="false">
+  <name>Товар 92 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/92</url>
+  <price>11587.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>92</model>
+  <vendorCode>92</vendorCode>
+  <description>Описание товара 92. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="93" available="false">
+  <name>Товар 93 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/93</url>
+  <price>15757.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>93</model>
+  <vendorCode>93</vendorCode>
+  <description>Описание товара 93. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer><offer id="94" available="false">
+  <name>Товар 94 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/94</url>
+  <price>18507.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>94</model>
+  <vendorCode>94</vendorCode>
+  <description>Описание товара 94. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="95" available="false">
+  <name>Товар 95 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/95</url>
+  <price>34007.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>95</model>
+  <vendorCode>95</vendorCode>
+  <description>Описание товара 95. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="96" available="false">
+  <name>Товар 96 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/96</url>
+  <price>23987.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Sfera</vendor>
+  <model>96</model>
+  <vendorCode>96</vendorCode>
+  <description>Описание товара 96. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="97" available="false">
+  <name>Товар 97 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/97</url>
+  <price>18377.50</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>97</model>
+  <vendorCode>97</vendorCode>
+  <description>Описание товара 97. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">M</param><param name="Цвет">серый</param>
+</offer><offer id="98" available="false">
+  <name>Товар 98 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/98</url>
+  <price>34645.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>98</model>
+  <vendorCode>98</vendorCode>
+  <description>Описание товара 98. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">S</param><param name="Цвет">белый</param>
+</offer><offer id="99" available="false">
+  <name>Товар 99 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/99</url>
+  <price>31445.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9fd59f8401</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>99</model>
+  <vendorCode>99</vendorCode>
+  <description>Описание товара 99. Тестовые данные для разработки.</description>
+  <param name="Материал">хлопок</param><param name="Размер">L</param><param name="Цвет">белый</param>
+</offer><offer id="100" available="false">
+  <name>Товар 100 — demo-home.ru</name>
+  <url>https://demo-home.ru/product/100</url>
+  <price>2425.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1bbba2f88a</categoryId>
+  <picture>https://example.invalid/placeholder.jpg</picture>
+  <vendor>Nord</vendor>
+  <model>100</model>
+  <vendorCode>100</vendorCode>
+  <description>Описание товара 100. Тестовые данные для разработки.</description>
+  <param name="Материал">金属</param><param name="Размер">L</param><param name="Цвет">чёрный</param>
+</offer></offers>
+  </shop>
+</yml_catalog>

@@ -1,0 +1,162 @@
+{
+  "domain": "tovarmir.ru",
+  "stage": "archive",
+  "checked_at": "2026-11-27T08:47:11+00:00",
+  "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmir.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+  "attempts": [
+    {
+      "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmir.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+      "query": "",
+      "checked_at": "2026-11-27T08:47:11+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarmir.ru\\20261127T084712922945Z.txt"
+    }
+  ],
+  "status": "captures",
+  "sample_count": 20,
+  "sample_first": "20170613194946",
+  "sample_last": "20191218141639",
+  "limit_reached": true,
+  "samples": [
+    {
+      "timestamp": "20191216033714",
+      "original": "http://tovarmir.ru/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20191216033714/http://tovarmir.ru/"
+    },
+    {
+      "timestamp": "20170613194946",
+      "original": "http://tovarmir.ru/robots.txt",
+      "statuscode": "200",
+      "mimetype": "text/plain",
+      "snapshot_url": "https://web.archive.org/web/20170613194946/http://tovarmir.ru/robots.txt"
+    },
+    {
+      "timestamp": "20170716143504",
+      "original": "http://tovarmir.ru/robots.txt",
+      "statuscode": "-",
+      "mimetype": "warc/revisit",
+      "snapshot_url": "https://web.archive.org/web/20170716143504/http://tovarmir.ru/robots.txt"
+    },
+    {
+      "timestamp": "20180301102335",
+      "original": "http://tovarmir.ru/robots.txt",
+      "statuscode": "404",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20180301102335/http://tovarmir.ru/robots.txt"
+    },
+    {
+      "timestamp": "20180401050101",
+      "original": "http://tovarmir.ru/robots.txt",
+      "statuscode": "200",
+      "mimetype": "text/plain",
+      "snapshot_url": "https://web.archive.org/web/20180401050101/http://tovarmir.ru/robots.txt"
+    },
+    {
+      "timestamp": "20181202141144",
+      "original": "http://tovarmir.ru/robots.txt",
+      "statuscode": "200",
+      "mimetype": "text/plain",
+      "snapshot_url": "https://web.archive.org/web/20181202141144/http://tovarmir.ru/robots.txt"
+    },
+    {
+      "timestamp": "20190116092158",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190116092158/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190215213436",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190215213436/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190319060746",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190319060746/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190418202508",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190418202508/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190519084445",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190519084445/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190618232926",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190618232926/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190719220330",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190719220330/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190820052703",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190820052703/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190921025529",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190921025529/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20191019000538",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20191019000538/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20191118075532",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20191118075532/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20191218141639",
+      "original": "http://best.tovarmir.ru:80/KFuXGY/",
+      "statuscode": "302",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20191218141639/http://best.tovarmir.ru:80/KFuXGY/"
+    },
+    {
+      "timestamp": "20190428013501",
+      "original": "http://ren.tovarmir.ru:80/vr8Hy7",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190428013501/http://ren.tovarmir.ru:80/vr8Hy7"
+    },
+    {
+      "timestamp": "20190528224501",
+      "original": "http://ren.tovarmir.ru:80/vr8Hy7",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190528224501/http://ren.tovarmir.ru:80/vr8Hy7"
+    }
+  ]
+}

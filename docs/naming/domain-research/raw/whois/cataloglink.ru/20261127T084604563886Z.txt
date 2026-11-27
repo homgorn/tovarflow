@@ -1,0 +1,18 @@
+% TCI Whois Service. Terms of use:
+% https://tcinet.ru/documents/whois_ru_rf.pdf (in Russian)
+% https://tcinet.ru/documents/whois_su.pdf (in Russian)
+
+domain:        CATALOGLINK.RU
+nserver:       ns1.privateperson.ru.
+nserver:       ns2.privateperson.ru.
+state:         REGISTERED, DELEGATED, VERIFIED
+org:           
+registrar:     DOMAINS-RU
+admin-contact: http://domains.ru/whois
+created:       2011-01-20T07:03:45Z
+paid-till:     2027-01-20T07:03:45Z
+free-date:     2027-02-20
+source:        TCI
+
+Last updated on 2026-11-27T08:43:02Z
+

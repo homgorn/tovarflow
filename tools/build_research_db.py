@@ -32,6 +32,7 @@ TRACK_DIRS = [
     ("inherited", "inherited", "general"),
     ("wordpress", "wordpress", "global"),
     ("admin", "admin", "general"),
+    ("naming", "naming", "general"),
 ]
 
 SCHEMA = """

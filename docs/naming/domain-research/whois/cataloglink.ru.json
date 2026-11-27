@@ -1,0 +1,28 @@
+{
+  "domain": "cataloglink.ru",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:46:03+00:00",
+  "attempts": [
+    {
+      "source": "whois.tcinet.ru",
+      "query": "cataloglink.ru",
+      "checked_at": "2026-11-27T08:46:03+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\cataloglink.ru\\20261127T084604563886Z.txt"
+    }
+  ],
+  "status": "taken",
+  "created": "2011-01-20T07:03:45Z",
+  "reason": "WHOIS record matches the queried domain",
+  "source": "whois.tcinet.ru",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "taken",
+      "created": "2011-01-20T07:03:45Z",
+      "reason": "WHOIS record matches the queried domain",
+      "source": "whois.tcinet.ru",
+      "backend": "registry"
+    }
+  ]
+}

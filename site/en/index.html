@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TovarFlow — supplier catalogues to storefronts and marketplaces</title>
+<meta name="description" content="TovarFlow turns supplier catalogues into storefronts and marketplace feeds: 16 Q-Parser API endpoints, 72 export formats, Ozon, Wildberries, Google Merchant and WordPress connectors.">
+<link rel="canonical" href="https://tovarflow.ru/en/">
+<link rel="alternate" hreflang="ru" href="https://tovarflow.ru/">
+<link rel="alternate" hreflang="en" href="https://tovarflow.ru/en/">
+<meta property="og:type" content="website"><meta property="og:url" content="https://tovarflow.ru/en/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TovarFlow","applicationCategory":"BusinessApplication","url":"https://tovarflow.ru/en/","description":"Catalogue ingestion, product normalisation, margin pricing and publishing to storefronts and marketplaces."}
+</script>
+<style>
+:root{color-scheme:light;--bg:#f6f7f9;--card:#fff;--ink:#141922;--muted:#586173;--line:#dfe3ea;--accent:#1d5fd8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 18px 64px}header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.brand{font-weight:750;font-size:20px}nav a{color:var(--muted);margin-left:14px;text-decoration:none}.lead{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 18px;font-size:17px}
+h1{font-size:30px;line-height:1.2;margin:0 0 14px}h2{margin:34px 0 12px;font-size:22px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin:14px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:15px}th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}th{background:#eef2f8}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}dt{font-weight:650}dd{margin:0;color:var(--muted)}
+code{background:#eef2f8;padding:1px 5px;border-radius:4px}a{color:var(--accent)}.muted{color:var(--muted)}footer{margin-top:40px;color:var(--muted);font-size:14px}
+@media(max-width:600px){h1{font-size:25px}dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><span class="brand">TovarFlow</span><nav><a href="/">Русский</a><a href="/index.md">Markdown</a><a href="/llms.txt">llms.txt</a><a href="https://github.com/homgorn/q-parser.ru">GitHub</a></nav></header>
+
+<h1>TovarFlow — supplier catalogues to storefronts and marketplaces</h1>
+<p class="lead">TovarFlow turns supplier catalogues into storefronts and marketplace feeds. The platform uses 16 documented Q-Parser API endpoints, knows 72 export formats and publishes to Ozon, Wildberries, Google Merchant and WordPress. The storefront runs on Medusa v2; the core is tenant-scoped with RLS from day one.</p>
+
+<h2>What it does</h2>
+<table>
+<thead><tr><th>Layer</th><th>Input</th><th>Output</th></tr></thead>
+<tbody>
+<tr><td>Ingestion</td><td>Q-Parser API, 1688, supplier feeds</td><td>Hashed raw payloads, paginated parsing and polling</td></tr>
+<tr><td>Normalisation</td><td><code>goods</code> fields and free-form <code>data</code> keys</td><td>Product, variant, offer, media, attributes; unknown is not zero</td></tr>
+<tr><td>Pricing</td><td>Purchase, delivery, duty, commission, returns, tax, margin</td><td>Explained price with a floor and <code>is_complete</code> flag</td></tr>
+<tr><td>Channels</td><td>Canonical catalogue</td><td>Ozon, WB, Yandex Market, Google Merchant, WordPress / WooCommerce</td></tr>
+<tr><td>Governance</td><td>Proposal and policy</td><td>Idempotent writes, read-back verification, audit log</td></tr>
+</tbody>
+</table>
+
+<h2>Key numbers</h2>
+<dl>
+  <dt>API documentation</dt><dd>128 pages, 442,579 characters, 0 gaps</dd>
+  <dt>Q-Parser endpoints</dt><dd>16; 9 used in the first ingestion slice</dd>
+  <dt>Export formats</dt><dd>72: files, CMS, social, marketplaces, group-buying</dd>
+  <dt>Concurrency</dt><dd>100 unfinished parses/exports; 1000 records per page</dd>
+  <dt>First slice</dt><dd>100 goods, 100 offers, 300 attributes; replay hash matches</dd>
+  <dt>Storefront</dt><dd>Medusa v2 (MIT) + Next.js, Answer-First and crawler-view gate</dd>
+</dl>
+
+<div class="card"><h2>Channel design</h2><p>Channels are split into <code>ru</code>, <code>cn</code>, <code>global</code> and <code>cis</code> layers. The primary axis is role: <strong>supply</strong> reads a catalogue and purchases; <strong>sales</strong> publishes listings and receives orders. Every write goes through Proposal → Policy → Execution → Verification; a retry with the same key never sends a second HTTP request.</p></div>
+
+<h2>Primary sources</h2>
+<ul>
+<li><a href="https://q-parser.ru/howto/api">Q-Parser API documentation</a> (measured 2026-11-22)</li>
+<li><a href="https://docs.ozon.ru/api/seller/">Ozon Seller API</a>, <a href="https://dev.wildberries.ru/">Wildberries API</a></li>
+<li><a href="https://developers.google.com/merchant/api/">Google Merchant API</a>, <a href="https://developers.bol.com/">Bol.com API</a></li>
+<li><a href="https://developers.cloudflare.com/workers/static-assets/">Cloudflare Workers Static Assets</a></li>
+</ul>
+
+<footer>TovarFlow · local development without a key: <code>python tools/mock_qparser.py --port 8765 --no-auth</code></footer>
+</div>
+</body>
+</html>
+
+<!-- aeo-content-type-fix -->

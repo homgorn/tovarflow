@@ -1,0 +1,30 @@
+# TovarFlow
+
+> Catalogue ingestion, normalisation, margin pricing and publishing to storefronts and marketplaces.
+
+TovarFlow ingests supplier catalogues through Q-Parser, normalises them into a canonical product
+model, prices them with a margin ledger, and publishes to Medusa v2 storefronts, marketplace APIs
+and WordPress/WooCommerce sites. 16 documented Q-Parser endpoints, 72 export formats, 128 pages of
+source documentation, 0 missing pages.
+
+- [Russian site](https://tovarflow.ru/)
+- [English site](https://tovarflow.ru/en/)
+- [Russian source](https://tovarflow.ru/index.md)
+- [English source](https://tovarflow.ru/en/index.md)
+- [GitHub](https://github.com/homgorn/q-parser.ru)
+
+## Channels
+
+- RU: Ozon Seller, Wildberries, Yandex Market, Megamarket, Avito, Kaspi.
+- CN: 1688 and Taobao Union as supply; Ozon Global and WB China blocked until a Chinese entity exists.
+- Global: Google Merchant first, then Bol.com and Walmart; Amazon SP-API later.
+- WordPress: separate installs + MainWP, `wc/v3` REST, outbox, Action Scheduler. MCP is not a bulk sync bus.
+
+## Evidence
+
+- https://q-parser.ru/howto/api — API contract, measured 2026-11-22.
+- https://docs.ozon.ru/api/seller/ — Ozon Seller API.
+- https://dev.wildberries.ru/ — Wildberries API.
+- https://developers.cloudflare.com/workers/static-assets/ — hosting.
+
+<!-- aeo-content-type-fix -->

@@ -1,0 +1,162 @@
+{
+  "domain": "tovardar.ru",
+  "stage": "archive",
+  "checked_at": "2026-11-27T08:47:14+00:00",
+  "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+  "attempts": [
+    {
+      "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+      "query": "",
+      "checked_at": "2026-11-27T08:47:14+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovardar.ru\\20261127T084716007298Z.txt"
+    }
+  ],
+  "status": "captures",
+  "sample_count": 20,
+  "sample_first": "20170503155320",
+  "sample_last": "20190913232148",
+  "limit_reached": true,
+  "samples": [
+    {
+      "timestamp": "20180429205619",
+      "original": "http://tovardar.ru/",
+      "statuscode": "302",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20180429205619/http://tovardar.ru/"
+    },
+    {
+      "timestamp": "20190404033217",
+      "original": "http://tovardar.ru:80/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190404033217/http://tovardar.ru:80/"
+    },
+    {
+      "timestamp": "20190913223347",
+      "original": "http://tovardar.ru:80/",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913223347/http://tovardar.ru:80/"
+    },
+    {
+      "timestamp": "20190429011346",
+      "original": "http://tovardar.ru:80/collection/diatonicheskie-garmoshki",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429011346/http://tovardar.ru:80/collection/diatonicheskie-garmoshki"
+    },
+    {
+      "timestamp": "20190913215146",
+      "original": "http://tovardar.ru:80/collection/diatonicheskie-garmoshki",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913215146/http://tovardar.ru:80/collection/diatonicheskie-garmoshki"
+    },
+    {
+      "timestamp": "20190429015811",
+      "original": "http://tovardar.ru:80/collection/navigatory",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429015811/http://tovardar.ru:80/collection/navigatory"
+    },
+    {
+      "timestamp": "20190913223341",
+      "original": "http://tovardar.ru:80/collection/navigatory",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913223341/http://tovardar.ru:80/collection/navigatory"
+    },
+    {
+      "timestamp": "20170503155320",
+      "original": "http://tovardar.ru:80/igzq/53648427",
+      "statuscode": "404",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20170503155320/http://tovardar.ru:80/igzq/53648427"
+    },
+    {
+      "timestamp": "20190429011438",
+      "original": "http://tovardar.ru:80/page/contacts",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429011438/http://tovardar.ru:80/page/contacts"
+    },
+    {
+      "timestamp": "20190913220608",
+      "original": "http://tovardar.ru:80/page/contacts",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913220608/http://tovardar.ru:80/page/contacts"
+    },
+    {
+      "timestamp": "20190429015742",
+      "original": "http://tovardar.ru:80/page/delivery",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429015742/http://tovardar.ru:80/page/delivery"
+    },
+    {
+      "timestamp": "20190913232148",
+      "original": "http://tovardar.ru:80/page/delivery",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913232148/http://tovardar.ru:80/page/delivery"
+    },
+    {
+      "timestamp": "20190429015734",
+      "original": "http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429015734/http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic"
+    },
+    {
+      "timestamp": "20190913221545",
+      "original": "http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913221545/http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic"
+    },
+    {
+      "timestamp": "20190429015806",
+      "original": "http://tovardar.ru:80/product/navitel-n500",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429015806/http://tovardar.ru:80/product/navitel-n500"
+    },
+    {
+      "timestamp": "20190913212509",
+      "original": "http://tovardar.ru:80/product/navitel-n500",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913212509/http://tovardar.ru:80/product/navitel-n500"
+    },
+    {
+      "timestamp": "20190429015849",
+      "original": "http://tovardar.ru:80/product/trimmer-stiga-sgt-600",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190429015849/http://tovardar.ru:80/product/trimmer-stiga-sgt-600"
+    },
+    {
+      "timestamp": "20190913215501",
+      "original": "http://tovardar.ru:80/product/trimmer-stiga-sgt-600",
+      "statuscode": "200",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20190913215501/http://tovardar.ru:80/product/trimmer-stiga-sgt-600"
+    },
+    {
+      "timestamp": "20170613190112",
+      "original": "http://tovardar.ru/robots.txt",
+      "statuscode": "404",
+      "mimetype": "text/html",
+      "snapshot_url": "https://web.archive.org/web/20170613190112/http://tovardar.ru/robots.txt"
+    },
+    {
+      "timestamp": "20170716142501",
+      "original": "http://tovardar.ru/robots.txt",
+      "statuscode": "-",
+      "mimetype": "warc/revisit",
+      "snapshot_url": "https://web.archive.org/web/20170716142501/http://tovardar.ru/robots.txt"
+    }
+  ]
+}

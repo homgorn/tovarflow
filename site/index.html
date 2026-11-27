@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TovarFlow — парсинг товаров в витрины и маркетплейсы</title>
+<meta name="description" content="TovarFlow превращает каталоги поставщиков в витрины интернет-магазинов и фиды маркетплейсов: 16 API-методов Q-Parser, 72 формата выгрузки, коннекторы Ozon, Wildberries и WordPress.">
+<link rel="canonical" href="https://tovarflow.ru/">
+<link rel="alternate" hreflang="en" href="https://tovarflow.ru/en/">
+<link rel="alternate" hreflang="ru" href="https://tovarflow.ru/">
+<meta property="og:title" content="TovarFlow — каталог → витрина → маркетплейс">
+<meta property="og:description" content="Инжест Q-Parser, канонический каталог, маржинальный ledger, витрины на Medusa v2 и синхронизация с Ozon, WB и WordPress.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tovarflow.ru/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TovarFlow","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://tovarflow.ru/","description":"Платформа инжеста каталогов, нормализации товаров, ценообразования и публикации в витрины и маркетплейсы.","offers":{"@type":"Offer","price":"0","priceCurrency":"RUB","description":"Локальная разработка через API-эмулятор без ключа"}}
+</script>
+<style>
+:root{color-scheme:light;--bg:#f6f7f9;--card:#fff;--ink:#141922;--muted:#586173;--line:#dfe3ea;--accent:#1d5fd8;--ok:#147a4b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 18px 64px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.brand{font-weight:750;letter-spacing:-.02em;font-size:20px}nav a{color:var(--muted);margin-left:14px;text-decoration:none}nav a:hover{color:var(--accent)}
+.lead{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px 18px;font-size:17px}
+h1{font-size:30px;line-height:1.2;margin:0 0 14px;letter-spacing:-.02em}h2{margin:34px 0 12px;font-size:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin:14px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:15px}th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}th{background:#eef2f8}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}dt{font-weight:650}dd{margin:0;color:var(--muted)}
+code{background:#eef2f8;padding:1px 5px;border-radius:4px}dl dt,dl dd,table{overflow-wrap:anywhere}
+a{color:var(--accent)}.ok{color:var(--ok);font-weight:650}.muted{color:var(--muted)}footer{margin-top:40px;color:var(--muted);font-size:14px}
+@media(max-width:600px){h1{font-size:25px}dl{grid-template-columns:1fr}nav a{display:block;margin:4px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="brand">TovarFlow</span>
+  <nav><a href="/en/">English</a><a href="/index.md">Markdown</a><a href="/llms.txt">llms.txt</a><a href="https://github.com/homgorn/q-parser.ru">GitHub</a></nav>
+</header>
+
+<h1>TovarFlow — парсинг товаров в витрины и маркетплейсы</h1>
+<p class="lead">TovarFlow превращает каталоги поставщиков в витрины интернет-магазинов и фиды маркетплейсов. Платформа использует 16 API-методов Q-Parser, знает 72 формата выгрузки и публикует товары в Ozon, Wildberries, Google Merchant и WordPress. Витрина работает на Medusa v2, ядро — с tenant_id и RLS с первого дня.</p>
+
+<h2>Что делает платформа</h2>
+<table>
+<thead><tr><th>Слой</th><th>Вход</th><th>Результат</th></tr></thead>
+<tbody>
+<tr><td>Инжест</td><td>Q-Parser API, 1688, фиды поставщиков</td><td>Сырые ответы с SHA-256, парсинг с пагинацией и polling</td></tr>
+<tr><td>Нормализация</td><td>Поля <code>goods</code> и свободные ключи <code>data</code></td><td>Продукт, вариант, оффер, медиа, атрибуты; unknown ≠ 0</td></tr>
+<tr><td>Ценообразование</td><td>Закупка, доставка, пошлина, комиссия, возвраты, налог, маржа</td><td>Объяснимая цена с floor и флагом is_complete</td></tr>
+<tr><td>Каналы</td><td>Канонический каталог</td><td>Ozon, WB, Яндекс.Маркет, Google Merchant, WordPress / WooCommerce</td></tr>
+<tr><td>Управление</td><td>Proposal и политика</td><td>Идемпотентная запись, верификация чтением, аудит</td></tr>
+</tbody>
+</table>
+
+<h2>Ключевые цифры</h2>
+<dl>
+  <dt>Документация API</dt><dd>128 страниц, 442 579 символов, 0 пропусков</dd>
+  <dt>Методы Q-Parser</dt><dd>16, из них 9 в первом слое инжеста</dd>
+  <dt>Форматы выгрузки</dt><dd>72: файлы, CMS, соцсети, маркетплейсы, СП</dd>
+  <dt>Параллельность</dt><dd>100 незавершённых парсингов и выгрузок, 1000 записей на страницу</dd>
+  <dt>Первый срез</dt><dd>100 товаров, 100 офферов, 300 атрибутов, replay-хеш совпадает</dd>
+  <dt>Витрина</dt><dd>Medusa v2 MIT + Next.js, Answer-First и crawler-view гейт</dd>
+</dl>
+
+<div class="card">
+<h2>Дизайн каналов</h2>
+<p>Каналы разделены на слои <code>ru</code>, <code>cn</code>, <code>global</code>, <code>cis</code>. Главная ось — роль: <strong>supply</strong> читает каталог и закупает, <strong>sales</strong> публикует и получает заказы. Это разные порты. Запись в любой канал идёт через Proposal → Policy → Execution → Verification; повтор с тем же ключом не отправляет второй HTTP-запрос.</p>
+</div>
+
+<h2>Первоисточники</h2>
+<p class="muted">Ссылки на официальные документы и реестры, чтобы ответ можно было проверить:</p>
+<ul>
+<li><a href="https://q-parser.ru/howto/api">Q-Parser API — документация</a> (измерено 22.11.2026)</li>
+<li><a href="https://docs.ozon.ru/api/seller/">Ozon Seller API</a>, <a href="https://dev.wildberries.ru/">Wildberries API</a></li>
+<li><a href="https://developers.google.com/merchant/api/">Google Merchant API</a>, <a href="https://developers.bol.com/">Bol.com API</a></li>
+<li><a href="https://developers.cloudflare.com/workers/static-assets/">Cloudflare Workers Static Assets</a></li>
+</ul>
+
+<footer>TovarFlow · локальная разработка без ключа: <code>python tools/mock_qparser.py --port 8765 --no-auth</code> · <span class="ok">health 9/9</span></footer>
+</div>
+</body>
+</html>
+
+<!-- aeo-content-type-fix -->

@@ -1,0 +1,1116 @@
+[
+  {
+    "domain": "tovarflow.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:48+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:48+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarflow.ru\\20261127T084649797603Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "catalogflow.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:49+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:49+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\catalogflow.ru\\20261127T084650778151Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "vitrinaflow.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:50+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaflow.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:50+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\vitrinaflow.ru\\20261127T084651914506Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarpotok.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:51+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarpotok.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarpotok.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:51+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarpotok.ru\\20261127T084653624747Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "katalogpotok.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:53+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.katalogpotok.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.katalogpotok.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:53+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\katalogpotok.ru\\20261127T084654538358Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarmost.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:54+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:54+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarmost.ru\\20261127T084658882153Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "catalogmost.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:46:58+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogmost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogmost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:46:58+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\catalogmost.ru\\20261127T084700281627Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "vitrinamost.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:00+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinamost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinamost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:00+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\vitrinamost.ru\\20261127T084700964491Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarsila.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:00+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsila.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsila.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:00+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarsila.ru\\20261127T084702158763Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarsvet.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:02+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsvet.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsvet.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:02+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarsvet.ru\\20261127T084703443809Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarrost.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:03+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarrost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarrost.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:03+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarrost.ru\\20261127T084704906074Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarput.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:04+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarput.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarput.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:04+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarput.ru\\20261127T084708074020Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "katalogput.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:08+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.katalogput.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.katalogput.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:08+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\katalogput.ru\\20261127T084709634597Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarsad.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:09+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsad.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsad.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:09+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarsad.ru\\20261127T084710324445Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarles.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:10+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarles.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarles.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:10+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarles.ru\\20261127T084711725290Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarmir.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:11+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmir.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmir.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:11+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarmir.ru\\20261127T084712922945Z.txt"
+      }
+    ],
+    "status": "captures",
+    "sample_count": 20,
+    "sample_first": "20170613194946",
+    "sample_last": "20191218141639",
+    "limit_reached": true,
+    "samples": [
+      {
+        "timestamp": "20191216033714",
+        "original": "http://tovarmir.ru/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20191216033714/http://tovarmir.ru/"
+      },
+      {
+        "timestamp": "20170613194946",
+        "original": "http://tovarmir.ru/robots.txt",
+        "statuscode": "200",
+        "mimetype": "text/plain",
+        "snapshot_url": "https://web.archive.org/web/20170613194946/http://tovarmir.ru/robots.txt"
+      },
+      {
+        "timestamp": "20170716143504",
+        "original": "http://tovarmir.ru/robots.txt",
+        "statuscode": "-",
+        "mimetype": "warc/revisit",
+        "snapshot_url": "https://web.archive.org/web/20170716143504/http://tovarmir.ru/robots.txt"
+      },
+      {
+        "timestamp": "20180301102335",
+        "original": "http://tovarmir.ru/robots.txt",
+        "statuscode": "404",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20180301102335/http://tovarmir.ru/robots.txt"
+      },
+      {
+        "timestamp": "20180401050101",
+        "original": "http://tovarmir.ru/robots.txt",
+        "statuscode": "200",
+        "mimetype": "text/plain",
+        "snapshot_url": "https://web.archive.org/web/20180401050101/http://tovarmir.ru/robots.txt"
+      },
+      {
+        "timestamp": "20181202141144",
+        "original": "http://tovarmir.ru/robots.txt",
+        "statuscode": "200",
+        "mimetype": "text/plain",
+        "snapshot_url": "https://web.archive.org/web/20181202141144/http://tovarmir.ru/robots.txt"
+      },
+      {
+        "timestamp": "20190116092158",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190116092158/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190215213436",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190215213436/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190319060746",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190319060746/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190418202508",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190418202508/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190519084445",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190519084445/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190618232926",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190618232926/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190719220330",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190719220330/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190820052703",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190820052703/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190921025529",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190921025529/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20191019000538",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20191019000538/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20191118075532",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20191118075532/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20191218141639",
+        "original": "http://best.tovarmir.ru:80/KFuXGY/",
+        "statuscode": "302",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20191218141639/http://best.tovarmir.ru:80/KFuXGY/"
+      },
+      {
+        "timestamp": "20190428013501",
+        "original": "http://ren.tovarmir.ru:80/vr8Hy7",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190428013501/http://ren.tovarmir.ru:80/vr8Hy7"
+      },
+      {
+        "timestamp": "20190528224501",
+        "original": "http://ren.tovarmir.ru:80/vr8Hy7",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190528224501/http://ren.tovarmir.ru:80/vr8Hy7"
+      }
+    ]
+  },
+  {
+    "domain": "tovarlad.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:12+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarlad.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarlad.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:12+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarlad.ru\\20261127T084714468179Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovardar.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:14+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:14+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovardar.ru\\20261127T084716007298Z.txt"
+      }
+    ],
+    "status": "captures",
+    "sample_count": 20,
+    "sample_first": "20170503155320",
+    "sample_last": "20190913232148",
+    "limit_reached": true,
+    "samples": [
+      {
+        "timestamp": "20180429205619",
+        "original": "http://tovardar.ru/",
+        "statuscode": "302",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20180429205619/http://tovardar.ru/"
+      },
+      {
+        "timestamp": "20190404033217",
+        "original": "http://tovardar.ru:80/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190404033217/http://tovardar.ru:80/"
+      },
+      {
+        "timestamp": "20190913223347",
+        "original": "http://tovardar.ru:80/",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913223347/http://tovardar.ru:80/"
+      },
+      {
+        "timestamp": "20190429011346",
+        "original": "http://tovardar.ru:80/collection/diatonicheskie-garmoshki",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429011346/http://tovardar.ru:80/collection/diatonicheskie-garmoshki"
+      },
+      {
+        "timestamp": "20190913215146",
+        "original": "http://tovardar.ru:80/collection/diatonicheskie-garmoshki",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913215146/http://tovardar.ru:80/collection/diatonicheskie-garmoshki"
+      },
+      {
+        "timestamp": "20190429015811",
+        "original": "http://tovardar.ru:80/collection/navigatory",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429015811/http://tovardar.ru:80/collection/navigatory"
+      },
+      {
+        "timestamp": "20190913223341",
+        "original": "http://tovardar.ru:80/collection/navigatory",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913223341/http://tovardar.ru:80/collection/navigatory"
+      },
+      {
+        "timestamp": "20170503155320",
+        "original": "http://tovardar.ru:80/igzq/53648427",
+        "statuscode": "404",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20170503155320/http://tovardar.ru:80/igzq/53648427"
+      },
+      {
+        "timestamp": "20190429011438",
+        "original": "http://tovardar.ru:80/page/contacts",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429011438/http://tovardar.ru:80/page/contacts"
+      },
+      {
+        "timestamp": "20190913220608",
+        "original": "http://tovardar.ru:80/page/contacts",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913220608/http://tovardar.ru:80/page/contacts"
+      },
+      {
+        "timestamp": "20190429015742",
+        "original": "http://tovardar.ru:80/page/delivery",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429015742/http://tovardar.ru:80/page/delivery"
+      },
+      {
+        "timestamp": "20190913232148",
+        "original": "http://tovardar.ru:80/page/delivery",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913232148/http://tovardar.ru:80/page/delivery"
+      },
+      {
+        "timestamp": "20190429015734",
+        "original": "http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429015734/http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic"
+      },
+      {
+        "timestamp": "20190913221545",
+        "original": "http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913221545/http://tovardar.ru:80/product/hohner-marine-band-36424-g-m364087-gubn-garmonika-richter-diatonic"
+      },
+      {
+        "timestamp": "20190429015806",
+        "original": "http://tovardar.ru:80/product/navitel-n500",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429015806/http://tovardar.ru:80/product/navitel-n500"
+      },
+      {
+        "timestamp": "20190913212509",
+        "original": "http://tovardar.ru:80/product/navitel-n500",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913212509/http://tovardar.ru:80/product/navitel-n500"
+      },
+      {
+        "timestamp": "20190429015849",
+        "original": "http://tovardar.ru:80/product/trimmer-stiga-sgt-600",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190429015849/http://tovardar.ru:80/product/trimmer-stiga-sgt-600"
+      },
+      {
+        "timestamp": "20190913215501",
+        "original": "http://tovardar.ru:80/product/trimmer-stiga-sgt-600",
+        "statuscode": "200",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20190913215501/http://tovardar.ru:80/product/trimmer-stiga-sgt-600"
+      },
+      {
+        "timestamp": "20170613190112",
+        "original": "http://tovardar.ru/robots.txt",
+        "statuscode": "404",
+        "mimetype": "text/html",
+        "snapshot_url": "https://web.archive.org/web/20170613190112/http://tovardar.ru/robots.txt"
+      },
+      {
+        "timestamp": "20170716142501",
+        "original": "http://tovardar.ru/robots.txt",
+        "statuscode": "-",
+        "mimetype": "warc/revisit",
+        "snapshot_url": "https://web.archive.org/web/20170716142501/http://tovardar.ru/robots.txt"
+      }
+    ]
+  },
+  {
+    "domain": "tovarvek.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:16+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarvek.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarvek.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:16+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarvek.ru\\20261127T084716847241Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarden.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:16+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarden.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarden.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:16+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarden.ru\\20261127T084717875403Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarpol.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:17+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarpol.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarpol.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:17+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\archive\\tovarpol.ru\\20261127T084719157357Z.txt"
+      }
+    ],
+    "status": "no_captures",
+    "sample_count": 0,
+    "samples": []
+  },
+  {
+    "domain": "tovarmag.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:19+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmag.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarmag.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:19+00:00",
+        "error": "URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarbazar.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarbazar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarbazar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovartorg.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovartorg.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovartorg.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarprod.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarprod.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarprod.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "parstovar.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.parstovar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.parstovar.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "parskatalog.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.parskatalog.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.parskatalog.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarlink.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarlink.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarlink.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "vitrinalink.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinalink.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinalink.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogsync.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogsync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogsync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarsync.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:22+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarsync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:22+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "vitrinasync.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinasync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinasync.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogdata.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogdata.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogdata.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovardata.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardata.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovardata.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogfeed.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogfeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogfeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarfeed.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarfeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarfeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "vitrinafeed.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinafeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinafeed.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogflux.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarflux.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "vitrinaflux.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaflux.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarport.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogport.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "vitrinaport.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.vitrinaport.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarnode.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarnode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarnode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalognode.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalognode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalognode.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarset.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarset.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarset.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogset.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogset.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogset.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "tovarkit.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarkit.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.tovarkit.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  },
+  {
+    "domain": "catalogkit.ru",
+    "stage": "archive",
+    "checked_at": "2026-11-27T08:47:23+00:00",
+    "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogkit.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+    "attempts": [
+      {
+        "source": "http://web.archive.org/cdx/search/cdx?url=%2A.catalogkit.ru%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype&limit=20&collapse=timestamp%3A6&gzip=false",
+        "query": "",
+        "checked_at": "2026-11-27T08:47:23+00:00",
+        "error": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+      }
+    ],
+    "status": "error",
+    "reason": "Skipped for this run: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "domain": "vitrinaflow.com",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:48:04+00:00",
+  "attempts": [
+    {
+      "source": "whois.verisign-grs.com",
+      "query": "vitrinaflow.com",
+      "checked_at": "2026-11-27T08:48:04+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\vitrinaflow.com\\20261127T084807307193Z.txt"
+    }
+  ],
+  "status": "taken",
+  "created": "2026-08-23T14:43:07Z",
+  "reason": "WHOIS record matches the queried domain",
+  "source": "whois.verisign-grs.com",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "taken",
+      "created": "2026-08-23T14:43:07Z",
+      "reason": "WHOIS record matches the queried domain",
+      "source": "whois.verisign-grs.com",
+      "backend": "registry"
+    }
+  ]
+}

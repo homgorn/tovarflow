@@ -2050,6 +2050,11 @@
       "label": "Admin Console Decision: Medusa Admin Extended vs Separate Operator Console"
     },
     {
+      "id": "track:naming",
+      "type": "research_track",
+      "label": "naming"
+    },
+    {
       "id": "marketplace:ru:Ozon Seller",
       "type": "marketplace",
       "label": "Ozon Seller"

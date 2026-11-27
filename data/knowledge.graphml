@@ -347,6 +347,7 @@
     <node id="track:inherited"><data key="type">research_track</data><data key="label">inherited</data></node>
     <node id="track:wordpress"><data key="type">research_track</data><data key="label">WordPress Synchronisation Transport &amp; Architecture Decision (2026)</data></node>
     <node id="track:admin"><data key="type">research_track</data><data key="label">Admin Console Decision: Medusa Admin Extended vs Separate Operator Console</data></node>
+    <node id="track:naming"><data key="type">research_track</data><data key="label">naming</data></node>
     <node id="marketplace:ru:Ozon Seller"><data key="type">marketplace</data><data key="label">Ozon Seller</data></node>
     <node id="layer:ru"><data key="type">layer</data><data key="label">ru</data></node>
     <node id="marketplace:ru:Wildberries"><data key="type">marketplace</data><data key="label">Wildberries</data></node>

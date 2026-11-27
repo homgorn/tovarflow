@@ -28,7 +28,8 @@ def load_env(path: Path = ENV_PATH) -> dict[str, str]:
 
 
 def get(name: str, default: str | None = None) -> str | None:
-    return os.environ.get(name) or load_env().get(name) or default
+    example = load_env(ROOT / ".env.example")
+    return os.environ.get(name) or load_env().get(name) or example.get(name) or default
 
 
 def qparser_config() -> dict:

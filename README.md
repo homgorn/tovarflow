@@ -8,6 +8,8 @@ orders and returns.
 The first market is RU (Ozon, Wildberries, Yandex Market). China and global channels are separate
 layers, designed but not built. The storefront platform is **Medusa v2 + Next.js** (ADR-0006).
 
+**Сайт:** https://tovarflow.rvcdax.workers.dev/ · **English README:** [README.en.md](README.en.md)
+
 ## Status
 
 | Layer | State |
@@ -44,8 +46,10 @@ python tools/query_research.py "WB token"
 python tools/mock_qparser.py --port 8765   # local API emulator, no key needed
 python tools/smoke_mock.py                 # 15 contract checks against the emulator
 python tools/ingest.py --domain demo-home.ru --mock --limit 100
+python tools/margin.py                      # объяснимая цена
+python tools/feed_yml.py                    # YML + валидатор
 python tools/replay.py --domain demo-home.ru
-python tools/aeo_lint.py
+python tools/aeo_lint.py --html site/index.html
 python tools/health.py --full               # all gates
 ```
 

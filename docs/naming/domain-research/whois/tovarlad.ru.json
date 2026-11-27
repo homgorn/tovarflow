@@ -1,0 +1,26 @@
+{
+  "domain": "tovarlad.ru",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:45:47+00:00",
+  "attempts": [
+    {
+      "source": "whois.tcinet.ru",
+      "query": "tovarlad.ru",
+      "checked_at": "2026-11-27T08:45:47+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarlad.ru\\20261127T084548257279Z.txt"
+    }
+  ],
+  "status": "available",
+  "reason": "WHOIS explicitly reports no record",
+  "source": "whois.tcinet.ru",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "available",
+      "reason": "WHOIS explicitly reports no record",
+      "source": "whois.tcinet.ru",
+      "backend": "registry"
+    }
+  ]
+}

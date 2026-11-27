@@ -11,7 +11,7 @@ updated: "2026-11-27"
 
 # Knowledge graph
 
-**Nodes:** 434 · **Edges:** 477 · Generated: 2026-11-27
+**Nodes:** 435 · **Edges:** 477 · Generated: 2026-11-27
 
 Merged from the Q-Parser corpus graph and the research graph. JSON and GraphML are in `data/`.
 
@@ -27,7 +27,7 @@ Merged from the Q-Parser corpus graph and the research graph. JSON and GraphML a
 | `endpoint` | 16 |
 | `claim` | 15 |
 | `asset` | 14 |
-| `research_track` | 9 |
+| `research_track` | 10 |
 | `limit` | 7 |
 | `adr` | 6 |
 | `plan` | 4 |

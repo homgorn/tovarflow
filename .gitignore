@@ -16,6 +16,7 @@ data/*.db
 docs/research/qparser/raw/
 docs/research/**/raw/
 docs/research/**/*.local.md
+site_assets.json
 
 # OS / editor
 .DS_Store

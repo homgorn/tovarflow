@@ -1,0 +1,33 @@
+{
+  "domain": "tovarflow.com",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:47:47+00:00",
+  "attempts": [
+    {
+      "source": "whois.iana.org",
+      "query": "com",
+      "checked_at": "2026-11-27T08:47:47+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarflow.com\\20261127T084756376135Z.txt"
+    },
+    {
+      "source": "whois.verisign-grs.com",
+      "query": "tovarflow.com",
+      "checked_at": "2026-11-27T08:47:56+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarflow.com\\20261127T084801245007Z.txt"
+    }
+  ],
+  "status": "available",
+  "reason": "WHOIS explicitly reports no record",
+  "source": "whois.verisign-grs.com",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "available",
+      "reason": "WHOIS explicitly reports no record",
+      "source": "whois.verisign-grs.com",
+      "backend": "registry"
+    }
+  ]
+}

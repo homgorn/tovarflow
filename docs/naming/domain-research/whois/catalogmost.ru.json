@@ -1,0 +1,26 @@
+{
+  "domain": "catalogmost.ru",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:45:33+00:00",
+  "attempts": [
+    {
+      "source": "whois.tcinet.ru",
+      "query": "catalogmost.ru",
+      "checked_at": "2026-11-27T08:45:33+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\catalogmost.ru\\20261127T084535030931Z.txt"
+    }
+  ],
+  "status": "available",
+  "reason": "WHOIS explicitly reports no record",
+  "source": "whois.tcinet.ru",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "available",
+      "reason": "WHOIS explicitly reports no record",
+      "source": "whois.tcinet.ru",
+      "backend": "registry"
+    }
+  ]
+}

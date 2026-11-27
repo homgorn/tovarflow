@@ -1,0 +1,28 @@
+{
+  "domain": "tovardom.ru",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:45:42+00:00",
+  "attempts": [
+    {
+      "source": "whois.tcinet.ru",
+      "query": "tovardom.ru",
+      "checked_at": "2026-11-27T08:45:42+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovardom.ru\\20261127T084543447431Z.txt"
+    }
+  ],
+  "status": "taken",
+  "created": "2022-05-13T14:07:27Z",
+  "reason": "WHOIS record matches the queried domain",
+  "source": "whois.tcinet.ru",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "taken",
+      "created": "2022-05-13T14:07:27Z",
+      "reason": "WHOIS record matches the queried domain",
+      "source": "whois.tcinet.ru",
+      "backend": "registry"
+    }
+  ]
+}

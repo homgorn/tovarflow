@@ -55,7 +55,10 @@ def check_html(path: Path) -> tuple[bool, list[str]]:
     problems = []
     if not re.search(r"<h1[^>]*>", text, re.I):
         problems.append("no H1 in HTML")
-    head = re.sub(r"<[^>]+>", " ", text)
+    body = text.lower().find("<body")
+    visible = text[body:] if body != -1 else text
+    visible = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", visible, flags=re.S | re.I)
+    head = re.sub(r"<[^>]+>", " ", visible)
     head = re.sub(r"\s+", " ", head).strip()[:300]
     if len(FACT.findall(head)) < 3:
         problems.append("first 300 chars have fewer than 3 facts")

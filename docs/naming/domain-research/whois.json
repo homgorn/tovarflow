@@ -1,0 +1,169 @@
+[
+  {
+    "domain": "tovarflow.com",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:47:47+00:00",
+    "attempts": [
+      {
+        "source": "whois.iana.org",
+        "query": "com",
+        "checked_at": "2026-11-27T08:47:47+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarflow.com\\20261127T084756376135Z.txt"
+      },
+      {
+        "source": "whois.verisign-grs.com",
+        "query": "tovarflow.com",
+        "checked_at": "2026-11-27T08:47:56+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarflow.com\\20261127T084801245007Z.txt"
+      }
+    ],
+    "status": "available",
+    "reason": "WHOIS explicitly reports no record",
+    "source": "whois.verisign-grs.com",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "available",
+        "reason": "WHOIS explicitly reports no record",
+        "source": "whois.verisign-grs.com",
+        "backend": "registry"
+      }
+    ]
+  },
+  {
+    "domain": "catalogflow.com",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:48:01+00:00",
+    "attempts": [
+      {
+        "source": "whois.verisign-grs.com",
+        "query": "catalogflow.com",
+        "checked_at": "2026-11-27T08:48:01+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\catalogflow.com\\20261127T084804108371Z.txt"
+      }
+    ],
+    "status": "taken",
+    "created": "2021-10-12T18:15:26Z",
+    "reason": "WHOIS record matches the queried domain",
+    "source": "whois.verisign-grs.com",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "taken",
+        "created": "2021-10-12T18:15:26Z",
+        "reason": "WHOIS record matches the queried domain",
+        "source": "whois.verisign-grs.com",
+        "backend": "registry"
+      }
+    ]
+  },
+  {
+    "domain": "vitrinaflow.com",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:48:04+00:00",
+    "attempts": [
+      {
+        "source": "whois.verisign-grs.com",
+        "query": "vitrinaflow.com",
+        "checked_at": "2026-11-27T08:48:04+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\vitrinaflow.com\\20261127T084807307193Z.txt"
+      }
+    ],
+    "status": "taken",
+    "created": "2026-08-23T14:43:07Z",
+    "reason": "WHOIS record matches the queried domain",
+    "source": "whois.verisign-grs.com",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "taken",
+        "created": "2026-08-23T14:43:07Z",
+        "reason": "WHOIS record matches the queried domain",
+        "source": "whois.verisign-grs.com",
+        "backend": "registry"
+      }
+    ]
+  },
+  {
+    "domain": "tovarflow.ru",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:48:07+00:00",
+    "attempts": [
+      {
+        "source": "whois.tcinet.ru",
+        "query": "tovarflow.ru",
+        "checked_at": "2026-11-27T08:48:07+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\tovarflow.ru\\20261127T084807464477Z.txt"
+      }
+    ],
+    "status": "available",
+    "reason": "WHOIS explicitly reports no record",
+    "source": "whois.tcinet.ru",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "available",
+        "reason": "WHOIS explicitly reports no record",
+        "source": "whois.tcinet.ru",
+        "backend": "registry"
+      }
+    ]
+  },
+  {
+    "domain": "catalogflow.ru",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:48:07+00:00",
+    "attempts": [
+      {
+        "source": "whois.tcinet.ru",
+        "query": "catalogflow.ru",
+        "checked_at": "2026-11-27T08:48:07+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\catalogflow.ru\\20261127T084809740859Z.txt"
+      }
+    ],
+    "status": "available",
+    "reason": "WHOIS explicitly reports no record",
+    "source": "whois.tcinet.ru",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "available",
+        "reason": "WHOIS explicitly reports no record",
+        "source": "whois.tcinet.ru",
+        "backend": "registry"
+      }
+    ]
+  },
+  {
+    "domain": "vitrinaflow.ru",
+    "stage": "whois",
+    "checked_at": "2026-11-27T08:48:09+00:00",
+    "attempts": [
+      {
+        "source": "whois.tcinet.ru",
+        "query": "vitrinaflow.ru",
+        "checked_at": "2026-11-27T08:48:09+00:00",
+        "http_status": 200,
+        "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\vitrinaflow.ru\\20261127T084809927786Z.txt"
+      }
+    ],
+    "status": "available",
+    "reason": "WHOIS explicitly reports no record",
+    "source": "whois.tcinet.ru",
+    "backend": "registry",
+    "outcomes": [
+      {
+        "status": "available",
+        "reason": "WHOIS explicitly reports no record",
+        "source": "whois.tcinet.ru",
+        "backend": "registry"
+      }
+    ]
+  }
+]

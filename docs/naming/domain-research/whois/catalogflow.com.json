@@ -1,0 +1,28 @@
+{
+  "domain": "catalogflow.com",
+  "stage": "whois",
+  "checked_at": "2026-11-27T08:48:01+00:00",
+  "attempts": [
+    {
+      "source": "whois.verisign-grs.com",
+      "query": "catalogflow.com",
+      "checked_at": "2026-11-27T08:48:01+00:00",
+      "http_status": 200,
+      "evidence": "C:\\susa ai\\q-parser.ru\\docs\\naming\\domain-research\\raw\\whois\\catalogflow.com\\20261127T084804108371Z.txt"
+    }
+  ],
+  "status": "taken",
+  "created": "2021-10-12T18:15:26Z",
+  "reason": "WHOIS record matches the queried domain",
+  "source": "whois.verisign-grs.com",
+  "backend": "registry",
+  "outcomes": [
+    {
+      "status": "taken",
+      "created": "2021-10-12T18:15:26Z",
+      "reason": "WHOIS record matches the queried domain",
+      "source": "whois.verisign-grs.com",
+      "backend": "registry"
+    }
+  ]
+}
