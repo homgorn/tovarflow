@@ -33,6 +33,9 @@ Start with:
    legal review.
 9. **Content rights before publishing.** No product or image without a `content_right` record.
 10. **Tenant isolation from day one.** Every domain table has `tenant_id`; RLS is on.
+11. **Work in chunks, driven by the todo list.** Read the backlog before starting; take one
+    vertical slice at a time; close a todo only with an evidence artefact (test, report, feed,
+    deployed URL). Report progress per chunk, not only at the end.
 
 ## 3. Evidence rules
 
