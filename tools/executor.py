@@ -10,6 +10,7 @@ Usage:
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import sqlite3
@@ -44,6 +45,17 @@ def now() -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--connector", choices=["local", "ozon"], default="local",
+                        help="local emulator (default) or the Ozon Seller adapter")
+    args = parser.parse_args()
+
+    adapter = None
+    if args.connector == "ozon":
+        sys.path.insert(0, str(ROOT))
+        from connectors.ru.ozon.adapter import OzonAdapter
+        adapter = OzonAdapter()
+
     conn = sqlite3.connect(DB)
     conn.executescript(SCHEMA)
     rows = conn.execute(
@@ -60,25 +72,41 @@ def main() -> int:
             json.dumps({"offer_id": offer_id, "price_minor": price, "currency": currency},
                        sort_keys=True).encode("utf-8")
         ).hexdigest()[:32]
-        cur = conn.execute(
-            "INSERT OR IGNORE INTO execution(id,proposal_id,idempotency_key,request_hash,"
-            "status,intended_price_minor,created_at,finished_at) VALUES(?,?,?,?,?,?,?,?)",
-            (f"ex_{proposal_id}", proposal_id, idem, request_hash, "DONE", price, stamp, stamp),
-        )
-        if not cur.rowcount:
+        existing = conn.execute("SELECT 1 FROM execution WHERE id=?", (f"ex_{proposal_id}",)).fetchone()
+        if existing:
             skipped += 1  # replay with the same idempotency key: no second write
             continue
 
+        if adapter is not None:
+            try:
+                adapter.update_price(offer_id, price, idem, currency=currency)
+                observed = adapter.verify_price(offer_id)
+            except Exception as exc:  # mapped to incident, never a blind retry
+                conn.execute(
+                    "INSERT INTO incident(kind,subject,details,created_at) VALUES(?,?,?,?)",
+                    ("execution_error", proposal_id,
+                     json.dumps({"error": type(exc).__name__, "message": str(exc)[:200]}),
+                     stamp),
+                )
+                conn.commit()
+                continue
+        else:
+            conn.execute(
+                "INSERT INTO channel_price(offer_id,price_minor,currency,updated_at) VALUES(?,?,?,?) "
+                "ON CONFLICT(offer_id) DO UPDATE SET price_minor=excluded.price_minor,"
+                "currency=excluded.currency,updated_at=excluded.updated_at",
+                (offer_id, price, currency, stamp),
+            )
+            observed = conn.execute(
+                "SELECT price_minor FROM channel_price WHERE offer_id=?", (offer_id,)
+            ).fetchone()[0]
+
         conn.execute(
-            "INSERT INTO channel_price(offer_id,price_minor,currency,updated_at) VALUES(?,?,?,?) "
-            "ON CONFLICT(offer_id) DO UPDATE SET price_minor=excluded.price_minor,"
-            "currency=excluded.currency,updated_at=excluded.updated_at",
-            (offer_id, price, currency, stamp),
+            "INSERT INTO execution(id,proposal_id,idempotency_key,request_hash,"
+            "status,intended_price_minor,created_at,finished_at) VALUES(?,?,?,?,?,?,?,?)",
+            (f"ex_{proposal_id}", proposal_id, idem, request_hash, "DONE", price, stamp, stamp),
         )
         applied += 1
-        observed = conn.execute(
-            "SELECT price_minor FROM channel_price WHERE offer_id=?", (offer_id,)
-        ).fetchone()[0]
         result = "OK" if observed == price else "MISMATCH"
         conn.execute(
             "INSERT INTO verification(execution_id,result,observed_price_minor,"
@@ -100,6 +128,7 @@ def main() -> int:
               for t in ("proposal", "execution", "verification", "channel_price", "incident")}
     conn.close()
     print(json.dumps({
+        "connector": args.connector,
         "approved": len(rows), "applied": applied, "verified": verified,
         "mismatches": mismatches, "idempotent_skips": skipped, "counts": counts,
     }, ensure_ascii=False, indent=2))

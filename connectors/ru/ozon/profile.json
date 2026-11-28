@@ -1,0 +1,52 @@
+{
+  "id": "ru.ozon.seller",
+  "layer": "ru",
+  "role": "sales",
+  "display_name": "Ozon Seller",
+  "auth": {
+    "type": "header",
+    "headers": ["Client-Id", "Api-Key"],
+    "secret_refs": ["OZON_CLIENT_ID", "OZON_API_KEY"]
+  },
+  "api": {
+    "style": "rest",
+    "base_url": "https://api-seller.ozon.ru",
+    "spec_path": "H:/susa ai 500/wb china/ozon-seller-api-openapi.json",
+    "spec_paths": 482
+  },
+  "capabilities": {
+    "product_import": "api",
+    "price_write": true,
+    "stock_write": true,
+    "order_read": true,
+    "returns": true,
+    "chat": true,
+    "ads": true
+  },
+  "endpoints": {
+    "price_write": "/v1/product/import/prices",
+    "price_read": "/v5/product/info/prices",
+    "stock_write": "/v2/products/stocks",
+    "products": "/v1/product/list",
+    "orders_fbo": "/v3/posting/fbo/list",
+    "orders_fbs": "/v3/posting/fbs/list"
+  },
+  "limits": {
+    "rate": null,
+    "page_size": null,
+    "note": "exact write rate limit not documented; conservative 0.2s spacing in local tests"
+  },
+  "requirements": {
+    "entity": "RU/EAEU",
+    "moderation": true,
+    "sandbox": false,
+    "certification": true
+  },
+  "content": {"language": "ru", "currency": "RUB"},
+  "maturity": "research",
+  "evidence": {
+    "source": "docs/research/marketplaces/ru/data.json",
+    "observed_at": "2026-11-27",
+    "confidence": "measured"
+  }
+}

@@ -96,6 +96,7 @@ def main() -> int:
         run_script("mock-smoke", "smoke_mock.py")
         if (DATA / "ingest" / "demo-home-ru.report.json").exists():
             run_script("canonical-replay", "replay.py", "--domain", "demo-home.ru")
+        run_script("ozon-contract", "contract_ozon.py")
 
     failed = sum(1 for _, ok, _ in CHECKS if not ok)
     print(f"\nhealth: {len(CHECKS) - failed} passed, {failed} failed")

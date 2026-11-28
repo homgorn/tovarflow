@@ -147,5 +147,8 @@ platforms, demand, WordPress, admin, inherited assets), synthesis, inherited-ass
 Answer-First/AEO contract and lint; Q-Parser client, mock API emulator and first vertical slice
 (100 goods ingested, canonical replay verified).
 
-Next: live Q-Parser key for a real domain; Medusa v2 + Next.js storefront MVP with AEO templates;
-margin ledger; Ozon/WB adapters at L2; Google Merchant feed; WordPress sync v1.
+Next: WB adapter at L2 using the 13 local specs; Medusa v2 + Next.js storefront MVP with AEO
+templates; Google Merchant feed; WordPress sync v1; real seller accounts for connector certification.
+
+Developer worklog for the client lives in `docs/WORKLOG.md` and is updated each chunk with evidence,
+sources and confidence.

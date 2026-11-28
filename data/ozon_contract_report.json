@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-28T18:25:05+00:00",
+  "endpoint_evidence": "H:/susa ai 500/wb china/ozon-seller-api-openapi.json (482 paths)",
+  "results": [
+    {
+      "check": "profile",
+      "passed": true,
+      "detail": "{\"id\": \"ru.ozon.seller\", \"layer\": \"ru\", \"role\": \"sales\", \"capabilities\": {\"product_import\": \"api\", \"price_write\": true, \"stock_write\": true, \"order_read\": true, \"returns\": true, \"chat\": true, \"ads\": true}, \"maturity\": \"research\"}"
+    },
+    {
+      "check": "health",
+      "passed": true,
+      "detail": "POST /v1/product/list returned result"
+    },
+    {
+      "check": "price write + read-back",
+      "passed": true,
+      "detail": "wrote 123456 minor, read 123456, response={'result': {'updated': 1, 'offer_id': 'SKU-7c903a59'}}"
+    },
+    {
+      "check": "idempotent replay",
+      "passed": true,
+      "detail": "price stayed 123456, writes 0 -> 0"
+    },
+    {
+      "check": "local validation",
+      "passed": true,
+      "detail": "price must be positive"
+    },
+    {
+      "check": "validation blocks HTTP",
+      "passed": true,
+      "detail": "ValidationError raised before HTTP"
+    },
+    {
+      "check": "auth error",
+      "passed": true,
+      "detail": "401 mapped to AuthError"
+    },
+    {
+      "check": "429 retry",
+      "passed": true,
+      "detail": "after one 429, price read 50000"
+    }
+  ],
+  "passed": 8,
+  "total": 8,
+  "confidence": "measured"
+}

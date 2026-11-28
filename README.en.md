@@ -56,6 +56,8 @@ python tools/health.py --full
 python tools/admin.py --port 8878           # operator dashboard prototype
 python tools/test_admin.py --port 8878      # smoke: mapping + approval idempotency
 python tools/executor.py                    # execute approved proposals, verify by read-back
+python tools/contract_ozon.py               # Ozon L2 contract tests (8 checks)
+python tools/executor.py --connector ozon   # execute approvals through the Ozon adapter
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.
