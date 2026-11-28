@@ -278,6 +278,8 @@ def page_reconciliation() -> str:
     def scalar(sql: str) -> int:
         return conn.execute(sql).fetchone()[0] or 0
     parsed = scalar("SELECT COALESCE(sum(goods_written),0) FROM ingest_run")
+    unique = scalar("SELECT count(*) FROM product")
+    duplicates = parsed - unique
     approved = scalar("SELECT count(*) FROM proposal WHERE status='APPROVED'")
     rejected = scalar("SELECT count(*) FROM proposal WHERE status='REJECTED'")
     pending = scalar("SELECT count(*) FROM proposal WHERE status='PENDING'")
@@ -286,6 +288,8 @@ def page_reconciliation() -> str:
     incidents = scalar("SELECT count(*) FROM incident")
     rows = [
         ("parsed", parsed, "записано из парсинга", "OK"),
+        ("unique", unique, "уникальных SKU после дедупликации", "OK"),
+        ("duplicates", duplicates, "перезапись одинаковых SKU между запусками", "OK"),
         ("approved", approved, "политика ALLOW", "OK"),
         ("rejected", rejected, "политика DENY", "OK"),
         ("pending", pending, "ожидают решения оператора", "PENDING"),
@@ -297,14 +301,14 @@ def page_reconciliation() -> str:
         f"<td class='{'ok' if s == 'OK' else 'bad'}'>{s}</td></tr>"
         for n, v, d, s in rows
     )
-    delta = parsed - (approved + rejected + pending)
+    delta = parsed - (unique + duplicates)
     conn.close()
     return "".join([
         head("TovarFlow — сверка", "reconciliation"),
-        f'<p class="lead">Распарсено {parsed} товаров; {approved} одобрено, {rejected} отклонено, '
+        f'<p class="lead">Распарсено {parsed} записей, из них {unique} уникальных SKU и '
+        f'{duplicates} дублей между запусками; {approved} одобрено, {rejected} отклонено, '
         f'{pending} ожидают решения; в канал записано {published}, верифицировано {verified}, '
-        f'инцидентов {incidents}. Разница «parsed − распределено» = {delta} — это нормально, пока '
-        'очередь не разобрана.</p>',
+        f'инцидентов {incidents}. Невязка «parsed − unique − duplicates» = {delta}.</p>',
         "<table><thead><tr><th>Метрика</th><th>Значение</th><th>Причина</th><th>Статус</th></tr></thead><tbody>"
         + table + "</tbody></table>",
         "<h2>Правило сверки</h2><p>Каждый товар обязан оказаться в одном из состояний: "
