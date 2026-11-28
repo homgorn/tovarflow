@@ -29,6 +29,10 @@ def main() -> int:
 
     dashboard = urllib.request.urlopen(base + "/", timeout=10).read().decode("utf-8")
     assert "операторский дашборд" in dashboard
+    executions = urllib.request.urlopen(base + "/executions", timeout=10).read().decode("utf-8")
+    assert "exec:" in executions
+    reconciliation = urllib.request.urlopen(base + "/reconciliation", timeout=10).read().decode("utf-8")
+    assert "parsed" in reconciliation
 
     mapping = urllib.request.urlopen(base + "/mapping", timeout=10).read().decode("utf-8")
     keys = re.findall(r"<code>([^<]+)</code>", mapping)
@@ -49,9 +53,15 @@ def main() -> int:
     ).fetchone()[0]
     status = conn.execute("SELECT status FROM proposal WHERE id=?", (target,)).fetchone()[0]
     mapping_rows = conn.execute("SELECT count(*) FROM attribute_mapping").fetchone()[0]
+    exec_rows = conn.execute("SELECT count(*) FROM execution").fetchone()[0]
+    verified = conn.execute(
+        "SELECT count(*) FROM verification WHERE result='OK'"
+    ).fetchone()[0]
     conn.close()
-    ok = events == 1 and status == "APPROVED" and mapping_rows >= 1
-    print(f"admin-smoke: events={events}, status={status}, mapping_rows={mapping_rows}")
+    ok = (events == 1 and status == "APPROVED" and mapping_rows >= 1
+          and exec_rows >= 1 and verified >= exec_rows)
+    print(f"admin-smoke: events={events}, status={status}, mapping_rows={mapping_rows}, "
+          f"executions={exec_rows}, verified={verified}")
     print("PASS" if ok else "FAIL")
     return 0 if ok else 1
 

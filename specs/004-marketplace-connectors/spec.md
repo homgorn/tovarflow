@@ -210,6 +210,11 @@ Unknown values are `null`. A profile with `null` limits cannot run at `L3_AUTO`.
 - Feeds + Items/Inventory/Orders; dynamic sandbox.
 - Delegated access is required for the SaaS phase.
 
+**Local emulator:** `tools/executor.py` implements the Execution and Verification steps for
+approved price proposals using the same `idempotency_key` rule. It writes `execution`,
+`verification`, `channel_price` and `incident` rows; the admin console exposes them at
+`/executions` and `/reconciliation`. This is a contract test bed, not a marketplace connector.
+
 ## 10. Acceptance scenarios
 
 ```gherkin

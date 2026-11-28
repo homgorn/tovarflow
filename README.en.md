@@ -55,6 +55,7 @@ python tools/aeo_lint.py --html site/index.html
 python tools/health.py --full
 python tools/admin.py --port 8878           # operator dashboard prototype
 python tools/test_admin.py --port 8878      # smoke: mapping + approval idempotency
+python tools/executor.py                    # execute approved proposals, verify by read-back
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.

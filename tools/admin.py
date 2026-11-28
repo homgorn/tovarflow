@@ -128,7 +128,7 @@ nav a{{margin-right:14px;color:var(--accent)}}footer{{margin-top:32px;color:var(
 input{{padding:5px 7px;border:1px solid var(--line);border-radius:5px}}button{{background:var(--accent);color:#fff;border:0;border-radius:5px;padding:6px 12px;cursor:pointer}}
 button.reject{{background:#b42318}}
 </style></head><body><div class="wrap">
-<nav><a href="/">Дашборд</a><a href="/mapping">Маппинг</a><a href="/proposals">Предложения</a><a href="/feed">YML</a><a href="https://github.com/homgorn/tovarflow">GitHub</a></nav>
+<nav><a href="/">Дашборд</a><a href="/mapping">Маппинг</a><a href="/proposals">Предложения</a><a href="/executions">Исполнение</a><a href="/reconciliation">Сверка</a><a href="/feed">YML</a><a href="https://github.com/homgorn/tovarflow">GitHub</a></nav>
 <h1>{escape(title)}</h1>"""
 
 
@@ -165,8 +165,12 @@ def page_dashboard() -> str:
                  + rows + "</tbody></table>")
     parts.append('<h2>Очередь ценовых предложений</h2>')
     pend = conn.execute("SELECT count(*) FROM proposal WHERE status='PENDING'").fetchone()[0]
+    executed = conn.execute("SELECT count(*) FROM execution").fetchone()[0]
     parts.append(f'<p>Ожидают решения: <strong>{pend}</strong>. '
                  '<a href="/proposals">Открыть очередь →</a></p>')
+    parts.append(f'<p>Исполнено предложений: <strong>{executed}</strong>. '
+                 '<a href="/executions">Исполнение →</a> · '
+                 '<a href="/reconciliation">Сверка →</a></p>')
     parts.append('<h2>Маппинг атрибутов</h2>')
     mapped = conn.execute("SELECT count(*) FROM attribute_mapping").fetchone()[0]
     parts.append(f'<p>Подтверждено соответствий: <strong>{mapped}</strong>. '
@@ -232,6 +236,84 @@ def page_proposals(message: str = "") -> str:
     ])
 
 
+def page_executions() -> str:
+    conn = connect()
+    rows = conn.execute(
+        "SELECT e.id,e.status,e.idempotency_key,e.intended_price_minor,"
+        "v.result,v.observed_price_minor,v.checked_at "
+        "FROM execution e LEFT JOIN verification v ON v.execution_id=e.id "
+        "ORDER BY e.created_at DESC LIMIT 80"
+    ).fetchall()
+    table = "".join(
+        f"<tr><td><code>{escape(str(r[0]))}</code></td><td>{escape(str(r[1]))}</td>"
+        f"<td><code>{escape(str(r[2]))}</code></td>"
+        f"<td>{r[3] / 100 if r[3] is not None else '—'}</td>"
+        f"<td>{escape(str(r[4] or '—'))}</td>"
+        f"<td>{r[5] / 100 if r[5] is not None else '—'}</td>"
+        f"<td>{escape(str(r[6] or '—'))}</td></tr>"
+        for r in rows
+    ) or "<tr><td colspan='7'>Исполнений нет</td></tr>"
+    incidents = conn.execute("SELECT kind,subject,details FROM incident ORDER BY id DESC LIMIT 20").fetchall()
+    inc_table = "".join(
+        f"<tr><td>{escape(str(i[0]))}</td><td><code>{escape(str(i[1]))}</code></td>"
+        f"<td><code>{escape(str(i[2]))}</code></td></tr>" for i in incidents
+    ) or "<tr><td colspan='3'>Инцидентов нет</td></tr>"
+    conn.close()
+    return "".join([
+        head("TovarFlow — исполнение и верификация", "executions"),
+        '<p class="lead">Одобренные предложения применяются один раз по ключу '
+        '<code>exec:&lt;proposal&gt;</code>, затем цена перечитывается из канала. '
+        'Расхождение создаёт инцидент, а не слепой ретрай.</p>',
+        "<table><thead><tr><th>Execution</th><th>Статус</th><th>Idempotency</th><th>Цена, ₽</th>"
+        "<th>Верификация</th><th>Прочитано, ₽</th><th>Время</th></tr></thead><tbody>"
+        + table + "</tbody></table>",
+        "<h2>Инциденты</h2><table><thead><tr><th>Тип</th><th>Объект</th><th>Детали</th></tr></thead><tbody>"
+        + inc_table + "</tbody></table>",
+        tail(),
+    ])
+
+
+def page_reconciliation() -> str:
+    conn = connect()
+    def scalar(sql: str) -> int:
+        return conn.execute(sql).fetchone()[0] or 0
+    parsed = scalar("SELECT COALESCE(sum(goods_written),0) FROM ingest_run")
+    approved = scalar("SELECT count(*) FROM proposal WHERE status='APPROVED'")
+    rejected = scalar("SELECT count(*) FROM proposal WHERE status='REJECTED'")
+    pending = scalar("SELECT count(*) FROM proposal WHERE status='PENDING'")
+    published = scalar("SELECT count(*) FROM channel_price")
+    verified = scalar("SELECT count(*) FROM verification WHERE result='OK'")
+    incidents = scalar("SELECT count(*) FROM incident")
+    rows = [
+        ("parsed", parsed, "записано из парсинга", "OK"),
+        ("approved", approved, "политика ALLOW", "OK"),
+        ("rejected", rejected, "политика DENY", "OK"),
+        ("pending", pending, "ожидают решения оператора", "PENDING"),
+        ("published", published, "цена применена в канале", "OK" if published == approved else "WARN"),
+        ("verified", verified, "прочитано обратно и совпало", "OK" if verified == published else "WARN"),
+    ]
+    table = "".join(
+        f"<tr><td>{escape(n)}</td><td>{v}</td><td>{escape(d)}</td>"
+        f"<td class='{'ok' if s == 'OK' else 'bad'}'>{s}</td></tr>"
+        for n, v, d, s in rows
+    )
+    delta = parsed - (approved + rejected + pending)
+    conn.close()
+    return "".join([
+        head("TovarFlow — сверка", "reconciliation"),
+        f'<p class="lead">Распарсено {parsed} товаров; {approved} одобрено, {rejected} отклонено, '
+        f'{pending} ожидают решения; в канал записано {published}, верифицировано {verified}, '
+        f'инцидентов {incidents}. Разница «parsed − распределено» = {delta} — это нормально, пока '
+        'очередь не разобрана.</p>',
+        "<table><thead><tr><th>Метрика</th><th>Значение</th><th>Причина</th><th>Статус</th></tr></thead><tbody>"
+        + table + "</tbody></table>",
+        "<h2>Правило сверки</h2><p>Каждый товар обязан оказаться в одном из состояний: "
+        "одобрен, отклонён или ожидает. Применённая цена обязана быть подтверждена чтением. "
+        "Любое расхождение без причины — инцидент.</p>",
+        tail(),
+    ])
+
+
 class Handler(BaseHTTPRequestHandler):
     def _send(self, body: str | bytes, ctype: str = "text/html; charset=utf-8", code: int = 200) -> None:
         data = body.encode("utf-8") if isinstance(body, str) else body
@@ -260,6 +342,10 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(page_mapping())
         if self.path == "/proposals":
             return self._send(page_proposals())
+        if self.path == "/executions":
+            return self._send(page_executions())
+        if self.path == "/reconciliation":
+            return self._send(page_reconciliation())
         if self.path == "/":
             return self._send(page_dashboard())
         self.send_error(404)
