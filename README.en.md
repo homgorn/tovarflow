@@ -54,6 +54,7 @@ python tools/replay.py --domain demo-home.ru
 python tools/aeo_lint.py --html site/index.html
 python tools/health.py --full
 python tools/admin.py --port 8878           # operator dashboard prototype
+python tools/test_admin.py --port 8878      # smoke: mapping + approval idempotency
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.

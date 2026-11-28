@@ -3,6 +3,11 @@
 **Status:** draft for approval · **Date:** 2026-11-27 · **Depends on:** constitution, specs 001–006,
 research `docs/research/admin/`.
 
+**Prototype:** `tools/admin.py` already serves the dashboard, the attribute-mapping review screen
+and the price-proposal approval queue from the local canonical catalogue. `tools/test_admin.py`
+verifies mapping writes, approval decisions and idempotency. This is the first vertical slice of
+the screens below; the production console remains Next.js + Refine.
+
 ## 1. Direct answer
 
 Use a **hybrid**: Medusa Admin v2 (extended with UI routes) owns commerce screens; a separate
