@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-11-28T03:17:38+00:00",
+  "total": 3,
+  "sites": [
+    {
+      "domain": "demo-home.ru",
+      "title": "Demo Home",
+      "slug": "demo-home-ru",
+      "private": false,
+      "free_until": null,
+      "categories": [
+        {
+          "title": "Кухня",
+          "slug": "кухня"
+        },
+        {
+          "title": "Текстиль",
+          "slug": "текстиль"
+        }
+      ],
+      "cities": [
+        {
+          "title": "Москва",
+          "slug": "moscow"
+        }
+      ]
+    },
+    {
+      "domain": "demo-tech.ru",
+      "title": "Demo Tech",
+      "slug": "demo-tech-ru",
+      "private": false,
+      "free_until": null,
+      "categories": [
+        {
+          "title": "Аксессуары",
+          "slug": "аксессуары"
+        },
+        {
+          "title": "Аудио",
+          "slug": "аудио"
+        }
+      ],
+      "cities": [
+        {
+          "title": "Москва",
+          "slug": "moscow"
+        }
+      ]
+    },
+    {
+      "domain": "demo-kids.ru",
+      "title": "Demo Kids",
+      "slug": "demo-kids-ru",
+      "private": false,
+      "free_until": null,
+      "categories": [
+        {
+          "title": "Игрушки",
+          "slug": "игрушки"
+        },
+        {
+          "title": "Одежда",
+          "slug": "одежда"
+        }
+      ],
+      "cities": [
+        {
+          "title": "Москва",
+          "slug": "moscow"
+        }
+      ]
+    }
+  ]
+}

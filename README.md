@@ -45,6 +45,7 @@ python tools/query_kb.py "webhook signature"
 python tools/query_research.py "WB token"
 python tools/mock_qparser.py --port 8765   # local API emulator, no key needed
 python tools/smoke_mock.py                 # 15 contract checks against the emulator
+python tools/catalog_dump.py --mock        # site catalogue to JSON/CSV
 python tools/ingest.py --domain demo-home.ru --mock --limit 100
 python tools/margin.py                      # объяснимая цена
 python tools/feed_yml.py                    # YML + валидатор

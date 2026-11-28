@@ -46,6 +46,7 @@ python tools/query_kb.py "webhook signature"
 python tools/query_research.py "WB token"
 python tools/mock_qparser.py --port 8765
 python tools/smoke_mock.py
+python tools/catalog_dump.py --mock        # full site catalogue to JSON/CSV
 python tools/ingest.py --domain demo-home.ru --mock --limit 100
 python tools/margin.py
 python tools/feed_yml.py
