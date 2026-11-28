@@ -1,73 +1,23 @@
 {
-  "generated_at": "2026-11-28T03:17:38+00:00",
-  "total": 3,
+  "generated_at": "2026-11-28T03:23:18+00:00",
+  "total": 1,
   "sites": [
     {
-      "domain": "demo-home.ru",
-      "title": "Demo Home",
-      "slug": "demo-home-ru",
+      "domain": "npopt.ru",
+      "title": "\"Необычные Подарки ОПТом\"",
+      "slug": "npopt",
       "private": false,
-      "free_until": null,
+      "free_until": 1802255286688,
       "categories": [
         {
-          "title": "Кухня",
-          "slug": "кухня"
-        },
-        {
-          "title": "Текстиль",
-          "slug": "текстиль"
+          "title": "К празднику, подарки и сувениры",
+          "slug": "gifts"
         }
       ],
       "cities": [
         {
-          "title": "Москва",
-          "slug": "moscow"
-        }
-      ]
-    },
-    {
-      "domain": "demo-tech.ru",
-      "title": "Demo Tech",
-      "slug": "demo-tech-ru",
-      "private": false,
-      "free_until": null,
-      "categories": [
-        {
-          "title": "Аксессуары",
-          "slug": "аксессуары"
-        },
-        {
-          "title": "Аудио",
-          "slug": "аудио"
-        }
-      ],
-      "cities": [
-        {
-          "title": "Москва",
-          "slug": "moscow"
-        }
-      ]
-    },
-    {
-      "domain": "demo-kids.ru",
-      "title": "Demo Kids",
-      "slug": "demo-kids-ru",
-      "private": false,
-      "free_until": null,
-      "categories": [
-        {
-          "title": "Игрушки",
-          "slug": "игрушки"
-        },
-        {
-          "title": "Одежда",
-          "slug": "одежда"
-        }
-      ],
-      "cities": [
-        {
-          "title": "Москва",
-          "slug": "moscow"
+          "title": "Хабаровск",
+          "slug": "habar"
         }
       ]
     }

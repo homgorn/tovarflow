@@ -1,0 +1,12 @@
+{
+  "domain": "npopt.ru",
+  "parse_id": "id4048511",
+  "run_id": "725c13879424858da9d56769",
+  "goods_processed": 973,
+  "goods_written": 200,
+  "unknown_publish": 0,
+  "unmapped_keys": [],
+  "canonical_hash": "c93593b624df41b6576fd8c8dd63913e606787486813e9c216828d55142525bb",
+  "generated_at": "2026-11-28T03:38:29+00:00",
+  "storage": "data/catalog.sqlite"
+}

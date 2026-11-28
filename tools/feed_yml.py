@@ -31,17 +31,30 @@ def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB)
     rows = conn.execute(
-        "SELECT p.url,p.title,p.description,p.brand,p.short_description,p.category_title,"
-        "p.attributes_raw,o.quantity,o.publish,pd.price_minor,pd.is_complete,pd.can_publish "
+        "SELECT p.domain,p.url,p.title,p.description,p.brand,p.short_description,p.category_title,"
+        "p.attributes_raw,o.quantity,o.publish,pd.price_minor,pd.is_complete,pd.can_publish,"
+        "(SELECT m.url FROM media m WHERE m.product_id=p.id ORDER BY m.position LIMIT 1) AS picture "
         "FROM product p JOIN variant v ON v.product_id=p.id "
         "JOIN offer o ON o.variant_id=v.id "
         "JOIN price_decision pd ON pd.offer_id=o.id"
     ).fetchall()
-    categories = sorted({r[5] or "Разное" for r in rows})
+    vendor_map = {}
+    catalog_file = ROOT / "data" / "catalog_sites.json"
+    if catalog_file.exists():
+        try:
+            catalog = json.loads(catalog_file.read_text(encoding="utf-8"))
+            vendor_map = {s.get("domain"): s.get("title") for s in catalog.get("sites", [])}
+        except (ValueError, TypeError):
+            vendor_map = {}
+    categories = sorted({r[6] or "Разное" for r in rows})
     errors = []
     offers = []
+    fallback_vendors = 0
     for r in rows:
-        url, title, description, brand, short, category, attrs_raw, quantity, publish, price, complete, can_publish = r
+        domain, url, title, description, brand, short, category, attrs_raw, quantity, publish, price, complete, can_publish, picture = r
+        vendor = brand or vendor_map.get(domain) or "TovarFlow"
+        if not brand:
+            fallback_vendors += 1
         article = url.rsplit("/", 1)[-1] if url else ""
         attrs = json.loads(attrs_raw or "{}")
         problems = []
@@ -55,8 +68,8 @@ def main() -> int:
             problems.append("below floor")
         if price is None or price <= 0:
             problems.append("missing price")
-        if not brand:
-            problems.append("missing vendor")
+        if not picture:
+            problems.append("missing picture")
         if problems:
             errors.append({"article": article, "problems": problems})
             continue
@@ -69,8 +82,8 @@ def main() -> int:
   <price>{money(price)}</price>
   <currencyId>RUB</currencyId>
   <categoryId>{cat_id(category)}</categoryId>
-  <picture>{escape('https://example.invalid/placeholder.jpg')}</picture>
-  <vendor>{escape(brand)}</vendor>
+  <picture>{escape(picture or '')}</picture>
+  <vendor>{escape(vendor)}</vendor>
   <model>{escape(article)}</model>
   <vendorCode>{escape(article)}</vendorCode>
   <description>{escape(description or short or title)}</description>
@@ -106,6 +119,7 @@ def main() -> int:
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "offers": len(offers), "categories": len(categories),
+        "fallback_vendors": fallback_vendors,
         "validation_errors": errors, "parse_errors": parse_errors,
         "feed": str(feed_path.relative_to(ROOT)).replace("\\", "/"),
         "valid": not errors and not parse_errors,

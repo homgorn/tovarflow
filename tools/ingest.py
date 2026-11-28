@@ -181,6 +181,8 @@ def main() -> int:
     parser.add_argument("--domain", default=os.environ.get("INGEST_DOMAIN", "demo-home.ru"))
     parser.add_argument("--limit", type=int, default=int(os.environ.get("INGEST_LIMIT", "1000")))
     parser.add_argument("--mock", action="store_true")
+    parser.add_argument("--parse-id", default=None,
+                        help="continue an existing parse instead of starting a new one")
     args = parser.parse_args()
 
     mock_server = None
@@ -203,20 +205,23 @@ def main() -> int:
     site = client.website(args.domain)
     print("site options:", site.get("options"))
 
-    cat_job = client.start_categories(args.domain)
-    for _ in range(30):
-        categories = client.categories(cat_job["id"])
-        if categories["status"] in ("completed", "error"):
-            break
-        time.sleep(0.5)
-    if categories["status"] != "completed":
-        print("categories failed:", categories)
-        return 2
-    chosen = categories.get("categories") or []
-    print("categories:", len(chosen))
-
-    parse_id = client.start_parser(args.domain, categories=chosen[:5])
-    deadline = time.time() + 180
+    if args.parse_id:
+        parse_id = args.parse_id
+        print("reusing parse:", parse_id)
+    else:
+        cat_job = client.start_categories(args.domain)
+        for _ in range(30):
+            categories = client.categories(cat_job["id"])
+            if categories["status"] in ("completed", "error"):
+                break
+            time.sleep(0.5)
+        if categories["status"] != "completed":
+            print("categories failed:", categories)
+            return 2
+        chosen = categories.get("categories") or []
+        print("categories:", len(chosen))
+        parse_id = client.start_parser(args.domain, categories=chosen[:5])
+    deadline = time.time() + 900
     status: dict = {}
     while time.time() < deadline:
         status = client.parser(parse_id)

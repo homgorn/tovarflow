@@ -81,6 +81,9 @@ Acceptance:
 - **FR-008** Media is content-addressed; the original, WebP and AVIF variants are stored.
 - **FR-009** Translation is per locale with `review_state` and a glossary.
 - **FR-010** Category mapping is external-taxonomy-versioned; a taxonomy diff is detectable.
+- **FR-011** If a supplier product has no brand, the feed uses the supplier name from the site
+  catalogue as `vendor` and records `fallback_vendors` in the feed report. This is a visible data
+  quality signal, not a silent correction. A human can override it per category later.
 
 ## 4. Non-functional requirements
 
