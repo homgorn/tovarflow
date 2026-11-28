@@ -52,6 +52,7 @@ python tools/feed_yml.py                    # YML + валидатор
 python tools/replay.py --domain demo-home.ru
 python tools/aeo_lint.py --html site/index.html
 python tools/health.py --full               # all gates
+python tools/admin.py --port 8878           # operator dashboard prototype
 ```
 
 Requirements: Python 3.12, `requests`, `beautifulsoup4`, `markdownify`.
